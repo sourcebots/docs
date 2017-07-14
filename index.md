@@ -18,4 +18,8 @@ Once this has been setup, you can use this variable for pretty much every functi
 
 ## Motor Boards
 
-## Power Bo
+## Power Board
+
+## Servos (Ruggeduino)
+
+## Vision
