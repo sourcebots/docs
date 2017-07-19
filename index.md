@@ -1,6 +1,6 @@
 This is the documentation tutorial showing how to use the robot's API.
 
-[See the reference documentation here](Docs/Reference)
+[See the reference documentation here](/Reference)
 ## Setup
 
 The following two lines of python code are required to setup the robot.
@@ -81,7 +81,7 @@ The motor board would then apply full power to both motors.
 In addition to the numeric values, there are two text constants that can be used. Robot.BRAKE and Robot.COAST.
 Robot.BRAKE is an alias for 0 (full stop), while Robot.COAST stops the application of power to the motors.
 
-## Servo Boards (Ruggeduino)
+## Ruggeduino (Servo Boards)
 
 ## Cameras (Vision Boards)
 
