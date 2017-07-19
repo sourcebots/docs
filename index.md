@@ -83,6 +83,30 @@ Robot.BRAKE is an alias for 0 (full stop), while Robot.COAST stops the applicati
 
 ## Ruggeduino (Servo Boards)
 
+get a dictionairy of connected servo boards with the serial numbers as keys:
+
+```python
+servo_boards = robot.servo_boards()
+# get a dictionairy of the servo boards
+board_one = servo_boards['S3rv0']
+# get a single board by serial number
+```
+Once you have a single servo board you can get the list of servos connected to that board and read and set the position of that servo:
+
+```python
+servo_one = board_one.ports()[1]
+# get the second element of the list of ports
+```
+
+The position of the selected servo can then be set and read as followings:
+```python
+
+servo_one.position(65)
+
+position = servo_one.position()
+# 65
+```
+
 ## Cameras (Vision Boards)
 
 
