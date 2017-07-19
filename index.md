@@ -1,7 +1,6 @@
-# Documentation
+This is the documentation tutorial showing how to use the robot's API.
 
-This is the documentation showing how to use the robot's API.
-
+[See the reference documentation here](Docs/Reference)
 ## Setup
 
 The following two lines of python code are required to setup the robot.
@@ -15,6 +14,27 @@ robot = Robot()
 This will initialize the robot's api calls and allow it to send and receive data from the robot's various boards.
 
 Once this has been setup, this object can be used for most of the functions of the robot.
+
+## Power Boards
+
+As with the motor boards, the serial number of the power board is needed. Once you have this you can obtain access to a power board as follows:
+
+```python
+power_boards = robot.power_boards()
+# gets a dictionairy of the connected power boards
+main_board = power_boards['POWER']
+# get the power board with that serial number
+```
+
+This power board object has two functions, power_on() and power_off() these turn the power on and off to the connected boards respectivley.
+
+```python
+main_board.power_on()
+# powers on the connected boards
+
+main_board.power_off()
+# powers off the connected boards
+```
 
 ## Motor Boards
 in order to use a motor board, you will first have to read the serial number off the motor boards:
@@ -60,30 +80,6 @@ The motor board would then apply full power to both motors.
 
 In addition to the numeric values, there are two text constants that can be used. Robot.BRAKE and Robot.COAST.
 Robot.BRAKE is an alias for 0 (full stop), while Robot.COAST stops the application of power to the motors.
-
-## Power Boards
-
-As with the motor boards, the serial number of the power board is needed. Once you have this you can obtain access to a power board as follows:
-
-```python
-power_boards = robot.power_boards()
-# gets a dictionairy of the connected power boards
-main_board = power_boards['POWER']
-# get the power board with that serial number
-```
-
-This power board object has two functions, power_on() and power_off() these turn the power on and off to the connected boards respectivley.
-
-```python
-main_board.power_on()
-# powers on the connected boards
-
-main_board.power_off()
-# powers off the connected boards
-```
-
-
-
 
 ## Servo Boards (Ruggeduino)
 
