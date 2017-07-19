@@ -23,7 +23,7 @@ Once this is done, the motors and their boards are accessed
 as follows:
 
 ```python
-motor_boards = Robot.motor_boards()
+motor_boards = robot.motor_boards()
 # Returns a dictionairy of the avaliable motor boards
 board_one = motor_boards['s3r1al']
 # Selects the board with that serial number
@@ -34,8 +34,8 @@ This board object has a property object for each of the motors connected to it. 
 It is a good idea to assign the left and right motor object to memorable variables, similar to the following
 
 ```python
-left_motor = Robot.motor_boards()['s3r1al'].m0()
-right_motor = Robot.motor_boards()['s3r1al'].m1()
+left_motor = robot.motor_boards()['s3r1al'].m0()
+right_motor = robot.motor_boards()['s3r1al'].m1()
 ```
 These Motor objects have a property called voltage, which can be read by calling it with no arguments and set by calling it with the new voltage as the singular argument.
 
@@ -63,11 +63,30 @@ Robot.BRAKE is an alias for 0 (full stop), while Robot.COAST stops the applicati
 
 ## Power Boards
 
+As with the motor boards, the serial number of the power board is needed. Once you have this you can obtain access to a power board as follows:
+
+```python
+power_boards = robot.power_boards()
+# gets a dictionairy of the connected power boards
+main_board = power_boards['POWER']
+# get the power board with that serial number
+```
+
+This power board object has two functions, power_on() and power_off() these turn the power on and off to the connected boards respectivley.
+
+```python
+main_board.power_on()
+# powers on the connected boards
+
+main_board.power_off()
+# powers off the connected boards
+```
+
+
+
+
 ## Servo Boards (Ruggeduino)
 
-## Vision
-You can call a list of markers that are currently visible to the robot by calling the robot object's see method. This list can them be iterated over in a for each loop. See example below
+## Cameras (Vision Boards)
 
 
-### Markers
-Makers, which are done using april tags are their own objects within the system. When the see method is called, a list of Marker objects are created, these have the following properties:
