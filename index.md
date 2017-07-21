@@ -109,4 +109,10 @@ position = servo_one.position()
 
 ## Cameras (Vision Boards)
 
+As always, a dictionairy of the avaliable cameras is obtained, then an inidivual camera is obtained using the serial number, as follows:
+```python
+cameras = robot.cameras()
+camera_one = cameras['camera']
+```
 
+Once you have a camera object you can check what markers it can see by using its see() command, this will return a list of marker objects.
