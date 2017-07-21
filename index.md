@@ -1,6 +1,6 @@
 This is the documentation tutorial showing how to use the robot's API.
 
-[See the reference documentation here](/Reference)
+[See the reference documentation here](Reference)
 ## Setup
 
 The following two lines of python code are required to setup the robot.
@@ -116,3 +116,8 @@ camera_one = cameras['camera']
 ```
 
 Once you have a camera object you can check what markers it can see by using its see() command, this will return a list of marker objects.
+```python
+markers = camera_one.see()
+```
+These marker objects have properties and some helper functions, see their entry in the reference for a complete list.
+
