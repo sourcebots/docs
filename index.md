@@ -22,20 +22,24 @@ Once this has been setup, this object can be used for most of the functions of t
 As with the motor boards, the serial number of the power board is needed. Once you have this you can obtain access to a power board as follows:
 
 ```python
+# get a dictionairy of the connected power boards
 power_boards = robot.power_boards
-# gets a dictionairy of the connected power boards
+
+# get the power board by serial number
 main_board = power_boards['POWER']
-# get the power board with that serial number
+
+# get the first power board
+main_board = power_boards[0]
 ```
 
 This power board object has two functions, power_on() and power_off() these turn the power on and off to the connected boards respectivley.
 
 ```python
-main_board.power_on()
 # powers on the connected boards
+main_board.power_on()
 
-main_board.power_off()
 # powers off the connected boards
+main_board.power_off()
 ```
 
 ## Motor Boards
@@ -45,10 +49,11 @@ Once this is done, the motors and their boards are accessed
 as follows:
 
 ```python
-motor_boards = robot.motor_boards
 # a dictionairy of the avaliable motor boards
+motor_boards = robot.motor_boards
+
+# Selects the motor board by serial number
 board_one = motor_boards['mOtOr']
-# Selects the board with that serial number
 ```
 
 This board object has a property object for each of the motors connected to it. These are mapped to the m1 and m0 variables.
@@ -72,10 +77,10 @@ right_motor.voltage = 1
 and these value can then be read like that:
 ```python
 left_motor.voltage
-# 1
+# >>> 1
 
 right_motor.voltage
-# 1
+# >>> 1
 ```
 
 The motor board would then apply full power to both motors.
@@ -88,16 +93,14 @@ robot.BRAKE is an alias for 0 (full stop), while robot.COAST stops the applicati
 get a dictionairy of connected servo boards with the serial numbers as keys:
 
 ```python
-servo_boards = robot.servo_boards
-# get a dictionairy of the servo boards
-board_one = servo_boards['S3rv0']
 # get a single board by serial number
+board_one = servo_boards['S3rv0']
 ```
 Once you have a single servo board you can get the list of servos connected to that board and read and set the position of that servo:
 
 ```python
-servo_one = board_one.ports[1]
 # get the second element of the list of ports
+servo_one = board_one.ports[1]
 ```
 
 The position of the selected servo can then be set and read as followings:
@@ -106,7 +109,7 @@ The position of the selected servo can then be set and read as followings:
 servo_one.position = 65
 
 position = servo_one.position
-# 65
+# >>> 65
 ```
 
 ## Cameras (Vision Boards)
@@ -125,11 +128,11 @@ Once you've got a marker object, you can check its id number against the predefi
 ```python
 eg_marker = markers[0]
 eg_marker.id
-# 34
+# >>> 34
 eg_marker.id in robot.WALL
-# false
+# >>> false
 eg_marker.id in robot.TOKEN
-# true
+# >>> true
 eg_maker.id in robot.SILVER_TOKEN
-# true
+# >>> true
 ```
