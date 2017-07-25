@@ -1,5 +1,7 @@
 # Robot API Reference
+
 [Usage Tutorial](index)
+
 ### robot.Camera
 
 Class that represents a camera
@@ -11,7 +13,6 @@ Class that represents a camera
   - `serial`: the camera's serial number.
 
 ---
-
 ### robot.CartCoord
 Class that represents a set of cartesian coordinates
 - **Properties**
@@ -20,12 +21,11 @@ Class that represents a set of cartesian coordinates
   - `z`: z-axis cartesian coordinate in meters.
 
 ---
-
 ### robot.Marker
 Class that represents a marker
 - **Methods**
-  - `is_token_marker()`: returns true if the marker is a token, false if otherwise.
-  - `is_wall_marker()`: returns true if the marker is a wall, false if otherwise.
+  - `is_token_marker()`: if the marker is a token marker.
+  - `is_wall_marker()`: if the marker is a wall marker.
 
 
 - **Properties**
@@ -38,14 +38,12 @@ Class that represents a marker
   - `size`: size of the marker in meters.
 
 ---
-
 ### robot.Motor
 Class that represents a motor
 - **Properties**
   - `voltage` : the normalised voltage of the motor.
 
 ---
-
 ### robot.MotorBoard
 Class that represents a motor board
 - **Properties**
@@ -54,7 +52,6 @@ Class that represents a motor board
   - `serial`: the board's serial number.
 
 ---
-
 ###  robot.PolarCoord
 Class that represents a set of polar coordinates
 - **Properties**
@@ -67,7 +64,6 @@ Class that represents a set of polar coordinates
   - `rot\_z_rad`: rotation on the z axis in radians.
 
 ---
-
 ###  robot.PowerBoard
 Class that represents a power board
 - **Methods**
@@ -79,7 +75,6 @@ Class that represents a power board
   - `serial`: the board's serial number.
 
 ---
-
 ###  robot.Robot
 Class that represents the robot as a whole
 - **Properties**
@@ -89,14 +84,12 @@ Class that represents the robot as a whole
   - `servo_boards`: a dictionairy of connected [Servo Board](#robotservoboard), using their serial numbers as keys.
 
 ---
-
 ###  robot.Servo
 Class that represents a servo
 - **Properties**
   - `position`: the position of the servo.
 
 ---
-
 ###  robot.ServoBoard
 Class representing a servo board
 - **Properties**
