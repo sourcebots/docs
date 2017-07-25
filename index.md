@@ -1,8 +1,8 @@
-# Robot API Tutorial 
+# Robot API Tutorial
 
 This is the documentation tutorial showing how to use the robot's API.
 
-[See the api reference.](reference)
+[See the API reference.](reference)
 ## Setup
 
 The following two lines of python code are required to setup the robot.
@@ -13,7 +13,7 @@ from robot import Robot
 robot = Robot()
 ```
 
-This will initialize the robot's api calls and allow it to send and receive data from the robot's various boards.
+This will initialize the robot's API calls and allow it to send and receive data from the robot's various boards.
 
 Once this has been setup, this object can be used for most of the functions of the robot.
 
@@ -133,4 +133,3 @@ eg_marker.id in robot.TOKEN
 eg_maker.id in robot.SILVER_TOKEN
 # true
 ```
-
