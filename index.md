@@ -119,5 +119,16 @@ Once you have a camera object you can check what markers it can see by using its
 ```python
 markers = camera_one.see()
 ```
-These marker objects have properties and some helper functions, see their entry in the reference for a complete list.
+Once you've got a marker object, you can check its id number against the predefined lists to see what type of marker it is:
+```python
+eg_marker = markers[0]
+eg_marker.id
+# 34
+eg_marker.id in robot.WALL
+# false
+eg_marker.id in robot.TOKEN
+# true
+eg_maker.id in robot.SILVER_TOKEN
+# true
+```
 
