@@ -95,7 +95,7 @@ The position of the selected servo can then be set and read as followings:
 servo_one.position = 65
 
 position = servo_one.position
-# 65
+# >>> 65
 ```
 
 ## Cameras (Vision Boards)
