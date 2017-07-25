@@ -50,7 +50,7 @@ Class that represents a motor
 
 ### robot.MotorBoard
 Class that represents a motor board
- - **Properties**
+- **Properties**
   - m0: The [motor](#robotmotor) connected to m0 on the motor board.
   - m1: The [motor](#robotmotor) connected to m1 on the motor board
   - serial: the board's serial number.
@@ -108,10 +108,10 @@ Class representing a servo board
 ---
 ### Data Values
 Constant data values found inside the robot library.
- - BRAKE: used by [motors](#robotmotor) to tell it to break
- - COAST: used by [motors](#robotmotor) to tell it to coast
- - GOLD_TOKEN: a list of the id numbers of all gold token markers
- - POISON_TOKEN: a list of the id numbers of all poison token markers
- - SILVER_TOKEN: a list of the id numbers of all silver token markers
- - TOKEN: a list of the id numbers of all token markers
- - WALL: a list of the id numbers of all wall markers.
+- BRAKE: used by [motors](#robotmotor) to tell it to break
+- COAST: used by [motors](#robotmotor) to tell it to coast
+- GOLD_TOKEN: a list of the id numbers of all gold token markers
+- POISON_TOKEN: a list of the id numbers of all poison token markers
+- SILVER_TOKEN: a list of the id numbers of all silver token markers
+- TOKEN: a list of the id numbers of all token markers
+- WALL: a list of the id numbers of all wall markers.
