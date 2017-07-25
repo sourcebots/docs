@@ -6,28 +6,28 @@ title: API Reference
 
 Class that represents a camera
  - **Methods**
-  - see( ): returns a list of [markers](#robotmarker) currently visible to the camera.
+   - see( ): returns a list of [markers](#robotmarker) currently visible to the camera.
 
 
  - **Properties**
-  - serial: the camera's serial number.
+   - serial: the camera's serial number.
 
 ---
 
 ### robot.CartCoord
 Class that represents a set of cartesian coordinates
  - **Properties**
-  - x: x-axis cartesian coordinate in meters.
-  - y: y-axis cartesian coordinate in meters.
-  - z: z-axis cartesian coordinate in meters.
+   - x: x-axis cartesian coordinate in meters.
+   - y: y-axis cartesian coordinate in meters.
+   - z: z-axis cartesian coordinate in meters.
 
 ---
 
 ### robot.Marker
 Class that represents a marker
  - **Methods**
-    - is_token_marker( ): returns true if the marker is a token, false if otherwise.
-    - is_wall_marker( ): returns true if the marker is a wall, false if otherwise.
+   - is_token_marker( ): returns true if the marker is a token, false if otherwise.
+   - is_wall_marker( ): returns true if the marker is a wall, false if otherwise.
 
 
  - **Properties**
