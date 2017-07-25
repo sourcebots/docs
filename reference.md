@@ -2,7 +2,7 @@
 
 Class that represents a camera
  - **Methods**
-  - see( ): returns a list of [markers](#robot.Marker) currently visible to the camera.
+  - see( ): returns a list of [markers](#robotMarker) currently visible to the camera.
 
 
  - **Properties**
@@ -27,12 +27,12 @@ Class that represents a marker
 
 
  - **Properties**
-  - cartesian: a [CartCoord](reference#robot.CartCoord) object representing the cartesian coordinates of the marker relative to the robot.
+  - cartesian: a [CartCoord](#robotCartCoord) object representing the cartesian coordinates of the marker relative to the robot.
   - distance_meters: the distance to the marker in meters.
   - id: the id number of the marker.
   - pixel_centre: pixel coordinates of the centre of the marker.
   - pixel_corners: pixel coordinates of the corners of the maker.
-  - polar: a [PolarCoord](reference#robot.PolarCoord) object representing the polar coordinates of the marker relative to the robot.
+  - polar: a [PolarCoord](#robotPolarCoord) object representing the polar coordinates of the marker relative to the robot.
   - size: size of the marker in meters.
 
 ---
@@ -47,8 +47,8 @@ Class that represents a motor
 ### robot.MotorBoard
 Class that represents a motor board
  - **Properties**
-  - m0: The [motor](reference#robot.Motor) connected to m0 on the motor board.
-  - m1: The [motor](reference#robot.Motor) connected to m1 on the motor board
+  - m0: The [motor](#robotMotor) connected to m0 on the motor board.
+  - m1: The [motor](#robotMotor) connected to m1 on the motor board
   - serial: the board's serial number.
 
 ---
@@ -81,7 +81,7 @@ Class that represents a power board
 ###  robot.Robot
 Class that represents the robot as a whole
  - **Properties**
-  - cameras: a dictionairy of connected [Camera](reference#robot.Camera) objects, using their serial numbers as keys.
+  - cameras: a dictionairy of connected [Camera](#robotCamera) objects, using their serial numbers as keys.
 ---
 
 ###  robot.Servo
