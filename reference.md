@@ -44,7 +44,7 @@ Class that represents a motor
 - **Properties**
   - voltage : the normalised voltage of the motor.
 
----   
+---
 
 ### robot.MotorBoard
 Class that represents a motor board

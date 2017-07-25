@@ -22,7 +22,7 @@ Once this has been setup, this object can be used for most of the functions of t
 As with the motor boards, the serial number of the power board is needed. Once you have this you can obtain access to a power board as follows:
 
 ```python
-# get a dictionairy of the connected power boards
+# get a dictionary of the connected power boards
 power_boards = robot.power_boards
 
 # get the power board by serial number
@@ -32,7 +32,7 @@ main_board = power_boards['POWER']
 main_board = power_boards[0]
 ```
 
-This power board object has two functions, power_on() and power_off() these turn the power on and off to the connected boards respectivley.
+This power board object has two functions, power_on() and power_off() these turn the power on and off to the connected boards respectively.
 
 ```python
 # powers on the connected boards
@@ -49,7 +49,7 @@ Once this is done, the motors and their boards are accessed
 as follows:
 
 ```python
-# a dictionairy of the avaliable motor boards
+# a dictionary of the available motor boards
 motor_boards = robot.motor_boards
 
 # Selects the motor board by serial number
@@ -90,7 +90,7 @@ robot.BRAKE is an alias for 0 (full stop), while robot.COAST stops the applicati
 
 ## Ruggeduino (Servo Boards)
 
-get a dictionairy of connected servo boards with the serial numbers as keys:
+get a dictionary of connected servo boards with the serial numbers as keys:
 
 ```python
 # get a single board by serial number
@@ -114,7 +114,7 @@ position = servo_one.position
 
 ## Cameras (Vision Boards)
 
-As always, a dictionairy of the avaliable cameras is obtained, then an inidivual camera is obtained using the serial number, as follows:
+As always, a dictionary of the available cameras is obtained, then an individual camera is obtained using the serial number, as follows:
 ```python
 cameras = robot.cameras
 camera_one = cameras['camera']
