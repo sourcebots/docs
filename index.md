@@ -1,6 +1,6 @@
 This is the documentation tutorial showing how to use the robot's API.
 
-[See the api reference.](Reference)
+[See the api reference.](reference)
 ## Setup
 
 The following two lines of python code are required to setup the robot.
