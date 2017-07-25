@@ -1,3 +1,6 @@
+---
+title: Robot Documentation
+---
 This is the documentation tutorial showing how to use the robot's API.
 
 [See the api reference.](reference)
@@ -78,8 +81,8 @@ right_motor.voltage
 
 The motor board would then apply full power to both motors.
 
-In addition to the numeric values, there are two text constants that can be used. Robot.BRAKE and Robot.COAST.
-Robot.BRAKE is an alias for 0 (full stop), while Robot.COAST stops the application of power to the motors.
+In addition to the numeric values, there are two text constants that can be used. robot.BRAKE and robot.COAST.
+robot.BRAKE is an alias for 0 (full stop), while robot.COAST stops the application of power to the motors.
 
 ## Ruggeduino (Servo Boards)
 

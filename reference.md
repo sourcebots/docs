@@ -1,3 +1,7 @@
+---
+title: API Reference
+---
+
 ### robot.Camera
 
 Class that represents a camera
