@@ -5,32 +5,32 @@ title: API Reference
 ### robot.Camera
 
 Class that represents a camera
- - **Methods**
-   - see( ): returns a list of [markers](#robotmarker) currently visible to the camera.
+- **Methods**
+  - see( ): returns a list of [markers](#robotmarker) currently visible to the camera.
 
 
- - **Properties**
-   - serial: the camera's serial number.
+- **Properties**
+  - serial: the camera's serial number.
 
 ---
 
 ### robot.CartCoord
 Class that represents a set of cartesian coordinates
- - **Properties**
-   - x: x-axis cartesian coordinate in meters.
-   - y: y-axis cartesian coordinate in meters.
-   - z: z-axis cartesian coordinate in meters.
+- **Properties**
+  - x: x-axis cartesian coordinate in meters.
+  - y: y-axis cartesian coordinate in meters.
+  - z: z-axis cartesian coordinate in meters.
 
 ---
 
 ### robot.Marker
 Class that represents a marker
- - **Methods**
-   - is_token_marker( ): returns true if the marker is a token, false if otherwise.
-   - is_wall_marker( ): returns true if the marker is a wall, false if otherwise.
+- **Methods**
+  - is_token_marker( ): returns true if the marker is a token, false if otherwise.
+  - is_wall_marker( ): returns true if the marker is a wall, false if otherwise.
 
 
- - **Properties**
+- **Properties**
   - cartesian: a [CartCoord](#robotcartcoord) object representing the cartesian coordinates of the marker relative to the robot.
   - distance_meters: the distance to the marker in meters.
   - id: the id number of the marker.
@@ -43,8 +43,8 @@ Class that represents a marker
 
 ### robot.Motor
 Class that represents a motor
- - **Properties**
-   - voltage : the normalised voltage of the motor.
+- **Properties**
+  - voltage : the normalised voltage of the motor.
 
 ---   
 
@@ -59,7 +59,7 @@ Class that represents a motor board
 
 ###  robot.PolarCoord
 Class that represents a set of polar coordinates
- - **Properties**
+- **Properties**
   - distance_meters: distance to the point in meters.
   - rot\_x_deg: rotation on the x axis in degrees.
   - rot\_y_deg: rotation on the y axis in degrees.
@@ -72,19 +72,19 @@ Class that represents a set of polar coordinates
 
 ###  robot.PowerBoard
 Class that represents a power board
- - **Methods**
+- **Methods**
   - power_on( ): turns the power on to the connected boards.
   - power_off( ): turns the power off to connected boards.
 
 
- - **Properties**
+- **Properties**
   - serial: the board's serial number.
 
 ---
 
 ###  robot.Robot
 Class that represents the robot as a whole
- - **Properties**
+- **Properties**
   - cameras: a dictionairy of connected [Cameras](#robotcamera), using their serial numbers as keys.
   - motor_boards: a dictionairy of connected [Motor Boards](#robotmotorboard), using their serial numbers as keys.
   - power_boards: a dictionairy of connected [Power Boards](#robotpowerboard), using their serial numbers as keys.
@@ -94,14 +94,14 @@ Class that represents the robot as a whole
 
 ###  robot.Servo
 Class that represents a servo
- - **Properties**
+- **Properties**
   - position: the position of the servo.
 
 ---
 
 ###  robot.ServoBoard
 Class representing a servo board
- - **Properties**
+- **Properties**
   - ports: returns a list of up to sixteen [servos](#robotservo), indexed by port number.
   - serial: Serial number for the board.
 
