@@ -1,6 +1,6 @@
 This is the documentation tutorial showing how to use the robot's API.
 
-[See the reference documentation here](Reference)
+[See the api reference.](Reference)
 ## Setup
 
 The following two lines of python code are required to setup the robot.
@@ -20,7 +20,7 @@ Once this has been setup, this object can be used for most of the functions of t
 As with the motor boards, the serial number of the power board is needed. Once you have this you can obtain access to a power board as follows:
 
 ```python
-power_boards = robot.power_boards()
+power_boards = robot.power_boards
 # gets a dictionairy of the connected power boards
 main_board = power_boards['POWER']
 # get the power board with that serial number
@@ -43,36 +43,36 @@ Once this is done, the motors and their boards are accessed
 as follows:
 
 ```python
-motor_boards = robot.motor_boards()
-# Returns a dictionairy of the avaliable motor boards
-board_one = motor_boards['s3r1al']
+motor_boards = robot.motor_boards
+# a dictionairy of the avaliable motor boards
+board_one = motor_boards['mOtOr']
 # Selects the board with that serial number
 ```
 
-This board object has a property object for each of the motors connected to it. These are called at the m0 and m1 functions.
+This board object has a property object for each of the motors connected to it. These are mapped to the m1 and m0 variables.
 
 It is a good idea to assign the left and right motor object to memorable variables, similar to the following
 
 ```python
-left_motor = robot.motor_boards()['s3r1al'].m0()
-right_motor = robot.motor_boards()['s3r1al'].m1()
+left_motor = robot.motor_boards['mOtOr'].m0
+right_motor = robot.motor_boards['mOtOr'].m1
 ```
-These Motor objects have a property called voltage, which can be read by calling it with no arguments and set by calling it with the new voltage as the singular argument.
+These Motor objects have a property called voltage, which can be read and set like any other variable.
 
 Note that this number has been normalised to be between -1 and 1 and is not the actual voltage being applied to the motor.
 
 So setting the voltage of the motors works like this:
 
 ```python
-left_motor.voltage(1)
-right_motor.voltage(1)
+left_motor.voltage  = 1
+right_motor.voltage = 1
 ```
 and these value can then be read like that:
 ```python
-left_voltage = left_motor.voltage()
+left_motor.voltage
 # 1
 
-right_voltage = right_motor.voltage()
+right_motor.voltage
 # 1
 ```
 
@@ -86,7 +86,7 @@ Robot.BRAKE is an alias for 0 (full stop), while Robot.COAST stops the applicati
 get a dictionairy of connected servo boards with the serial numbers as keys:
 
 ```python
-servo_boards = robot.servo_boards()
+servo_boards = robot.servo_boards
 # get a dictionairy of the servo boards
 board_one = servo_boards['S3rv0']
 # get a single board by serial number
@@ -94,16 +94,16 @@ board_one = servo_boards['S3rv0']
 Once you have a single servo board you can get the list of servos connected to that board and read and set the position of that servo:
 
 ```python
-servo_one = board_one.ports()[1]
+servo_one = board_one.ports[1]
 # get the second element of the list of ports
 ```
 
 The position of the selected servo can then be set and read as followings:
 ```python
 
-servo_one.position(65)
+servo_one.position = 65
 
-position = servo_one.position()
+position = servo_one.position
 # 65
 ```
 
@@ -111,7 +111,7 @@ position = servo_one.position()
 
 As always, a dictionairy of the avaliable cameras is obtained, then an inidivual camera is obtained using the serial number, as follows:
 ```python
-cameras = robot.cameras()
+cameras = robot.cameras
 camera_one = cameras['camera']
 ```
 
