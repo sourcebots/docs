@@ -1,6 +1,4 @@
----
-title: API Reference
----
+# Robot API Reference
 
 ### robot.Camera
 

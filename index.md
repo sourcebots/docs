@@ -1,6 +1,5 @@
----
-title: Robot Documentation
----
+# Robot API Tutorial 
+
 This is the documentation tutorial showing how to use the robot's API.
 
 [See the api reference.](reference)
