@@ -32,7 +32,7 @@ main_board = power_boards['POWER']
 main_board = power_boards[0]
 ```
 
-This power board object has two functions, power_on() and power_off() these turn the power on and off to the connected boards respectively.
+This power board object has two functions, `power_on()` and `power_off()` these turn the power on and off to the connected boards respectively.
 
 ```python
 # powers on the connected boards
@@ -64,7 +64,7 @@ It is a good idea to assign the left and right motor object to memorable variabl
 left_motor = robot.motor_boards['mOtOr'].m0
 right_motor = robot.motor_boards['mOtOr'].m1
 ```
-These Motor objects have a property called voltage, which can be read and set like any other variable.
+These Motor objects have a property called `voltage`, which can be read and set like any other variable.
 
 Note that this number has been normalised to be between -1 and 1 and is not the actual voltage being applied to the motor.
 
@@ -85,8 +85,8 @@ right_motor.voltage
 
 The motor board would then apply full power to both motors.
 
-In addition to the numeric values, there are two text constants that can be used. robot.BRAKE and robot.COAST.
-robot.BRAKE is an alias for 0 (full stop), while robot.COAST stops the application of power to the motors.
+In addition to the numeric values, there are two text constants that can be used. `robot.BRAKE` and `robot.COAST`.
+`robot.BRAKE` is an alias for 0 (full stop), while `robot.COAST` stops the application of power to the motors.
 
 ## Ruggeduino (Servo Boards)
 
@@ -120,7 +120,7 @@ cameras = robot.cameras
 camera_one = cameras['camera']
 ```
 
-Once you have a camera object you can check what markers it can see by using its see() command, this will return a list of marker objects.
+Once you have a camera object you can check what markers it can see by using its `see()` command, this will return a list of marker objects.
 ```python
 markers = camera_one.see()
 ```
