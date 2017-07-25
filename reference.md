@@ -1,5 +1,5 @@
 # Robot API Reference
-
+[Usage Tutorial]()
 ### robot.Camera
 
 Class that represents a camera
