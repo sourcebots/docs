@@ -26,6 +26,9 @@ main_board = power_boards['POWER']
 
 # get the first power board
 main_board = power_boards[0]
+
+# get the first power board
+main_board = power_board
 ```
 
 This power board object has two functions, `power_on()` and `power_off()` these turn the power on and off to the connected boards respectively.
@@ -33,9 +36,14 @@ This power board object has two functions, `power_on()` and `power_off()` these 
 `power_on()` is called during initialization, so this isn't needed.
 
 ## Motor Boards
-In order to use a motor board, you will first have to read the serial number off the motor boards:
 
-Once this is done, the motors and their boards are accessed as follows:
+If there is only one motor board connected, you can use `robot.motor_board` to get the object representing it.
+```
+# a single connected motor board
+motor_board = robot.motor_board
+```
+ If their is more than one, there is a dictionary of all of them indexed by serial number.
+
 ```python
 # a dictionary of the available motor boards
 motor_boards = robot.motor_boards
@@ -48,8 +56,8 @@ This board object has a property object for each of the motors connected to it. 
 
 It is a good idea to assign the left and right motor object to memorable variables, similar to the following
 ```python
-left_motor = robot.motor_boards['mOtOr'].m0
-right_motor = robot.motor_boards['mOtOr'].m1
+left_motor = robot.motor_board.m0
+right_motor = robot.motor_board.m1
 ```
 
 These `Motor` objects have a property called `voltage`, which is used to set the power of the motors, between -1 and 1.
@@ -78,10 +86,13 @@ In addition to the numeric values, there are two text constants that can be used
 
 ## Ruggeduino (Servo Boards)
 
-get a dictionary of connected servo boards with the serial numbers as keys:
+get a dictionary of connected servo boards with the serial numbers as keys, or if only one servo board is connected. There is also a function just for that one.:
 ```python
 # get a single board by serial number
-board_one = servo_boards['S3rv0']
+board_one = robot.servo_boards['S3rv0']
+
+# get the only board connected
+board_one = robot.servo_board
 ```
 
 Once you have a single servo board you can get the list of servos connected to that board and read and set the position of that servo:
@@ -99,11 +110,15 @@ servo_one.position
 ```
 
 ## Cameras (Vision Boards)
-As always, a dictionary of the available cameras is obtained, then an individual camera is obtained using the serial number, as follows:
+As always, a dictionary of the available cameras is obtained, then an individual camera is obtained using the serial number, or if there is only a single camera connected, then there is a function to get that as follows:
 
 ```python
+# get the camera by serial number from the dictionary
 cameras = robot.cameras
 camera_one = cameras['camera']
+
+# get the only camera
+camera_one = robot.camera
 ```
 
 Once you have a camera object you can check what markers it can see by using its `see()` command, this will return a list of marker objects.
@@ -123,3 +138,4 @@ eg_marker.id in robot.TOKEN
 eg_maker.id in robot.SILVER_TOKEN
 # >>> true
 ```
+These markers also have variables assigned to them to get distance, size and their cartesian and polar coordinates.
