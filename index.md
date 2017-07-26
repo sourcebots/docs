@@ -28,7 +28,7 @@ main_board = power_boards['POWER']
 main_board = power_boards[0]
 
 # get the first power board
-main_board = power_board
+main_board = robot.power_board
 ```
 
 This power board object has two functions, `power_on()` and `power_off()` these turn the power on and off to the connected boards respectively.
