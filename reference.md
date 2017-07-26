@@ -56,12 +56,12 @@ Class that represents a motor board
 Class that represents a set of polar coordinates
 - **Properties**
   - `distance_meters`: distance to the point in meters.
-  - `rot\_x_deg`: rotation on the x axis in degrees.
-  - `rot\_y_deg`: rotation on the y axis in degrees.
-  - `rot\_z_deg`: rotation on the z axis in degrees.
-  - `rot\_x_rad`: rotation on the x axis in radians.
-  - `rot\_y_rad`: rotation on the y axis in radians.
-  - `rot\_z_rad`: rotation on the z axis in radians.
+  - `rot_x_deg`: rotation on the x axis in degrees.
+  - `rot_y_deg`: rotation on the y axis in degrees.
+  - `rot_z_deg`: rotation on the z axis in degrees.
+  - `rot_x_rad`: rotation on the x axis in radians.
+  - `rot_y_rad`: rotation on the y axis in radians.
+  - `rot_z_rad`: rotation on the z axis in radians.
 
 ---
 ###  robot.PowerBoard
