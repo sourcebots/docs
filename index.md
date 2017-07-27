@@ -112,8 +112,12 @@ The position of the selected servo can then be set and read as followings:
 servo_one.position = 0.65
 
 servo_one.position
->>> 65
+>>> 0.65
 ```
+
+Note that this value is not in degrees!
+
+By default, servos will be un-powered when your robot starts, and can freely rotate. Once you set a value, they then fix to that rotation.
 
 ## Cameras (Vision Boards)
 As always, a dictionary of the available cameras is obtained, then an individual camera is obtained using the serial number, or if there is only a single camera connected, then there is a function to get that as follows:
