@@ -10,7 +10,7 @@ Class that represents a camera
 
 
 - **Properties**
-  - `serial`: the camera's serial number.
+  - `serial`: the camera's serial number as a string.
 
 ---
 ### robot.CartCoord
@@ -41,7 +41,7 @@ Class that represents a marker
 ### robot.Motor
 Class that represents a motor
 - **Properties**
-  - `voltage` : the normalised voltage of the motor.
+  - `voltage` : the normalised voltage of the motor. Should range between -1 and 1, and can be set to `robot.BRAKE` and `robot.COAST` if needed.
 
 ---
 ### robot.MotorBoard
@@ -49,7 +49,7 @@ Class that represents a motor board
 - **Properties**
   - `m0`: The [motor](#robotmotor) connected to m0 on the motor board.
   - `m1`: The [motor](#robotmotor) connected to m1 on the motor board
-  - `serial`: the board's serial number.
+  - `serial`: the board's serial number as a string.
 
 ---
 ###  robot.PolarCoord
@@ -72,7 +72,7 @@ Class that represents a power board
 
 
 - **Properties**
-  - `serial`: the board's serial number.
+  - `serial`: the board's serial number as a string.
 
 ---
 ###  robot.Robot
@@ -88,20 +88,20 @@ Class that represents the robot as a whole
   - `power_board`: the first indexed [Power Board](#robotpowerboard).
   - `servo_boards`: a dictionary of connected [Servo Board](#robotservoboard), using their serial numbers as keys.
   - `servo_board`: the first indexed [Servo Board](#robotservoboard).
-  
+
 
 ---
 ###  robot.Servo
 Class that represents a servo
 - **Properties**
-  - `position`: the position of the servo.
+  - `position`: the position of the servo. Should range between -1 and 1.
 
 ---
 ###  robot.ServoBoard
 Class representing a servo board
 - **Properties**
   - `ports`: returns a list of up to sixteen [servos](#robotservo), indexed by port number.
-  - `serial`: Serial number for the board.
+  - `serial`: Serial number for the board as a string.
 
 ---
 ### Data Values

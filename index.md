@@ -103,7 +103,7 @@ servo_one = board_one.ports[1]
 
 The position of the selected servo can then be set and read as followings:
 ```python
-servo_one.position = 65
+servo_one.position = 0.65
 
 servo_one.position
 # >>> 65
