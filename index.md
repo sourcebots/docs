@@ -146,4 +146,15 @@ eg_marker.id in TOKEN
 eg_maker.id in SILVER_TOKEN
 >>> True
 ```
-These markers also have variables assigned to them to get distance, size and their cartesian and polar coordinates.
+
+You can also do this automatically for all tokens your robot can see:
+```python
+for marker in r.see():
+  if marker.id in TOKEN:
+    print("I can see a token!")
+```
+
+Or filter what you see so you only get the token markers
+```python
+only_token_markers = [marker for marker in r.see() if marker.id in TOKEN]
+```
