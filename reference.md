@@ -4,7 +4,7 @@
 
 ### robot.Camera
 
-Class that represents a camera
+Class that represents a camera.
 - **Methods**
   - `see()`: returns a list of [markers](#robotmarker) currently visible to the camera sorted by distance (closest first).
 
@@ -14,7 +14,7 @@ Class that represents a camera
 
 ---
 ### robot.CartCoord
-Class that represents a set of cartesian coordinates
+Class that represents a set of cartesian coordinates.
 - **Properties**
   - `x`: x-axis cartesian coordinate in metres.
   - `y`: y-axis cartesian coordinate in metres.
@@ -22,7 +22,7 @@ Class that represents a set of cartesian coordinates
 
 ---
 ### robot.Marker
-Class that represents a marker
+Class that represents a marker.
 - **Methods**
   - `is_token_marker()`: if the marker is a token marker.
   - `is_wall_marker()`: if the marker is a wall marker.
@@ -39,13 +39,13 @@ Class that represents a marker
 
 ---
 ### robot.Motor
-Class that represents a motor
+Class that represents a motor.
 - **Properties**
   - `voltage` : the normalised voltage of the motor. Should range between -1 and 1, and can be set to `robot.BRAKE` and `robot.COAST` if needed.
 
 ---
 ### robot.MotorBoard
-Class that represents a motor board
+Class that represents a motor board.
 - **Properties**
   - `m0`: The [motor](#robotmotor) connected to m0 on the motor board.
   - `m1`: The [motor](#robotmotor) connected to m1 on the motor board
@@ -53,7 +53,7 @@ Class that represents a motor board
 
 ---
 ###  robot.PolarCoord
-Class that represents a set of polar coordinates
+Class that represents a set of polar coordinates.
 - **Properties**
   - `distance_metres`: distance to the point in metres.
   - `rot_x_deg`: rotation on the x axis in degrees.
@@ -65,7 +65,7 @@ Class that represents a set of polar coordinates
 
 ---
 ###  robot.PowerBoard
-Class that represents a power board
+Class that represents a power board.
 - **Methods**
   - `power_on()`: turns the power on to the connected boards.
   - `power_off()`: turns the power off to connected boards.
@@ -78,8 +78,8 @@ Class that represents a power board
 ###  robot.Robot
 Class that represents the robot as a whole
 - **Properties**
-  - `zone`: the zone number the robot has started in (0-3)
-  - `mode`: either GameMode.COMPETITION or GameMode.DEVELOPMENT (it's an enum), depending on if the robot is in competition mode or development mode (can be switched to competition mode by putting a special USB stick in the robot)
+  - `zone`: the zone number the robot has started in (0-3).
+  - `mode`: either GameMode.COMPETITION or GameMode.DEVELOPMENT (it's an enum), depending on if the robot is in competition mode or development mode (can be switched to competition mode by putting a special USB stick in the robot).
   - `cameras`: a dictionary of connected [Cameras](#robotcamera), using their serial numbers as keys.
   - `camera`: the first indexed [Camera](#robotcamera).
   - `motor_boards`: a dictionary of connected [Motor Boards](#robotmotorboard), using their serial numbers as keys.
@@ -89,16 +89,15 @@ Class that represents the robot as a whole
   - `servo_boards`: a dictionary of connected [Servo Board](#robotservoboard), using their serial numbers as keys.
   - `servo_board`: the first indexed [Servo Board](#robotservoboard).
 
-
 ---
 ###  robot.Servo
-Class that represents a servo
+Class that represents a servo.
 - **Properties**
   - `position`: the position of the servo. Should range between -1 and 1.
 
 ---
 ###  robot.ServoBoard
-Class representing a servo board
+Class representing a servo board.
 - **Properties**
   - `ports`: returns a list of up to sixteen [servos](#robotservo), indexed by port number.
   - `serial`: Serial number for the board as a string.
@@ -106,10 +105,10 @@ Class representing a servo board
 ---
 ### Data Values
 Constant data values found inside the robot library. For example `from robot import BRAKE`.
-- `BRAKE`: used by [motors](#robotmotor) to tell it to break
-- `COAST`: used by [motors](#robotmotor) to tell it to coast
-- `GOLD_TOKEN`: a list of the id numbers of all gold token markers
-- `POISON_TOKEN`: a list of the id numbers of all poison token markers
-- `SILVER_TOKEN`: a list of the id numbers of all silver token markers
-- `TOKEN`: a list of the id numbers of all token markers
+- `BRAKE`: used by [motors](#robotmotor) to tell it to break.
+- `COAST`: used by [motors](#robotmotor) to tell it to coast.
+- `GOLD_TOKEN`: a list of the id numbers of all gold token markers.
+- `POISON_TOKEN`: a list of the id numbers of all poison token markers.
+- `SILVER_TOKEN`: a list of the id numbers of all silver token markers.
+- `TOKEN`: a list of the id numbers of all token markers.
 - `WALL`: a list of the id numbers of all wall markers.

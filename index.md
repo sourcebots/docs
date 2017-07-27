@@ -42,8 +42,8 @@ If there is only one motor board connected, you can use `r.motor_board` to get t
 # a single connected motor board
 motor_board = r.motor_board
 ```
- If their is more than one, there is a dictionary of all of them indexed by serial number.
 
+If their is more than one, there is a dictionary of all of them indexed by serial number.
 ```python
 # a dictionary of the available motor boards
 motor_boards = r.motor_boards
@@ -70,7 +70,7 @@ left_motor.voltage  = 1
 right_motor.voltage = 1
 ```
 
-and these value can then be read like that:
+and these value can then be read back:
 ```python
 left_motor.voltage
 >>> 1
@@ -81,8 +81,7 @@ right_motor.voltage
 
 The motor board would then apply full power to both motors.
 
-In addition to the numeric values, there are two text constants that can be used. `robot.BRAKE` and `robot.COAST`.
-`robot.BRAKE` is an alias for 0 (full stop), while `robot.COAST` stops the application of power to the motors.
+In addition to the numeric values, there are two text constants that can be used. `robot.BRAKE` and `robot.COAST`. `robot.BRAKE` is an alias for 0 (full stop), while `robot.COAST` stops the application of power to the motors.
 
 ```python
 from robot import BRAKE
@@ -92,7 +91,7 @@ left_motor.voltage = BRAKE
 
 ## Ruggeduino (Servo Boards)
 
-get a dictionary of connected servo boards with the serial numbers as keys, or if only one servo board is connected. There is also a function just for that one.:
+get a dictionary of connected servo boards with the serial numbers as keys, or if only one servo board is connected. There is also a function just for the first:
 ```python
 # get a single board by serial number
 board_one = r.servo_boards['S3rv0']
@@ -107,7 +106,7 @@ Once you have a single servo board you can get the list of servos connected to t
 servo_one = board_one.ports[1]
 ```
 
-The position of the selected servo can then be set and read as followings:
+The position of the selected servo can then be set and read:
 ```python
 servo_one.position = 0.65
 
@@ -136,7 +135,7 @@ Once you have a camera object you can check what markers it can see by using its
 markers = camera_one.see()
 ```
 
-Once you've got a marker object, you can check its id number against the predefined lists to see what type of marker it is:
+Once you've got a marker object, you can check its id number against the predefined lists to see what type of marker it is.
 ```python
 from robot import WALL, TOKEN, SILVER_TOKEN
 
@@ -151,14 +150,14 @@ eg_maker.id in SILVER_TOKEN
 >>> True
 ```
 
-You can also do this automatically for all tokens your robot can see:
+You can also do this automatically for all tokens your robot can see.
 ```python
 for marker in r.see():
   if marker.id in TOKEN:
     print("I can see a token!")
 ```
 
-Or filter what you see so you only get the token markers
+Or filter what you see so you only get the token markers.
 ```python
 only_token_markers = [marker for marker in r.see() if marker.id in TOKEN]
 ```
