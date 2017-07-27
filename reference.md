@@ -78,13 +78,13 @@ Class that represents a power board
 ###  robot.Robot
 Class that represents the robot as a whole
 - **Properties**
-  - `cameras`: a dictionairy of connected [Cameras](#robotcamera), using their serial numbers as keys.
+  - `cameras`: a dictionary of connected [Cameras](#robotcamera), using their serial numbers as keys.
   - `camera`: the first indexed [Camera](#robotcamera).
-  - `motor_boards`: a dictionairy of connected [Motor Boards](#robotmotorboard), using their serial numbers as keys.
+  - `motor_boards`: a dictionary of connected [Motor Boards](#robotmotorboard), using their serial numbers as keys.
   - `motor_board`: the first indexed [Motor Board](#robotmotorboard).
-  - `power_boards`: a dictionairy of connected [Power Boards](#robotpowerboard), using their serial numbers as keys.
+  - `power_boards`: a dictionary of connected [Power Boards](#robotpowerboard), using their serial numbers as keys.
   - `power_board`: the first indexed [Power Board](#robotpowerboard).
-  - `servo_boards`: a dictionairy of connected [Servo Board](#robotservoboard), using their serial numbers as keys.
+  - `servo_boards`: a dictionary of connected [Servo Board](#robotservoboard), using their serial numbers as keys.
   - `servo_board`: the first indexed [Servo Board](#robotservoboard).
 
 ---
