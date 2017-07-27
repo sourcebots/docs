@@ -86,6 +86,9 @@ Class that represents the robot as a whole
   - `power_board`: the first indexed [Power Board](#robotpowerboard).
   - `servo_boards`: a dictionary of connected [Servo Board](#robotservoboard), using their serial numbers as keys.
   - `servo_board`: the first indexed [Servo Board](#robotservoboard).
+  
+  - `zone`: the zone number the robot has started in (0-3)
+  - `mode`: either GameMode.COMPETITION or GameMode.DEVELOPMENT (it's an enum), depending on if the robot is in competition mode or development mode (can be switched to competition mode by putting a special USB stick in the robot)
 
 ---
 ###  robot.Servo
