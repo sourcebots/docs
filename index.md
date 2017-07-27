@@ -12,7 +12,7 @@ from robot import Robot
 robot = Robot()
 ```
 
-This will initialize the robot's API calls and allow it to send and receive data from the robot's various boards.
+This will setup your robot and allow it to send and receive data from the robot's various boards.
 
 Once this has been setup, this object can be used for most of the functions of the robot.
 
@@ -33,7 +33,7 @@ main_board = robot.power_board
 
 This power board object has two functions, `power_on()` and `power_off()` these turn the power on and off to the connected boards respectively.
 
-`power_on()` is called during initialization, so this isn't needed.
+`power_on()` is called during initialisation, so this isn't needed.
 
 ## Motor Boards
 
