@@ -22,7 +22,7 @@ Once this has been setup, this object can be used for most of the functions of t
 power_boards = r.power_boards
 
 # get the power board by serial number
-main_board = power_boards['POWER']
+main_board = power_boards['SERIAL']
 
 # get the first power board
 main_board = power_boards[0]
@@ -49,7 +49,7 @@ If their is more than one, there is a dictionary of all of them indexed by seria
 motor_boards = r.motor_boards
 
 # Selects the motor board by serial number
-board_one = motor_boards['mOtOr']
+board_one = motor_boards['SERIAL']
 ```
 
 This board object has a property object for each of the motors connected to it. These are mapped to the `m1` and `m0` variables.
@@ -124,7 +124,7 @@ As always, a dictionary of the available cameras is obtained, then an individual
 ```python
 # get the camera by serial number from the dictionary
 cameras = r.cameras
-camera_one = cameras['camera']
+camera_one = cameras['SERIAL']
 
 # get the only camera
 camera_one = r.camera
