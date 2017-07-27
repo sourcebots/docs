@@ -73,10 +73,10 @@ right_motor.voltage = 1
 and these value can then be read like that:
 ```python
 left_motor.voltage
-# >>> 1
+>>> 1
 
 right_motor.voltage
-# >>> 1
+>>> 1
 ```
 
 The motor board would then apply full power to both motors.
@@ -106,7 +106,7 @@ The position of the selected servo can then be set and read as followings:
 servo_one.position = 0.65
 
 servo_one.position
-# >>> 65
+>>> 65
 ```
 
 ## Cameras (Vision Boards)
@@ -130,12 +130,12 @@ Once you've got a marker object, you can check its id number against the predefi
 ```python
 eg_marker = markers[0]
 eg_marker.id
-# >>> 34
+>>> 34
 eg_marker.id in robot.WALL
-# >>> false
+>>> False
 eg_marker.id in robot.TOKEN
-# >>> true
+>>> True
 eg_maker.id in robot.SILVER_TOKEN
-# >>> true
+>>> True
 ```
 These markers also have variables assigned to them to get distance, size and their cartesian and polar coordinates.
