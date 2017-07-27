@@ -18,22 +18,19 @@ Once this has been setup, this object can be used for most of the functions of t
 
 ## Power Boards
 ```python
-# get a dictionary of the connected power boards
-power_boards = r.power_boards
-
-# get the power board by serial number
-main_board = power_boards['SERIAL']
-
-# get the first power board
-main_board = power_boards[0]
-
 # get the first power board
 main_board = r.power_board
+
+# get the power board by serial number
+main_board = r.power_boards['SERIAL']
+
+# get the first power board
+main_board = r.power_boards[0]
 ```
 
 This power board object has two functions, `power_on()` and `power_off()` these turn the power on and off to the connected boards respectively.
 
-`power_on()` is called during initialisation, so this isn't needed.
+`power_on()` is called during initialisation, so this doesn't need to be called manually.
 
 ## Motor Boards
 
@@ -45,11 +42,8 @@ motor_board = r.motor_board
 
 If their is more than one, there is a dictionary of all of them indexed by serial number.
 ```python
-# a dictionary of the available motor boards
-motor_boards = r.motor_boards
-
 # Selects the motor board by serial number
-board_one = motor_boards['SERIAL']
+motor_board = r.motor_boards['SERIAL']
 ```
 
 This board object has a property object for each of the motors connected to it. These are mapped to the `m1` and `m0` variables.
@@ -93,11 +87,11 @@ left_motor.voltage = BRAKE
 
 get a dictionary of connected servo boards with the serial numbers as keys, or if only one servo board is connected. There is also a function just for the first:
 ```python
-# get a single board by serial number
-board_one = r.servo_boards['S3rv0']
-
 # get the only board connected
 board_one = r.servo_board
+
+# get a single board by serial number
+board_one = r.servo_boards['S3rv0']
 ```
 
 Once you have a single servo board you can get the list of servos connected to that board and read and set the position of that servo:
@@ -122,12 +116,11 @@ By default, servos will be un-powered when your robot starts, and can freely rot
 As always, a dictionary of the available cameras is obtained, then an individual camera is obtained using the serial number, or if there is only a single camera connected, then there is a function to get that as follows:
 
 ```python
-# get the camera by serial number from the dictionary
-cameras = r.cameras
-camera_one = cameras['SERIAL']
-
 # get the only camera
 camera_one = r.camera
+
+# get the camera by serial number
+camera_one = r.cameras['SERIAL']
 ```
 
 Once you have a camera object you can check what markers it can see by using its `see()` command, this will return a list of marker objects.
