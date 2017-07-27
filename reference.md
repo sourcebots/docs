@@ -16,9 +16,9 @@ Class that represents a camera
 ### robot.CartCoord
 Class that represents a set of cartesian coordinates
 - **Properties**
-  - `x`: x-axis cartesian coordinate in meters.
-  - `y`: y-axis cartesian coordinate in meters.
-  - `z`: z-axis cartesian coordinate in meters.
+  - `x`: x-axis cartesian coordinate in metres.
+  - `y`: y-axis cartesian coordinate in metres.
+  - `z`: z-axis cartesian coordinate in metres.
 
 ---
 ### robot.Marker
@@ -30,12 +30,12 @@ Class that represents a marker
 
 - **Properties**
   - `cartesian`: a [CartCoord](#robotcartcoord) object representing the cartesian coordinates of the marker relative to the robot.
-  - `distance_meters`: the distance to the marker in meters.
+  - `distance_metres`: the distance to the marker in metres.
   - `id`: the id number of the marker.
   - `pixel_centre`: pixel coordinates of the centre of the marker.
   - `pixel_corners`: pixel coordinates of the corners of the maker.
   - `polar`: a [PolarCoord](#robotpolarcoord) object representing the polar coordinates of the marker relative to the robot.
-  - `size`: size of the marker in meters.
+  - `size`: size of the marker in metres.
 
 ---
 ### robot.Motor
@@ -55,7 +55,7 @@ Class that represents a motor board
 ###  robot.PolarCoord
 Class that represents a set of polar coordinates
 - **Properties**
-  - `distance_meters`: distance to the point in meters.
+  - `distance_metres`: distance to the point in metres.
   - `rot_x_deg`: rotation on the x axis in degrees.
   - `rot_y_deg`: rotation on the y axis in degrees.
   - `rot_z_deg`: rotation on the z axis in degrees.
