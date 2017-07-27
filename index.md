@@ -38,7 +38,7 @@ This power board object has two functions, `power_on()` and `power_off()` these 
 ## Motor Boards
 
 If there is only one motor board connected, you can use `robot.motor_board` to get the object representing it.
-```
+```python
 # a single connected motor board
 motor_board = robot.motor_board
 ```
