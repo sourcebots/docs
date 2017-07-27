@@ -105,7 +105,7 @@ Class representing a servo board
 
 ---
 ### Data Values
-Constant data values found inside the robot library.
+Constant data values found inside the robot library. For example `from robot import BRAKE`.
 - `BRAKE`: used by [motors](#robotmotor) to tell it to break
 - `COAST`: used by [motors](#robotmotor) to tell it to coast
 - `GOLD_TOKEN`: a list of the id numbers of all gold token markers

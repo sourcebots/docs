@@ -9,7 +9,7 @@ The following two lines are required to setup the robot.
 ```python
 from robot import Robot
 
-robot = Robot()
+r = Robot()
 ```
 
 This will setup your robot and allow it to send and receive data from the robot's various boards.
@@ -19,7 +19,7 @@ Once this has been setup, this object can be used for most of the functions of t
 ## Power Boards
 ```python
 # get a dictionary of the connected power boards
-power_boards = robot.power_boards
+power_boards = r.power_boards
 
 # get the power board by serial number
 main_board = power_boards['POWER']
@@ -28,7 +28,7 @@ main_board = power_boards['POWER']
 main_board = power_boards[0]
 
 # get the first power board
-main_board = robot.power_board
+main_board = r.power_board
 ```
 
 This power board object has two functions, `power_on()` and `power_off()` these turn the power on and off to the connected boards respectively.
@@ -37,16 +37,16 @@ This power board object has two functions, `power_on()` and `power_off()` these 
 
 ## Motor Boards
 
-If there is only one motor board connected, you can use `robot.motor_board` to get the object representing it.
+If there is only one motor board connected, you can use `r.motor_board` to get the object representing it.
 ```python
 # a single connected motor board
-motor_board = robot.motor_board
+motor_board = r.motor_board
 ```
  If their is more than one, there is a dictionary of all of them indexed by serial number.
 
 ```python
 # a dictionary of the available motor boards
-motor_boards = robot.motor_boards
+motor_boards = r.motor_boards
 
 # Selects the motor board by serial number
 board_one = motor_boards['mOtOr']
@@ -56,8 +56,8 @@ This board object has a property object for each of the motors connected to it. 
 
 It is a good idea to assign the left and right motor object to memorable variables, similar to the following
 ```python
-left_motor = robot.motor_board.m0
-right_motor = robot.motor_board.m1
+left_motor = r.motor_board.m0
+right_motor = r.motor_board.m1
 ```
 
 These `Motor` objects have a property called `voltage`, which is used to set the power of the motors, between -1 and 1.
@@ -84,15 +84,21 @@ The motor board would then apply full power to both motors.
 In addition to the numeric values, there are two text constants that can be used. `robot.BRAKE` and `robot.COAST`.
 `robot.BRAKE` is an alias for 0 (full stop), while `robot.COAST` stops the application of power to the motors.
 
+```python
+from robot import BRAKE
+
+left_motor.voltage = BRAKE
+```
+
 ## Ruggeduino (Servo Boards)
 
 get a dictionary of connected servo boards with the serial numbers as keys, or if only one servo board is connected. There is also a function just for that one.:
 ```python
 # get a single board by serial number
-board_one = robot.servo_boards['S3rv0']
+board_one = r.servo_boards['S3rv0']
 
 # get the only board connected
-board_one = robot.servo_board
+board_one = r.servo_board
 ```
 
 Once you have a single servo board you can get the list of servos connected to that board and read and set the position of that servo:
@@ -114,11 +120,11 @@ As always, a dictionary of the available cameras is obtained, then an individual
 
 ```python
 # get the camera by serial number from the dictionary
-cameras = robot.cameras
+cameras = r.cameras
 camera_one = cameras['camera']
 
 # get the only camera
-camera_one = robot.camera
+camera_one = r.camera
 ```
 
 Once you have a camera object you can check what markers it can see by using its `see()` command, this will return a list of marker objects.
@@ -128,14 +134,16 @@ markers = camera_one.see()
 
 Once you've got a marker object, you can check its id number against the predefined lists to see what type of marker it is:
 ```python
+from robot import WALL, TOKEN, SILVER_TOKEN
+
 eg_marker = markers[0]
 eg_marker.id
 >>> 34
-eg_marker.id in robot.WALL
+eg_marker.id in WALL
 >>> False
-eg_marker.id in robot.TOKEN
+eg_marker.id in TOKEN
 >>> True
-eg_maker.id in robot.SILVER_TOKEN
+eg_maker.id in SILVER_TOKEN
 >>> True
 ```
 These markers also have variables assigned to them to get distance, size and their cartesian and polar coordinates.
