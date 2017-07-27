@@ -78,6 +78,8 @@ Class that represents a power board
 ###  robot.Robot
 Class that represents the robot as a whole
 - **Properties**
+  - `zone`: the zone number the robot has started in (0-3)
+  - `mode`: either GameMode.COMPETITION or GameMode.DEVELOPMENT (it's an enum), depending on if the robot is in competition mode or development mode (can be switched to competition mode by putting a special USB stick in the robot)
   - `cameras`: a dictionary of connected [Cameras](#robotcamera), using their serial numbers as keys.
   - `camera`: the first indexed [Camera](#robotcamera).
   - `motor_boards`: a dictionary of connected [Motor Boards](#robotmotorboard), using their serial numbers as keys.
@@ -87,8 +89,6 @@ Class that represents the robot as a whole
   - `servo_boards`: a dictionary of connected [Servo Board](#robotservoboard), using their serial numbers as keys.
   - `servo_board`: the first indexed [Servo Board](#robotservoboard).
   
-  - `zone`: the zone number the robot has started in (0-3)
-  - `mode`: either GameMode.COMPETITION or GameMode.DEVELOPMENT (it's an enum), depending on if the robot is in competition mode or development mode (can be switched to competition mode by putting a special USB stick in the robot)
 
 ---
 ###  robot.Servo
