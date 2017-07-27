@@ -6,7 +6,7 @@
 
 Class that represents a camera
 - **Methods**
-  - `see()`: returns a list of [markers](#robotmarker) currently visible to the camera.
+  - `see()`: returns a list of [markers](#robotmarker) currently visible to the camera sorted by distance (closest first).
 
 
 - **Properties**
