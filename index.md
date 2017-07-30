@@ -130,7 +130,7 @@ markers = camera_one.see()
 
 Once you've got a marker object, you can check its id number against the predefined lists to see what type of marker it is.
 ```python
-from robot import WALL, TOKEN, SILVER_TOKEN
+from robot import WALL, TOKEN
 
 eg_marker = markers[0]
 eg_marker.id
@@ -138,8 +138,6 @@ eg_marker.id
 eg_marker.id in WALL
 >>> False
 eg_marker.id in TOKEN
->>> True
-eg_maker.id in SILVER_TOKEN
 >>> True
 ```
 

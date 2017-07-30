@@ -3,7 +3,6 @@
 [Usage Tutorial](index)
 
 ### robot.Camera
-
 Class that represents a camera.
 - **Methods**
   - `see()`: returns a list of [markers](#robotmarker) currently visible to the camera sorted by distance (closest first).
@@ -107,8 +106,5 @@ Class representing a servo board.
 Constant data values found inside the robot library. For example `from robot import BRAKE`.
 - `BRAKE`: used by [motors](#robotmotor) to tell it to break.
 - `COAST`: used by [motors](#robotmotor) to tell it to coast.
-- `GOLD_TOKEN`: a list of the id numbers of all gold token markers.
-- `POISON_TOKEN`: a list of the id numbers of all poison token markers.
-- `SILVER_TOKEN`: a list of the id numbers of all silver token markers.
 - `TOKEN`: a list of the id numbers of all token markers.
 - `WALL`: a list of the id numbers of all wall markers.
