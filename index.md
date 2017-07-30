@@ -96,8 +96,8 @@ board_one = r.servo_boards['S3rv0']
 
 Once you have a single servo board you can get the list of servos connected to that board and read and set the position of that servo:
 ```python
-# get the second element of the list of ports
-servo_one = board_one.ports[1]
+# get the second element of the list of servo ports
+servo_one = board_one.servos[1]
 ```
 
 The position of the selected servo can then be set and read:

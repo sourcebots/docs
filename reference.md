@@ -98,7 +98,7 @@ Class that represents a servo.
 ###  robot.ServoBoard
 Class representing a servo board.
 - **Properties**
-  - `ports`: returns a list of up to sixteen [servos](#robotservo), indexed by port number.
+  - `servos`: returns a list of up to sixteen [servos](#robotservo), indexed by port number.
   - `serial`: Serial number for the board as a string.
 
 ---
