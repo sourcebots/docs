@@ -12,9 +12,10 @@ from robot import Robot
 r = Robot()
 ```
 
-This will setup your robot and allow it to send and receive data from the robot's various boards.
+This will setup your robot and allow it to send and receive data from the robot's various boards. Once this has been setup, this object can be used for most of the functions of the robot.
 
-Once this has been setup, this object can be used for most of the functions of the robot.
+### Start Button
+So your robot doesn't start moving as soon as the robot is finished setting up, the code is paused after setup until the _Start Button_ on the power board is pressed. There is a green LED next to the start button when the robot is finished setting up and the start button can be pressed. 
 
 ## Power Boards
 ```python
