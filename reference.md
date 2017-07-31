@@ -67,6 +67,10 @@ Class that represents the robot as a whole
 ---
 ###  robot.Servo
 Class that represents a servo.
+- **Methods**
+  - `read_analogue()`: Get a list of all the values of the analogue pins, indexed by pin number.
+  - `read_ultrasound(trigger_pin, echo_pin)`: Get the distance reported on your ultrasound sensor, with the read and write pins connected to `echo_pin` and `trigger_pin` respectively.
+
 - **Properties**
   - `position`: the position of the servo. Should range between -1 and 1.
 
