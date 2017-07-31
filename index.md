@@ -83,8 +83,11 @@ from robot import BRAKE
 left_motor.voltage = BRAKE
 ```
 
-## Ruggeduino (Servo Boards)
+## Servo Assembly
 
+The servo assembly contains multiple components. The Arduino powering it allows you to control Servos, Ultrasound sensors, and anything else that accepts digital or analogue signals.
+
+### Servos
 get a dictionary of connected servo boards with the serial numbers as keys, or if only one servo board is connected. There is also a function just for the first:
 ```python
 # get the only board connected
@@ -110,4 +113,4 @@ servo_one.position
 
 Note that this value is not in degrees!
 
-By default, servos will be un-powered when your robot starts, and can freely rotate. Once you set a value, they then fix to that rotation.
+By default, servos will be un-powered when your robot starts, and can freely rotate. Once you set a value, they then fix to that rotation. This also happens when you turn off your robot, or unplug your USB.
