@@ -3,6 +3,30 @@
 [Usage Tutorial](index)
 
 ---
+### robot.PinMode
+Holds constant values to represent the mode of a pin
+- **Values**
+  - `INPUT`: Make the pin be an input.
+  - `INPUT_PULLUP`: Make the pin be an input, with a pullup resistor.
+  - `OUTPUT_HIGH`: Set the pin to output high.
+  - `OUTPUT_LOW`: Set the pin to output low.
+
+---
+### robot.PinValue
+Holds constant the values of a pin
+- **Values**
+  - `HIGH`: The pin is receiving a high current
+  - `LOW`: The pin is receiving a low current
+
+---
+### robot.Gpio
+Class that represents GPIO (_General Purpose Input Output_) pins on the servo board
+- **Properties**
+  - `mode`: set the usage of the pin. The possible values are `INPUT`, `INPUT_PULLUP`, `OUTPUT_HIGH` and `OUTPUT_LOW`.
+- **Methods**
+  - `read()`: Read the pins value. Either `HIGH` or `LOW`.
+
+---
 ### robot.Motor
 Class that represents a motor.
 - **Properties**
@@ -52,6 +76,7 @@ Class representing a servo board.
 - **Properties**
   - `servos`: returns a list of up to sixteen [servos](#robotservo), indexed by port number.
   - `serial`: Serial number for the board as a string.
+  - `gpio`: returns a list of [GPIO](#robotgpio) pins, indexed by pin number
 
 ---
 ### Data Values
