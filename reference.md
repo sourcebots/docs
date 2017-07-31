@@ -22,9 +22,9 @@ Holds constant the values of a pin
 ### robot.Gpio
 Class that represents GPIO (_General Purpose Input Output_) pins on the servo board
 - **Properties**
-  - `mode`: set the usage of the pin. The possible values are `INPUT`, `INPUT_PULLUP`, `OUTPUT_HIGH` and `OUTPUT_LOW`.
+  - `mode`: Set the [`PinMode`](#robotpinmode) of the pin.
 - **Methods**
-  - `read()`: Read the pins value. Either `HIGH` or `LOW`.
+  - `read()`: Read the [`PinValue`](#robotpinvalue) of the pin.
 
 ---
 ### robot.Motor
