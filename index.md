@@ -114,3 +114,49 @@ servo_one.position
 Note that this value is not in degrees!
 
 By default, servos will be un-powered when your robot starts, and can freely rotate. Once you set a value, they then fix to that rotation. This also happens when you turn off your robot, or unplug your USB.
+
+### Ultrasound
+The ultrasound sensor can be used to measure the distance your robot is away from something.
+
+Assuming you've wired up the read (_echo_) and write (_trigger_) pins to 6 and 7:
+```python
+board = r.servo_board
+
+board.read_ultrasound(7, 6)
+>>> 0.524
+```
+
+The returned value is in metres.
+
+### GPIO
+
+You can use the GPIO pins to read and write individual pins of the servo assembly. These cann be used for anything, from microswitches to LEDs.
+
+To set the value of a pin to high you set its mode to `PinMode.OUTPUT_HIGH`. To set the value to low, set it to `PinMode.OUTPUT_LOW`.
+
+```python
+from robot import PinMode
+
+board = r.servo_boards
+
+# Make the pin go high
+board.gpio[3].mode = PinMode.OUTPUT_HIGH
+
+# Make the pin go low
+board.gpio[3].mode = PinMode.OUTPUT_LOW
+```
+
+To read from a pin, you first must set it to `PinMode.INPUT`. If you wish to use the built-in pullup resistor, use `PinMode.INPUT_PULLUP` instead.
+
+```python
+board.gpio[3].mode = PinMode.INPUT
+```
+
+To read the value of a pin, simply call `read()`.
+
+```python
+from robot import PinValue
+
+board.gpio[3].read() == PinValue.HIGH
+>>> True
+```
