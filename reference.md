@@ -2,39 +2,29 @@
 
 [Usage Tutorial](index)
 
-### robot.Camera
-Class that represents a camera.
-- **Methods**
-  - `see()`: returns a list of [markers](#robotmarker) currently visible to the camera sorted by distance (closest first).
-
-
-- **Properties**
-  - `serial`: the camera's serial number as a string.
+---
+### robot.PinMode
+Holds constant values to represent the mode of a pin
+- **Values**
+  - `INPUT`: Make the pin be an input.
+  - `INPUT_PULLUP`: Make the pin be an input, with a pullup resistor.
+  - `OUTPUT_HIGH`: Set the pin to output high.
+  - `OUTPUT_LOW`: Set the pin to output low.
 
 ---
-### robot.CartCoord
-Class that represents a set of cartesian coordinates.
-- **Properties**
-  - `x`: x-axis cartesian coordinate in metres.
-  - `y`: y-axis cartesian coordinate in metres.
-  - `z`: z-axis cartesian coordinate in metres.
+### robot.PinValue
+Holds constant the values of a pin
+- **Values**
+  - `HIGH`: The pin is receiving a high current
+  - `LOW`: The pin is receiving a low current
 
 ---
-### robot.Marker
-Class that represents a marker.
-- **Methods**
-  - `is_token_marker()`: if the marker is a token marker.
-  - `is_wall_marker()`: if the marker is a wall marker.
-
-
+### robot.Gpio
+Class that represents GPIO (_General Purpose Input Output_) pins on the servo board
 - **Properties**
-  - `cartesian`: a [CartCoord](#robotcartcoord) object representing the cartesian coordinates of the marker relative to the robot.
-  - `distance_metres`: the distance to the marker in metres.
-  - `id`: the id number of the marker.
-  - `pixel_centre`: pixel coordinates of the centre of the marker.
-  - `pixel_corners`: pixel coordinates of the corners of the maker.
-  - `polar`: a [PolarCoord](#robotpolarcoord) object representing the polar coordinates of the marker relative to the robot.
-  - `size`: size of the marker in metres.
+  - `mode`: Set the [`PinMode`](#robotpinmode) of the pin.
+- **Methods**
+  - `read()`: Read the [`PinValue`](#robotpinvalue) of the pin.
 
 ---
 ### robot.Motor
@@ -49,18 +39,6 @@ Class that represents a motor board.
   - `m0`: The [motor](#robotmotor) connected to m0 on the motor board.
   - `m1`: The [motor](#robotmotor) connected to m1 on the motor board
   - `serial`: the board's serial number as a string.
-
----
-###  robot.PolarCoord
-Class that represents a set of polar coordinates.
-- **Properties**
-  - `distance_metres`: distance to the point in metres.
-  - `rot_x_deg`: rotation on the x axis in degrees.
-  - `rot_y_deg`: rotation on the y axis in degrees.
-  - `rot_z_deg`: rotation on the z axis in degrees.
-  - `rot_x_rad`: rotation on the x axis in radians.
-  - `rot_y_rad`: rotation on the y axis in radians.
-  - `rot_z_rad`: rotation on the z axis in radians.
 
 ---
 ###  robot.PowerBoard
@@ -79,8 +57,6 @@ Class that represents the robot as a whole
 - **Properties**
   - `zone`: the zone number the robot has started in (0-3).
   - `mode`: either GameMode.COMPETITION or GameMode.DEVELOPMENT (it's an enum), depending on if the robot is in competition mode or development mode (can be switched to competition mode by putting a special USB stick in the robot).
-  - `cameras`: a dictionary of connected [Cameras](#robotcamera), using their serial numbers as keys.
-  - `camera`: the first indexed [Camera](#robotcamera).
   - `motor_boards`: a dictionary of connected [Motor Boards](#robotmotorboard), using their serial numbers as keys.
   - `motor_board`: the first indexed [Motor Board](#robotmotorboard).
   - `power_boards`: a dictionary of connected [Power Boards](#robotpowerboard), using their serial numbers as keys.
@@ -91,6 +67,10 @@ Class that represents the robot as a whole
 ---
 ###  robot.Servo
 Class that represents a servo.
+- **Methods**
+  - `read_analogue()`: Get a list of all the values of the analogue pins, indexed by pin number.
+  - `read_ultrasound(trigger_pin, echo_pin)`: Get the distance reported on your ultrasound sensor, with the read and write pins connected to `echo_pin` and `trigger_pin` respectively. The value will be in metres.
+
 - **Properties**
   - `position`: the position of the servo. Should range between -1 and 1.
 
@@ -100,11 +80,10 @@ Class representing a servo board.
 - **Properties**
   - `servos`: returns a list of up to sixteen [servos](#robotservo), indexed by port number.
   - `serial`: Serial number for the board as a string.
+  - `gpio`: returns a list of [GPIO](#robotgpio) pins, indexed by pin number
 
 ---
 ### Data Values
 Constant data values found inside the robot library. For example `from robot import BRAKE`.
 - `BRAKE`: used by [motors](#robotmotor) to tell it to break.
 - `COAST`: used by [motors](#robotmotor) to tell it to coast.
-- `TOKEN`: a list of the id numbers of all token markers.
-- `WALL`: a list of the id numbers of all wall markers.

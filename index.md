@@ -12,9 +12,13 @@ from robot import Robot
 r = Robot()
 ```
 
-This will setup your robot and allow it to send and receive data from the robot's various boards.
+This will setup your robot and allow it to send and receive data from the robot's various boards. Once this has been setup, this object can be used for most of the functions of the robot.
 
-Once this has been setup, this object can be used for most of the functions of the robot.
+### Start Button
+So your robot doesn't start moving as soon as the robot is finished setting up, the code is paused after setup until the _Start Button_ on the power board is pressed. There is a green LED next to the start button when the robot is finished setting up and the start button can be pressed.
+
+### Logs
+So you can see what your robot did, what it didn't do, and any errors it raised, a log file is saved on the USB drive. The file is saved to `log.txt` in the root of the USB. Be careful, this log is cleared each time the robot is setup, so save it off the USB if you need to keep hold of it!
 
 ## Power Boards
 ```python
@@ -83,8 +87,11 @@ from robot import BRAKE
 left_motor.voltage = BRAKE
 ```
 
-## Ruggeduino (Servo Boards)
+## Servo Assembly
 
+The servo assembly contains multiple components. The Arduino powering it allows you to control Servos, Ultrasound sensors, and anything else that accepts digital or analogue signals.
+
+### Servos
 get a dictionary of connected servo boards with the serial numbers as keys, or if only one servo board is connected. There is also a function just for the first:
 ```python
 # get the only board connected
@@ -110,45 +117,50 @@ servo_one.position
 
 Note that this value is not in degrees!
 
-By default, servos will be un-powered when your robot starts, and can freely rotate. Once you set a value, they then fix to that rotation.
+By default, servos will be un-powered when your robot starts, and can freely rotate. Once you set a value, they then fix to that rotation. This also happens when you turn off your robot, or unplug your USB.
 
-## Cameras (Vision Boards)
-As always, a dictionary of the available cameras is obtained, then an individual camera is obtained using the serial number, or if there is only a single camera connected, then there is a function to get that as follows:
+### Ultrasound
+The ultrasound sensor can be used to measure the distance your robot is away from something.
 
+Assuming you've wired up the read (_echo_) and write (_trigger_) pins to 6 and 7:
 ```python
-# get the only camera
-camera_one = r.camera
+board = r.servo_board
 
-# get the camera by serial number
-camera_one = r.cameras['SERIAL']
+board.read_ultrasound(7, 6)
+>>> 0.524
 ```
 
-Once you have a camera object you can check what markers it can see by using its `see()` command, this will return a list of marker objects.
+The returned value is in metres.
+
+### GPIO
+
+You can use the GPIO pins to read and write individual pins of the servo assembly. These cann be used for anything, from microswitches to LEDs.
+
+To set the value of a pin to high you set its mode to `PinMode.OUTPUT_HIGH`. To set the value to low, set it to `PinMode.OUTPUT_LOW`.
+
 ```python
-markers = camera_one.see()
+from robot import PinMode
+
+board = r.servo_boards
+
+# Make the pin go high
+board.gpio[3].mode = PinMode.OUTPUT_HIGH
+
+# Make the pin go low
+board.gpio[3].mode = PinMode.OUTPUT_LOW
 ```
 
-Once you've got a marker object, you can check its id number against the predefined lists to see what type of marker it is.
-```python
-from robot import WALL, TOKEN
+To read from a pin, you first must set it to `PinMode.INPUT`. If you wish to use the built-in pullup resistor, use `PinMode.INPUT_PULLUP` instead.
 
-eg_marker = markers[0]
-eg_marker.id
->>> 34
-eg_marker.id in WALL
->>> False
-eg_marker.id in TOKEN
+```python
+board.gpio[3].mode = PinMode.INPUT
+```
+
+To read the value of a pin, simply call `read()`.
+
+```python
+from robot import PinValue
+
+board.gpio[3].read() == PinValue.HIGH
 >>> True
-```
-
-You can also do this automatically for all tokens your robot can see.
-```python
-for marker in r.see():
-  if marker.id in TOKEN:
-    print("I can see a token!")
-```
-
-Or filter what you see so you only get the token markers.
-```python
-only_token_markers = [marker for marker in r.see() if marker.id in TOKEN]
 ```
