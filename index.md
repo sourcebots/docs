@@ -44,7 +44,7 @@ If there is only one motor board connected, you can use `r.motor_board` to get t
 motor_board = r.motor_board
 ```
 
-If their is more than one, there is a dictionary of all of them indexed by serial number.
+If there is more than one, there is a dictionary of all of them indexed by serial number.
 ```python
 # Selects the motor board by serial number
 motor_board = r.motor_boards['SERIAL']
@@ -52,7 +52,7 @@ motor_board = r.motor_boards['SERIAL']
 
 This board object has a property object for each of the motors connected to it. These are mapped to the `m1` and `m0` variables.
 
-It is a good idea to assign the left and right motor object to memorable variables, similar to the following
+It is a good idea to assign the left and right motor object to memorable variables, similar to the following:
 ```python
 left_motor = r.motor_board.m0
 right_motor = r.motor_board.m1
@@ -134,7 +134,7 @@ The returned value is in metres.
 
 ### GPIO
 
-You can use the GPIO pins to read and write individual pins of the servo assembly. These cann be used for anything, from microswitches to LEDs.
+You can use the GPIO pins to read and write individual pins of the servo assembly. These can be used for anything, from microswitches to LEDs.
 
 To set the value of a pin to high you set its mode to `PinMode.OUTPUT_HIGH`. To set the value to low, set it to `PinMode.OUTPUT_LOW`.
 
@@ -164,3 +164,5 @@ from robot import PinValue
 board.gpio[3].read() == PinValue.HIGH
 >>> True
 ```
+
+*Note that pin 0 and pin 1 should not be used for GPIO, as these are reserved for serial communications with the Pi and attempting to use them will raise errors.*
