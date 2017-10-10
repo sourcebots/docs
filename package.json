@@ -13,7 +13,5 @@
   },
   "homepage": "https://github.com/sourcebots/docs#readme",
   "devDependencies": {
-    "browserify": "14.4.0",
-    "node-sass": "4.5.3"
   }
 }
