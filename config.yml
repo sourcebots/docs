@@ -1,4 +1,18 @@
 baseURL: https://sourcebots.github.io/docs
 languageCode: en-gb
-title: Hugo Test Site
+title: Sourcebots Documentation
+theme: learn
 staticDir: static/build
+
+params:
+    author: Sourcebots
+    description: Sourcebots Documentation
+    showVisitedLinks: false
+    disableInlineCopyToClipBoard: true
+    disableLanguageSwitchingButton: true
+
+menu:
+    shortcuts:
+        - name: Github Repo
+          url: https://google.co.uk
+
