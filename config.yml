@@ -13,6 +13,9 @@ params:
 
 menu:
     shortcuts:
-        - name: Github Repo
-          url: https://google.co.uk
+        - name: "<i class='fa fa-github'></i> Github Repo"
+          url: https://github.com/sourcebots/docs
+
+        - name: "<i class='fa fa-globe'></i> Website"
+          url: http://sourcebot
 
