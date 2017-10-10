@@ -1,0 +1,4 @@
+baseURL: https://sourcebots.github.io/docs
+languageCode: en-gb
+title: Hugo Test Site
+staticDir: static/build

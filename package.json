@@ -1,0 +1,19 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourcebots/docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sourcebots/docs/issues"
+  },
+  "homepage": "https://github.com/sourcebots/docs#readme",
+  "devDependencies": {
+    "browserify": "14.4.0",
+    "node-sass": "4.5.3"
+  }
+}
