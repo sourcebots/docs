@@ -10,6 +10,7 @@ params:
     showVisitedLinks: false
     disableInlineCopyToClipBoard: true
     disableLanguageSwitchingButton: true
+    disableAssetsBusting: true
 
 menu:
     shortcuts:
