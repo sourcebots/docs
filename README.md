@@ -5,8 +5,8 @@
 URL: https://sourcebots.github.io/docs
 
 ## Requirements
-- [Hugo](https://gohugo.io)
-- [NodeJS](https://nodejs.org/)
+- [Hugo](https://gohugo.io) (>=0.29)
+- [NodeJS](https://nodejs.org/) (>=6)
 
 ## Local Setup
 1. `npm install`
