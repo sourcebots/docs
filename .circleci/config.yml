@@ -24,9 +24,6 @@ jobs:
             - run:
                 name: Build site
                 command: ./scripts/build.sh
-            - run:
-                name: Install deployment dependencies
-                command: sudo apt install rsync
             - save_cache:
                 key: node-{{ checksum "package.json" }}
                 paths:
