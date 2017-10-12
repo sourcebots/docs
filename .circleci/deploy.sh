@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [ "${CIRCLE_BRANCH}" != "master" ]; then
+    echo "Only master branch can be deployed"
+    exit 0
+fi
+
 set -e
 
 DEPLOY_DIR=deploy
