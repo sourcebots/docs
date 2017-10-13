@@ -30,7 +30,7 @@ servo_one.position
 
 Note that this value is not in degrees!
 
-By default, servos will be un-powered when your robot starts, and can freely rotate. Once you set a value, they then fix to that rotation. This also happens when you turn off your robot, or unplug your USB.
+By default, servos will be unpowered when your robot starts, and can freely rotate. Once you set a value, they then fix to that rotation. This also happens when you turn off your robot, or unplug your USB.
 
 ### Ultrasound
 The ultrasound sensor can be used to measure the distance your robot is away from something.

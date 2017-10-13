@@ -24,6 +24,9 @@ jobs:
             - run:
                 name: Build site
                 command: ./scripts/build.sh
+            - run:
+                name: Run Tests
+                command: npm test
             - save_cache:
                 key: node-{{ checksum "package.json" }}
                 paths:
