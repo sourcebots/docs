@@ -1,4 +1,4 @@
-# Sourcebots Documentation
+# SourceBots Documentation
 
 [![CircleCI](https://circleci.com/gh/sourcebots/docs.svg?style=svg)](https://circleci.com/gh/sourcebots/docs)
 
