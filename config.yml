@@ -1,8 +1,7 @@
-baseURL: https://sourcebots.github.io/docs
+baseURL: http://docs.sourcebots.co.uk
 languageCode: en-gb
 title: Sourcebots Documentation
 theme: learn
-staticDir: static/build
 
 params:
     author: Sourcebots
