@@ -150,7 +150,9 @@ PNP Transistors
 Magazine
 ```
 
-Notice that the indices start at 0, not 1. There is a sensible, technical explanation for this that is beyond this tutorial's scope. Also note that because of this, the last element of this four-element list is at index 3. Attempting to retrieve `shopping_list[4]` would cause an error.
+{{% notice warning %}}
+Like most other programming languages, indices start at 0, not 1. Because of this, the last element of this four-element list is at index 3. Attempting to retrieve `shopping_list[4]` would cause an error.
+{{% /notice %}}
 
 You can find out the length of a list with the `len` function, like so:
 
@@ -420,7 +422,9 @@ Run your code and check that it works.
 
 Write a program which uses `input` to take an X and a Y coordinate, and calculate the distance from (0, 0) to (X, Y) using Pythagoras' Theorem. Put the code into an interpreter and run it. Does it do what you expected?
 
-**Hint:** you can find the square root of a number by raising it to the power of 0.5, for example, `my_number ** 0.5`.
+{{% notice tip %}}
+You can find the square root of a number by raising it to the power of 0.5, for example, `my_number ** 0.5`.
+{{% /notice %}}
 
 **Extension:** can you adapt the program to calculate the distance between any two points?
 
@@ -543,8 +547,6 @@ Now, extend your program to let the user enter the list of values. Stop asking f
 
 Write a program which prints a list of numbers from 0 to 100, but replace numbers divisible by 3 with "Fizz", numbers divisible by 5 with "Buzz", and numbers divisible by both with "Fizz Buzz".
 
-**Hint:** you might find the `range` function from the next section useful.
-
 **Extension:** create a list of numbers, and replace a number with "Fuzz" if it is a multiple of any number in the list.
 
 ### Trees and Triangles
@@ -590,7 +592,10 @@ Try the same, but with the right angle in the top-right, like so (again, for inp
 
 Write a program that takes as input an angle (in radians) and the length of one side (of your choice) of a right-angled triangle. Print out the length of all sides of the triangle.
 
-You'll need the functions contained in the [`math` module](http://docs.python.org/library/math.html). Note that Python uses radians for its angles. If you are not comfortable with radians, you can use the `radians` function in the `math` module to convert to radians from degrees.
+You'll need the functions contained in the [`math` module](http://docs.python.org/library/math.html).
+{{% notice note %}}
+Python uses radians for its angles. If you are not comfortable with radians, you can use the `radians` function in the `math` module to convert to radians from degrees.
+{{% /notice %}}
 
 **Extension:** you can return multiple values from a function like so:
 
