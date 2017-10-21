@@ -103,18 +103,18 @@ A group of consecutive statements that are all indented by the same distance is 
 name = input("What is your name?")
 email = "Bank of Nigeria: Tax Refund"
 if name == "Tim":
-	print("Hello Tim.")
-	if email != "":
-		print("You've got an email.")
+    print("Hello Tim.")
+    if email != "":
+        print("You've got an email.")
 
-		# (blocks can contain blank lines in the middle)
-		if email != "Bank of Nigeria: Tax Refund":
-			print("Looks legitimate, too!")
-	else:
-		print("No mail.")
+        # (blocks can contain blank lines in the middle)
+        if email != "Bank of Nigeria: Tax Refund":
+            print("Looks legitimate, too!")
+    else:
+        print("No mail.")
 
 else:
-	print("You're not Tim!")
+    print("You're not Tim!")
 
 print("Python rocks.")
 ```
@@ -178,11 +178,11 @@ The `while` loop is the most basic type of loop. It repeats the statements in th
 ```python
 x = 10
 while x > 0:
-	print(x)
-	if x == 5:
-		print("Half way there!")
+    print(x)
+    if x == 5:
+        print("Half way there!")
 
-	x = x - 1
+    x = x - 1
 
 print("Zero!")
 ```
@@ -213,7 +213,7 @@ The most common application of loops is in conjunction with lists. The `for` loo
 ```python
 shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
 for x in shopping_list:
-	print("[ ]", x)
+    print("[ ]", x)
 ```
 
 The code is executed once for each item in the list, with `x` set to each item in turn. So, the output of this example is:
@@ -231,7 +231,7 @@ Unfortunately, this method doesn't tell you the index of the current item. `x` i
 prices = [4, 5, 2, 1.50]
 # Add VAT
 for index, value in enumerate(prices):
-	prices[index] = value * 1.20
+    prices[index] = value * 1.20
 
 print(prices)
 ```
@@ -248,10 +248,10 @@ Functions are pre-written bits of code that can be run ('called') at any point. 
 ```python
 x = 10
 while x > 0:
-	print(x)
-	x = x - 1
-	if x == 5:
-		exit()  # not supported in repl.it!
+    print(x)
+    x = x - 1
+    if x == 5:
+        exit()  # not supported in repl.it!
 ```
 
 This will output the numbers 10 to 6, and then stop. Not very useful. However, most functions take input values ('parameters') and output something useful (a 'return value'). For example, the `len` function returns the length of the given list:
@@ -310,8 +310,8 @@ Of course, you'll want to make your own functions. To do this, you precede a blo
 
 ```python
 def annoy(num_times):
-	for i in range(num_times):
-		print("Na na na-na na!")
+    for i in range(num_times):
+        print("Na na na-na na!")
 
 annoy(3)
 ```
@@ -322,7 +322,7 @@ To return a value, use the `return` statement. A rather trivial example:
 
 ```python
 def multiply(x, y):
-	return x * y
+    return x * y
 
 print(multiply(2, 3))
 ```
@@ -334,13 +334,13 @@ Without functions, most programs would be very hard to read and maintain. Here's
 my_string = "All bees like cheese when they're wearing hats."
 x = 0
 for c in my_string:
-	if c == "a":
-		x = x + 1
+    if c == "a":
+        x = x + 1
 
 y = 0
 for c in my_string:
-	if c == "e":
-		y = y + 1
+    if c == "e":
+        y = y + 1
 ```
 
 Before we explain the example, try and figure out what it does. What do `x` and `y` represent?
@@ -349,12 +349,12 @@ Now, let's refine it with functions:
 
 ```python
 def count_letter(string, l):
-	x = 0
-	for c in string:
-		if c == l:
-			x = x + 1
+    x = 0
+    for c in string:
+        if c == l:
+            x = x + 1
 
-	return x
+    return x
 
 my_string = "Bees like cheese when they're wearing hats."
 
@@ -380,8 +380,8 @@ When you set a variable inside a function, it will only keep its value inside th
 x = 2
 
 def foo():
-	x = 3
-	print("In foo(), x =", x)
+    x = 3
+    print("In foo(), x =", x)
 
 foo()
 print("Outside foo(), x =", x)
@@ -447,10 +447,10 @@ False
 ```python
 name = input("What is your name?")
 if name == "Tim":
-	print("Hello Tim.")
-	print("You've got an email.")
+    print("Hello Tim.")
+    print("You've got an email.")
 else:
-	print("You're not Tim!")
+    print("You're not Tim!")
 
 print("Python rocks!")
 ```
@@ -468,12 +468,12 @@ Having another `if` in the `else` block is very common:
 ```python
 price = 50000 * 1.3
 if price < 60000:
-	print("We can afford the tall ship!")
+    print("We can afford the tall ship!")
 else:
-	if price < 70000:
-		print("We might be able to afford the tall ship...")
-	else:
-		print("We can't afford the tall ship. :-(")
+    if price < 70000:
+        print("We might be able to afford the tall ship...")
+    else:
+        print("We can't afford the tall ship. :-(")
 ```
 
 So common that there's a special keyword, `elif`, for the purpose. So, the following piece of code is equivalent to the last:
@@ -481,11 +481,11 @@ So common that there's a special keyword, `elif`, for the purpose. So, the follo
 ```python
 price = 50000 * 1.3
 if price < 60000:
-	print("We can afford the tall ship!")
+    print("We can afford the tall ship!")
 elif price < 70000:
-	print("We might be able to afford the tall ship...")
+    print("We might be able to afford the tall ship...")
 else:
-	print("We can't afford the tall ship. :-(")
+    print("We can't afford the tall ship. :-(")
 ```
 
 Both output:
@@ -503,15 +503,15 @@ Without running it, work out what output the following code will give:
 ```python
 some_text = "Duct Tape"
 if 5 > 4:
-	print("Maths works.")
-	if some_text == "duct tape":
-		print("The case is wrong.")
-	elif some_text == "Duct Tape":
-		print("That's right.")
-	else:
-		print("Completely wrong.")
+    print("Maths works.")
+    if some_text == "duct tape":
+        print("The case is wrong.")
+    elif some_text == "Duct Tape":
+        print("That's right.")
+    else:
+        print("Completely wrong.")
 else:
-	print("Oh-oh.")
+    print("Oh-oh.")
 ```
 
 Run the code and check your prediction.
@@ -532,9 +532,9 @@ You can tell when a user has not entered anything at a `input` prompt when it re
 ```python
 var = input("Enter a number: ")
 if var == "":
-	print("You didn't enter anything!")
+    print("You didn't enter anything!")
 else:
-	print("You entered", float(var))
+    print("You entered", float(var))
 ```
 
 Now, extend your program to let the user enter the list of values. Stop asking for new list entries when they do not enter anything at the `input` prompt.
@@ -596,7 +596,7 @@ You'll need the functions contained in the [`math` module](http://docs.python.or
 
 ```python
 def foo():
-	return 1, 2, 3
+    return 1, 2, 3
 
 x, y, z = foo()
 ```
@@ -617,10 +617,10 @@ As mentioned at the start, there are loads of Python exercises out there on the 
 
 ## Appendices
 
-## Operators
+### Operators
 There are three types of operators in Python: arithmetic, comparison, and logical. I'll list the most important.
 
-### Arithmetic
+#### Arithmetic
 
 The usual mathematical order (BODMAS) applies to these, just like in normal algebra.
 
@@ -633,7 +633,7 @@ The usual mathematical order (BODMAS) applies to these, just like in normal alge
 `**`
 :   power (e.g. `4 ** 2` is 4 squared)
 
-### Comparison
+#### Comparison
 
 These return a boolean (`True` or `False`) value, and are used in `if` statements and `while` loops. These are always done after arithmetic.
 
@@ -648,10 +648,10 @@ These return a boolean (`True` or `False`) value, and are used in `if` statement
 
 ```python
 if "car" in "Scarzy's hair":
-	print("Of course.")
+    print("Of course.")
 ```
 
-### Logical
+#### Logical
 
 These operators are `and`, `or`, and `not`. They are done after both arithmetic and comparisons. They're pretty self-explanatory, with an example:
 
@@ -661,9 +661,9 @@ y = 8
 z = 2
 
 if x == 5 and y == 3:
-	print("True")
+    print("True")
 else:
-	print("False")
+    print("False")
 
 print(x == 5 or not y == 8)         # could use y != 8 instead
 print(x == 2 and y == 3 or z == 2)  # needs brackets for clarity!
@@ -684,7 +684,7 @@ print((x == 2 and y == 3) or z == 2)
 ```
 
 
-## Built-in functions
+### Built-in functions
 
 A lot of functions are defined for you by Python. Those listed in [the docs](http://docs.python.org/library/functions.html) are always available, and are the most commonly used, including `len`, `range`, and enumerate.
 
