@@ -2,7 +2,7 @@
 title: Servos
 ---
 
-From the servo assembly, you can control the attached servos. By default, servos will be un-powered when your robot starts, and can freely rotate. Once you set a value, they then fix to that rotation. This also happens when you turn off your robot, or unplug your USB.
+From the servo assembly, you can control the attached servos. By default, servos will be unpowered when your robot starts, and can freely rotate. Once you set a value, they then fix to that rotation. This also happens when you turn off your robot, or unplug your USB.
 
 ## Querying servos
 
@@ -27,7 +27,7 @@ print(servo_one.position)
 ```
 
 {{% notice tip %}}
-When `position` is set to 0, the servo loses power and can freely rotate. The same state they're in at startup.
+When `position` is set to 0, the servo loses power and can freely rotate. The same state they're in at start-up.
 {{% /notice %}}
 
 

@@ -11,7 +11,7 @@ Ultrasound should only be considered accurate up to around 2 metres, beyond that
 {{% /notice %}}
 
 ## Reading a distance
-Assuming you wired the _trigger_ pin to pin 6, and the _echo_ pin to pinn 7, you can query the distance from the sensor using:
+Assuming you wired the _trigger_ pin to pin 6, and the _echo_ pin to pin 7, you can query the distance from the sensor using:
 
 ```python
 r.servo_board.read_ultrasound(6, 7)
