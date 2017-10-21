@@ -23,4 +23,6 @@ board_one = r.servo_boards['S3rv0']
 board_one = r.servo_boards[0]
 ```
 
+{{% notice tip %}}
 If you already have a board instance, and want to get its serial number, you can use the `serial` property.
+{{% /notice %}}

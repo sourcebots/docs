@@ -6,11 +6,15 @@ From the servo assembly, you can control the attached servos. By default, servos
 
 ## Querying servos
 
-The servo assembly can interface with multiple servos connected to it. Servo can be connected to any port, you don't have to start at 0!
+The servo assembly can interface with multiple servos connected to it.
 
 ```python
 servo_one = r.servo_board.servos[1]
 ```
+
+{{% notice tip %}}
+Servo can be connected to any port, you don't have to start at 0!
+{{% /notice %}}
 
 ## Controlling Servos
 
@@ -22,6 +26,8 @@ print(servo_one.position)
 >>> 0.65
 ```
 
-When `position` is set to 0, the servo loses power. It no longer attempts to hold its position in place.
+{{% notice tip %}}
+When `position` is set to 0, the servo loses power and can freely rotate. The same state they're in at startup.
+{{% /notice %}}
 
 
