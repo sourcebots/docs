@@ -47,3 +47,13 @@ r.servo_board.gpio[3].read() == PinValue.HIGH
 
 Note: Calling `read()` will raise an exception if the pins mode isn't set to an input type.
 
+# Analogue Pins
+
+Certain sensors output analogue signals rather than digial ones, so have to be read differently. The servo assembly has 4 analogue inputs.
+
+To read the value of an analogue pin, call `read_analogue()` on the servo board. This will give you the value of all analogue pins. The values are the voltage read on the pins, between 0 and 5.
+
+```python
+r.servo_board.read_analogue()["a0"]
+>>> 1.569
+``` 
