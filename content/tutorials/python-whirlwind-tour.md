@@ -1,11 +1,11 @@
 ---
 title: "Python: A whirlwind tour"
 ---
-In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use one called [Python](https://www.python.org/), specifically version 3. We chose it because it's good for beginners, but also elegant and powerful.
+In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use [Python](https://www.python.org/), specifically version 3. We chose it because it's good for beginners, but also elegant and powerful.
 
 At the end of the tutorial are exercises. The first ones for each section should be quite easy, while the higher-numbered exercises will be harder. Some will be very hard; try these if you're up for a challenge.
 
-Before we begin: a word on learning. The way that you learn to code is by doing it; make sure you try out the examples, fiddle with them, break them, try some of the exercises. So, on with the tutorial!
+Before we begin, a word on learning. The way that you learn to code is by doing it; make sure you try out the examples, fiddle with them, break them, try some of the exercises.
 
 ## Using an interpreter
 
@@ -23,7 +23,7 @@ print("Hello World!")
 
 The text `Hello World!` should appear in the output box.
 
-There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. Mac OS X and Linux come with one by default (just type `python` at the terminal), and you can download the [Windows interpreter](https://python.org/download) (try [Portable Python](http://portablepython.com) if you can't install programs on your computer).
+There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. Downloads are available for all common OS's from [the website](https://www.python.org/downloads/). (try [Portable Python](http://portablepython.com) if you can't install programs on your computer).
 
 ## Statements
 
@@ -83,7 +83,7 @@ You can ask the user to put some text into a variable with the `input` function 
 name = input("What is your name?")
 ```
 
-## Identifiers
+### Identifiers
 
 Certain things in your program, for example variables and functions, will need names. These names are called 'identifiers', and must follow these rules:
 
@@ -625,7 +625,7 @@ There are three types of operators in Python: arithmetic, comparison, and logica
 The usual mathematical order (BODMAS) applies to these, just like in normal algebra.
 
 `+`, `-`, `*`, `/`
-:   Self-explanatory (if you're having trouble with division, read the first half of [this article](http://www.ferg.org/projects/python_gotchas.html).
+:   Self-explanatory.
 
 `%`
 :   Remainder. For example, `5 % 2` is 1, `4 % 2` is 0.
