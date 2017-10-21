@@ -169,7 +169,7 @@ print(shopping_list)
 
 The values in a list can be of any type, even other lists. Also, a list can contain values of different types.
 
-There are various other useful data structures that are beyond the scope of this tutorial, such as dictionaries (which allow indices other than numbers). You can find out more about these at <http://docs.python.org/tutorial/datastructures.html>.
+There are various other useful data structures that are beyond the scope of this tutorial, such as dictionaries (which allow indices other than numbers). You can find out more about these in [python's documentation](http://docs.python.org/tutorial/datastructures.html).
 
 ## `while` loops
 
@@ -225,7 +225,7 @@ The code is executed once for each item in the list, with `x` set to each item i
 [ ] Newspaper
 ```
 
-Unfortunately, this method doesn't tell you the index of the current item. `x` is only a temporary variable, so modifying it has no effect on the list itself (try it). This is where the `enumerate` function comes in. It tells us the index of each value we loop over. An example with numbers:
+Unfortunately, this method doesn't tell you the index of the current item. `x` is only a temporary variable, so modifying it has no effect on the list itself (try it). This is where the `enumerate` function comes in (see the [Calling functions](#calling-functions). It tells us the index of each value we loop over. An example with numbers:
 
 ```python
 prices = [4, 5, 2, 1.50]
@@ -296,7 +296,7 @@ Output:
 [1, 3, 5, 7, 9]
 ```
 
-There are many built-in functions supplied with Python. Most are in 'modules', collections of functions which have to be imported. For example, the `math` module contains mathematical functions. To use the `sin` function, we must import it:
+There are many built-in functions supplied with Python (see [appendix](#built-in-functions)). Most are in 'modules', collections of functions which have to be imported. For example, the `math` module contains mathematical functions. To use the `sin` function, we must import it:
 
 ```python
 import math
@@ -440,7 +440,7 @@ True
 False
 ```
 
-`<` and `==` are operators, just like `+` or `*`, which return booleans. Others include `<=` (less than or equal to), `>`, `>=` and `!=` (not equal to). You can also use `and`, `or`, and `not`.
+`<` and `==` are operators, just like `+` or `*`, which return booleans. Others include `<=` (less than or equal to), `>`, `>=` and `!=` (not equal to). You can also use `and`, `or`, and `not` (see the [Operators](#operators) appendix).
 
 `if` statements execute code only if their condition is true. The code to include in the `if` is denoted by a number of indented lines. To indent a line, press the tab key or insert four spaces at the start. You can also include an `else` statement, which is executed if the condition is false. For example:
 
@@ -686,7 +686,7 @@ print((x == 2 and y == 3) or z == 2)
 
 ## Built-in functions
 
-A lot of functions are defined for you by Python. Those listed at http://docs.python.org/library/functions.html are always available, and are the most commonly used, including `len`, `range`, and enumerate.
+A lot of functions are defined for you by Python. Those listed in [the docs](http://docs.python.org/library/functions.html) are always available, and are the most commonly used, including `len`, `range`, and enumerate.
 
 Others are contained in modules. To use a function from a module, you must `import` that module, like so:
 
