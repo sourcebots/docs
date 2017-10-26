@@ -2,7 +2,7 @@
 title: Homepage
 ---
 
-# Sourcebots Robotics Documentation
+# SourceBots Robotics Documentation
 
 
 This is the documentation showing how to use the kit and the robots Python API.
