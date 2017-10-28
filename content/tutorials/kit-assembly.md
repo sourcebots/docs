@@ -15,7 +15,7 @@ title: Connecting your kit
 - USB Hub
 - USB Webcam
 - 2 x Black USB-A to micro-usb cables
-- Beige USB-A to USB-B cable (for the Arduino)
+- USB-A to USB-B cable (for the Arduino)
 - camcon to micro-usb cable (for the Raspberry Pi)
 - Pliers
 - Wire Cutters
