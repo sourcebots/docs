@@ -14,7 +14,7 @@ title: Connecting your kit
 - 2 x 7.5mm Camcon (for the Motor Board)
 - USB Hub
 - USB Webcam
-- 2 x Black USB-A to micro-usb cables
+- 2 x USB-A to micro-usb cables
 - USB-A to USB-B cable (for the Arduino)
 - camcon to micro-usb cable (for the Raspberry Pi)
 - Pliers
