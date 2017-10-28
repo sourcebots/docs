@@ -24,6 +24,9 @@ title: Connecting your kit
 - 2 x Motor
 - Anything else will have to be obtained elsewhere… ask someone!
 
+{{% notice info %}}
+_Camcons_ are the [green connectors](../kit-assembly.files/camcons.png) used to supply power to our kits.
+{{% /notice %}}
 
 ## Important notes before you start
 {{% notice warning %}}
