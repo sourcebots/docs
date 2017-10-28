@@ -69,5 +69,5 @@ r.servo_board.read_analogue()["a0"]
 ``` 
 
 {{% notice info %}}
-The values are the voltage read on the pins, between 0 and 5.
+The values are the voltages read on the pins, between 0 and 5.
 {{% /notice %}}
