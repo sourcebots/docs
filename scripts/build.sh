@@ -5,10 +5,7 @@ set -e
 export PATH=node_modules/.bin:${PATH}
 
 rm -rf public/
-rm -rf static/build
-
-mkdir -p static/build
-
-cp -r static/src/img static/build
+rm -rf content/tutorials/kit-assembly.files
+cp -r static/img/assembly content/tutorials/kit-assembly.files
 
 hugo -v

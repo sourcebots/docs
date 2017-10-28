@@ -1,12 +1,11 @@
-baseURL: https://sourcebots.github.io/docs
+baseURL: http://docs.sourcebots.co.uk
 languageCode: en-gb
-title: Sourcebots Documentation
+title: SourceBots Documentation
 theme: learn
-staticDir: static/build
 
 params:
-    author: Sourcebots
-    description: Sourcebots Documentation
+    author: SourceBots
+    description: SourceBots Documentation
     showVisitedLinks: false
     disableInlineCopyToClipBoard: true
     disableLanguageSwitchingButton: true
