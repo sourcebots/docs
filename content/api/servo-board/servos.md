@@ -27,7 +27,7 @@ print(servo_one.position)
 ```
 
 {{% notice tip %}}
-When `position` is set to 0, the servo loses power and can freely rotate. The same state they're in at start-up.
+When `position` is set to `None`, the servo loses power and can freely rotate. The same state they're in at start-up.
 {{% /notice %}}
 
 
