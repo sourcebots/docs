@@ -240,7 +240,7 @@ print(prices)
 
 Output:
 
-```python
+```text
 [4.8, 6.0, 2.4, 1.7999999999999998]
 ```
 
@@ -265,7 +265,7 @@ print(len(my_list))
 
 Output:
 
-```python
+```text
 3
 ```
 
@@ -278,7 +278,7 @@ print(range(len(my_list)))
 
 Output:
 
-```python
+```text
 [0, 1, 2]
 ```
 
@@ -292,7 +292,7 @@ print(range(1, 10, 2))     # odd numbers from 1 to 10
 
 Output:
 
-```python
+```text
 [0, 1, 2, 3, 4]
 [2, 3, 4]
 [1, 3, 5, 7, 9]
@@ -439,7 +439,7 @@ print(4 == 2)
 
 Output:
 
-```python
+```text
 True
 False
 ```
@@ -676,7 +676,7 @@ print(x == 2 and y == 3 or z == 2)  # needs brackets for clarity!
 
 Output:
 
-```python
+```text
 "False"
 True
 True
