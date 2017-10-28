@@ -227,7 +227,7 @@ The code is executed once for each item in the list, with `x` set to each item i
 [ ] Newspaper
 ```
 
-Unfortunately, this method doesn't tell you the index of the current item. `x` is only a temporary variable, so modifying it has no effect on the list itself (try it). This is where the `enumerate` function comes in (see the [Calling functions](#calling-functions). It tells us the index of each value we loop over. An example with numbers:
+Unfortunately, this method doesn't tell you the index of the current item. `x` is only a temporary variable, so modifying it has no effect on the list itself (try it). This is where the `enumerate` function comes in (see [Calling functions](#calling-functions)). It tells us the index of each value we loop over. An example with numbers:
 
 ```python
 prices = [4, 5, 2, 1.50]
