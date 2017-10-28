@@ -19,6 +19,6 @@ r.servo_board.read_ultrasound(6, 7)
 ```
 
 {{% notice info %}}
-The returned distance is in meters. 
+The returned distance is in metres. 
 {{% /notice %}}
 
