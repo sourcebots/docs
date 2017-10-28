@@ -20,7 +20,7 @@ The input modes closely resemble those of an Arduino. More information on them c
 Allows reading the value from the pin
 
 ### `PinMode.INPUT_PULLUP`
-Allows reading the value from the pin using the built-in pullup resistor.
+Allows reading the value from the pin using the built-in [pullup resistor](https://learn.sparkfun.com/tutorials/pull-up-resistors).
 
 ### `PinMode.OUTPUT_HIGH`
 Set the pin to high output. Equivalent to `PinValue.HIGH`
