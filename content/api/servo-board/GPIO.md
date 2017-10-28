@@ -2,7 +2,7 @@
 title: GPIO
 ---
 
-You can use the GPIO pins to read and write individual pins of the servo assembly. These can be used for anything, from microswitches to LEDs. GPIO is only available on pins 2 to 12, because pins 0 and 1 are reserved for communication with our kit.
+You can use the GPIO _(General Purpose Input/Output)_ pins to read and write individual pins of the servo assembly. These can be used for anything, from microswitches to LEDs. GPIO is only available on pins 2 to 12, because pins 0 and 1 are reserved for communication with our kit.
 
 ## Pin Mode
 GPIO pins support 4 different modes, allowing it to work in 4 different ways. A pin can only have 1 mode at a time, and certain pins aren't compatible with certain modes. These Pin modes are stored in an [enum](https://docs.python.org/3/library/enum.html) which needs to be imported to use.
