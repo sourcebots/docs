@@ -1,15 +1,15 @@
 ---
-title: "Python: A whirlwind tour"
+title: "Python: A Whirlwind Tour"
 ---
-In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use [Python](https://www.python.org/), specifically version 3. We chose it because it's good for beginners, but also elegant and powerful.
+In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use [Python](https://www.python.org/), specifically version 3. We chose Python because it's easy to learn, but also elegant and powerful.
 
 At the end of the tutorial are exercises. The first ones for each section should be quite easy, while the higher-numbered exercises will be harder. Some will be very hard; try these if you're up for a challenge.
 
 Before we begin, a word on learning. The way that you learn to code is by doing it; make sure you try out the examples, fiddle with them, break them, try some of the exercises.
 
-## Using an interpreter
+## Using an Interpreter
 
-To run Python programs you need a something called an interpreter. This is a computer program which interprets human-readable Python code into something that the computer can execute. There are a number of online interpreters that should work even on a locked-down computer such as you will probably find in your college.
+To run Python programs you need a something called an interpreter. This is a computer program which interprets human-readable Python code into something that the computer can execute. There are a number of online interpreters that should work even on a locked-down computer, such as you will probably find in your college.
 
 If your computer has a compatible browser, go to http://repl.it and select _Python3_ from the dropdown. Enter your program in the box on the left, and click the arrow to run it.
 
@@ -23,7 +23,7 @@ print("Hello World!")
 
 The text `Hello World!` should appear in the output box.
 
-There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. Downloads are available for all common OS's from [the website](https://www.python.org/downloads/). (try [Portable Python](http://portablepython.com) if you can't install programs on your computer).
+There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. Downloads are available for all common OS's from [the website](https://www.python.org/downloads/). Try [Portable Python](http://portablepython.com) if you can't install programs on your computer.
 
 ## Statements
 
@@ -85,17 +85,17 @@ name = input("What is your name?")
 
 ### Identifiers
 
-Certain things in your program, for example variables and functions, will need names. These names are called 'identifiers', and must follow these rules:
+Certain things in your program, for example variables and functions, will need names. These names are called 'identifiers' and must follow these rules:
 
 - Identifiers can contain letters, digits, and underscores. They may not contain spaces or other symbols.
 - An identifier cannot begin with a digit.
 - Identifiers are case sensitive. This means that `bees`, `Bees` and `BEES` are three different identifiers.
 
-## Code blocks and indentation
+## Code Blocks and Indentation
 
 In the previous section, you probably noticed that the statements 'inside' the `if` statements were indented relative to the rest of the code. Python is reasonably unique in that it cares about indentation, and uses it to decide which statements are referred to by things like `if` statements.
 
-In most other programming languages, if you don't indent your code it will run just fine, but any poor soul who has to read your code afterwards will hunt you down and hit you around the head with a large, wet fish. In Python, you'll just get an error, which we're sure you'll agree is preferable.
+In most other programming languages, if you don't indent your code it will run just fine, but any poor soul who has to read your code will hunt you down and hit you around the head with a large, wet fish. In Python, you'll just get an error, which we're sure you'll agree is preferable.
 
 A group of consecutive statements that are all indented by the same distance is called a block. `if` statements, as well as functions and loops, all refer to the block that follows them, which must be indented further than that statement. An example is in order. Let's expand the first `if` example:
 
@@ -132,7 +132,7 @@ To find the limits of an `if` statement, just scan straight down until you encou
 One final thing: Python doesn't mind _how_ you indent lines, just so long as you're consistent. Some text editors insert indent characters when you press tab; others insert spaces (normally four). They'll often look the same, but cause errors if they're mixed. If you're using an online interpreter, you probably don't need to worry. Otherwise, check your editor's settings to make sure they're consistent. Four spaces per indent level is the convention in Python. We'll now move on from this topic before that last sentence causes a [flame war](https://www.youtube.com/watch?v=SsoOG6ZeyUI).
 
 ## Lists
-Lists store more than one value in a single variable, and allow you to set and retrieve values by their position ('index') in the list. For example:
+Lists store more than one value in a single variable and allow you to set and retrieve values by their position ('index') in the list. For example:
 
 ```python
 shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
@@ -151,7 +151,7 @@ Magazine
 ```
 
 {{% notice warning %}}
-Like most other programming languages, indices start at 0, not 1. Because of this, the last element of this four-element list is at index 3. Attempting to retrieve `shopping_list[4]` would cause an error.
+Like most other programming languages, indices start at 0, not 1. Due to this, the last element of this four-element list is at index 3. Attempting to retrieve `shopping_list[4]` would cause an error.
 {{% /notice %}}
 
 You can find out the length of a list with the `len` function, like so:
@@ -206,7 +206,7 @@ Half way there!
 Zero!
 ```
 
-The condition is the same as it would be in an `if` statement, and the block of code to put in the loop is denoted in the same way, too.
+The condition is the same as it would be in an `if` statement and the block of code to put in the loop is denoted in the same way, too.
 
 ## `for` loops
 
