@@ -42,7 +42,7 @@ r.servo_board.gpio[3].mode = PinMode.INPUT_PULLUP
 To read the value of a pin, simply call `read()`. This will return either `PinValue.HIGH` or `PinValue.LOW`, which have to be imported to use.
 
 ```python
-from robot import PinMode
+from robot import PinMode, PinValue
 
 r.servo_board.gpio[3].read() == PinValue.HIGH
 >>> True
@@ -55,6 +55,10 @@ Calling `read()` will raise an exception if the pins mode hasn't been set to an 
 # Analogue Pins
 
 Certain sensors output analogue signals rather than digital ones, so have to be read differently. The servo assembly has 4 analogue inputs.
+
+{{% notice info %}}
+You can read more about digital vs analogue signals [here](https://learn.sparkfun.com/tutorials/analog-vs-digital).
+{{% /notice %}}
 
 To read the value of an analogue pin, call `read_analogue()` on the servo board. This will give you the value of all analogue pins.
 
