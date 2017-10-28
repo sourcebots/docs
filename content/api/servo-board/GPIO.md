@@ -57,6 +57,7 @@ Calling `read()` will raise an exception if the pins mode hasn't been set to an 
 Certain sensors output analogue signals rather than digital ones, so have to be read differently. The servo assembly has 4 analogue inputs.
 
 {{% notice info %}}
+Analogue signals can have any voltage, while digital signals can only take on one of two voltages.
 You can read more about digital vs analogue signals [here](https://learn.sparkfun.com/tutorials/analog-vs-digital).
 {{% /notice %}}
 
