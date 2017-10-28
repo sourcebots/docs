@@ -11,7 +11,7 @@ Before we begin, a word on learning. The way that you learn to code is by doing 
 
 To run Python programs you need a something called an interpreter. This is a computer program which interprets human-readable Python code into something that the computer can execute. There are a number of online interpreters that should work even on a locked-down computer such as you will probably find in your college.
 
-If your computer has a compatible browser, go to http://repl.it and click Python. Enter your program in the box on the left, and click the arrow to run it.
+If your computer has a compatible browser, go to http://repl.it and select _Python3_ from the dropdown. Enter your program in the box on the left, and click the arrow to run it.
 
 If your browser isn't compatible, another good online interpreter can be found at http://codeskulptor.org. It's very similar; simply enter your program into the left pane and click the play button to run it. The output will appear in the right pane.
 
