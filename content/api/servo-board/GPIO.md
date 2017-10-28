@@ -12,7 +12,7 @@ from robot import PinMode
 ``` 
 
 {{% notice note %}}
-The input modes closely resemble those of an Arduino. More information on them can be found in [their docs](https://docs.python.org/3/library/enum.html)
+The input modes closely resemble those of an Arduino. More information on them can be found in [their docs](https://www.arduino.cc/en/Tutorial/DigitalPins)
 {{% /notice %}}
 
 
