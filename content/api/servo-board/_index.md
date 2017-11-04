@@ -22,7 +22,3 @@ board = r.servo_board
 board_one = r.servo_boards['S3rv0']
 board_one = r.servo_boards[0]
 ```
-
-{{% notice tip %}}
-If you want to get the serial for a board you can use the `serial` property, i.e. `r.servo_boards[0].serial`
-{{% /notice %}}
