@@ -2,18 +2,21 @@
 title: Power Board
 ---
 
+As there is only one power board, it is not accessed like a list like motors for example:
+
 ```python
-# get the first power board
 main_board = r.power_board
-
-# get the power board by serial number
-main_board = r.power_boards['SERIAL']
-
-# get the first power board
-main_board = r.power_boards[0]
 ```
 
-This power board object has two functions, `power_on()` and `power_off()` these turn the power on and off to the connected boards respectively.
+## Power Outputs
+The power boards 6 outputs can be turned on and off using the `power_on` and `power_off` functions respectively.
 
-`power_on()` is called during initialisation, so this doesn't need to be called manually.
+```python
+r.power_board.power_off()
+```
+
+{{% notice note %}}
+`power_on` is called when you setup your robot, so this doesn't need to be called manually. The ports will come on automatically as soon as your robot is ready, before the start button is pressed.
+{{% /notice %}}
+
 
