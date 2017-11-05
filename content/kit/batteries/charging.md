@@ -15,12 +15,15 @@ This list must be followed carefully each time a battery is connected to the cha
 
 ### Starting Charging
 
-1. If it does not, repeatedly press `Batt.Type/Stop` until it does.
-2. Press `Start/Enter` to select lithium battery charging.
-3. Press `Start/Enter` to edit the charging current.
-4. The current (bottom left) should start blinking. Use the `Inc./Dec.` buttons until it reads 2.2A. Press `Start/Enter` to store the value and to begin editing the battery voltage. Use the `Inc./Dec.` buttons until it reads 11.1V(3S).
-5. Hold `Start/Enter` for 3 seconds to confirm. The charger will try to detect the battery.
-6. Once the battery has been detected, the screen will show _CONFIRM (ENTER)_. Press `Start/Enter` to start charging.
+{{% notice warning %}}
+Do not attempt to charge your battery if any of the cables are lose or frayed. Contact us immediately if you think there's an issue!
+{{% /notice %}}
+
+1. Press `Start/Enter` to select lithium battery charging.
+2. Press `Start/Enter` to edit the charging current.
+3. The current (bottom left) should start blinking. Use the `Inc./Dec.` buttons until it reads 2.2A. Press `Start/Enter` to store the value and to begin editing the battery voltage. Use the `Inc./Dec.` buttons until it reads 11.1V(3S).
+4. Hold `Start/Enter` for 3 seconds to confirm. The charger will try to detect the battery.
+5. Once the battery has been detected, the screen will show _CONFIRM (ENTER)_. Press `Start/Enter` to start charging.
 
 {{% notice warning %}}
 The important thing to note here is that the number of cells detected by the charger (_R_) and the number of cells set by you (_S_) are both 3. *If either of these numbers are different immediately power down the charger and contact us.*

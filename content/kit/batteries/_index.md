@@ -10,7 +10,9 @@ Your kit will come with several pieces of battery related equipment:
 2. One battery charger.
 3. One battery charging bag.
 
+{{% notice warning %}}
 You must not use any batteries, chargers, bags or cables not explicitly authorised by {{% siteparam "author" %}}.
+{{% /notice %}}
 
 ## Warnings
 - Never leave batteries unattended when they are in use or charging.
@@ -30,7 +32,7 @@ When your batteries are not actively in use, they should be safely stored. You m
 If you are not going to use the batteries for a long period of time, such as more than a week, then you should charge the batteries before hand. By themselves, batteries will discharge very slowly, and over-discharging will lead to damage. We recommend that you charge all batteries to at least 70% of capacity before being stored for a long period.
 
 ## Operating Batteries
-To use your batteries, you must connect them to the Student Robotics power board. Do not tamper with the cable or connect the batteries to anything other than the power board (or the charger when charging).
+To use your batteries, you must connect them to the power board. Do not tamper with the cable or connect the batteries to anything other than the power board (or the charger when charging).
 
 During operation, the battery is protected by over-current protection and a fuse in the power board. If any equipment is short circuited, the over-current protection will activate - protecting the battery. In extreme circumstances the fuse may blow to prevent damage to the battery. This is an important safety feature: do not, under any circumstances, bypass the fuse. The fuse is not user serviceable and if the fuse has blown then the power board must be replaced. If you suspect the fuse has blown then please contact us straight away.
 
