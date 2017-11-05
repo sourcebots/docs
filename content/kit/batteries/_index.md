@@ -1,5 +1,5 @@
 ---
-title: Batteries and Charging
+title: Batteries
 ---
 
 The electronics kit contains two lithium-ion polymer (LiPo) batteries. These are similar to those used in laptops, and are small and light for the amount of energy they contain. This is great for your robot but it is vital to treat such a high concentration of energy with respect. If you do not, there is a serious risk of fire and injury. To avoid this, you should follow the safety information on this page closely, at all times.
