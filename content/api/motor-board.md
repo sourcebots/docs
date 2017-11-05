@@ -2,34 +2,38 @@
 title: Motor Board
 ---
 
-If there is only one motor board connected, you can use `r.motor_board` to get the object representing it.
+The kit can control multiple motors simultaneously. 1 Motor Board can control up to 2 motors.
+
+## Accessing Motor Boards
+If there is only one motor board connected, you can use `r.motor_board` to interface with it.
 ```python
-# a single connected motor board
 motor_board = r.motor_board
 ```
 
-If there is more than one, there is a dictionary of all of them indexed by serial number.
+When you have more than one Motor Board connected to your kit, they can be accessed based upon their serial number. Assuming your motor board has the serial number `SERIAL`:
+
 ```python
-# Selects the motor board by serial number
 motor_board = r.motor_boards['SERIAL']
 ```
 
-This board object has a property object for each of the motors connected to it. These are mapped to the `m1` and `m0` variables.
+This board object has a property for each of the motors connected to it. These are mapped to the `m1` and `m0` variables. The boards are labelled so you know which motor is which.
 
-It is a good idea to assign the left and right motor object to memorable variables, similar to the following:
 ```python
 left_motor = r.motor_board.m0
 right_motor = r.motor_board.m1
 ```
 
-These `Motor` objects have a property called `voltage`, which is used to set the power of the motors, between -1 and 1.
+## Powering Motors
+Motor power is controlled using PWM with 100% power being a duty cycle of 1. You set the power with an integer value between `-1` and `1` inclusive (where a negative value puts the motor in reverse).
+The field to change the output power is `voltage`.
 
-Note that this number is not the actual voltage being applied to the motor.
+{{% notice info %}}
+This number is not the actual voltage being applied to the motor.
+{{% /notice %}}
 
-So setting the voltage of the motors works like this:
 ```python
 left_motor.voltage  = 1
-right_motor.voltage = 1
+right_motor.voltage = -1
 ```
 
 and these value can then be read back:
@@ -38,15 +42,36 @@ left_motor.voltage
 >>> 1
 
 right_motor.voltage
->>> 1
+>>> -1
 ```
 
-The motor board would then apply full power to both motors.
+{{% notice warning %}}
+Setting `voltage` to an incorrect value will raise an exception and your robot will crash.
+{{% /notice %}}  
 
-In addition to the numeric values, there are two text constants that can be used. `robot.BRAKE` and `robot.COAST`. `robot.BRAKE` is an alias for 0 (full stop), while `robot.COAST` stops the application of power to the motors.
+### Special Values
+
+In addition to the numeric values, there are two text constants that can be used. `robot.BRAKE` and `robot.COAST`. 
+
+#### `robot.BRAKE`
+`robot.BRAKE` will stop the motors from turning, and thus stop your robot as quick as possible.
+
+{{% notice tip %}}
+`robot.BRAKE` does the same as setting your robots power to `0`.
+{{% /notice %}}  
 
 ```python
 from robot import BRAKE
 
-left_motor.voltage = BRAKE
+r.motor_board.m0.voltage = BRAKE
+```
+
+#### `robot.COAST`
+`robot.COAST` will stop applying power to the motors. This will mean they continue moving under the momentum they had before. 
+
+
+```python
+from robot import COAST
+
+r.motor_board.m1.voltage = COAST
 ```

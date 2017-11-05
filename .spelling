@@ -1,4 +1,4 @@
-Sourcebots
+SourceBots
 arduino
 pullup
 camcon
@@ -10,3 +10,9 @@ L0-3
 7.5mm
 5mm
 enum
+3.81mm
+camcons
+micro-usb
+Smallpeice
+LiPo
+square-ish
