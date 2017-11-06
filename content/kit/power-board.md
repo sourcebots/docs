@@ -9,8 +9,10 @@ for the Brain Board.
 It also holds the internal On|Off switch for the whole robot as well as
 the Start button which is used to start your robot code running.
 
-## Connectors
+## Board Diagram
+![Power Board Diagram](/img/kit/power_board_v4_diagram.png)
 
+## Connectors
 There are six power output connectors on the board, labelled L0–L3, H0, and H1. These are enabled when your robot code is started, and supply around 11.1V (±15%). They should be used to connect to the motor and servo board power inputs. The "H" connectors will supply more current than the "L" connectors.
 
 The 5V connectors can be used to connect low-current devices that take 5V inputs, such as the Brain Board.
@@ -19,13 +21,11 @@ There is also a Micro USB B connector which should be used to connect the Brain 
 
 Finally, there are connectors for external Start and On\|Off switches. You may connect any push-to-make latching switch for the On\|Off button, or a push-to-make button for the start button.
 
-
 {{% notice note %}}
 If you intend to use only the internal On|Off switch, you must connect a CamCon to the On|Off connector with a wire connecting one pin to the other pin on the same connector.
 {{% /notice %}}
 
 ## Indicators
-
 |   LED           | Meaning                         | Initial power-up state
 |-----------------|---------------------------------|----------------------
 | PWR\|FLAT       | Green when powered<br />Flashing red and green when the battery is low | Green
@@ -40,15 +40,15 @@ On power-up, the Power Board will emit some beeps, which are related to the vers
 If the Power Board starts beeping (and all the outputs turn off) then this means that the whole board's current limit has been triggered.
 
 ## Controls
-
 | Control        | Use
 |----------------|----------------------------
 | ON\|OFF        | Turns the power board on, when used in conjunction with an external switch
 | START          | Starts your program (can be used instead of the robot WiFi interface)
 
+## Case Dimensions
+The case measures 83x99x24mm. Don’t forget that the cables will stick out.
+
 ## Specification
-
-
 |  Parameter                           |   Value   |
 |--------------------------------------|-----------|
 | Main battery fuse current            | 40A       |
@@ -59,3 +59,10 @@ If the Power Board starts beeping (and all the outputs turn off) then this means
 | Maximum output current per 5V channel| 1A        |
 
 [^2]: If overall current limit is exceeded, the Power Board will turn off and start beeping.
+
+## Designs
+You can access the schematics and source code of the firmware for the power board in the following places. You do not need this information to use the board but it may be of interest to some people.
+
+- [Full Schematics](/docs/power-schematic.pdf)
+- [Firmware Source](https://github.com/sourcebots/power-v4-fw)
+- [Hardware Source](https://github.com/sourcebots/power-v4-hw)
