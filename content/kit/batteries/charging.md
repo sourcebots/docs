@@ -19,7 +19,7 @@ This list must be followed carefully each time a battery is connected to the cha
 Do not attempt to charge your battery if any of the cables are lose or frayed. Contact us immediately if you think there's an issue!
 {{% /notice %}}
 
-1. Press `Start/Enter` to select lithium battery charging.
+1. Press `Start/Enter` to select the "LiPo balance" charging mode.
 2. Press `Start/Enter` to edit the charging current.
 3. The current (bottom left) should start blinking. Use the `Inc./Dec.` buttons until it reads 2.2A. Press `Start/Enter` to store the value and to begin editing the battery voltage. Use the `Inc./Dec.` buttons until it reads 11.1V(3S).
 4. Hold `Start/Enter` for 3 seconds to confirm. The charger will try to detect the battery.
@@ -30,6 +30,10 @@ The important thing to note here is that the number of cells detected by the cha
 {{% /notice %}}
 
 The screen shows the charging current, the current voltage, the time elapsed and the energy provided to the battery.
+
+{{% notice note %}}
+The "LiPo charge" mode will also fully charge your battery and is usually somewhat faster than "LiPo balance"; however it shortens the lifespan of the battery. We highly recommend using balance mode unless you desperately need the battery to be charged sooner.
+{{% /notice %}}
 
 ### Stopping Charging
 The charger will beep when the battery is fully charged. You must then:
