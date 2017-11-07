@@ -1,16 +1,17 @@
-baseURL: https://sourcebots.github.io/docs
+baseURL: http://docs.sourcebots.co.uk
 languageCode: en-gb
 title: SourceBots Documentation
 theme: learn
-staticDir: static/build
 
 params:
-    author: SourceBots
-    description: SourceBots Documentation
+    author: Sourcebots
+    description: Sourcebots Documentation
     showVisitedLinks: false
     disableInlineCopyToClipBoard: true
     disableLanguageSwitchingButton: true
     disableAssetsBusting: true
+    editURL: "https://github.com/sourcebots/docs/tree/master/content/"
+    ordersectionsby: "title"
 
 menu:
     shortcuts:
@@ -20,3 +21,12 @@ menu:
         - name: "<i class='fa fa-globe'></i> Website"
           url: https://sourcebots.github.io/website
 
+enableGitInfo: true
+enableRobotsTXT: true
+disableHugoGeneratorInject: true
+enableEmoji: true
+taxonomies: []
+pygmentsCodeFencesGuessSyntax: true
+disableKinds:
+    - taxonomy
+    - taxonomyTerm

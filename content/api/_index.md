@@ -13,8 +13,22 @@ r = Robot()
 
 This will setup your robot and allow it to send and receive data from the robot's various boards. Once this has been setup, this object can be used for most of the functions of the robot.
 
-### Start Button
+The remainder of the tutorials pages will assume your robot is defined as `r`.
+
+## Start Button
 So your robot doesn't start moving as soon as the robot is finished setting up, the code is paused after setup until the _Start Button_ on the power board is pressed. There is a green LED next to the start button when the robot is finished setting up and the start button can be pressed.
 
-### Logs
+## Logs
 So you can see what your robot did, what it didn't do, and any errors it raised, a log file is saved on the USB drive. The file is saved to `log.txt` in the root of the USB. Be careful, this log is cleared each time the robot is setup, so save it off the USB if you need to keep hold of it!
+
+## Serial Number
+All kit boards have a serial number, unique to that specific board, which can be read using the `serial` property:
+
+```python
+r.power_board.serial
+>>> 'P1'
+r.serial_board.serial
+>>> 'S1'
+r.motor_board.serial
+>>> 'M1'
+```

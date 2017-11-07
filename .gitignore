@@ -132,5 +132,4 @@ typings/
 
 # End of https://www.gitignore.io/api/node,hugo,intellij
 
-static/src/scss/highlight.css
-static/build
+content/tutorials/kit-assembly.files
