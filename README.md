@@ -10,7 +10,8 @@ URL: http://docs.sourcebots.co.uk
 
 ## Local Setup
 1. `npm install`
-2. `./scripts/build.sh`
+2. `git submodule update --init`
+3. `./scripts/build.sh`
 
 The site will be output to `public/`.
 
