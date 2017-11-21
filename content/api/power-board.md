@@ -23,8 +23,9 @@ r.power_board.power_off()
 
 The power board has a piezo buzzer which can beep.
 
-The `buzz` function accepts multiple parameters, depending on what you want to play. The first argument is the duration of the beep, in seconds. The later arguments are either the note you want to play, or the buzzers frequency.
+The `buzz` function accepts multiple parameters, depending on what you want to play. The first argument is the duration of the beep, in seconds. The later arguments are either the note you want to play, or the buzzers frequency (in Hz).
 
+Theoretically, the piezo buzzer will buzz at any provided frequency, however humans can only hear between [20Hz and 20000Hz](https://en.wikipedia.org/wiki/Hearing_range#Humans).  
 
 {{% notice note %}}
 You should only pass `frequency` __or__ `note`. If you pass both, `note` is used, and `frequency` is silently ignored.
