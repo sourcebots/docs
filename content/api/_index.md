@@ -26,7 +26,11 @@ If this file is missing or incorrectly named, your robot won't do anything. No l
 So your robot doesn't start moving as soon as the robot is finished setting up, the code is paused after setup until the _Start Button_ on the power board is pressed. There is a green LED next to the start button when the robot is finished setting up and the start button can be pressed.
 
 ## Logs
-So you can see what your robot did, what it didn't do, and any errors it raised, a log file is saved on the USB drive. The file is saved to `log.txt` in the root of the USB. Be careful, this log is cleared each time the robot is setup, so save it off the USB if you need to keep hold of it!
+So you can see what your robot did, what it didn't do, and any errors it raised, a log file is saved on the USB drive. The file is saved to `log.txt` in the root of the USB.
+
+{{% notice warning %}}
+The log file is deleted on each run, so save it (Ideally off the USB) if you need to keep hold of it!
+{{% /notice %}}
 
 ## Serial Number
 All kit boards have a serial number, unique to that specific board, which can be read using the `serial` property:
