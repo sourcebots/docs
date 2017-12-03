@@ -1,5 +1,6 @@
 ---
 title: Python API
+weight: 1
 ---
 
 ## Setup

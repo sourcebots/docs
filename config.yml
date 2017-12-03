@@ -11,7 +11,7 @@ params:
     disableLanguageSwitchingButton: true
     disableAssetsBusting: true
     editURL: "https://github.com/sourcebots/docs/tree/master/content/"
-    ordersectionsby: "title"
+    ordersectionsby: "weight"
 
 menu:
     shortcuts:
