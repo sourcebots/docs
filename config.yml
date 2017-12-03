@@ -34,5 +34,4 @@ disableKinds:
 outputs:
   home:
     - html
-    - rss
     - json
