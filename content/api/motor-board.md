@@ -19,30 +19,29 @@ motor_board = r.motor_boards['SERIAL']
 This board object has a property for each of the motors connected to it. These are mapped to the `m1` and `m0` variables. The boards are labelled so you know which motor is which.
 
 ```python
-left_motor = r.motor_board.m0
-right_motor = r.motor_board.m1
+r.motor_board.m0
+r.motor_board.m1
 ```
 
 ## Powering Motors
-Motor power is controlled using PWM with 100% power being a duty cycle of 1. You set the power with an integer value between `-1` and `1` inclusive (where a negative value puts the motor in reverse).
-The field to change the output power is `power`.
+Motor power is controlled using PWM with 100% power being a duty cycle of 1. You set the power with a value between `-1` and `1` inclusive (where a negative value puts the motor in reverse).
 
 ```python
-left_motor.power  = 1
-right_motor.power = -1
+r.motor_board.m0  = 1
+r.motor_board.m1 = -1
 ```
 
 and these value can then be read back:
 ```python
-left_motor.power
+r.motor_board.m0
 >>> 1
 
-right_motor.power
+r.motor_board.m1
 >>> -1
 ```
 
 {{% notice warning %}}
-Setting `power` to an incorrect value will raise an exception and your robot will crash.
+Setting an incorrect value will raise an exception and your robot will crash.
 {{% /notice %}}  
 
 ### Special Values
@@ -59,7 +58,7 @@ In addition to the numeric values, there are two text constants that can be used
 ```python
 from robot import BRAKE
 
-r.motor_board.m0.power = BRAKE
+r.motor_board.m0 = BRAKE
 ```
 
 #### `robot.COAST`
@@ -69,5 +68,5 @@ r.motor_board.m0.power = BRAKE
 ```python
 from robot import COAST
 
-r.motor_board.m1.power = COAST
+r.motor_board.m1 = COAST
 ```
