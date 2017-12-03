@@ -15,6 +15,13 @@ This will setup your robot and allow it to send and receive data from the robot'
 
 The remainder of the tutorials pages will assume your robot is defined as `r`.
 
+## Where to put your code
+Your code needs to be put on a USB drive in a file in the file called `main.py`. On insertion, this file will be executed.
+
+{{% notice warning %}}
+If this file is missing or incorrectly named, your robot won't do anything. No log file will be created.
+{{% /notice %}}
+
 ## Start Button
 So your robot doesn't start moving as soon as the robot is finished setting up, the code is paused after setup until the _Start Button_ on the power board is pressed. There is a green LED next to the start button when the robot is finished setting up and the start button can be pressed.
 
