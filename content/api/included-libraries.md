@@ -1,0 +1,14 @@
+---
+title: Included Libraries
+---
+
+Python already comes with plenty of [builtin libraries](https://docs.python.org/3.4/py-modindex.html) to use, However there are some extra ones installed which may be of us:
+
+- [numpy](https://pypi.python.org/pypi/numpy)
+- [scipy](https://pypi.python.org/pypi/scipy)
+
+Additionally, some of the libraries installed and used by our kit are also available, however these are subject to change:
+
+- [pyserial](https://pypi.python.org/pypi/pyserial)
+- [pyudev](https://pypi.python.org/pypi/pyudev)
+- [pillow](https://pypi.python.org/pypi/pillow)
