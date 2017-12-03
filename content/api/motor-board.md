@@ -75,3 +75,8 @@ from robot import COAST
 
 r.motor_board.m1.voltage = COAST
 ```
+
+{{% notice warning %}}
+Changing motor speed by more than 1 in a single operation (e.g. `-1` to `0`, `1` to `-1` etc) will likely trigger the current protection and your robot will shut down with a distinct beeping noise.
+{{% /notice %}} 
+
