@@ -27,8 +27,8 @@ The `buzz` function accepts multiple parameters, depending on what you want to p
 
 Theoretically, the piezo buzzer will buzz at any provided frequency, however humans can only hear between [20Hz and 20000Hz](https://en.wikipedia.org/wiki/Hearing_range#Humans).  
 
-{{% notice note %}}
-You should only pass `frequency` __or__ `note`. If you pass both, `note` is used, and `frequency` is silently ignored.
+{{% notice info %}}
+To help prevent possible errors, you must specify which argument you're passing. Simply calling `buzz(2, 'c')` will raise a `TypeError`
 {{% /notice %}}
 
 
