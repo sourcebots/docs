@@ -16,7 +16,7 @@ This will setup your robot and allow it to send and receive data from the robot'
 The remainder of the tutorials pages will assume your robot is defined as `r`.
 
 ## Where to put your code
-Your code needs to be put on a USB drive in a file in the file called `main.py`. On insertion, this file will be executed.
+Your code needs to be put on a USB drive in a file called `main.py`. On insertion, this file will be executed.
 
 {{% notice warning %}}
 If this file is missing or incorrectly named, your robot won't do anything. No log file will be created.
