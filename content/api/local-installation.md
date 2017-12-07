@@ -2,7 +2,7 @@
 title: Local installation
 ---
 
-Installing our code locally will allow your editor you extract type definitions from the `Robot` class and its boards, as well as allowing type completion on parameters.
+Installing our code locally will allow your editor you to extract type definitions from the `Robot` class and its boards, as well as allowing auto-complete (also known as [IntelliSense](https://en.wikipedia.org/wiki/IntelliSense)).
 
 Installing these definitions is highly optional, however will be incredibly useful if your editor supports this. All editors in our [recommended list](/tutorials/editors/) besides IDLE will support it.
 
@@ -19,7 +19,7 @@ If you're doing this on a shared computer, such as those found in your colleges,
 pip install git+https://github.com/sourcebots/robot-api --user
 ```
 
-Simply restart your editor of choice, and it should these up and start being able to use them immediately.
+Simply restart your editor of choice, and it should detect and start being able to use them immediately.
 
 ## Upgrading installation
 
