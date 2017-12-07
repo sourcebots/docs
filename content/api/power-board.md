@@ -21,7 +21,7 @@ r.power_board.power_off()
 
 ## Buzzing :bee:
 
-The power board has a piezo buzzer which can beep.
+The power board has a piezo buzzer which can buzz.
 
 The `buzz` function accepts multiple parameters, depending on what you want to play. The first argument is the duration of the beep, in seconds. The later arguments are either the note you want to play, or the buzzers frequency (in Hz).
 
