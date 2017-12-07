@@ -1,7 +1,7 @@
 ---
 title: "Python: A Whirlwind Tour"
 ---
-In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use [Python](https://www.python.org/), specifically version 3. We chose Python because it's easy to learn, but also elegant and powerful.
+In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use [Python](https://www.python.org/). We chose Python because it's easy to learn, but also elegant and powerful.
 
 At the end of the tutorial are exercises. The first ones for each section should be quite easy, while the higher-numbered exercises will be harder. Some will be very hard; try these if you're up for a challenge.
 

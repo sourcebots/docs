@@ -2,6 +2,8 @@
 title: Python API
 ---
 
+Programming your robot is done in [Python](https://www.python.org/), specifically version 3.5. You can learn more about Python from their [docs](https://docs.python.org/3.5/), and our [whirlwind tour](/tutorials/python-whirlwind-tour).
+
 ## Setup
 The following two lines are required to setup the robot.
 
