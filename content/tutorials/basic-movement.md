@@ -33,7 +33,7 @@ There is a certain specification the motor(s) you use must meet. The criteria ar
 * A stall current of less than 10A (this is the current limit for the [motor boards](/kit/motor_board)
 
 {{% notice note %}}
-When designing your robot you should bear in mind that while each motor board can deliver 10A on each output, all the power needs to go through the power board, which is fused at 15A. This means that across all the outputs for all the motors, you can only draw up to 15A at any time.
+When designing your robot you should bear in mind that while each motor board can deliver 10A on each output, all the power needs to go through the power board, which has its own [limiting per output](/kit/power-board/#specification).
 {{% /notice %}}
 
 ## Connecting a Motor
