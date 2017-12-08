@@ -12,7 +12,7 @@ The aim of this tutorial is to get a motor turning with your kit. To complete th
 * 2 lengths of a suitable gauge of wire for powering the motor board from the power board (one should be black/grey)
 * A motor (see specification below)
 * A small (5mm) green _CamCon_ connector to plug the motor and motor board together
-* 2 lengths of a suitable gauge of wire for your motor
+* 2 lengths of a suitable thickness of wire for your motor
 * 2 Micro USB cables
 * The Pi power cable
 
