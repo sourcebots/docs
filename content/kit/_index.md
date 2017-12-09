@@ -23,20 +23,20 @@ With your kit, you should have the following boards:
 ### Additional Parts
 In addition to the boards, your kit will also contain:
 
-| Part                         | Quantity | Specification               | Notes                    |
-|------------------------------|----------|-----------------------------|--------------------------|
-| Battery Charger              | 1        | iMAX B6                     |                          |
-| Battery Charger Power Supply | 1        | 12V 5A                      |                          |
-| Battery                      | 1        | 11.1V 2.2Ah Lithium Polymer |                          |
-| USB Memory Stick             | 1        | 1GB                         |                          |
-| USB Hub                      | 1        |                             | Does _not_ require power |
-| Micro USB Cable              | 2        |                             |                          |
-| USB B Cable                  | 1        |                             |                          |
-| Black Wire                   | 3m       |                             | Used for ground *only*   |
-| Red Wire                     | 3m       |                             |                          |
-| Blue Wire                    | 3m       |                             |                          |
-| Small CamCon                 | 2        | 5mm                         |                          |
-| CamCon                       | 2        | 7.5mm                       |                          |
-| Micro CamCon                 | 2        | 3mm                         |                          |
-| Webcam                       | 1        |                             |                          |
-| Battery Bag                  | 1        |                             |                          |
+| Part                         | Quantity | Specification               | Notes                  |
+|------------------------------|----------|-----------------------------|------------------------|
+| Battery Charger              | 1        | iMAX B6                     |                        |
+| Battery Charger Power Supply | 1        | 12V 5A                      |                        |
+| Battery                      | 1        | 11.1V 2.2Ah Lithium Polymer |                        |
+| USB Memory Stick             | 1        | 1GB                         |                        |
+| USB Hub                      | 1        |                             |                        |
+| Micro USB Cable              | 2        |                             |                        |
+| USB B Cable                  | 1        |                             |                        |
+| Black Wire                   | 3m       |                             | Used for ground *only* |
+| Red Wire                     | 3m       |                             |                        |
+| Blue Wire                    | 3m       |                             |                        |
+| Small CamCon                 | 2        | 5mm                         |                        |
+| CamCon                       | 2        | 7.5mm                       |                        |
+| Micro CamCon                 | 2        | 3mm                         |                        |
+| Webcam                       | 1        |                             |                        |
+| Battery Bag                  | 1        |                             |                        |
