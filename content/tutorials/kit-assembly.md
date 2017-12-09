@@ -9,14 +9,15 @@ title: Connecting your kit
 - Arduino (The blue, exposed board with a metal USB-B connector)
 - Arduino Servo Shield (another blue board, hopefully on top of the first)
 If any of this is unsure to you check on the underside of the board it should be labelled 
+- Battery
+- USB Hub
+- USB Webcam
 
 ##Connectors and Cables##
 - 1 x 3.81mm Camcon (for the Arduino Servo Shield)
 - 2 x 5mm Camcon (for the Motors)
 - 1 x 5mm Camcon with wire loop (attached to the power board)
 - 2 x 7.5mm Camcon (for the Motor Board)
-- USB Hub
-- USB Webcam
 - 2 x USB-A to micro-usb cables
 - USB-A to USB-B cable (for the Arduino)
 - Camcon to micro-usb cable (for the Raspberry Pi)
