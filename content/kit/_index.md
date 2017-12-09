@@ -28,7 +28,7 @@ In addition to the boards, your kit will also contain:
 | Battery Charger              | 1        | iMAX B6                     |                          |
 | Battery Charger Power Supply | 1        | 12V 5A                      |                          |
 | Battery                      | 1        | 11.1V 2.2Ah Lithium Polymer |                          |
-| USB Memory Stick             | 1        | 4GB                         |                          |
+| USB Memory Stick             | 1        | 1GB                         |                          |
 | USB Hub                      | 1        |                             | Does _not_ require power |
 | Micro USB Cable              | 2        |                             |                          |
 | USB B Cable                  | 1        |                             |                          |
