@@ -2,15 +2,15 @@
 title: Connecting your kit
 ---
 
-###Essential Hardware###
-- Raspberry Pi (the board in a plastic case with many USB ports, )
+##Essential Hardware##
+- Raspberry Pi (the board in a plastic case with many USB ports)
 - Power Board (the board in a plastic case with many green sockets and two buttons)
 - Motor Board (the other board in a plastic case)
 - Arduino (The blue, exposed board with a metal USB-B connector)
 - Arduino Servo Shield (another blue board, hopefully on top of the first)
 If any of this is unsure to you check on the underside of the board it should be labelled 
 
-###Connectors and Cables###
+##Connectors and Cables##
 - 1 x 3.81mm Camcon (for the Arduino Servo Shield)
 - 2 x 5mm Camcon (for the Motors)
 - 1 x 5mm Camcon with wire loop (attached to the power board)
@@ -22,7 +22,7 @@ If any of this is unsure to you check on the underside of the board it should be
 - Camcon to micro-usb cable (for the Raspberry Pi)
 - Wire
 
-###Tools you'll need (Not Supplied)###
+##Tools you'll need (Not Supplied)##
 - Pliers
 - Wire Cutters
 - Wire Strippers
