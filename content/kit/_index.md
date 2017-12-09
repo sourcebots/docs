@@ -35,8 +35,8 @@ In addition to the boards, your kit will also contain:
 | Black Wire                   | 3m       |                             | Used for ground *only*   |
 | Red Wire                     | 3m       |                             |                          |
 | Blue Wire                    | 3m       |                             |                          |
-| Small CamCon                 | 2        |                             |                          |
-| CamCon                       | 2        |                             |                          |
-| Micro CamCon                 | 2        |                             |                          |
+| Small CamCon                 | 2        | 5mm                         |                          |
+| CamCon                       | 2        | 7.5mm                       |                          |
+| Micro CamCon                 | 2        | 3mm                         |                          |
 | Webcam                       | 1        |                             |                          |
 | Battery Bag                  | 1        |                             |                          |
