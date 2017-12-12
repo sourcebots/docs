@@ -41,3 +41,4 @@ In addition to the boards, your kit will also contain:
 | Micro CamCon                 | 1        | 3mm                         | 1 additionally found on Pi power cable |
 | Webcam                       | 1        |                             |                                        |
 | Battery Bag                  | 1        |                             |                                        |
+| Pi Power Cable               | 1        | Micro USB to Micro CamCon   |                                        |
