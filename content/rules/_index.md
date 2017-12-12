@@ -1,5 +1,6 @@
 ---
 title: Rules
+weight: 1
 ---
 
 {{% center %}}
