@@ -23,12 +23,12 @@ r.power_board.power_off()
 
 The power board has a piezo buzzer which can buzz.
 
-The `buzz` function accepts multiple parameters, depending on what you want to play. The first argument is the duration of the beep, in seconds. The later arguments are either the note you want to play, or the buzzers frequency (in Hz).
+The `buzz` function accepts multiple parameters, depending on what you want to play. The first argument is the duration of the beep, in seconds. The later arguments are either the note you want to play, or the buzzers frequency (in Hz). You have to specify which of note or frequency you're passing using a keyword argument, your code will fail otherwise.
 
 Theoretically, the piezo buzzer will buzz at any provided frequency, however humans can only hear between [20Hz and 20000Hz](https://en.wikipedia.org/wiki/Hearing_range#Humans).  
 
-{{% notice info %}}
-To help prevent possible errors, you must specify which argument you're passing. Simply calling `buzz(2, 'c')` will raise a `TypeError`
+{{% notice tip %}}
+Calling `buzz` is non-blocking. Meaning it doesn't actually wait for the piezo to stop buzzing before continuing with your code. If you want duration to wait for the buzzing to stop, add a `sleep` afterwards!
 {{% /notice %}}
 
 
@@ -38,6 +38,10 @@ r.power_board.buzz(0.5, note='d')
 
 # Buzz for 2 seconds at 400Hz
 r.power_board.buzz(2, frequency=400)
+
+# Will fail!
+r.power_board.buzz(2, 400)
+
 ```
 
 {{% notice warning %}}
