@@ -14,6 +14,7 @@ With your kit, you should have the following boards:
 
 | Part                                                     | Quantity |
 |----------------------------------------------------------|----------|
+| [Raspberry Pi](pi)                                       | 1        |
 | [Motor Board](motor-board)                               | 1        |
 | [Power Board](power-board)                               | 1        |
 | [Servo Assembly](servo-assembly) (Arduino + Servo Hat)   | 1        |
