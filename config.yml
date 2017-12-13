@@ -11,7 +11,9 @@ params:
     disableLanguageSwitchingButton: true
     disableAssetsBusting: true
     editURL: "https://github.com/sourcebots/docs/tree/master/content/"
-    ordersectionsby: "title"
+    ordersectionsby: "weight"
+
+    pythonVersion: 3.5
 
 menu:
     shortcuts:
@@ -19,7 +21,7 @@ menu:
           url: https://github.com/sourcebots/docs
 
         - name: "<i class='fa fa-globe'></i> Website"
-          url: https://sourcebots.github.io/website
+          url: http://sourcebots.co.uk/
 
 enableGitInfo: true
 enableRobotsTXT: true
