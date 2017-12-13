@@ -5,7 +5,7 @@ title: Vision
 The main way your robot will sense the outside world is through the webcam.
 
 {{% notice info %}}
-Throught this page it is assumed you have a `Robot` object deined as `r`
+Throughout this page it is assumed you have a `Robot` object defined as `r`
 {{% /notice %}}
 
 ## Using the camera to search for markers
@@ -33,7 +33,7 @@ The markers that are contained within the array have some useful properties:
   - `is_token_marker()` - returns whether or not a marker is of type TOKEN
   - `id()` - returns the id of the marker
   - `pixel_centre()` - returns a **tuple** containing the pixel coordinates of the centre of the marker.
-  - `polar()` - returns a PolarCoord object containing the position of the marker in the polar co-odrinate system.
-  - `cartersian()` - returns a CartCoord object containing the position of the marker in the cartesian co-odrinate system.
+  - `polar()` - returns a PolarCoord object containing the position of the marker in the Polar coodrinate system.
+  - `cartersian()` - returns a CartCoord object containing the position of the marker in the Cartesian coodrinate system.
 
 ## Cartesian and Polar Co-ordinate Systems
