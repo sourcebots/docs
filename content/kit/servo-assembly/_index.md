@@ -6,9 +6,6 @@ The servo assembly allows you to control GPIO pins, Analogue pins, and servos. I
 
 ![Servo Assembly](/img/kit/servo-assembly.jpg?width=30pc)
 
-## Power
-The Arduino itself is powered entirely over USB. If you wish to use servos, you'll need to supply an additional 5V through the connector on the hat from the [power board](/kit/power-board).
-
 ## The servo hat
 The servo hat enables you to control up to 16 servos. It's attached to the top of the arduino, passing through its pins.
 
