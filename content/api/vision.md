@@ -2,7 +2,7 @@
 title: Vision
 ---
 
-The main way your robot will sense the outside world is through the webcam which is used to read the AprilTag markers.
+The main way your robot will sense the outside world is through the webcam.
 
 {{% notice info %}}
 Throught this page it is assumed you have a `Robot` object deined as `r`
@@ -10,3 +10,30 @@ Throught this page it is assumed you have a `Robot` object deined as `r`
 
 ## Using the camera to search for markers
 If you have a webcam connected, you can use `r.camera.see()` to take a picture. The software will process the image and return any markers it sees into an array sorted by distance.
+```python
+markers = r.camera.see()
+```
+If you consider it necessary you can assign the camera object to a variable just like Robot
+
+```python
+camera = r.camera
+```
+
+You can then iterate over the `markers` array just as you would any other list.
+```python
+for marker in markers:
+  # Do robot stuff
+```
+
+## Marker properties
+The markers that are contained within the array have some useful properties:
+
+  - `distance_meters()` - returns the distance from the camera to the marker in **meters**.
+  - `is_wall_marker()` - returns whether or not a marker is of type WALL
+  - `is_token_marker()` - returns whether or not a marker is of type TOKEN
+  - `id()` - returns the id of the marker
+  - `pixel_centre()` - returns a **tuple** containing the pixel coordinates of the centre of the marker.
+  - `polar()` - returns a PolarCoord object containing the position of the marker in the polar co-odrinate system.
+  - `cartersian()` - returns a CartCoord object containing the position of the marker in the cartesian co-odrinate system.
+
+## Cartesian and Polar Co-ordinate Systems
