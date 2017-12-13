@@ -9,6 +9,9 @@ The servo assembly allows you to control GPIO pins, Analogue pins, and servos. I
 ## The servo hat
 The servo hat enables you to control up to 16 servos. It's attached to the top of the arduino, passing through its pins.
 
+## The reset button
+The reset button allows you to instantly reboot the arduino in case it isn't working. This is not a guaranteed fix, however may solve the problem.
+
 
 ## Designs
 The board diagrams for both the Arduino and hat are below, as long as the custom firmware on the Arduino. You do not need this information to use the board but it may be of interest to some people.
