@@ -21,5 +21,5 @@ r.power_board.power_on()
 ```
 
 {{% notice warning %}}
-Because the power board is powered through these power outputs, whilst the power is off, you won't be able to control your motors. This will register as a missing board and your code will break if you try and control them.
+Because the motor board is powered through these power outputs, whilst the power is off, you won't be able to control your motors. This will register as a missing board and your code will break if you try and control them.
 {{% /notice %}}
