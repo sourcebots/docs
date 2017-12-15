@@ -3,11 +3,9 @@ title: Homepage
 ---
 
 # SourceBots Robotics Documentation
-
-
 This is the documentation showing how to use the kit and the robots Python API.
 
-There are a number of sections in the documentation, offering help for the IDE, the kit and programming. Under the tutorials section, a number of these things are combined to help you understand what you can, or need, to do.
+There are a number of sections in the documentation, offering help for the kit and programming. Under the tutorials section, a number of these things are combined to help you understand what you can, or need, to do.
 
 Within this documentation, you will come across a number of boxes like this:
 
