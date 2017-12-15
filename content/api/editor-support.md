@@ -18,7 +18,7 @@ And on windows:
 py -m pip install git+https://github.com/sourcebots/robot-api
 ```
 
-If you're doing this on a shared computer, such as those found in your colleges, add `--user` to the end:
+If you're doing this on a shared computer, such as those you may find in your colleges, add `--user` to the end:
 
 ```bash
 pip install git+https://github.com/sourcebots/robot-api --user
