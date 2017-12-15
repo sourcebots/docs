@@ -16,7 +16,7 @@ If you consider it necessary you can assign the camera object to a variable just
 ```python
 camera = r.camera
 ```
-The software will process the image and return any markers it sees into an array sorted by distance.
+The software will process the image and return any markers it sees into an array sorted by distance where the first element of the array is the closest marker to the camera.
 
 ```python
 markers = r.camera.see()
@@ -67,6 +67,6 @@ The `PolarCoord` object has the following properties:
 ## Marker IDs
 Each marker used in the game has a unique ID that corresponds to the marker type. You can use this within your code to determine what sort of marker you're looking at and make decisions based off of it.
 
-There are two main marker types in the game WALL and TOKEN:
-  - WALL markers are ones that are on the walls of the arena and have marker IDs from 0 - 27
-  - TOKEN markers are ones that are the on the boxes and have marker IDs from 44 - 83
+There are two main marker types in the game `WALL` and `TOKEN`:
+  - `WALL` markers are ones that are on the walls of the arena and have marker IDs from 0 - 27
+  - `TOKEN` markers are ones that are the on the boxes and have marker IDs from 44 - 83
