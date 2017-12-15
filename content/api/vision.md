@@ -2,8 +2,6 @@
 title: Vision
 ---
 
-Your robot uses its webcam to see markers.
-
 {{% notice info %}}
 Throughout this page it is assumed you have a `Robot` object defined as `r`
 {{% /notice %}}
@@ -56,7 +54,7 @@ The `CartCoord` object has the following properties:
   - `z` - returns the z coordinate of the marker in Cartesian space, it is defined as the distance from the camera to the marker.
 
 {{% notice info %}}
-(0,0,1) would be exactly 1 metre in front of the marker, with the camera looking at the centre.
+For example, if x, y and z were 0, 0 and 1 respectively. This would correspond to a marker being exactly 1 metre in front of the camera, looking at the centre.
 {{% /notice %}}
   
 The `PolarCoord` object has the following properties:
