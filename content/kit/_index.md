@@ -38,7 +38,7 @@ In addition to the boards, your kit will also contain:
 | Blue Wire                    | 3m       |                             |                                        |
 | Small CamCon                 | 2        | 5mm                         |                                        |
 | CamCon                       | 2        | 7.5mm                       |                                        |
-| Micro CamCon                 | 1        | 3mm                         | 1 additionally found on Pi power cable |
+| Micro CamCon                 | 3        | 3mm                         | 1 additionally found on Pi power cable |
 | Webcam                       | 1        |                             |                                        |
 | Battery Bag                  | 1        |                             |                                        |
 | Pi Power Cable               | 1        | Micro USB to Micro CamCon   |                                        |
