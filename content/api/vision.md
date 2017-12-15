@@ -2,6 +2,8 @@
 title: Vision
 ---
 
+Your webcam is the main way your robot will see markers.
+
 {{% notice info %}}
 Throughout this page it is assumed you have a `Robot` object defined as `r`
 {{% /notice %}}
@@ -47,11 +49,11 @@ The markers' position can be represented using both the Polar and Cartesian coor
 All distances in this section are measured in meters.
 {{% /notice %}}
 
-The `CartCoord` object has the following properties:
+The `CartCoord` object has the following properties, where each coordinate is in Cartesian space:
 
-  - `x` - returns the x coordinate of the marker in Cartesian space, x is defined as being positive in the right direction.
-  - `y` - returns the y coordinate of the marker in Cartesian space, y is defined as being positive in the up direction.
-  - `z` - returns the z coordinate of the marker in Cartesian space, it is defined as the distance from the camera to the marker.
+  - `x` - returns the x coordinate, defined as being positive in the right direction.
+  - `y` - returns the y coordinate, defined as being positive in the up direction.
+  - `z` - returns the z coordinate, defined as the distance from the camera to the marker.
 
 {{% notice info %}}
 For example, if x, y and z were 0, 0 and 1 respectively. This would correspond to a marker being exactly 1 metre in front of the camera, looking at the centre.
@@ -65,6 +67,10 @@ The `PolarCoord` object has the following properties:
 ## Marker IDs
 Each marker used in the game has a unique ID that corresponds to the marker type. You can use this within your code to determine what sort of marker you're looking at and make decisions based off of it.
 
-There are two main marker types in the game `WALL` and `TOKEN`:
-  - `WALL` markers are ones that are on the walls of the arena and have marker IDs from 0 - 27
-  - `TOKEN` markers are ones that are the on the boxes and have marker IDs from 44 - 83
+There are three main marker types in the game `WALL`, `TOKEN` and `TOKEN_ZONE_x` where `x` is the starting zone in the arena:
+  - `WALL`- Markers that are on the walls with IDs from 0 - 27
+  - `TOKEN`- Markers that are on the tokens (boxes) with IDs from 44 - 63
+  - `TOKEN_ZONE_0` - Markers in the 0th zone with IDs from 44 - 48
+  - `TOKEN_ZONE_1` - Markers in the 1st zone with IDs from 49 - 53
+  - `TOKEN_ZONE_2` - Markers in the 2nd zone with IDs from 54 - 58
+  - `TOKEN_ZONE_3` - Markers in the 3rd zone with IDs from 59 - 63
