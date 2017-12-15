@@ -26,6 +26,8 @@ square-ish
 83x99x24mm
 4mm
 2.2A.
+numpy
+scipy
 piezo
 20Hz
 20000Hz
