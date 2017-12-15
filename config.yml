@@ -32,3 +32,8 @@ pygmentsCodeFencesGuessSyntax: true
 disableKinds:
     - taxonomy
     - taxonomyTerm
+
+outputs:
+  home:
+    - html
+    - json
