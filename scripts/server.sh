@@ -4,4 +4,4 @@ set -e
 
 bash ./scripts/build.sh
 
-hugo server --noHTTPCache
+hugo server --noHTTPCache --disableFastRender
