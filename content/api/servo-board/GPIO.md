@@ -34,7 +34,7 @@ Set the pin to low output. Equivalent to `PinValue.LOW`
 ```python
 from robot import PinMode
 
-r.servo_board.gpio[3].mode = PinMode.INPUT_PULLUP
+r.servo_board.gpios[3].mode = PinMode.INPUT_PULLUP
 ```
 
 ## Reading a pin value
@@ -44,7 +44,7 @@ To read the value of a pin, simply call `read()`. This will return either `PinVa
 ```python
 from robot import PinMode, PinValue
 
-r.servo_board.gpio[3].read() == PinValue.HIGH
+r.servo_board.gpios[3].read() == PinValue.HIGH
 >>> True
 ```
 
