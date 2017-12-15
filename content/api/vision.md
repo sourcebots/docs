@@ -62,4 +62,4 @@ The `CartCoord` object has the following properties:
 The `PolarCoord` object has the following properties:
  - `distance_meters` - returns the distance from the camera to the marker.
  - `rot_x_rad` and `rot_x_deg` - returns the angle of rotation in radians/degrees about the x axis. The x axis runs horizontally in front of the camera. A positive angle would be one where the marker is leaning toward the camera.
- - `rot_y_rad` and `rot_x_deg` - returns the angle of rotation in radians/degrees about the y axis. The y axsis runs vertically in front of the camera. A positive angle would be one where the marker is rotated clockwise about the y axis looking from the top of the marker.
+ - `rot_y_rad` and `rot_x_deg` - returns the angle of rotation in radians/degrees about the y axis. The y axis runs vertically in front of the camera. A positive angle would be one where the marker is rotated clockwise about the y axis looking from the top of the marker.
