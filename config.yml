@@ -11,7 +11,9 @@ params:
     disableLanguageSwitchingButton: true
     disableAssetsBusting: true
     editURL: "https://github.com/sourcebots/docs/tree/master/content/"
-    ordersectionsby: "title"
+    ordersectionsby: "weight"
+
+    pythonVersion: 3.5
 
 menu:
     shortcuts:
@@ -30,3 +32,8 @@ pygmentsCodeFencesGuessSyntax: true
 disableKinds:
     - taxonomy
     - taxonomyTerm
+
+outputs:
+  home:
+    - html
+    - json
