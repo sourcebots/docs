@@ -16,7 +16,3 @@ Any editor will do, so it's recommended to use one you're already familiar with.
 - [Sublime Text 3](https://sublimetext.com) (License recommended for continued use)
 - [Notepad++](https://notepad-plus-plus.org/) (Windows only)
 - [IDLE](https://wiki.python.org/moin/IDLE) (Pre-installed with Python on Windows!)
-
-{{% notice info %}}
-Visual Studio and Visual Studio Code are different programs, make sure you have the correct one !!!
-{{% /notice %}}
