@@ -3,6 +3,8 @@ title: Python API
 weight: 1
 ---
 
+Programming your robot is done in [Python](https://www.python.org/), specifically version {{% python_version %}}. You can learn more about Python from their [docs](https://docs.python.org/{{% python_version %}}/), and our [whirlwind tour](/tutorials/python-whirlwind-tour).
+
 ## Setup
 The following two lines are required to setup the robot.
 

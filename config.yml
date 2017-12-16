@@ -13,6 +13,8 @@ params:
     editURL: "https://github.com/sourcebots/docs/tree/master/content/"
     ordersectionsby: "weight"
 
+    pythonVersion: 3.5
+
 menu:
     shortcuts:
         - name: "<i class='fa fa-github'></i> Github Repo"
@@ -30,3 +32,8 @@ pygmentsCodeFencesGuessSyntax: true
 disableKinds:
     - taxonomy
     - taxonomyTerm
+
+outputs:
+  home:
+    - html
+    - json

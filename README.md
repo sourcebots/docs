@@ -5,7 +5,7 @@
 URL: http://docs.sourcebots.co.uk
 
 ## Requirements
-- [Hugo](https://gohugo.io) (>=0.29)
+- [Hugo](https://gohugo.io) (>=0.30)
 - [NodeJS](https://nodejs.org/) (>=6)
 
 ## Local Setup
