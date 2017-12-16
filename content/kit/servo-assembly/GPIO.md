@@ -10,5 +10,5 @@ The pin layout of the servo assembly is the same as an Arduino uno.
 
 
 {{% notice note %}}
-The servo hat communicates using 2 of the analogue output pins (4 and 5), and so these are inaccessible.
+The servo hat communicates using 2 of the analogue input pins (4 and 5), and so these are inaccessible.
 {{% /notice %}}
