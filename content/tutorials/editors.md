@@ -11,6 +11,9 @@ To write code for the kit, you don't need anything specific in your editor, you 
 Any editor will do, so it's recommended to use one you're already familiar with. If you don't already have a preference, here's some great ones, available on Windows, macOS, and Linux!
 
 - [Visual Studio Code](https://code.visualstudio.com)
+-{{% notice info %}}
+- Visual Studio and Visual Studio Code are different programs, make sure you have the correct one !!!
+-{{% /notice %}}
 - [PyCharm](https://jetbrains.com/pycharm/)
 - [Atom](https://atom.io/)
 - [Sublime Text 3](https://sublimetext.com) (License recommended for continued use)
