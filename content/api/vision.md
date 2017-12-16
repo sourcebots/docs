@@ -33,8 +33,8 @@ The markers that are contained within the array have some useful properties:
 
   - `is_wall_marker` - returns whether or not the marker is a wall marker.
   - `is_token_marker` - returns whether or not the marker is a token marker.
-  - `id` - returns the id of the marker
-  - `pixel_centre` - returns a [tuple](https://www.tutorialspoint.com/python/python_tuples.htm) containing the pixel coordinates of the centre of the marker.
+  - `id` - returns the id of the marker.
+  - `pixel_centre` - returns the pixel coordinates of the centre of the marker.
   - `polar` - returns a `PolarCoord` object containing the position of the marker in the Polar coordinate system.
   - `cartesian` - returns a `CartCoord` object containing the position of the marker in the Cartesian coordinate system.
 
