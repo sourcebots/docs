@@ -53,7 +53,7 @@ Make sure to read all these **before** you start assembly
 8. Connect the Arduino Servo Shield to the Power Board by screwing the green connector on the top and the small (3.81mm) camcon provided onto the opposite ends of a pair of wires and plugging the camcon into the second of the 5V power rail sockets on the Power Board.
 9. Connect the USB Webcam to the Pi via any one of the remaining USB sockets on the Pi or connected USB hub.
 10. To connect the motors, first screw wires connected to their pins into one of the medium-sized (5mm) camcons and plug these into either of the two appropriate sockets on a Motor Board.
-11. At this point, check that everything is connected up correctly and ask someone in a purple Smallpeice T-shirt to double-check then we will give you your battery. You don’t want the battery to blow up your kit!
+11. At this point, check that everything is connected up correctly and ask someone in a purple Smallpeice T-shirt to double-check. You don’t want the battery to blow up your kit!
 12. Connect the Power Board to one of the blue LiPo batteries by plugging the yellow connector on the cable connected to the Power Board into its counterpart on the battery. 
 13. If there is not one plugged in already, a loop of wire should be connected to the socket beneath the On/Off button. Check that the Power Board works by pressing the On/Off button and checking that the LEDs on the board come on green. Ensure that the kit is switched off again and the battery unplugged before continuing assembly.
 
