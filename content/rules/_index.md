@@ -3,11 +3,6 @@ title: Rules
 weight: 1
 ---
 
-{{% center %}}
-## The rules for SourceBots 2018 will be released at a later date. Stand by!
-{{% /center %}}
+You can find the rules for SourceBots 2018 below
 
-# 16th December 2017 at 13:00
-
-![Logo](/img/logo.svg)
-
+# [Download the rules!](/rules.pdf)
