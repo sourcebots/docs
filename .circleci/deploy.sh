@@ -5,7 +5,7 @@ if [ "${CIRCLE_BRANCH}" != "master" ]; then
     exit 0
 fi
 
-set -ex
+set -e
 
 DEPLOY_DIR=deploy
 
