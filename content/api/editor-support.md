@@ -7,7 +7,7 @@ Installing our code locally will allow your editor to extract information from o
 Installing these definitions is optional, however will be incredibly useful if your editor supports this. All editors in our [recommended list](/tutorials/editors/) besides IDLE will support it.
 
 ## Installation
-Installing our API, the code you interact with, can be installed using `pip`, Python's built-in package manager. `pip` should be installed on your machine, if it's not, you'll need to look up how to install it. See [here](https://stackoverflow.com/a/12476379) for installation on windows.
+Installing our API, the code you interact with, can be installed using `pip`, Python's built-in package manager. `pip` should be installed on your machine, if it's not, you'll need to look up how to install it. See [here](https://stackoverflow.com/a/12476379) for troubleshooting on Windows.
 
 ```bash
 pip install git+https://github.com/sourcebots/robot-api
