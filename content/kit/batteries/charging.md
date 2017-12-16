@@ -49,5 +49,5 @@ This process is also the same if you want to stop charging part-way through.
 
 ### Troubleshooting
 
-* The charger displays a mode other than "LiPo charge" or "LiPo balance". -> Press the stop button until you see "PROGRAM SELECT LiPo BATT" then press start. you can then press the `Inc./Dec.` until it shows the "LiPo balance" mode.
+* The charger displays a mode other than "LiPo charge" or "LiPo balance". -> Press the stop button repeatedly until you see "PROGRAM SELECT LiPo BATT" then press start. You can then press the `Inc./Dec.` until it shows the "LiPo balance" mode.
 * The charger displays an error when charging. -> Go through the charging setup process again, disconnecting and reconnecting the battery. If the problem persists disconnect the battery and charger and contact us.
