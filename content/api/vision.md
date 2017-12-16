@@ -2,10 +2,10 @@
 title: Vision
 ---
 
-Your webcam is the main way your robot will see markers.
+Your webcam is how your robot will see markers.
 
 {{% notice info %}}
-Throughout this page it is assumed you have a `Robot` object defined as `r`
+Throughout this page it is assumed you have a `Robot` object defined as `r`.
 {{% /notice %}}
 
 ## Using the camera to search for markers
