@@ -4,10 +4,6 @@ title: Vision
 
 Your webcam is how your robot will see markers.
 
-{{% notice info %}}
-Throughout this page it is assumed you have a `Robot` object defined as `r`.
-{{% /notice %}}
-
 ## Using the camera to search for markers
 If you have a webcam connected, you can use `r.camera.see()` to take a picture. 
 
