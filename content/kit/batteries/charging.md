@@ -11,7 +11,7 @@ This list must be followed carefully each time a battery is connected to the cha
 2. Connect the charging lead from the charger to the battery. Ensure you plug the lead into the charger first and the battery second to avoid risk of shorting the battery.
 3. Connect the monitoring lead from the battery to the charger.
 4. Place the battery in the charging bag.
-5. Configure the charger using the menu system as follows. 
+5. Configure the charger using the menu system as follows.
 
 ### Starting Charging
 
@@ -47,3 +47,7 @@ The charger will beep when the battery is fully charged. You must then:
 This process is also the same if you want to stop charging part-way through.
 {{% /notice %}}
 
+### Troubleshooting
+
+* The charger displays a mode other than "LiPo charge" or "LiPo balance". -> Press the stop button until you see "PROGRAM SELECT LiPo BATT" then press start. you can then press the `Inc./Dec.` until it shows the "LiPo balance" mode.
+* The charger displays an error when charging. -> Go through the charging setup process again, disconnecting and reconnecting the battery. If the problem persists disconnect the battery and charger and contact us.
