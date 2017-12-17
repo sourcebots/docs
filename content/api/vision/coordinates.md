@@ -27,7 +27,7 @@ The Cartesian position is represented as 3 coordinates, `x`, `y` and `z`. These 
 - `y` - the y coordinate, positive in the up direction.
 - `z` - the z coordinate, defined as the distance forwards in front of the camera.
 
-For example, if `x`, `y` and `z` were `0`, `0` and `1` respectively, the marker would be 1 metre directly in front of the camera, looking at the centre.
+For example, if `x`, `y` and `z` were `0`, `0` and `1` respectively, the marker would be 1 metre directly in front of the camera.
 
 {{% notice warning %}}
 `z` is not the same as the [polar](#polar-coordinates) `distance_metres`. For example, if `x`, `y` and `z` were `1`, `0` and `1` respectively, the marker would be 1 metre in front, and 1 metre to the right of the camera, and so would be `1.412` metres from the camera.
