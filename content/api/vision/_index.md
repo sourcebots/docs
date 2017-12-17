@@ -4,24 +4,11 @@ title: Vision
 
 Your webcam is how your robot will see markers.
 
-## Using the camera to search for markers
-If you have a webcam connected, you can use `r.camera.see()` to take a picture. 
-
-If you consider it necessary you can assign the camera object to a variable just like `Robot`:
-
-```python
-camera = r.camera
-```
-The software will process the image and return any markers it sees into an array sorted by distance where the first element of the array is the closest marker to the camera.
+## Searching for markers
+Assuming you have a webcam connected, you can use `r.camera.see()` to take a picture. The software will process the picture and returns a list of the markers it sees, sorted by distance, where the first element of the array is the closest marker to the camera.
 
 ```python
 markers = r.camera.see()
-```
-
-You can then iterate over the `markers` just as you would any other list:
-```python
-for marker in markers:
-  # Do robot stuff
 ```
 
 ## Marker properties
