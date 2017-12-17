@@ -7,7 +7,7 @@ Each marker used in the game has an ID that corresponds to the marker type. You 
 There are some useful constants which can be imported to do this. For example:
 
 ```python
-from robot import WALL
+from robot import WALL, TOKEN_ZONE_1, COLUMN_N_FACING_N
 ```
 
 To check your marker matches one of these types, you can use the `in` operator:
@@ -15,14 +15,23 @@ To check your marker matches one of these types, you can use the `in` operator:
 ```python
 marker = r.camera.see()[0]  # Only the closest marker
 
-marker.id in WALL, TOKEN_ZONE_1, COLUMN_N_FACING_N
+marker.id in WALL
 >>> True 
 ```
 
 To see the full range of constants, and the exact IDs they match up to, have a look at [the source](https://github.com/sourcebots/robot-api/blob/master/robot/game_specific.py).
 
 ### _Wall_ Markers
-These markers are the ones positioned around the arena, there are 28 in total. Each token has a unique ID, and its location is documented in [the rules](/rules), and available in the `WALL` constant. This may be useful to calculate your position in the arena.
+These markers are the ones positioned around the arena, there are 28 in total. Each token has a unique ID, and its location is documented in [the rules](/rules). This may be useful to calculate your position in the arena.
+
+```python
+marker.id in WALL  # Is this marker a wall marker
+```
+
+{{% notice tip %}}
+It's recommended to use `marker.is_wall_marker()` instead of `marker.id in WALL`
+{{% /notice %}}
+
 
 ### _Column_ Markers
 These markers are those positioned on the 4 faces of the 4 columns in the arena. Each face has a unique, documented ID, and so could be used in addition to [_Wall_ Markers](#wall-markers) to calculate your position, and make sure you don't run into them!
@@ -39,6 +48,8 @@ Columns are referenced like the points of a compass (_N_, _E_, _S_, _W_), with t
 {{% /notice %}}
 
 ```python
+marker.id in COLUMN  # Is the marker a column marker?
+ 
 marker.id in COLUMN_N  # Is the marker on the North column? 
 
 marker.id in COLUMN_FACING_E  # Is the marker facing East on its column?
@@ -62,4 +73,8 @@ marker.id in TOKEN_ZONE_0  # Does this token belong to the team in zone 0?
 
 {{% notice info %}}
 Each face of the token has the same marker on. However each token has different markers.
+{{% /notice %}}
+
+{{% notice tip %}}
+It's recommended to use `marker.is_token_marker()` instead of `marker.id in TOKEN`
 {{% /notice %}}
