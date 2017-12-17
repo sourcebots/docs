@@ -10,3 +10,17 @@ Assuming you have a webcam connected, you can use `r.camera.see()` to take a pic
 ```python
 markers = r.camera.see()
 ```
+
+## Marker properties
+The markers in the list have some useful properties:
+
+- `is_wall_marker()` - returns whether or not the marker is a [wall marker](marker-ids/#wall-markers).
+- `is_token_marker()` - returns whether or not the marker is a [token marker](marker-ids/#token-markers).
+- `id` - returns the [id](marker-ids) of the marker.
+- `pixel_centre` - returns the pixel coordinates of the centre of the marker.
+- `polar` - returns details of the position of the marker in the [Polar](coordinates/#polar-coordinates) coordinate system.
+- `cartesian` - returns details of the position of the marker in the [Cartesian](coordinates/#cartesian-coordinates) coordinate system.
+
+{{% notice tip %}}
+The markers' position can be represented using both the [Polar](coordinates/#polar-coordinates) and [Cartesian](coordinates/#cartesian-coordinates) coordinate system.
+{{% /notice %}}
