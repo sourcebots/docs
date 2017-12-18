@@ -12,13 +12,11 @@ The webcam has a manual focus ring around the lens. During standard operation, t
 It's recommended to manually focus the camera using a separate computer, and then use a __non permanent__ method (hot glue is great for this) to prevent it moving.
 
 {{% notice warning %}}
-There's no guarantee the webcam is correctly focused in your kit!
+You will likely need to manually focus the webcam before you first use it!
 {{% /notice %}}
 
 ## Mounting the camera
-The camera can be mounted in many different ways, from cable ties to duct tape. We recommend using the 1/4" screw mount on the base of the camera, commonly used for tripods. This has the advantage of being far sturdier than other methods and less prone to moving, whilst reducing any risk of damaging the camera. 
+The camera can be mounted in many different ways, from cable ties to duct tape. We recommend using the 1/4" screw mount on the base of the camera, commonly used for tripods. 
 
 ## The LEDs
-The front of the webcam has 6 LEDs. These LEDs are fairly weak, however may increase reliability of image processing in close, dimly lit environments.
-
-The LEDs are controlled using a dial inline on the USB cable. Although it's a dial, the LEDs only have an _on_ and _off_ state, no granular control. This also means it's not possible to control the LEDs from the [vision API](/api/vision). 
+The front of the webcam has 6 LEDs. The LEDs are controlled only using the dial inline on the USB cable. Although it's a dial, the LEDs only have an _on_ and _off_ state, no granular control. 
