@@ -2,7 +2,7 @@
 title: Servo Assembly
 ---
 
-The servo assembly allows you to control GPIO pins, Analogue pins, and servos. It's comprised of [an arduino](https://store.arduino.cc/arduino-uno-rev3), and a [servo hat](https://learn.adafruit.com/16-channel-pwm-servo-driver/overview).
+The servo assembly allows you to control GPIO pins, Analogue pins, and servos. It's comprised of [an arduino](https://store.arduino.cc/arduino-uno-rev3), and a [servo hat](https://learn.adafruit.com/adafruit-16-channel-pwm-slash-servo-shield).
 
 ![Servo Assembly](/img/kit/servo-assembly.jpg?width=30pc)
 
