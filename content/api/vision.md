@@ -75,9 +75,10 @@ There are three main marker types in the game `WALL`, `TOKEN` and `TOKEN_ZONE_x`
 
 ## Marker PDFs
 
-There are PDFs of the [Large markers][large-marker-pdf], which need to be printed on A3
+You can download PDF files of all markers:
 
-There are PDFs of the [Small markers][small-marker-pdf], which need to be printed on A4
+- [Large markers][large-marker-pdf], (should be printed on A3)
+- [Small markers][small-marker-pdf], (should be printed on A4)
 
 
 [large-marker-pdf]: /docs/large-tags.pdf
