@@ -9,7 +9,7 @@ To see the outside world, a webcam is used to capture images for them to be proc
 ## Focus
 The webcam has a manual focus ring around the lens. During standard operation, this lens may be knocked, and move the image out of focus, which can seriously reduce the accuracy of the [vision](/api/vision/). 
 
-It's recommended to manually focus the camera using a separate computer, and then use a __non permanent__ method (hot glue is great for this) to prevent it moving.
+It's recommended to manually focus the camera using a separate computer, and then use a __non permanent__ method (a small drop of hot glue is great for this) to prevent it moving.
 
 {{% notice warning %}}
 You will likely need to manually focus the webcam before you first use it
