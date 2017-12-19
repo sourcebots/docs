@@ -72,3 +72,13 @@ There are three main marker types in the game `WALL`, `TOKEN` and `TOKEN_ZONE_x`
   - `TOKEN_ZONE_1` - Markers in the 1st zone with IDs from 49 - 53
   - `TOKEN_ZONE_2` - Markers in the 2nd zone with IDs from 54 - 58
   - `TOKEN_ZONE_3` - Markers in the 3rd zone with IDs from 59 - 63
+
+## Marker PDFs
+
+There are PDFs of the [Large markers][large-marker-pdf], which need to be printed on A3
+
+There are PDFs of the [Small markers][small-marker-pdf], which need to be printed on A4
+
+
+[large-marker-pdf]: /docs/large-tags.pdf
+[small-marker-pdf]: /docs/small-tags.pdf
