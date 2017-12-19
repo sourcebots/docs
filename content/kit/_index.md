@@ -28,17 +28,17 @@ In addition to the boards, your kit will also contain:
 
 | Part                         | Quantity | Specification               | Notes                                  |
 |------------------------------|----------|-----------------------------|----------------------------------------|
+| Battery Bag                  | 1        |                             |                                        |
 | Battery Charger              | 1        | iMAX B6                     |                                        |
 | Battery Charger Power Supply | 1        | 12V 5A                      |                                        |
 | Battery                      | 1        | 11.1V 2.2Ah Lithium Polymer |                                        |
+| Webcam                       | 1        | TeckNet C016                |                                        |
 | USB Hub                      | 1        |                             |                                        |
 | Micro USB Cable              | 2        |                             |                                        |
 | USB B Cable                  | 1        |                             |                                        |
-| Small CamCon                 | 2        | 5mm                         |                                        |
 | CamCon                       | 2        | 7.5mm                       |                                        |
+| Small CamCon                 | 2        | 5mm                         |                                        |
 | Micro CamCon                 | 3        | 3mm                         | 1 additionally found on Pi power cable |
-| Webcam                       | 1        | TeckNet C016                |                                        |
-| Battery Bag                  | 1        |                             |                                        |
 | Pi Power Cable               | 1        | Micro USB to Micro CamCon   |                                        |
 
 ### Parts we don't mind you keeping
