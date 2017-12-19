@@ -31,7 +31,7 @@ In addition to the boards, your kit will also contain:
 | Battery Bag                  | 1        |                             |                                        |
 | Battery Charger              | 1        | iMAX B6                     |                                        |
 | Battery Charger Power Supply | 1        | 12V 5A                      |                                        |
-| Battery                      | 1        | 11.1V 2.2Ah Lithium Polymer |                                        |
+| Battery                      | 2        | 11.1V 2.2Ah Lithium Polymer |                                        |
 | Webcam                       | 1        | TeckNet C016                |                                        |
 | USB Hub                      | 1        |                             |                                        |
 | Micro USB Cable              | 2        |                             |                                        |
