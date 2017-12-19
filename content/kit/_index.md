@@ -31,16 +31,21 @@ In addition to the boards, your kit will also contain:
 | Battery Charger              | 1        | iMAX B6                     |                                        |
 | Battery Charger Power Supply | 1        | 12V 5A                      |                                        |
 | Battery                      | 1        | 11.1V 2.2Ah Lithium Polymer |                                        |
-| USB Memory Stick             | 1        | 1GB                         |                                        |
 | USB Hub                      | 1        |                             |                                        |
 | Micro USB Cable              | 2        |                             |                                        |
 | USB B Cable                  | 1        |                             |                                        |
-| Black Wire                   | 3m       |                             | Used for ground *only*                 |
-| Red Wire                     | 3m       |                             |                                        |
-| Blue Wire                    | 3m       |                             |                                        |
 | Small CamCon                 | 2        | 5mm                         |                                        |
 | CamCon                       | 2        | 7.5mm                       |                                        |
 | Micro CamCon                 | 3        | 3mm                         | 1 additionally found on Pi power cable |
-| Webcam                       | 1        |                             |                                        |
+| Webcam                       | 1        | Tecknet C016                |                                        |
 | Battery Bag                  | 1        |                             |                                        |
 | Pi Power Cable               | 1        | Micro USB to Micro CamCon   |                                        |
+
+### Parts we don't mind you keeping
+
+| Part                         | Quantity | Specification               | Notes                                  |
+|------------------------------|----------|-----------------------------|----------------------------------------|
+| Black Wire                   | 3m       |                             | Used for ground *only*                 |
+| Red Wire                     | 3m       |                             |                                        |
+| Blue Wire                    | 3m       |                             |                                        |
+| USB Memory Stick             | 2        | 1GB                         |                                        |
