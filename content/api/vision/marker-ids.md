@@ -60,13 +60,13 @@ marker.id == COLUMN_S_FACING_W  # Is the marker on the South column facing West?
 In the above examples, the points of the compass may be replaced with any others. 
 
 {{% notice note %}}
-The constants for a specific column face (eg `COLUMN_S_FACING_W`) only contain a single ID, so `==` should be used over `in`.
+The constants for a specific column face (e.g. `COLUMN_S_FACING_W`) only contain a single ID, so `==` should be used over `in`.
 {{% /notice %}}
 
 ### _Token_ Markers
 Each token has a marker on its face. These markers can be used to work out what teams token it is.
 
-There's a constant for each zone, and an additional to work out if it's a marker token you're looking at.
+Each scoring zone has a corresponding constant that matches tokens belonging to that zone. There's also another constant that matches tokens belonging to any zone.
 
 ```python
 marker.id in TOKEN  # Is the marker on a token?
