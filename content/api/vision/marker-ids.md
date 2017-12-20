@@ -54,10 +54,13 @@ marker.id in COLUMN_N  # Is the marker on the North column?
 
 marker.id in COLUMN_FACING_E  # Is the marker facing East on its column?
  
-marker.id in COLUMN_S_FACING_W  # Is the marker on the South column facing West?
+marker.id == COLUMN_S_FACING_W  # Is the marker on the South column facing West?
 ```
+
+In the above examples, the points of the compass may be replaced with any others. 
+
 {{% notice note %}}
-In the above examples, the points of the compass may be replaced with any others.
+The constants for a specific column face (eg `COLUMN_S_FACING_W`) only contain a single ID, so `==` should be used over `in`.
 {{% /notice %}}
 
 ### _Token_ Markers
