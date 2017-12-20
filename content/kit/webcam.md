@@ -12,7 +12,7 @@ The webcam has a manual focus ring around the lens. During standard operation, t
 It's recommended to manually focus the camera using a separate computer, and then use a __non permanent__ method (a small drop of hot glue is great for this) to prevent it moving.
 
 {{% notice warning %}}
-You will likely need to manually focus the webcam before you first use it
+You will likely need to manually focus the webcam before you first use it.
 {{% /notice %}}
 
 ## Mounting the camera
