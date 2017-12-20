@@ -22,5 +22,5 @@ The markers in the list have some useful properties:
 - `cartesian` - returns details of the position of the marker in the [Cartesian](coordinates/#cartesian-coordinates) coordinate system.
 
 {{% notice tip %}}
-The markers' position can be represented using both the [Polar](coordinates/#polar-coordinates) and [Cartesian](coordinates/#cartesian-coordinates) coordinate system.
+A marker's position can be represented using both the [Polar](coordinates/#polar-coordinates) and [Cartesian](coordinates/#cartesian-coordinates) coordinate systems.
 {{% /notice %}}
