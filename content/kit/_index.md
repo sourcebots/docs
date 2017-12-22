@@ -45,7 +45,7 @@ In addition to the boards, your kit will also contain:
 
 | Part                         | Quantity | Specification               | Notes                                  |
 |------------------------------|----------|-----------------------------|----------------------------------------|
-| Black Wire                   | 3m       |                             | Used for ground *only*                 |
+| Black Wire                   | 3m       |                             |                                        |
 | Red Wire                     | 3m       |                             |                                        |
 | Blue Wire                    | 3m       |                             |                                        |
-| USB Memory Stick             | 2        | 1GB                         |                                        |
+| USB Memory Stick             | 2        |                             |                                        |
