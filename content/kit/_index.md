@@ -22,7 +22,7 @@ With your kit, you should have the following boards:
 | [Power Board](power-board)                               | 1        |
 | [Servo Assembly](servo-assembly) (Arduino + Servo Hat)   | 1        |
 
-### Additional Parts
+### Other parts we want back
 
 In addition to the boards, your kit will also contain:
 
