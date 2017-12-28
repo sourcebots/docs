@@ -15,12 +15,12 @@ Besides the Pi, there are 3 main controller boards to interface with your kit.
 
 With your kit, you should have the following boards:
 
-| Part                                                     | Quantity |
-|----------------------------------------------------------|----------|
-| [Raspberry Pi](pi)                                       | 1        |
-| [Motor Board](motor-board)                               | 1        |
-| [Power Board](power-board)                               | 1        |
-| [Servo Assembly](servo-assembly) (Arduino + Servo Hat)   | 1        |
+| Part                                                        | Quantity |
+|-------------------------------------------------------------|----------|
+| [Raspberry Pi](pi)                                          | 1        |
+| [Motor Board](motor-board)                                  | 1        |
+| [Power Board](power-board)                                  | 1        |
+| [Servo Assembly](servo-assembly) (Arduino + Servo Shield)   | 1        |
 
 ### Other parts we want back
 

@@ -10,5 +10,5 @@ The pin layout of the servo assembly is the same as an Arduino uno.
 
 
 {{% notice note %}}
-The Arduino communicates with the servo hat using two of the analogue input pins (4 and 5), and with the Raspberry Pi using two of the digital IO pins (0 and 1). These four pins are therefore reserved, and using them may cause the Arduino or servo hat to behave unusually.
+The Arduino communicates with the servo shield using two of the analogue input pins (4 and 5), and with the Raspberry Pi using two of the digital IO pins (0 and 1). These four pins are therefore reserved, and using them may cause the Arduino or servo shield to behave unusually.
 {{% /notice %}}
