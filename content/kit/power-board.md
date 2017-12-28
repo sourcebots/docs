@@ -9,7 +9,7 @@ for the Brain Board.
 It also holds the internal On|Off switch for the whole robot as well as
 the Start button which is used to start your robot code running.
 
-## Board Diagram
+## Board diagram
 ![Power Board Diagram](/img/kit/power_board_v4_diagram.png)
 
 ## Connectors
@@ -45,7 +45,7 @@ If the Power Board starts beeping (and all the outputs turn off) then this means
 | ON\|OFF        | Turns the power board on, when used in conjunction with an external switch
 | START          | Starts your program (can be used instead of the robot WiFi interface)
 
-## Case Dimensions
+## Case dimensions
 The case measures 83x99x24mm. Don’t forget that the cables will stick out.
 
 ## Specification

@@ -4,7 +4,7 @@ title: Servo Assembly
 
 The Servo Assembly handles connection to multiple peripherals:
 
-- [GPIO Pins](gpio) (Digital and Analogue)
+- [GPIO pins](gpio) (digital and analogue)
 - [Servos](servos)
 - [Ultrasound](ultrasound)
 

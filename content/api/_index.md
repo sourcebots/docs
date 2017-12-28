@@ -35,7 +35,7 @@ So you can see what your robot did, what it didn't do, and any errors it raised,
 The log file is deleted on each run, so save it (Ideally off the USB) if you need to keep hold of it!
 {{% /notice %}}
 
-## Serial Number
+## Serial number
 All kit boards have a serial number, unique to that specific board, which can be read using the `serial` property:
 
 ```python

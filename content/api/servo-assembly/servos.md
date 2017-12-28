@@ -16,7 +16,7 @@ servo_one = r.servo_board.servos[1]
 Servo can be connected to any port, you don't have to start at 0!
 {{% /notice %}}
 
-## Controlling Servos
+## Controlling servos
 
 Servos can be controlled using the `position` parameter. This should be set to a value between -1 and 1.
 

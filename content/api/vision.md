@@ -31,11 +31,11 @@ The markers that are contained within the list have some useful properties:
   - `is_token_marker()` - returns whether or not the marker is a token marker.
   - `id` - returns the id of the marker.
   - `pixel_centre` - returns the pixel coordinates of the centre of the marker.
-  - `polar` - returns a `PolarCoord` object containing the position of the marker in the Polar coordinate system.
+  - `polar` - returns a `PolarCoord` object containing the position of the marker in the polar coordinate system.
   - `cartesian` - returns a `CartCoord` object containing the position of the marker in the Cartesian coordinate system.
 
-## Cartesian and Polar Coordinate Systems
-The markers' position can be represented using both the Polar and Cartesian coordinate system. The two objects `CartCoord` and `PolarCoord` hold the position information for both of these systems.
+## Cartesian and polar coordinate systems
+The markers' position can be represented using both the polar and Cartesian coordinate system. The two objects `CartCoord` and `PolarCoord` hold the position information for both of these systems.
 
 {{% notice info %}}
 [Cartesian coordinates](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) are ones that are defined using a unique set of values (typically x, y and z) to specify a point in space. [Polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system) are represented by a distance from a set point and an angle from a set direction.

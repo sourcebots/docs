@@ -4,7 +4,7 @@ title: Wiring
 
 Ensuring your robot is wired correctly is incredibly important. If wired incorrectly, your kit may not work correctly, or may be damaged.
 
-## Wire Colouring
+## Wire colouring
 Ground should be black, and nothing else should be black. This is in the interest of both safety and organisation. Being able to see where all your ground cables go allows you to easily track cable runs and diagnose electronic issues. It also greatly reduces the chance of incorrectly connecting any power cables to ground, which would short-circuit the battery and seriously damage the kit!
 
 ## Keep your solders clean

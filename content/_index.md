@@ -22,7 +22,7 @@ These are code examples provided to help you.
 From time to time, you may come across some warnings such as the following:
 
 {{% notice warning %}}
-Charge Your Batteries!
+Charge your batteries!
 {{% /notice %}}
 
 It would be advisable to take note of these, especially that one! You will also come across some blue boxes providing information, similar to the following:

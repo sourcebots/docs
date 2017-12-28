@@ -2,7 +2,7 @@
 title: Battery Charging
 ---
 
-## Charging Checklist
+## Charging checklist
 This list must be followed carefully each time a battery is connected to the charger.
 
 1. Plug in the mains adapter and plug it into the battery charger.
@@ -15,7 +15,7 @@ This list must be followed carefully each time a battery is connected to the cha
 The charging cable is cable-tied to the charger and you must not remove this cable. The charging lead is terminated with 4mm bullet connectors, which present a very high risk of shorting the battery if removed from the charger.
 {{% /notice %}}
 
-### Starting Charging
+### Starting charging
 
 {{% notice warning %}}
 Do not attempt to charge your battery if any of the cables are lose or frayed. Contact us immediately if you think there's an issue!
@@ -37,7 +37,7 @@ The screen shows the charging current, the current voltage, the time elapsed and
 The "LiPo charge" mode will also fully charge your battery and is usually somewhat faster than "LiPo balance"; however it shortens the lifespan of the battery. We highly recommend using balance mode unless you desperately need the battery to be charged sooner.
 {{% /notice %}}
 
-### Stopping Charging
+### Stopping charging
 The charger will beep when the battery is fully charged. You must then:
 
 1. Press `Stop` button. The beeping should now stop.

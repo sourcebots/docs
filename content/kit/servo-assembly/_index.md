@@ -2,15 +2,15 @@
 title: Servo Assembly
 ---
 
-The servo assembly allows you to control GPIO pins, Analogue pins, and servos. It's comprised of [an arduino](https://store.arduino.cc/arduino-uno-rev3), and a [servo shield](https://learn.adafruit.com/adafruit-16-channel-pwm-slash-servo-shield).
+The servo assembly allows you to control GPIO pins, analogue pins, and servos. It's comprised of [an Arduino](https://store.arduino.cc/arduino-uno-rev3), and a [servo shield](https://learn.adafruit.com/adafruit-16-channel-pwm-slash-servo-shield).
 
 ![Servo Assembly](/img/kit/servo-assembly.jpg?width=30pc)
 
 ## The servo shield
-The servo shield enables you to control up to 16 servos. It's attached to the top of the arduino, passing through its pins.
+The servo shield enables you to control up to 16 servos. It's attached to the top of the Arduino, passing through its pins.
 
 ## The reset button
-The reset button allows you to instantly reboot the arduino in case it isn't working. This is not a guaranteed fix, however may solve the problem.
+The reset button allows you to instantly reboot the Arduino in case it isn't working. This is not a guaranteed fix, however may solve the problem.
 
 
 ## Designs

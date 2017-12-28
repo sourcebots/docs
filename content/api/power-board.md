@@ -8,7 +8,7 @@ As there is only one power board, it is not accessed like a list like motors for
 main_board = r.power_board
 ```
 
-## Power Outputs
+## Power outputs
 The power boards 6 outputs can be turned on and off using the `power_on` and `power_off` functions respectively.
 
 {{% notice note %}}

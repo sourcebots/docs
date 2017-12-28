@@ -19,14 +19,14 @@ The aim of this tutorial is to get a motor turning with your kit. To complete th
 You'll also need these, which aren't provided with your kit:
 
 * The memory stick
-* A soldering Iron
+* A soldering iron
 * Some solder wire
 * Wire strippers
 * A small slotted/flat blade screwdriver (for the _CamCon_ screws)
 
 You should be familiar with the setup for most of the above now from the [kit assembly tutorial](/tutorials/kit-assembly/), so it's just the motor-related parts that need explaining.
 
-## Motor Specification
+## Motor specification
 There is a certain specification the motor(s) you use must meet. The criteria are as follows:
 
 * 12V motor
@@ -36,7 +36,7 @@ There is a certain specification the motor(s) you use must meet. The criteria ar
 When designing your robot you should bear in mind that while each motor board can deliver 10A on each output, all the power needs to go through the power board, which has its own [limiting per output](/kit/power-board/#specification).
 {{% /notice %}}
 
-## Connecting a Motor
+## Connecting a motor
 To plug the motor into the kit, you'll need to solder an appropriate gauge of wire to the terminals on the motor, and connect the other ends to the _CamCon_ connector. Like so:
 
 ![Motor connected to CamCon](/img/assembly/motor_and_camcon.png)
@@ -58,11 +58,11 @@ You must always use black or grey for ground (0V) connections (and only for thes
 
 You can now connect this into the power board on one end, and the motor board power connection on the other.
 
-## Some Code
+## Some code
 
 The example program we'll write will do a number of things with the motor: forwards and backwards, and different power settings, for example. Let's begin. To start off with, we'll just make a motor move forwards, then backwards, and then repeat.
 
-### Forwards & Backwards
+### Forwards & backwards
 
 Doing this is actually very easy; the only thing you need to realise is that a positive number is forwards and a negative number is backwards.
 
@@ -104,7 +104,7 @@ So, if you put the above code on your robot, you should be able to see a motor s
 If you find that the motor doesn't turn when you run the above code, check that you've got all the cables connected to the right places, in particular note that the motor board has _two_ outputs.
 {{% /notice %}}
 
-### Changing the Speed
+### Changing the speed
 
 Now we're going to modify the program to vary the speed of the motor. Our aim is to do the forwards and backwards bit (as above), but, before we loop round again, ramp the power up to 70%, then down to -70%, and then back to 0 (all in steps of 10%). Here's the code:
 
@@ -159,6 +159,6 @@ while True:
     time.sleep(1)
 ```
 
-## Next Steps
+## Next steps
 
 From here, you should be able to make your robot move about in a controlled manner. See if you can make your robot drive forwards to a given point, stop, turn around and then return to its starting point.
