@@ -13,7 +13,7 @@ The speed and direction of the two outputs are controlled independently through 
 | LED                    | Meaning                 | Initial power-up state
 |------------------------|-------------------------|------------------------------
 | Power                  | The board is powered    | On
-| M{0,1} Speed/Direction | Brightness indicates speed, colour indicates direction | Off
+| M0/M1 Speed/Direction | Brightness indicates speed, colour indicates direction | Off
 | USB Power              | The USB interface is powered | On
 | USB Data               | Data is being transferred to/from the board | Off
 
