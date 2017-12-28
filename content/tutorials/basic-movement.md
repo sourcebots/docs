@@ -6,7 +6,7 @@ The aim of this tutorial is to get a motor turning with your kit. To complete th
 
 * The [power board](/kit/power-board)
 * A [motor board](/kit/motor-board)
-* The [Pi](/kit/pi)
+* The [Raspberry Pi](/kit/pi)
 * The battery (charged, of course)
 * 2 large (7.5mm) green _CamCon_ connectors to plug the power board and motor board together
 * 2 lengths of a suitable gauge of wire for powering the motor board from the power board (one should be black/grey)
@@ -14,7 +14,7 @@ The aim of this tutorial is to get a motor turning with your kit. To complete th
 * A small (5mm) green _CamCon_ connector to plug the motor and motor board together
 * 2 lengths of a suitable thickness of wire for your motor
 * 2 Micro USB cables
-* The Pi power cable
+* The Raspberry Pi power cable
 
 You'll also need these, which aren't provided with your kit:
 

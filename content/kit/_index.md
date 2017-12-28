@@ -5,7 +5,7 @@ weight: 1
 
 ## Boards
 
-Besides the Pi, there are 3 main controller boards to interface with your kit.
+Besides the Raspberry Pi, there are 3 main controller boards to interface with your kit.
 
 | [Motor Board](motor-board) | [Power Board](power-board) | [Servo Assembly](servo-assembly) |
 |---|---|---|
@@ -38,8 +38,8 @@ In addition to the boards, your kit will also contain:
 | USB B Cable                  | 1        |                             |                                        |
 | Large CamCon                 | 2        | 7.5mm                       |                                        |
 | Medium CamCon                | 2        | 5mm                         |                                        |
-| Small CamCon                 | 3        | 3mm                         | 1 additionally found on Pi power cable |
-| Pi Power Cable               | 1        | Micro USB to Micro CamCon   |                                        |
+| Small CamCon                 | 3        | 3mm                         | 1 additionally found on Raspberry Pi power cable |
+| Raspberry Pi Power Cable     | 1        | Micro USB to Micro CamCon   |                                        |
 
 ### Parts we don't mind you keeping
 
