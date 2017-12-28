@@ -2,7 +2,7 @@
 title: Motor Board
 ---
 
-The kit can control multiple motors simultaneously. 1 Motor Board can control up to 2 motors.
+The kit can control multiple motors simultaneously. One Motor Board can control up to two motors.
 
 ## Accessing Motor Boards
 If there is only one motor board connected, you can use `r.motor_board` to interface with it.

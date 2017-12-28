@@ -24,7 +24,7 @@ Do not attempt to charge your battery if any of the cables are lose or frayed. C
 1. Press `Start/Enter` to select the "LiPo balance" charging mode.
 2. Press `Start/Enter` to edit the charging current.
 3. The current (bottom left) should start blinking. Use the `Inc./Dec.` buttons until it reads 2.2A. Press `Start/Enter` to store the value and to begin editing the battery voltage. Use the `Inc./Dec.` buttons until it reads 11.1V(3S).
-4. Hold `Start/Enter` for 3 seconds to confirm. The charger will try to detect the battery.
+4. Hold `Start/Enter` for three seconds to confirm. The charger will try to detect the battery.
 5. Once the battery has been detected, the screen will show _CONFIRM (ENTER)_. Press `Start/Enter` to start charging.
 
 {{% notice warning %}}

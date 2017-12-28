@@ -38,5 +38,5 @@ You can access the schematics and source code of the firmware on the motor board
 - [Firmware Source](https://github.com/sourcebots/motor-v4-fw)
 - [Hardware Source](https://github.com/sourcebots/motor-v4-hw)
 
-[^1]: Can be sustained for 1 second, on a single channel.
+[^1]: Can be sustained for one second, on a single channel.
 [^2]: If the board is controlled solely via the UART connection, this voltage must be supplied via the UART connector.

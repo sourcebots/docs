@@ -52,7 +52,7 @@ The `CartCoord` object has the following properties, where each coordinate is in
   - `z` - returns the z coordinate, defined as the distance from the camera to the marker.
 
 {{% notice info %}}
-For example, if x, y and z were 0, 0 and 1 respectively. This would correspond to a marker being exactly 1 metre in front of the camera, looking at the centre.
+For example, if x, y and z were 0, 0 and 1 respectively. This would correspond to a marker being exactly one metre in front of the camera, looking at the centre.
 {{% /notice %}}
 
 The `PolarCoord` object has the following properties:

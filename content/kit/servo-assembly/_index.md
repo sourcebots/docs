@@ -7,7 +7,7 @@ The servo assembly allows you to control GPIO pins, analogue pins, and servos. I
 ![Servo Assembly](/img/kit/servo-assembly.jpg?width=30pc)
 
 ## The servo shield
-The servo shield enables you to control up to 16 servos. It's attached to the top of the Arduino, passing through its pins.
+The servo shield enables you to control up to sixteen servos. It's attached to the top of the Arduino, passing through its pins.
 
 ## The reset button
 The reset button allows you to instantly reboot the Arduino in case it isn't working. This is not a guaranteed fix, however may solve the problem.

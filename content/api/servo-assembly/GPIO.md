@@ -5,7 +5,7 @@ title: GPIO
 You can use the GPIO _(General Purpose Input/Output)_ pins to read and write individual pins of the servo assembly. These can be used for anything, from microswitches to LEDs. GPIO is only available on pins 2 to 12, because pins 0 and 1 are reserved for communication with our kit.
 
 ## Pin mode
-GPIO pins support 4 different modes, allowing it to work in 4 different ways. A pin can only have 1 mode at a time, and certain pins aren't compatible with certain modes. These Pin modes are stored in an [enum](https://docs.python.org/3/library/enum.html) which needs to be imported to use.
+GPIO pins support four different modes, allowing it to work in four different ways. A pin can only have one mode at a time, and certain pins aren't compatible with certain modes. These Pin modes are stored in an [enum](https://docs.python.org/3/library/enum.html) which needs to be imported to use.
 
 ```python
 from robot import PinMode
@@ -54,7 +54,7 @@ Calling `read()` will raise an exception if the pins mode hasn't been set to an 
 
 # Analogue pins
 
-Certain sensors output analogue signals rather than digital ones, so have to be read differently. The servo assembly has 4 analogue inputs.
+Certain sensors output analogue signals rather than digital ones, so have to be read differently. The servo assembly has four analogue inputs.
 
 {{% notice info %}}
 Analogue signals can have any voltage, while digital signals can only take on one of two voltages.
