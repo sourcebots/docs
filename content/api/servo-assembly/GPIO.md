@@ -54,7 +54,7 @@ Calling `read()` will raise an exception if the pins mode hasn't been set to an 
 
 # Analogue pins
 
-Certain sensors output analogue signals rather than digital ones, so have to be read differently. The servo assembly has four analogue inputs.
+Certain sensors output analogue signals rather than digital ones, so have to be read differently. The servo assembly has six analogue inputs, of which four (analogue pins 4 and 5) are reserved for communication between the Arduino and the servo shield.
 
 {{% notice info %}}
 Analogue signals can have any voltage, while digital signals can only take on one of two voltages.

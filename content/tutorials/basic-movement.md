@@ -29,6 +29,7 @@ You should be familiar with the setup for most of the above now from the [kit as
 ## Motor specification
 There is a certain specification the motor(s) you use must meet. The criteria are as follows:
 
+* Brushed DC type
 * 12V motor
 * A stall current of less than 10A (this is the current limit for the [motor boards](/kit/motor_board)
 

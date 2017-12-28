@@ -38,7 +38,7 @@ In addition to the boards, your kit will also contain:
 | USB B Cable                  | 1        |                             |                                        |
 | Large CamCon                 | 2        | 7.5mm                       |                                        |
 | Medium CamCon                | 2        | 5mm                         |                                        |
-| Small CamCon                 | 3        | 3mm                         | 1 additionally found on Raspberry Pi power cable |
+| Small CamCon                 | 3        | 3.81mm                      | 1 additionally found on Raspberry Pi power cable |
 | Raspberry Pi Power Cable     | 1        | Micro USB to Micro CamCon   |                                        |
 
 ### Parts we don't mind you keeping

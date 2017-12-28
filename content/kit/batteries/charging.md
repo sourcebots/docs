@@ -6,7 +6,7 @@ title: Battery Charging
 This list must be followed carefully each time a battery is connected to the charger.
 
 1. Plug in the mains adapter and plug it into the battery charger.
-2. Connect the charging lead from the charger to the battery. Ensure you plug the lead into the charger first and the battery second to avoid risk of shorting the battery.
+2. Connect the battery to the charging cable that is cable-tied to the charger.
 3. Connect the monitoring lead from the battery to the charger.
 4. Place the battery in the charging bag.
 5. Configure the charger using the menu system as follows.
@@ -42,7 +42,7 @@ The charger will beep when the battery is fully charged. You must then:
 
 1. Press `Stop` button. The beeping should now stop.
 2. Unplug the charger from the mains.
-3. Unplug the battery from the charging lead, do not unplug the charging lead from the charger with the battery still connected.
+3. Unplug the battery from the charging lead.
 4. Unplug the monitoring lead from the battery to the charger.
 
 {{% notice note %}}
