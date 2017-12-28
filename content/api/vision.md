@@ -12,7 +12,7 @@ If you consider it necessary you can assign the camera object to a variable just
 ```python
 camera = r.camera
 ```
-The software will process the image and return any markers it sees into an array sorted by distance where the first element of the array is the closest marker to the camera.
+The software will process the image and return any markers it sees into a list sorted by distance where the first element of the list is the closest marker to the camera.
 
 ```python
 markers = r.camera.see()
@@ -25,7 +25,7 @@ for marker in markers:
 ```
 
 ## Marker properties
-The markers that are contained within the array have some useful properties:
+The markers that are contained within the list have some useful properties:
 
   - `is_wall_marker()` - returns whether or not the marker is a wall marker.
   - `is_token_marker()` - returns whether or not the marker is a token marker.
