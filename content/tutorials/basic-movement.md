@@ -162,4 +162,3 @@ while True:
 ## Next Steps
 
 From here, you should be able to make your robot move about in a controlled manner. See if you can make your robot drive forwards to a given point, stop, turn around and then return to its starting point.
-

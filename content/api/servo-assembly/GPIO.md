@@ -9,7 +9,7 @@ GPIO pins support 4 different modes, allowing it to work in 4 different ways. A 
 
 ```python
 from robot import PinMode
-``` 
+```
 
 {{% notice note %}}
 The input modes closely resemble those of an Arduino. More information on them can be found in [their docs](https://www.arduino.cc/en/Tutorial/DigitalPins)
@@ -66,7 +66,7 @@ To read the value of an analogue pin, call `read_analogue()` on the servo board.
 ```python
 r.servo_board.read_analogue()["a0"]
 >>> 1.569
-``` 
+```
 
 {{% notice info %}}
 The values are the voltages read on the pins, between 0 and 5.

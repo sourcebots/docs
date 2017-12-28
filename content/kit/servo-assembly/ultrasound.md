@@ -5,7 +5,7 @@ title: Ultrasound
 Ultrasound sensors are a useful way of measuring distance when objects are too close for the [Webcam](/api/webcam) to detect, or if they don't have markers. Ultrasound sensors communicate primarily over 2 pins. A signal is sent to the sensor on the _trigger_ pin, and the delay on a response on the _echo_ pin can be used to calculate the distance.
 
 {{% notice warning %}}
-Ultrasound should only be considered accurate up to around 2 metres, beyond that the signal can become distorted and produce erroneous results. 
+Ultrasound should only be considered accurate up to around 2 metres, beyond that the signal can become distorted and produce erroneous results.
 {{% /notice %}}
 
 ## Wiring up the sensor

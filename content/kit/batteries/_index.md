@@ -23,7 +23,7 @@ You must not use any batteries, chargers, bags or cables not explicitly authoris
 - If a battery has any cuts, nicks, exposed copper on wires or is bulging to the point of no longer being squishy, contact us immediately.
 
 {{% notice warning %}}
-Disobeying the above warnings greatly increases the risk of damage to your battery, which can have fatal consequences. If you have any questions or doubts, contact us immediately. 
+Disobeying the above warnings greatly increases the risk of damage to your battery, which can have fatal consequences. If you have any questions or doubts, contact us immediately.
 {{% /notice %}}
 
 ## Storing Batteries

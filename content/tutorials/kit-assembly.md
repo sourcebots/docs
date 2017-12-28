@@ -29,7 +29,7 @@ title: Connecting your kit
 - Screwdriver (2mm)
 - 2 x Motor
 
-Obtain any other needed tools/supplies yourself 
+Obtain any other needed tools/supplies yourself
 
 {{% notice info %}}
 _Camcons_ are the [green connectors](../kit-assembly.files/camcons.png) used to supply power to our kits.
@@ -61,6 +61,5 @@ Make sure to read all these **before** you start assembly
 9. Connect the USB Webcam to the Pi via any one of the remaining USB sockets on the Pi or connected USB hub.
 10. To connect the motors, first screw wires connected to their pins into one of the medium-sized (5mm) camcons and plug these into either of the two appropriate sockets on a Motor Board.
 11. At this point, check that everything is connected up correctly (it may be helpful to ask someone around you to check that all cables are connected properly).
-12. Connect the Power Board to one of the blue LiPo batteries by plugging the yellow connector on the cable connected to the Power Board into its counterpart on the battery. 
+12. Connect the Power Board to one of the blue LiPo batteries by plugging the yellow connector on the cable connected to the Power Board into its counterpart on the battery.
 13. If there is not one plugged in already, a loop of wire should be connected to the socket beneath the On/Off button. Check that the Power Board works by pressing the On/Off button and checking that the LEDs on the board come on green. Ensure that the kit is switched off again and the battery unplugged before continuing assembly.
-

@@ -5,7 +5,7 @@ title: Vision
 Your webcam is how your robot will see markers.
 
 ## Using the camera to search for markers
-If you have a webcam connected, you can use `r.camera.see()` to take a picture. 
+If you have a webcam connected, you can use `r.camera.see()` to take a picture.
 
 If you consider it necessary you can assign the camera object to a variable just like `Robot`:
 
@@ -54,7 +54,7 @@ The `CartCoord` object has the following properties, where each coordinate is in
 {{% notice info %}}
 For example, if x, y and z were 0, 0 and 1 respectively. This would correspond to a marker being exactly 1 metre in front of the camera, looking at the centre.
 {{% /notice %}}
-  
+
 The `PolarCoord` object has the following properties:
 
  - `distance_meters` - returns the distance from the camera to the marker.

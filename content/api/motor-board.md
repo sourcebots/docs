@@ -42,18 +42,18 @@ r.motor_board.m1
 
 {{% notice warning %}}
 Setting an incorrect value will raise an exception and your robot will crash.
-{{% /notice %}}  
+{{% /notice %}}
 
 ### Special Values
 
-In addition to the numeric values, there are two text constants that can be used. `robot.BRAKE` and `robot.COAST`. 
+In addition to the numeric values, there are two text constants that can be used. `robot.BRAKE` and `robot.COAST`.
 
 #### `robot.BRAKE`
 `robot.BRAKE` will stop the motors from turning, and thus stop your robot as quick as possible.
 
 {{% notice tip %}}
 `robot.BRAKE` does the same as setting the power to `0`.
-{{% /notice %}}  
+{{% /notice %}}
 
 ```python
 from robot import BRAKE
@@ -62,7 +62,7 @@ r.motor_board.m0 = BRAKE
 ```
 
 #### `robot.COAST`
-`robot.COAST` will stop applying power to the motors. This will mean they continue moving under the momentum they had before. 
+`robot.COAST` will stop applying power to the motors. This will mean they continue moving under the momentum they had before.
 
 
 ```python
@@ -73,5 +73,5 @@ r.motor_board.m1 = COAST
 
 {{% notice warning %}}
 Changing the motor speed by more than 1 in a single operation (e.g. `-1` to `0`, `1` to `-1` etc) will likely trigger the current protection and your robot will shut down with a distinct beeping noise.
-{{% /notice %}} 
+{{% /notice %}}
 
