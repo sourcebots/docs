@@ -2,8 +2,6 @@
 title: Battery Charging
 ---
 
-The charging cable is cable-tied to the charger and you must not remove this cable. The charging lead is terminated with 4mm bullet connectors, which present a very high risk of shorting the battery if removed from the charger.
-
 ## Charging Checklist
 This list must be followed carefully each time a battery is connected to the charger.
 
@@ -12,6 +10,10 @@ This list must be followed carefully each time a battery is connected to the cha
 3. Connect the monitoring lead from the battery to the charger.
 4. Place the battery in the charging bag.
 5. Configure the charger using the menu system as follows.
+
+{{% notice warning %}}
+The charging cable is cable-tied to the charger and you must not remove this cable. The charging lead is terminated with 4mm bullet connectors, which present a very high risk of shorting the battery if removed from the charger.
+{{% /notice %}}
 
 ### Starting Charging
 
