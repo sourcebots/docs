@@ -31,7 +31,7 @@ There is a certain specification that the motor(s) you use must meet. The criter
 
 * Brushed DC type
 * Rated for at least 12V
-* A stall current of less than 10A (this is the current limit for the [motor boards](/kit/motor_board)
+* A stall current of less than 10A (this is the current limit for the [motor boards](/kit/motor-board)
 
 {{% notice note %}}
 When designing your robot you should bear in mind that while each motor board can deliver 10A on each output, all the power needs to go through the power board, which has its own [limiting per output](/kit/power-board/#specification).
@@ -51,7 +51,7 @@ Now you need to connect the motor to one of your motor boards. You'll need to co
 * Your motor into the M0 socket on the motor board
 * The micro USB cable from the motor board to the USB hub
 
-This is almost ready, but the motor board also needs the power that it will be delivering to the motor. This is done by connecting together the two larger CamCon connectors, using the other two lengths of wire. Be sure that the cable connects the positive motor rail output ("+") of the power board to the positive power input of the motor board, and likewise for the ground ("-") output. See the [power board](/kit/power_board) and [motor board](/kit/motor_board) documentation to see which is which.
+This is almost ready, but the motor board also needs the power that it will be delivering to the motor. This is done by connecting together the two larger CamCon connectors, using the other two lengths of wire. Be sure that the cable connects the positive motor rail output ("+") of the power board to the positive power input of the motor board, and likewise for the ground ("-") output. See the [power board](/kit/power-board) and [motor board](/kit/motor-board) documentation to see which is which.
 
 {{% notice tip %}}
 You must always use black or grey for ground (0V) connections (and only for these), so that it's clear where these are.
@@ -96,7 +96,7 @@ while True:
 You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `r.motor_board...` lines. For a comprehensive reference to the `motor` object, see [`motor` API](/api/motor-board) page.
 But, to summarise:
 
-`r.motor_board.m0 = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](/kit/motor_board) to half speed forwards (i.e. a duty-cycle of 0.5 forwards). As you would expect, then, `-0.5` will put the this motor into reverse at half power.
+`r.motor_board.m0 = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](/kit/motor-board) to half speed forwards (i.e. a duty-cycle of 0.5 forwards). As you would expect, then, `-0.5` will put the this motor into reverse at half power.
 `r.motor_board.m0 = 0` will brake the motor and stop it.
 
 So, if you put the above code on your robot, you should be able to see a motor spin forwards, stop, spin backwards, stop, and then repeat...
