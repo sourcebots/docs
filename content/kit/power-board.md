@@ -26,12 +26,12 @@ If you intend to use only the internal On|Off switch, you must plug a CamCon int
 {{% /notice %}}
 
 ## Indicators
-|   LED           | Meaning                         | Initial power-up state
-|-----------------|---------------------------------|----------------------
-| PWR\|FLAT       | Green when powered<br />Flashing red and green when the battery is low | Green
-| 5V              | Green when 5V is being supplied | Green
-| H0–1, L0–3      | Green when the corresponding output is on [^1]<br />Red when the output's current limit is reached | Off
-| RUN\|ERROR      | Orange on power-up, or USB reset <br />Flashing green when ready to run<br /> Solid green when running or booting | Orange
+|   LED      | Meaning                                                                                                           | Initial power-up state |
+|------------|-------------------------------------------------------------------------------------------------------------------|------------------------|
+| PWR\|FLAT  | Green when powered<br />Flashing red and green when the battery is low                                            | Green                  |
+| 5V         | Green when 5V is being supplied                                                                                   | Green                  |
+| H0–1, L0–3 | Green when the corresponding output is on [^1]<br />Red when the output's current limit is reached                | Off                    |
+| RUN\|ERROR | Orange on power-up, or USB reset <br />Flashing green when ready to run<br /> Solid green when running or booting | Orange                 |
 
 [^1]: The outputs only turn on when your program runs (specifically, when the `Robot` object is created).
 
@@ -40,23 +40,23 @@ On power-up, the Power Board will emit some beeps, which are related to the vers
 If the Power Board starts beeping (and all the outputs turn off) then this means that the whole board's current limit has been triggered.
 
 ## Controls
-| Control        | Use
-|----------------|----------------------------
-| ON\|OFF        | Turns the power board on, when used in conjunction with an external switch
-| START          | Starts your program
+| Control | Use                                                                        |
+|---------|----------------------------------------------------------------------------|
+| ON\|OFF | Turns the power board on, when used in conjunction with an external switch |
+| START   | Starts your program                                                        |
 
 ## Case dimensions
 The case measures 83x99x24mm. Don’t forget that the cables will stick out.
 
 ## Specification
-|  Parameter                           |   Value   |
-|--------------------------------------|-----------|
-| Main battery fuse current            | 40A       |
-| Overall current limit[^2]            | 30A       |
-| High current outputs (H0-1)          | 20A       |
-| Low current outputs (L0-3)           | 10A       |
-| Motor rail output voltage (nominal)  | 11.1V ± 15% |
-| Total 5V output | 2A        |
+|  Parameter                          |   Value     |
+|-------------------------------------|-------------|
+| Main battery fuse current           | 40A         |
+| Overall current limit[^2]           | 30A         |
+| High current outputs (H0-1)         | 20A         |
+| Low current outputs (L0-3)          | 10A         |
+| Motor rail output voltage (nominal) | 11.1V ± 15% |
+| Total 5V output                     | 2A          |
 
 [^2]: If overall current limit is exceeded, the Power Board will turn off and start beeping.
 

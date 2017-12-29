@@ -10,12 +10,12 @@ The speed and direction of the two outputs are controlled independently through 
 ![Board Diagram](/img/kit/mcv4b_board_diagram.png)
 
 ## Indicators
-| LED                    | Meaning                 | Initial power-up state
-|------------------------|-------------------------|------------------------------
-| Power                  | The board is powered    | On
-| M0/M1 Speed/Direction | Brightness indicates speed, colour indicates direction | Off
-| USB Power              | The USB interface is powered | On
-| USB Data               | Data is being transferred to/from the board | Off
+| LED                   | Meaning                                                | Initial power-up state |
+|-----------------------|--------------------------------------------------------|------------------------|
+| Power                 | The board is powered                                   | On                     |
+| M0/M1 Speed/Direction | Brightness indicates speed, colour indicates direction | Off                    |
+| USB Power             | The USB interface is powered                           | On                     |
+| USB Data              | Data is being transferred to/from the board            | Off                    |
 
 ## Case dimensions
 The case measures 70x84x20mm. Don’t forget that the cables will stick out.
