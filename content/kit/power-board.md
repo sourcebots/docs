@@ -7,7 +7,7 @@ six individual general-purpose 12V power outputs along with a separate power con
 for the Raspberry Pi and servos.
 
 It also holds the internal On|Off switch for the whole robot as well as
-the Start button which is used to start your robot code running.
+the Start button which is used to start your robot code.
 
 ## Board diagram
 ![Power Board Diagram](/img/kit/power_board_v4_diagram.png)
@@ -22,7 +22,7 @@ There is also a Micro USB B connector which should be used to connect the Raspbe
 Finally, there are connectors for external Start and On|Off switches. You may connect any latching switch for the On|Off switch, or a push-to-make button for the Start button.
 
 {{% notice note %}}
-If you intend to use only the internal On|Off switch, you must connect a CamCon to the On|Off connector with a wire connecting one pin to the other pin on the same connector.
+If you intend to use only the internal On|Off switch, you must plug a CamCon into the On|Off connector with a wire connecting one pin to the other pin on the same connector.
 {{% /notice %}}
 
 ## Indicators
@@ -30,7 +30,7 @@ If you intend to use only the internal On|Off switch, you must connect a CamCon 
 |-----------------|---------------------------------|----------------------
 | PWR\|FLAT       | Green when powered<br />Flashing red and green when the battery is low | Green
 | 5V              | Green when 5V is being supplied | Green
-| H0-1, L0-3      | Green when the output is on [^1]<br />Red when the output's current limit is reached | Off
+| H0–1, L0–3      | Green when the corresponding output is on [^1]<br />Red when the output's current limit is reached | Off
 | RUN\|ERROR      | Orange on power-up, or USB reset <br />Flashing green when ready to run<br /> Solid green when running or booting | Orange
 
 [^1]: The outputs only turn on when your program runs (specifically, when the `Robot` object is created).

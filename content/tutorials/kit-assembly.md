@@ -6,8 +6,8 @@ title: Connecting your kit
 - Raspberry Pi (the board in a plastic case with many USB ports)
 - Power Board (the board in a plastic case with many green sockets and two buttons)
 - Motor Board (the other board in a plastic case)
-- Arduino (The blue, exposed board with a metal USB-B connector)
-- Arduino Servo Shield (another blue board, hopefully on top of the first)
+- Arduino Servo Shield (a blue board with many vertical connector pins)
+- Arduino (another blue board with a metal USB-B connector, usually attached underneath the first)
 - Battery
 - USB Hub
 - USB Webcam
@@ -29,15 +29,15 @@ title: Connecting your kit
 - Screwdriver (2mm flat-head)
 - 2 x Motor
 
-Obtain any other needed tools/supplies yourself
+You will need to obtain any other needed tools/supplies yourself.
 
 {{% notice info %}}
-_CamCons_ are the [green connectors](../kit-assembly.files/camcons.png) used to supply power to our kits.
+_CamCons_ are the [green connectors](../kit-assembly.files/camcons.png) used for power wiring within our kit.
 {{% /notice %}}
 
 ## Important notes before you start
 {{% notice warning %}}
-Make sure to read all these **before** you start assembly
+Make sure to read all these **before** you start assembly.
 {{% /notice %}}
 
 - Do not disassemble/reassemble your kit without first switching it off and unplugging the battery and check it thoroughly before plugging it in and switching it on again (don’t be afraid to ask someone to check your kit before you do so). If something is connected up wrongly when the kit is powered up, it may damage the components.
@@ -46,7 +46,7 @@ Make sure to read all these **before** you start assembly
 
 - Colour coding is key; please try to use _red_ for wires connected to a powered rail (say 12V or 5V), _black_ for wires connected to ground (0V rail) and _blue_ for motors.
 
-## How it call fits together
+## How it all fits together
 
 {{% attachments title="Related files" /%}}
 

@@ -29,12 +29,12 @@ Disobeying the above warnings greatly increases the risk of damage to your batte
 ## Storing batteries
 When your batteries are not actively in use, they should be safely stored. You must disconnect the batteries from all electrical equipment, and place them in the battery charging bag. You should then store the charging bag in a safe location.
 
-If you are not going to use the batteries for a long period of time, such as more than a week, then you should charge the batteries before hand. By themselves, batteries will discharge very slowly, and over-discharging will lead to damage. We recommend that you charge all batteries to at least 70% of capacity before being stored for a long period.
+If you are not going to use the batteries for a long period of time, such as more than a week, then you should charge the batteries beforehand. By themselves, batteries will discharge very slowly, and over-discharging will lead to damage. We recommend that you charge all batteries to at least 70% of capacity before being stored for a long period.
 
 ## Operating batteries
 To use your batteries, you must connect them to the power board. Do not tamper with the cable or connect the batteries to anything other than the power board (or the charger when charging).
 
-During operation, the battery is protected by over-current protection and a fuse in the power board. If any equipment is short circuited, the over-current protection will activate - protecting the battery. In extreme circumstances the fuse may blow to prevent damage to the battery. This is an important safety feature: do not, under any circumstances, bypass the fuse. The fuse is not user serviceable and if the fuse has blown then the power board must be replaced. If you suspect the fuse has blown then please contact us straight away.
+During operation, the battery is protected by over-current protection and a fuse in the power board. If any equipment is short circuited, the over-current protection will activate, protecting the battery. In extreme circumstances the fuse may blow to prevent damage to the battery. This is an important safety feature: do not, under any circumstances, bypass the fuse. It is not user serviceable and if it has blown then the power board must be replaced. If you suspect the fuse has blown then please contact us straight away.
 
 Mechanical damage to a battery can be dangerous, and a puncture or large force applied to a battery causes a serious risk of fire. To avoid this, your battery should be shielded from mechanical damage while you operate it. Secure your battery to your robot, so that it does not move or fall off while the robot moves. You should also build a compartment for the battery to be placed in, so that accidental collisions do not damage the battery.
 

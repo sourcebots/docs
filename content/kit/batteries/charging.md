@@ -40,7 +40,7 @@ The "LiPo charge" mode will also fully charge your battery and is usually somewh
 ### Stopping charging
 The charger will beep when the battery is fully charged. You must then:
 
-1. Press `Stop` button. The beeping should now stop.
+1. Press the `Stop` button. The beeping should now stop.
 2. Unplug the charger from the mains.
 3. Unplug the battery from the charging lead.
 4. Unplug the monitoring lead from the battery to the charger.
@@ -51,5 +51,5 @@ This process is also the same if you want to stop charging part-way through.
 
 ### Troubleshooting
 
-* The charger displays a mode other than "LiPo charge" or "LiPo balance". -> Press the stop button repeatedly until you see "PROGRAM SELECT LiPo BATT" then press `Start/Enter`. You can then press the `Inc./Dec.` until it shows the "LiPo balance" mode.
+* The charger displays a mode other than "LiPo charge" or "LiPo balance". -> Press the stop button repeatedly until you see "PROGRAM SELECT LiPo BATT", then press `Start/Enter`. You can then press the `Inc./Dec.` button until it shows the "LiPo balance" mode.
 * The charger displays an error when charging. -> Go through the charging setup process again, disconnecting and reconnecting the battery. If the problem persists disconnect the battery and charger and contact us.

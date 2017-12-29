@@ -19,4 +19,4 @@ You will likely need to manually focus the webcam before you first use it.
 The camera can be mounted in many different ways, from cable ties to duct tape. We recommend using the 1/4" screw mount on the base of the camera, commonly used for tripods.
 
 ## The LEDs
-The front of the webcam has six LEDs. The LEDs are controlled only using the dial inline on the USB cable. Although it's a dial, the LEDs only have an _on_ and _off_ state, no granular control.
+The front of the webcam has six LEDs. The LEDs are controlled only using the dial inline on the USB cable. Although it's a dial, the LEDs only have an _on_ and _off_ state with no granular control.

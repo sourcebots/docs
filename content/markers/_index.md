@@ -7,8 +7,6 @@ Our vision system uses the [AprilTag][apriltag] fiducial marker system.
 
 Here you can download PDF files of all markers:
 
-You can download PDF files of all markers:
-
 | PDF                               | Marker Size | Paper Size |
 |-----------------------------------|-------------|------------|
 | [Large markers][large-marker-pdf] | 250x250mm   | A3         |

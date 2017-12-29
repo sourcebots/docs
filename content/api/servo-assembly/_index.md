@@ -2,11 +2,11 @@
 title: Servo Assembly
 ---
 
-The Servo Assembly handles connection to multiple peripherals:
+The Servo Assembly is used to connect to multiple types of peripheral:
 
 - [GPIO pins](gpio) (digital and analogue)
 - [Servos](servos)
-- [Ultrasound](ultrasound)
+- [Ultrasound sensors](ultrasound)
 
 ## Getting a servo board instance
 
