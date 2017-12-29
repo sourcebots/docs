@@ -48,7 +48,7 @@ You may want to insulate the motor's terminals with some insulation tape (or hea
 
 Now you need to connect the motor to one of your motor boards. You'll need to connect the following:
 
-* Your motor into the motor 0 socket on the motor board
+* Your motor into the M0 socket on the motor board
 * The micro USB cable from the motor board to the USB hub
 
 This is almost ready, but the motor board also needs the power that it will be delivering to the motor. This is done by connecting together the two larger CamCon connectors, using the other two lengths of wire. Be sure that the cable connects the positive motor rail output ("+") of the power board to the positive power input of the motor board, and likewise for the ground ("-") output. See the [power board](/kit/power_board) and [motor board](/kit/motor_board) documentation to see which is which.

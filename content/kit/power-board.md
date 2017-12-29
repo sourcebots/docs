@@ -19,7 +19,7 @@ The 5V connectors can be used to connect low-current devices that take 5V inputs
 
 There is also a Micro USB B connector which should be used to connect the Raspberry Pi for control of the power board.
 
-Finally, there are connectors for external Start and On\|Off switches. You may connect any latching switch for the On\|Off button, or a push-to-make button for the start button.
+Finally, there are connectors for external Start and On|Off switches. You may connect any latching switch for the On|Off switch, or a push-to-make button for the Start button.
 
 {{% notice note %}}
 If you intend to use only the internal On|Off switch, you must connect a CamCon to the On|Off connector with a wire connecting one pin to the other pin on the same connector.

@@ -31,7 +31,7 @@ In addition to the boards, your kit will also contain:
 | Battery Bag                  | 1        |                             |                                        |
 | Battery Charger              | 1        | iMAX B6                     |                                        |
 | Battery Charger Power Supply | 1        | 12V 5A                      |                                        |
-| Battery                      | 2        | 11.1V 2.2Ah Lithium Polymer |                                        |
+| Battery                      | 2        | 11.1V 2200mAh Lithium Polymer |                                        |
 | Webcam                       | 1        | TeckNet C016                |                                        |
 | USB Hub                      | 1        |                             |                                        |
 | Micro USB Cable              | 2        |                             |                                        |
@@ -39,7 +39,7 @@ In addition to the boards, your kit will also contain:
 | Large CamCon                 | 2        | 7.5mm                       |                                        |
 | Medium CamCon                | 2        | 5mm                         |                                        |
 | Small CamCon                 | 3        | 3.81mm                      | 1 additionally found on Raspberry Pi power cable |
-| Raspberry Pi Power Cable     | 1        | Micro USB to Micro CamCon   |                                        |
+| Raspberry Pi Power Cable     | 1        | Micro USB to small CamCon   |                                        |
 
 ### Parts we don't mind you keeping
 
