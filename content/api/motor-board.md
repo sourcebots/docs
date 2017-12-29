@@ -24,7 +24,7 @@ r.motor_board.m1
 ```
 
 ## Powering motors
-Motor power is controlled using PWM with 100% power being a duty cycle of 1. You set the power with a value between `-1` and `1` inclusive (where a negative value puts the motor in reverse).
+Motor power is controlled using [PWM][pwm] with 100% power being a duty cycle of 1. You set the power with a value between `-1` and `1` inclusive (where a negative value puts the motor in reverse).
 
 ```python
 r.motor_board.m0  = 1
@@ -75,3 +75,4 @@ r.motor_board.m1 = COAST
 Changing the motor speed by more than 1 in a single operation (e.g. `-1` to `0`, `1` to `-1` etc) will likely trigger the current protection and your robot will shut down with a distinct beeping noise.
 {{% /notice %}}
 
+[pwm]: https://en.wikipedia.org/wiki/Pulse-width_modulation

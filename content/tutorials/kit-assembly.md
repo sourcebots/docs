@@ -44,7 +44,7 @@ Make sure to read all these **before** you start assembly
 
 - When wiring Camcons (or anything at all, but Camcons in particular), always double-check that the correct connections are made at either end (positive to positive, ground to ground, etc.) before plugging in the cable or plugging in the battery or switching things on. In particular the connections from the Power Board and the Arduino Servo Shield and Raspberry Pi, because these boards are particularly fragile. Don’t be afraid to ask someone to check your connections, and DO NOT disassemble the cable provided for powering the Raspberry Pi or attempt to power it another way as this may damage it.
 
-- Colour coding is key; please try to use RED for wires connected to a powered rail (say 12V or 5V), BLACK for wires connected to ground (0V rail) and BLUE for motors.
+- Colour coding is key; please try to use _red_ for wires connected to a powered rail (say 12V or 5V), _black_ for wires connected to ground (0V rail) and _blue_ for motors.
 
 ## How it call fits together
 

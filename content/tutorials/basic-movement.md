@@ -8,10 +8,10 @@ The aim of this tutorial is to get a motor turning with your kit. To complete th
 * A [motor board](/kit/motor-board)
 * The [Raspberry Pi](/kit/pi)
 * The battery (charged, of course)
-* Two large (7.5mm) green _CamCon_ connectors to plug the power board and motor board together
+* Two large (7.5mm) green CamCon connectors to plug the power board and motor board together
 * Two lengths of a suitable gauge of wire for powering the motor board from the power board (one should be black/grey)
 * A motor (see specification below)
-* A small (5mm) green _CamCon_ connector to plug the motor and motor board together
+* A small (5mm) green CamCon connector to plug the motor and motor board together
 * Two lengths of a suitable thickness of wire for your motor
 * Two Micro USB cables
 * The Raspberry Pi power cable
@@ -22,7 +22,7 @@ You'll also need these, which aren't provided with your kit:
 * A soldering iron
 * Some solder wire
 * Wire strippers
-* A small slotted/flat blade screwdriver (for the _CamCon_ screws)
+* A small slotted/flat blade screwdriver (for the CamCon screws)
 
 You should be familiar with the setup for most of the above now from the [kit assembly tutorial](/tutorials/kit-assembly/), so it's just the motor-related parts that need explaining.
 
@@ -38,7 +38,7 @@ When designing your robot you should bear in mind that while each motor board ca
 {{% /notice %}}
 
 ## Connecting a motor
-To plug the motor into the kit, you'll need to solder an appropriate gauge of wire to the terminals on the motor, and connect the other ends to the _CamCon_ connector. Like so:
+To plug the motor into the kit, you'll need to solder an appropriate gauge of wire to the terminals on the motor, and connect the other ends to the CamCon connector. Like so:
 
 ![Motor connected to CamCon](/img/assembly/motor_and_camcon.png)
 
@@ -51,7 +51,7 @@ Now you need to connect the motor to one of your motor boards. You'll need to co
 * Your motor into the motor 0 socket on the motor board
 * The micro USB cable from the motor board to the USB hub
 
-This is almost ready, but the motor board also needs the power that it will be delivering to the motor. This is done by connecting together the two larger _CamCon_ connectors, using the other two lengths of wire. Be sure that the cable connects the positive motor rail output ("+") of the power board to the positive power input of the motor board, and likewise for the ground ("-") output. See the [power board](/kit/power_board) and [motor board](/kit/motor_board) documentation to see which is which.
+This is almost ready, but the motor board also needs the power that it will be delivering to the motor. This is done by connecting together the two larger CamCon connectors, using the other two lengths of wire. Be sure that the cable connects the positive motor rail output ("+") of the power board to the positive power input of the motor board, and likewise for the ground ("-") output. See the [power board](/kit/power_board) and [motor board](/kit/motor_board) documentation to see which is which.
 
 {{% notice tip %}}
 You must always use black or grey for ground (0V) connections (and only for these), so that it's clear where these are.

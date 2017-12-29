@@ -3,7 +3,7 @@ title: Markers
 weight: 2
 ---
 
-Our vision system uses the AprilTag fiducial marker system.
+Our vision system uses the [AprilTag][apriltag] fiducial marker system.
 
 Here you can download PDF files of all markers:
 
@@ -14,5 +14,6 @@ You can download PDF files of all markers:
 | [Large markers][large-marker-pdf] | 250x250mm   | A3         |
 | [Small markers][small-marker-pdf] | 100x100mm   | A4         |
 
+[apriltag]: https://april.eecs.umich.edu/software/apriltag/
 [large-marker-pdf]: /docs/large-tags.pdf
 [small-marker-pdf]: /docs/small-tags.pdf
