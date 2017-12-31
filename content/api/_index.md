@@ -32,7 +32,7 @@ After the robot has finished starting up, it will wait for the _Start Button_ on
 A log file is saved on the USB drive so you can see what your robot did, what it didn't do, and any errors it raised. The file is saved to `log.txt` in the top-level directory of the USB drive.
 
 {{% notice warning %}}
-The log file is deleted on each run, so copy it elsewhere if you need to keep hold of it!
+The previous log file is deleted at the start of each run, so copy it elsewhere if you need to keep hold of it!
 {{% /notice %}}
 
 ## Serial number
