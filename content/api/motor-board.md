@@ -24,7 +24,7 @@ r.motor_board.m1
 ```
 
 ## Powering motors
-Motor power is controlled using [pulse-width modulation (PWM)](https://en.wikipedia.org/wiki/Pulse-width_modulation). You set the power with a fractional value between `-1` and `1` inclusive, where `1` is maximum speed in one direction, `-1` is maximum speed in the other direction and `0` sets the speed to zero.
+Motor power is controlled using [pulse-width modulation (PWM)](https://en.wikipedia.org/wiki/Pulse-width_modulation). You set the power with a fractional value between `-1` and `1` inclusive, where `1` is maximum speed in one direction, `-1` is maximum speed in the other direction and `0` causes the motor to brake.
 
 ```python
 r.motor_board.m0  = 1
