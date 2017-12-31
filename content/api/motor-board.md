@@ -24,7 +24,7 @@ r.motor_board.m1
 ```
 
 ## Powering motors
-Motor power is controlled using [pulse-width modulation (PWM)][pwm]. You set the power with a fractional value between `-1` and `1` inclusive, where `1` is maximum speed in one direction, `-1` is maximum speed in the other direction and `0` sets the speed to zero.
+Motor power is controlled using [pulse-width modulation (PWM)](https://en.wikipedia.org/wiki/Pulse-width_modulation). You set the power with a fractional value between `-1` and `1` inclusive, where `1` is maximum speed in one direction, `-1` is maximum speed in the other direction and `0` sets the speed to zero.
 
 ```python
 r.motor_board.m0  = 1
@@ -74,5 +74,3 @@ r.motor_board.m1 = COAST
 {{% notice warning %}}
 Changing the motor speed by more than 1 in a single operation (e.g. `-1` to `0`, `1` to `-1` etc.) will likely trigger the current protection and your robot will shut down with a distinct beeping noise.
 {{% /notice %}}
-
-[pwm]: https://en.wikipedia.org/wiki/Pulse-width_modulation
