@@ -26,7 +26,7 @@ If this file is missing or incorrectly named, your robot won't do anything. No l
 {{% /notice %}}
 
 ## Start Button
-After the robot has finished starting up, it will wait for the _Start Button_ on the power board to be pressed before running your code, so that you can control when it starts moving. There is a green LED next to the start button which flashes when the robot is finished setting up and the start button can be pressed.
+After the robot has finished starting up, it will wait for the _Start Button_ on the power board to be pressed before continuing with your code, so that you can control when it starts moving. There is a green LED next to the start button which flashes when the robot is finished setting up and the start button can be pressed.
 
 ## Logs
 A log file is saved on the USB drive so you can see what your robot did, what it didn't do, and any errors it raised. The file is saved to `log.txt` in the top-level directory of the USB drive.
