@@ -39,7 +39,7 @@ r.servo_board.gpios[3].mode = PinMode.INPUT_PULLUP
 
 ## Reading a pin state
 
-To read the state of a pin, simply call `read()`, which will return either `PinValue.HIGH` or `PinValue.LOW`. Like `PinMode`, the `PinValue` enum must be imported.
+To read the state of a pin, simply call `read()`, which will return either `PinValue.HIGH` or `PinValue.LOW`. Like `PinMode`, the `PinValue` enum must be imported to be used.
 
 ```python
 from robot import PinMode, PinValue
