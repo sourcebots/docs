@@ -7,7 +7,7 @@ Your webcam is how your robot will see markers.
 ## Using the camera to search for markers
 If you have a webcam connected, you can use `r.camera.see()` to take a picture.
 
-If you consider it necessary you can assign the camera object to a variable just like `Robot`:
+If you consider it necessary you can assign the camera object to a variable:
 
 ```python
 camera = r.camera
