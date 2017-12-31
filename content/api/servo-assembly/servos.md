@@ -2,7 +2,7 @@
 title: Servos
 ---
 
-You can control attached servo motors from the servo assembly. By default, servos will be unpowered when your robot starts, and can freely rotate when turned by hand. Upon setting a value, they will hold the corresponding position. They will become unpowered again when you turn off your robot, or unplug your USB stick.
+You can control attached servo motors from the servo assembly. By default, servos will be unpowered when your robot starts, and can freely rotate when turned by hand. Upon setting a value, they will hold the corresponding position. They will become unpowered again when you turn off your robot, unplug your USB stick, or set their position to the special value `None`.
 
 ## Querying servos
 
