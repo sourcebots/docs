@@ -8,8 +8,6 @@ The power board can be accessed using the `power_board` property of the `Robot` 
 main_board = r.power_board
 ```
 
-As there is only one power board, it cannot be accessed from a list like motor boards can.
-
 ## Power outputs
 The power board's six outputs can be turned on and off using the `power_on` and `power_off` functions respectively.
 
