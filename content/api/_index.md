@@ -6,7 +6,7 @@ weight: 1
 Programming your robot is done in [Python](https://www.python.org/), specifically version {{% python_version %}}. You can learn more about Python from their [docs](https://docs.python.org/{{% python_version %}}/), and our [whirlwind tour](/tutorials/python-whirlwind-tour).
 
 ## Setup
-The following two lines are required to initialise the robot.
+The following two lines are required to complete initialisation of the kit:
 
 ```python
 from robot import Robot
@@ -14,9 +14,9 @@ from robot import Robot
 r = Robot()
 ```
 
-This will initialise your robot and allow it to communicate with the robot's various boards. Once this has been done, this `Robot` object can be used for most of the functions of the robot.
+Once this has been done, this `Robot` object can be used to control the robot's functions.
 
-The remainder of the tutorials pages will assume your robot is defined as `r`.
+The remainder of the tutorials pages will assume your `Robot` object is defined as `r`.
 
 ## Where to put your code
 Your code needs to be put on a USB drive in a file called `main.py`. On insertion into the robot, this file will be executed. The file is directly executed off your USB drive, with your drive as the working directory.
