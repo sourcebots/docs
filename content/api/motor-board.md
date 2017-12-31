@@ -16,7 +16,7 @@ When you have more than one Motor Board connected to your kit, they can be acces
 motor_board = r.motor_boards['SERIAL']
 ```
 
-This board object has a property for each of the motors connected to it. These are mapped to the `m0` and `m1` variables. The boards are labelled so you know which motor is which.
+This board object has attributes for each of the motors connected to it, named `m0` and `m1`. The boards are labelled so you know which motor is which.
 
 ```python
 r.motor_board.m0
