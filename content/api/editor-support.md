@@ -13,7 +13,7 @@ Our API, the code you interact with, can be installed using Python's built-in pa
 pip install git+https://github.com/sourcebots/robot-api
 ```
 
-The above command requires administrator access to the computer. If you're doing this on a shared computer, such as those you may find in your colleges, add `--user` to the end:
+The above command may require administrator access to the computer. If you're doing this on a shared computer, such as those you may find in your colleges, add `--user` to the end:
 
 ```bash
 pip install git+https://github.com/sourcebots/robot-api --user
