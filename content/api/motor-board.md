@@ -46,13 +46,17 @@ Setting a value outside of the range `-1` to `1` will raise an exception and you
 
 ### Special values
 
-In addition to the numeric values, there are two special constants that can be used: `robot.BRAKE` and `robot.COAST`.
+In addition to the numeric values, there are two special constants that can be used: `BRAKE` and `COAST`. In order to use these, they must be imported from the `robot` module like so:
 
-#### `robot.BRAKE`
-`robot.BRAKE` will stop the motors from turning, and thus stop your robot as quick as possible.
+```python
+from robot import BRAKE, COAST
+```
+
+#### `BRAKE`
+`BRAKE` will stop the motors from turning, and thus stop your robot as quick as possible.
 
 {{% notice tip %}}
-`robot.BRAKE` does the same as setting the power to `0`.
+`BRAKE` does the same as setting the power to `0`.
 {{% /notice %}}
 
 ```python
@@ -61,8 +65,8 @@ from robot import BRAKE
 r.motor_board.m0 = BRAKE
 ```
 
-#### `robot.COAST`
-`robot.COAST` will stop applying power to the motors. This will mean they continue moving under the momentum they had before.
+#### `COAST`
+`COAST` will stop applying power to the motors. This will mean they continue moving under the momentum they had before.
 
 
 ```python
