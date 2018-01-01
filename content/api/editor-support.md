@@ -32,5 +32,5 @@ pip install git+https://github.com/sourcebots/robot-api --update --user
 ```
 
 {{% notice note %}}
-On macOS / Linux, you may also use `sudo` to run the command as root. On Windows, you may run the command as an administrator by using [running command prompt as an administrator](https://technet.microsoft.com/en-us/library/cc947813.aspx).
+On macOS / Linux, you may also use `sudo` to run the command as root. On Windows, you may need to re-run using [command prompt as an administrator](https://technet.microsoft.com/en-us/library/cc947813.aspx).
 {{% /notice %}}
