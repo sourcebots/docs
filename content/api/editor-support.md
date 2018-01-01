@@ -13,12 +13,6 @@ Installing our API, the code you interact with, can be installed using `pip`, Py
 pip install git+https://github.com/sourcebots/robot-api
 ```
 
-If you're doing this on a shared computer, such as those you may find in your colleges, add `--user` to the end:
-
-```bash
-pip install git+https://github.com/sourcebots/robot-api --user
-```
-
 Simply restart your editor of choice, and it should detect and start being able to use them immediately.
 
 ## Upgrading installation
@@ -27,5 +21,16 @@ When we release new updates, you'll need to update the locally installed version
 
 ```bash
 pip install git+https://github.com/sourcebots/robot-api --update
-pip install git+https://github.com/sourcebots/robot-api --user --update
 ```
+
+## Permission error
+The above commands may require administrator access to the computer. If you're getting a _Permission Denied_ error of some sorts, you may need to add `--user` to the end. This is likely needed on a shared computer, such as those you may find in your colleges. 
+
+```bash
+pip install git+https://github.com/sourcebots/robot-api --user
+pip install git+https://github.com/sourcebots/robot-api --update --user
+```
+
+{{% notice note %}}
+On macOS / Linux, you may also use `sudo` to run the command as root. On Windows, you may run the command as an administrator by using [running command prompt as an administrator](https://technet.microsoft.com/en-us/library/cc947813.aspx).
+{{% /notice %}}
