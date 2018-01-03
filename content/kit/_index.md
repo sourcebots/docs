@@ -9,7 +9,7 @@ Besides the Pi, there are 3 main controller boards to interface with your kit.
 
 | [Motor Board](motor-board) | [Power Board](power-board) | [Servo Assembly](servo-assembly) | [Raspberry Pi](pi) |
 |---|---|---|---|
-| ![Motor Board](/img/kit/mcv4b.png?width=20pc) | ![Power Board](/img/kit/pbv4.png?width=20pc) | ![Servo Assembly](/img/kit/servo-assembly.png?width=20pc) | ![Pi](/img/kit/pi.png?width=20pc) |
+| ![Motor Board](/img/kit/mcv4b.png?width=20pc) | ![Power Board](/img/kit/pbv4.png?width=20pc) | ![Servo Assembly](/img/kit/servo-assembly.png?width=20pc) | ![Pi](/img/kit/pi.jpg?width=20pc) |
 
 ## Kit Contents
 
