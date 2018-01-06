@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import <nixpkgs> {}, withTestSupport ? true }:
 
 with pkgs;
 
@@ -9,6 +9,5 @@ stdenv.mkDerivation {
   name = "docs-env";
   buildInputs = [
     hugo
-    nodejs
-  ];
+  ] ++ lib.optional withTestSupport nodejs;
 }
