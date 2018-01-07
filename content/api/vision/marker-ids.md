@@ -26,11 +26,6 @@ These markers are the ones positioned around the arena, there are 28 in total. E
 marker.id in WALL  # Is this marker a wall marker
 ```
 
-{{% notice tip %}}
-It's recommended to use `marker.is_wall_marker()` instead of `marker.id in WALL`
-{{% /notice %}}
-
-
 ### _Column_ Markers
 These markers are those positioned on the four faces of the four columns in the arena. Each face has a unique, documented ID, and so could be used in addition to [_Wall_ Markers](#wall-markers) to calculate your position, and make sure you don't run into them!
 
