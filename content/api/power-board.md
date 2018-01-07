@@ -48,5 +48,5 @@ r.power_board.buzz(2, 400)
 ```
 
 {{% notice warning %}}
-Passing an invalid note will raise a `KeyError`. You can see all the supported notes by looking at the power boards `BUZZ_NOTES` variable: `print(r.power_board.BUZZ_NOTES)`
+Passing an invalid note will raise a `KeyError`. You can see all the supported notes by looking at the power boards `BUZZ_NOTES` variable by printing it (`print(r.power_board.BUZZ_NOTES)`), or [looking at the source](https://github.com/sourcebots/robot-api/blob/master/robot/power.py)
 {{% /notice %}}
