@@ -2,7 +2,7 @@
 title: Coordinates
 ---
 
-[Polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system) are represented by a distance from a set point and an angle from a set direction. [Cartesian coordinates](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) are ones that are defined using a unique set of values (typically _x_, _y_ and _z_) to specify a point in space.
+[Polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system) represent a distance from a set point and an angle from a set direction. [Cartesian coordinates](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) use three perpendicular axes (typically _x_, _y_ and _z_) to specify a point in space.
 
 {{% notice note %}}
 All distances are measured in metres.
