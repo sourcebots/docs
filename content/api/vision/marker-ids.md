@@ -32,7 +32,7 @@ It's recommended to use `marker.is_wall_marker()` instead of `marker.id in WALL`
 
 
 ### _Column_ Markers
-These markers are those positioned on the 4 faces of the 4 columns in the arena. Each face has a unique, documented ID, and so could be used in addition to [_Wall_ Markers](#wall-markers) to calculate your position, and make sure you don't run into them!
+These markers are those positioned on the four faces of the four columns in the arena. Each face has a unique, documented ID, and so could be used in addition to [_Wall_ Markers](#wall-markers) to calculate your position, and make sure you don't run into them!
 
 ```python
 marker.id in COLUMN
