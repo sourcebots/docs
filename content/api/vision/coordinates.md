@@ -9,7 +9,7 @@ All distances are measured in metres.
 {{% /notice %}}
 
 ## Polar Coordinates
-The polar coordinates are taken from the position of the webcam.
+The polar coordinates of a marker are relative to the view of the camera.
 
  - `distance_metres` - the distance from the camera to the marker.
  - `rot_x_rad` / `rot_x_deg` - the angle of rotation in radians/degrees about the x axis. The x axis runs horizontally in front of the camera. A positive angle would be one where the marker is in front of the camera.
