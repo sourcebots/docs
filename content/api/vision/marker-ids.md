@@ -42,7 +42,7 @@ marker.id in COLUMN
 Each column has its own constant to check if the marker belongs to a specific column. There's also additional constants to check if a marker is facing a certain direction, and of course checking a specific face of a specific column.
 
 {{% notice tip %}}
-Columns are referenced like the points of a compass (_N_, _E_, _S_, _W_), with the North West corner as corner 0.
+Columns are referenced like the points of a compass (_N_, _E_, _S_, _W_), with the North West corner of the arena as corner 0.
 {{% /notice %}}
 
 ```python
