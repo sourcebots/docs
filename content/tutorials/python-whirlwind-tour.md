@@ -520,7 +520,7 @@ else:
 
 Run the code and check your prediction.
 
-### Age discrimination tool
+### Age detection tool
 
 Write a program that asks the user for their age, and prints a different message depending on whether they are under 18, over 65, or in between.
 
