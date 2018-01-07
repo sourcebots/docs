@@ -6,38 +6,39 @@ The aim of this tutorial is to get a motor turning with your kit. To complete th
 
 * The [power board](/kit/power-board)
 * A [motor board](/kit/motor-board)
-* The [Pi](/kit/pi)
-* The battery (charged, of course)
-* 2 large (7.5mm) green _CamCon_ connectors to plug the power board and motor board together
-* 2 lengths of a suitable gauge of wire for powering the motor board from the power board (one should be black/grey)
+* The [Raspberry Pi](/kit/pi)
+* A battery (charged, of course)
+* Two large (7.5mm) green CamCon connectors to plug the power board and motor board together
+* Two lengths of a suitable gauge of wire for powering the motor board from the power board; we recommend that one be black and the other be red
 * A motor (see specification below)
-* A small (5mm) green _CamCon_ connector to plug the motor and motor board together
-* 2 lengths of a suitable thickness of wire for your motor
-* 2 Micro USB cables
-* The Pi power cable
+* A small (5mm) green CamCon connector to plug the motor and motor board together
+* Two lengths of a suitable thickness of wire for your motor; we recommend that they be blue (or any colour other than black)
+* Two Micro USB cables
+* The Raspberry Pi power cable
 
 You'll also need these, which aren't provided with your kit:
 
 * The memory stick
-* A soldering Iron
+* A soldering iron
 * Some solder wire
 * Wire strippers
-* A small slotted/flat blade screwdriver (for the _CamCon_ screws)
+* A small slotted/flat blade screwdriver (for the CamCon screws)
 
 You should be familiar with the setup for most of the above now from the [kit assembly tutorial](/tutorials/kit-assembly/), so it's just the motor-related parts that need explaining.
 
-## Motor Specification
-There is a certain specification the motor(s) you use must meet. The criteria are as follows:
+## Motor specification
+There is a certain specification that the motor(s) you use must meet. The criteria are as follows:
 
-* 12V motor
-* A stall current of less than 10A (this is the current limit for the [motor boards](/kit/motor_board)
+* Brushed DC type
+* Rated for at least 12V
+* A stall current of less than 10A (this is the current limit for the [motor boards](/kit/motor-board)
 
 {{% notice note %}}
 When designing your robot you should bear in mind that while each motor board can deliver 10A on each output, all the power needs to go through the power board, which has its own [limiting per output](/kit/power-board/#specification).
 {{% /notice %}}
 
-## Connecting a Motor
-To plug the motor into the kit, you'll need to solder an appropriate gauge of wire to the terminals on the motor, and connect the other ends to the _CamCon_ connector. Like so:
+## Connecting a motor
+To plug the motor into the kit, you'll need to solder the two lengths of blue wire to the motor terminals, and connect the other ends to the CamCon connector. Like so:
 
 ![Motor connected to CamCon](/img/assembly/motor_and_camcon.png)
 
@@ -47,10 +48,10 @@ You may want to insulate the motor's terminals with some insulation tape (or hea
 
 Now you need to connect the motor to one of your motor boards. You'll need to connect the following:
 
-* Your motor into the motor 0 socket on the motor board
+* Your motor into the M0 socket on the motor board
 * The micro USB cable from the motor board to the USB hub
 
-This is almost ready, but the motor board also needs the power that it will be delivering to the motor. This is done by connecting together the two larger _CamCon_ connectors, using the other two lengths of wire. Be sure that the cable connects the positive motor rail output ("+") of the power board to the positive power input of the motor board, and likewise for the ground ("-") output. See the [power board](/kit/power_board) and [motor board](/kit/motor_board) documentation to see which is which.
+This is almost ready, but the motor board also needs the power that it will be delivering to the motor. This is done by connecting together the two larger CamCon connectors, using the other two lengths of wire. Be sure that the cable connects the positive motor rail output ("+") of the power board to the positive power input of the motor board, and likewise for the ground ("-") output. See the [power board](/kit/power-board) and [motor board](/kit/motor-board) documentation to see which is which.
 
 {{% notice tip %}}
 You must always use black or grey for ground (0V) connections (and only for these), so that it's clear where these are.
@@ -58,11 +59,11 @@ You must always use black or grey for ground (0V) connections (and only for thes
 
 You can now connect this into the power board on one end, and the motor board power connection on the other.
 
-## Some Code
+## Some code
 
-The example program we'll write will do a number of things with the motor: forwards and backwards, and different power settings, for example. Let's begin. To start off with, we'll just make a motor move forwards, then backwards, and then repeat.
+The example program we'll write will do a number of things with the motor: forwards and backwards, and different power settings, for example. Let's begin. To start off, we'll just make a motor move forwards, then backwards, and then repeat.
 
-### Forwards & Backwards
+### Forwards & backwards
 
 Doing this is actually very easy; the only thing you need to realise is that a positive number is forwards and a negative number is backwards.
 
@@ -95,7 +96,7 @@ while True:
 You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `r.motor_board...` lines. For a comprehensive reference to the `motor` object, see [`motor` API](/api/motor-board) page.
 But, to summarise:
 
-So, `r.motor_board.m0 = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](/kit/motor_board) plugged in to a USB hub to half speed forwards (i.e. a duty-cycle of 0.5 forwards). As you would expect, then, `-0.5` will put the this motor into reverse at half power.
+`r.motor_board.m0 = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](/kit/motor-board) to half speed forwards (i.e. a duty-cycle of 0.5 forwards). As you would expect, then, `-0.5` will put the this motor into reverse at half power.
 `r.motor_board.m0 = 0` will brake the motor and stop it.
 
 So, if you put the above code on your robot, you should be able to see a motor spin forwards, stop, spin backwards, stop, and then repeat...
@@ -104,7 +105,7 @@ So, if you put the above code on your robot, you should be able to see a motor s
 If you find that the motor doesn't turn when you run the above code, check that you've got all the cables connected to the right places, in particular note that the motor board has _two_ outputs.
 {{% /notice %}}
 
-### Changing the Speed
+### Changing the speed
 
 Now we're going to modify the program to vary the speed of the motor. Our aim is to do the forwards and backwards bit (as above), but, before we loop round again, ramp the power up to 70%, then down to -70%, and then back to 0 (all in steps of 10%). Here's the code:
 
@@ -159,7 +160,6 @@ while True:
     time.sleep(1)
 ```
 
-## Next Steps
+## Next steps
 
 From here, you should be able to make your robot move about in a controlled manner. See if you can make your robot drive forwards to a given point, stop, turn around and then return to its starting point.
-

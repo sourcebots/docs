@@ -4,8 +4,8 @@ title: SourceBots Documentation
 theme: learn
 
 params:
-    author: Sourcebots
-    description: Sourcebots Documentation
+    author: SourceBots
+    description: SourceBots Documentation
     showVisitedLinks: false
     disableInlineCopyToClipBoard: true
     disableLanguageSwitchingButton: true

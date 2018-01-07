@@ -5,14 +5,14 @@ title: Vision
 Your webcam is how your robot will see markers.
 
 ## Using the camera to search for markers
-If you have a webcam connected, you can use `r.camera.see()` to take a picture. 
+If you have a webcam connected, you can use `r.camera.see()` to take a picture.
 
-If you consider it necessary you can assign the camera object to a variable just like `Robot`:
+If you consider it necessary you can assign the camera object to a variable:
 
 ```python
 camera = r.camera
 ```
-The software will process the image and return any markers it sees into an array sorted by distance where the first element of the array is the closest marker to the camera.
+The software will process the image and return any markers it sees into a list sorted by distance where the first element of the list is the closest marker to the camera.
 
 ```python
 markers = r.camera.see()
@@ -25,17 +25,17 @@ for marker in markers:
 ```
 
 ## Marker properties
-The markers that are contained within the array have some useful properties:
+The markers that are contained within the list have some useful properties:
 
   - `is_wall_marker()` - returns whether or not the marker is a wall marker.
   - `is_token_marker()` - returns whether or not the marker is a token marker.
   - `id` - returns the id of the marker.
   - `pixel_centre` - returns the pixel coordinates of the centre of the marker.
-  - `polar` - returns a `PolarCoord` object containing the position of the marker in the Polar coordinate system.
+  - `polar` - returns a `PolarCoord` object containing the position of the marker in the polar coordinate system.
   - `cartesian` - returns a `CartCoord` object containing the position of the marker in the Cartesian coordinate system.
 
-## Cartesian and Polar Coordinate Systems
-The markers' position can be represented using both the Polar and Cartesian coordinate system. The two objects `CartCoord` and `PolarCoord` hold the position information for both of these systems.
+## Cartesian and polar coordinate systems
+The markers' position can be represented using both the polar and Cartesian coordinate system. The two objects `CartCoord` and `PolarCoord` hold the position information for both of these systems.
 
 {{% notice info %}}
 [Cartesian coordinates](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) are ones that are defined using a unique set of values (typically x, y and z) to specify a point in space. [Polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system) are represented by a distance from a set point and an angle from a set direction.
@@ -52,9 +52,9 @@ The `CartCoord` object has the following properties, where each coordinate is in
   - `z` - returns the z coordinate, defined as the distance from the camera to the marker.
 
 {{% notice info %}}
-For example, if x, y and z were 0, 0 and 1 respectively. This would correspond to a marker being exactly 1 metre in front of the camera, looking at the centre.
+For example, if x, y and z were 0, 0 and 1 respectively. This would correspond to a marker being exactly one metre in front of the camera, looking at the centre.
 {{% /notice %}}
-  
+
 The `PolarCoord` object has the following properties:
 
  - `distance_meters` - returns the distance from the camera to the marker.
