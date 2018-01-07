@@ -100,7 +100,7 @@ A set of marker ids specifying which direction a column is facing.
 - `COLUMN_FACING_W`
  
 #### Specific column faces
-A single marker ids specifying which column the marker is on, and which direction it's facing. 
+A single marker id specifying which column the marker is on, and which direction it's facing. 
 
 - `COLUMN_N_FACING_N`
 - `COLUMN_N_FACING_S`
