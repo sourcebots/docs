@@ -79,5 +79,5 @@ Each face of the token has the same marker on. However each token has different 
 {{% /notice %}}
 
 {{% notice tip %}}
-It's recommended to use `marker.is_token_marker()` instead of `marker.id in TOKEN`
+It's recommended to use `marker.is_token_marker()` instead of `marker.id in TOKEN`.
 {{% /notice %}}
