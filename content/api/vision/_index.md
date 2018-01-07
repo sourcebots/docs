@@ -11,8 +11,8 @@ Assuming you have a webcam connected, you can use `r.camera.see()` to take a pic
 markers = r.camera.see()
 ```
 
-## Marker properties
-The markers in the list have some useful properties:
+## Marker attributes
+The markers in the list have some useful attributes:
 
 - `is_wall_marker()` - returns whether or not the marker is a [wall marker](marker-ids/#wall-markers).
 - `is_token_marker()` - returns whether or not the marker is a [token marker](marker-ids/#token-markers).
