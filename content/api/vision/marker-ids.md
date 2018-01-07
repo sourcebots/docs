@@ -58,7 +58,7 @@ marker.id == COLUMN_S_FACING_W  # Is the marker on the South column facing West?
 In the above examples, the points of the compass may be replaced with any others. 
 
 {{% notice note %}}
-The constants for a specific column face (e.g. `COLUMN_S_FACING_W`) only contain a single ID, so `==` should be used over `in`.
+The constants for the general classes of column markers (e.g: `COLUMN_N`) are collections of marker ids and so need comparison with `in`. The constants for the specific column faces (e.g: `COLUMN _S_FACING_W`) define only a single value and so should be compared to using `==`.
 {{% /notice %}}
 
 ### _Token_ Markers
