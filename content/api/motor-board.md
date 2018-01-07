@@ -76,5 +76,5 @@ r.motor_board.m1 = COAST
 ```
 
 {{% notice warning %}}
-Changing the motor speed by more than 1 in a single operation (e.g. `-1` to `0`, `1` to `-1` etc.) will likely trigger the current protection and your robot will shut down with a distinct beeping noise.
+Sudden large changes in the motor speed setting (e.g. `-1` to `0`, `1` to `-1` etc.) will likely trigger the current protection and your robot will shut down with a distinct beeping noise.
 {{% /notice %}}
