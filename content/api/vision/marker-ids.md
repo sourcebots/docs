@@ -13,7 +13,7 @@ from robot import WALL, TOKEN_ZONE_1, COLUMN_N_FACING_N
 To check your marker matches one of these types, you can use the `in` operator:
 
 ```python
-marker = r.camera.see()[0]  # Only the closest marker
+marker, * = r.camera.see()  # Get only the closest marker 
 
 marker.id in WALL
 >>> True 
