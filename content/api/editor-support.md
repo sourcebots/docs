@@ -24,7 +24,7 @@ pip install git+https://github.com/sourcebots/robot-api --update
 ```
 
 ## Permission error
-The above commands may require administrator access to the computer. If you're getting a _Permission Denied_ error of some sorts, you may need to add `--user` to the end. This is likely needed on a shared computer, such as those you may find in your colleges. 
+The above commands may require administrator access to the computer. If you're getting a _Permission Denied_ error of some sorts, you may need to add `--user` to the end. This is likely needed on a shared computer, such as those you may find in your colleges.
 
 ```bash
 pip install git+https://github.com/sourcebots/robot-api --user
