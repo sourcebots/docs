@@ -130,28 +130,28 @@ while True:
 
     # ^^ code from before ^^
 
-    # power up to 70 (from 10)
+    # power up to 0.7 (from 0.1)
     for pwr in range(10, 80, 10):
-        r.motor_board.m0 = pwr
+        r.motor_board.m0 = pwr / 100.0
         time.sleep(0.1)
 
-    # power down from 70 (to 10)
+    # power down from 0.7 (to 0.1)
     for pwr in range(70, 0, -10):
-        r.motor_board.m0 = pwr
+        r.motor_board.m0 = pwr / 100.0
         time.sleep(0.1)
 
     # set power to 0 for a second
     r.motor_board.m0 = 0
     time.sleep(1)
 
-    # power up to -70 (from -10)
+    # power up to -0.7 (from -0.1)
     for pwr in range(-10, -80, -10):
-        r.motor_board.m0 = pwr
+        r.motor_board.m0 = pwr / 100.0
         time.sleep(0.1)
 
-    # power up to -10 (from -70)
+    # power down to -0.1 (from -0.7)
     for pwr in range(-70, 0, 10):
-        r.motor_board.m0 = pwr
+        r.motor_board.m0 = pwr / 100.0
         time.sleep(0.1)
 
     # set power to 0 for a second
