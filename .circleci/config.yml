@@ -6,9 +6,6 @@ jobs:
             - image: circleci/node:6.10
         working_directory: ~/circleci-hugo-template
         steps:
-            - add_ssh_keys:
-                fingerprints:
-                    - "95:b5:87:34:7f:d8:4f:23:bc:bc:5e:c8:a1:a5:08:aa"
             - checkout
             - run:
                 name: Checkout submodules
@@ -31,7 +28,3 @@ jobs:
                 key: node-{{ checksum "package.json" }}
                 paths:
                     - node_modules
-            - deploy:
-                name: Deploy to Github Pages
-                command: ./.circleci/deploy.sh
-
