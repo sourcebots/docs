@@ -1,13 +1,13 @@
 ---
 title: "Python: A Whirlwind Tour"
 ---
-In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use [Python](https://www.python.org/), Specifically {{% python_version %}}. We chose Python because it's easy to learn, but also elegant and powerful.
+In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use [Python](https://www.python.org/), specifically {{% python_version %}}. We chose Python because it's easy to learn, but also elegant and powerful.
 
 At the end of the tutorial are exercises. The first ones for each section should be quite easy, while the higher-numbered exercises will be harder. Some will be very hard; try these if you're up for a challenge.
 
 Before we begin, a word on learning. The way that you learn to code is by doing it; make sure you try out the examples, fiddle with them, break them, try some of the exercises.
 
-## Using an Interpreter
+## Using an interpreter
 
 To run Python programs you need a something called an interpreter. This is a computer program which interprets human-readable Python code into something that the computer can execute. There are a number of online interpreters that should work even on a locked-down computer, such as you will probably find in your college.
 
@@ -91,7 +91,7 @@ Certain things in your program, for example variables and functions, will need n
 - An identifier cannot begin with a digit.
 - Identifiers are case sensitive. This means that `bees`, `Bees` and `BEES` are three different identifiers.
 
-## Code Blocks and Indentation
+## Code blocks and indentation
 
 In the previous section, you probably noticed that the statements 'inside' the `if` statements were indented relative to the rest of the code. Python is reasonably unique in that it cares about indentation, and uses it to decide which statements are referred to by things like `if` statements.
 
@@ -244,7 +244,7 @@ Output:
 [4.8, 6.0, 2.4, 1.7999999999999998]
 ```
 
-## Calling Functions
+## Calling functions
 Functions are pre-written bits of code that can be run ('called') at any point. The simplest functions take no parameters and return nothing. For example, the `exit` function ends your program prematurely:
 
 ```python
@@ -402,7 +402,7 @@ This concept is called 'scope'. We say that variables which are changed inside a
 
 You can have functions within functions, and this can actually be quite useful. In this situation, each nested function will also have its own scope.
 
-## Exercises: Variables and Mathematics
+## Exercises: variables and mathematics
 ### Average calculator
 
 The first two lines of this program put two numbers entered by the user into variables `a` and `b`. (The `input` function is like `input`, but returns a number (e.g. `42`) when you enter one, rather than a string (like `"42"`).) Replace the comment with code that averages the numbers and puts them in a variable called `average`.
@@ -498,7 +498,7 @@ Both output:
 We might be able to afford the tall ship...
 ```
 
-## Exercises: `if` Statements and Blocks
+## Exercises: `if` statements and blocks
 
 ### So many `if`s
 
@@ -520,11 +520,11 @@ else:
 
 Run the code and check your prediction.
 
-### Age Discrimination Tool
+### Age detection tool
 
 Write a program that asks the user for their age, and prints a different message depending on whether they are under 18, over 65, or in between.
 
-## Exercises: Lists and Loops
+## Exercises: lists and loops
 
 ### A better average calculator
 
@@ -549,7 +549,7 @@ Write a program which prints a list of numbers from 0 to 100, but replace number
 
 **Extension:** create a list of numbers, and replace a number with "Fuzz" if it is a multiple of any number in the list.
 
-### Trees and Triangles
+### Trees and triangles
 
 You can combine (or 'concatenate') strings in Python with the `+` operator:
 
@@ -586,7 +586,7 @@ Try the same, but with the right angle in the top-right, like so (again, for inp
    *
 ```
 
-## Exercises: Functions
+## Exercises: functions
 
 ### Trigonometry
 
