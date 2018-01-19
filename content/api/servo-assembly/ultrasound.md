@@ -2,7 +2,7 @@
 title: Ultrasound
 ---
 
-We noticed many teams used ultrasound sensors to assist the vision system for finer distance measurement, so we've built the mechanisms for reading and measuring distances using ultrasound right into the kit!
+The servo assembly has support for measuring distances using [ultrasound sensors](/kit/servo-assembly/ultrasound), which can provide finer distance measurement than the [vision system](/api/vision).
 
 ## Reading a distance
 Assuming you wired the ultrasound sensor's _trigger_ pin to digital pin 6 on the servo assembly, and the _echo_ pin to pin 7, you can query the distance from the sensor using:
