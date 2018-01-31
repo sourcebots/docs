@@ -7,7 +7,10 @@ The Servo Assembly is used to connect to multiple types of peripheral:
 - [GPIO pins](gpio) (digital and analogue)
 - [Servos](servos)
 - [Ultrasound sensors](ultrasound)
-- [Custom Arduino commands](arduino-commands)
+
+At the core of the Servo Assembly is an Arduino <TODO: model name>. If you need
+more direct control over your perhiperals, you can change the firmware running
+on the Arduino and extend it to support [custom commands](arduino-commands).
 
 ## Getting a servo board instance
 
