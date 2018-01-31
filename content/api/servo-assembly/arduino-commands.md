@@ -15,13 +15,12 @@ than can be achieved through the Python API.
 
 As your new firmware will still need to be able to talk to the Python code
 running on the Raspberry Pi, you'll need to base it on SourceBots default
-firmware. You can get a copy of the source code from GitHub:
+firmware. You can get a copy of the source code from GitHub either by
+downloading the [repo archive](servo-firmware-zip) or by cloning the repo:
 
 ```txt
 git clone https://github.com/sourcebots/servo-firmware
 ```
-
-<TODO: describe how to do that without git>
 
 We recommend using [Arduino Studio](https://www.arduino.cc/en/Main/Software) to
 edit your firmware as it provides direct support for building the code into the
@@ -194,4 +193,5 @@ correctly for all your messages back to the Pi.
     as it's nontrivial to describe which bits are safe to remove.
 -->
 
+[servo-firmware-zip]: https://github.com/sourcebots/servo-firmware/archive/master.zip
 [errors]: https://docs.python.org/3/tutorial/errors.html
