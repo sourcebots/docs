@@ -2,8 +2,8 @@
 title: Custom Arduino Commands
 ---
 
-At the core of the servo assembly is an Arduino <TODO: model name>. By default
-the Arduino runs firmware created by SourceBots providing simple access to the
+At the core of the servo assembly is an [Arduino Uno][arduino]. By default the
+Arduino runs firmware created by SourceBots providing simple access to the
 attached servo shield, compatible ultrasound sensors and to the GPIO pins
 directly.
 
@@ -193,5 +193,6 @@ correctly for all your messages back to the Pi.
     as it's nontrivial to describe which bits are safe to remove.
 -->
 
+[arduino]: https://store.arduino.cc/arduino-uno-rev3
 [servo-firmware-zip]: https://github.com/sourcebots/servo-firmware/archive/master.zip
 [errors]: https://docs.python.org/3/tutorial/errors.html
