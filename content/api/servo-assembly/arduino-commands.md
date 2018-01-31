@@ -15,7 +15,7 @@ than can be achieved through the Python API.
 
 As your new firmware will still need to be able to talk to the Python code
 running on the Raspberry Pi, you'll need to base it on SourceBots default
-firmware. You can get a copy of the source code from github:
+firmware. You can get a copy of the source code from GitHub:
 
 ```none
 git clone https://github.com/sourcebots/servo-firmware
@@ -36,7 +36,7 @@ Adding a command requires two changes. First you must define the function which
 will implement the operations of that command and then you register that command
 under the name you'll use to call it from the Python code.
 
-### Implmenting the command
+### Implementing the command
 
 Here's a simple command which just echoes back any arguments it receives:
 
