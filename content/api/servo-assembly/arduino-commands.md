@@ -54,7 +54,6 @@ static CommandError echo(int commandId, String argument) {
     return COMMAND_ERROR("nothing to echo");
   }
 
-  int i = 1;
   while (argument.length() > 0) {
     // You can use `pop_option` to extract individual parameters from the
     // `argument` string. They're sent space-separated, so be sure not to
