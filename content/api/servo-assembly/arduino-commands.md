@@ -17,7 +17,7 @@ As your new firmware will still need to be able to talk to the Python code
 running on the Raspberry Pi, you'll need to base it on SourceBots default
 firmware. You can get a copy of the source code from GitHub:
 
-```none
+```txt
 git clone https://github.com/sourcebots/servo-firmware
 ```
 
