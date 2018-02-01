@@ -25,7 +25,7 @@ The Cartesian position is represented as 3 coordinates, `x`, `y` and `z`. These 
 
 - `x` - the x coordinate, positive in the right direction.
 - `y` - the y coordinate, positive in the up direction.
-- `z` - the z coordinate, defined as the distance forwards in front of the camera.
+- `z` - the z coordinate, the distance forwards in front of the camera.
 
 For example, if `x`, `y` and `z` were `0`, `0` and `1` respectively, the marker would be one metre directly in front of the camera.
 
