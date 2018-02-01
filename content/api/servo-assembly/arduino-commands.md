@@ -114,8 +114,6 @@ To call a command from Python you should call the `direct_command` method on a
 r.servo_board.direct_command('echo', "first argument", 2, "third argument")
 ```
 
-<!-- TODO: what happens to numbers sent over the serial connection? -->
-
 This will return a `list` of the responses from the command (anything which was
 sent back using the `serialWrite` function):
 
