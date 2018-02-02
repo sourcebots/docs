@@ -37,13 +37,32 @@ under the name you'll use to call it from the Python code.
 
 ### Implementing the command
 
-Here's a simple command which just echoes back any arguments it receives:
+You'll need to define a function to implement your command. The function should
+be placed in the `firmware.cpp` file just above the definition of the `commands`
+array (likely about like 205).
+
+The function definition needs to look like this:
 
 ```cpp
-// Define a function which implements your command. As long as you stick to
-// letters, numbers and underscore (_), you can call it whatever you like.
-// With the exception of the name (here it's `echo`), the rest of the function's
-// "signature" must be exactly as it is on the following line:
+static CommandError my_function(int commandId, String argument) {
+  // implementation here
+  return OK;
+}
+```
+
+You should choose a suitable name for your function (above it's called
+`my_function`), though you'll need to stick to letters, numbers and underscore
+(`_`). The rest of the function signature (the line starting `static
+CommandError` above) needs to be exactly as above.
+
+You command will need to adhere to some conventions to be able to communicate
+with the Pi, though you can otherwise do pretty much anything you normally would
+on an Arduino.
+
+The following example command shows how to handle arguments from the Pi as well
+as how to return errors an other values:
+
+```cpp
 static CommandError echo(int commandId, String argument) {
 
   if (argument.length() == 0) {
