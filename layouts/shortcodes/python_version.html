@@ -1,1 +1,1 @@
-{{ .Site.Params.pythonVersion }}
+{{ delimit (first 2 (split .Site.Params.pythonVersion ".")) "." -}}
