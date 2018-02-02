@@ -39,7 +39,7 @@ under the name you'll use to call it from the Python code.
 
 You'll need to define a function to implement your command. The function should
 be placed in the `firmware.cpp` file just above the definition of the `commands`
-array (likely about like 205).
+array (likely about line 205).
 
 The function definition needs to look like this:
 
