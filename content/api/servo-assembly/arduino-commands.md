@@ -112,15 +112,15 @@ To call a command from Python you should call the `direct_command` method on a
 `Servo` instance. You can send strings and numbers:
 
 ```python
-r.servo_board.direct_command('echo', "first argument", 2, "third argument")
+r.servo_board.direct_command('echo', 'first argument', 2, 'third argument')
 ```
 
 This will return a `list` of the responses from the command (anything which was
 sent back using the `serialWrite` function):
 
 ```python
->>> r.servo_board.direct_command('echo', "first argument", 2, "third argument")
-["first argument", "2", "third argument"]
+>>> r.servo_board.direct_command('echo', 'first argument', 2, 'third argument')
+['first argument', '2', 'third argument']
 ```
 
 Note that the responses will all be strings, so you'll need to explicitly
