@@ -13,7 +13,7 @@ params:
     editURL: "https://github.com/sourcebots/docs/tree/master/content/"
     ordersectionsby: "weight"
 
-    pythonVersion: 3.5
+    pythonVersion: 3.5.3
 
 menu:
     shortcuts:
