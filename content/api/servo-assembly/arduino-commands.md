@@ -57,7 +57,7 @@ with the Pi, though you can otherwise do pretty much anything you normally would
 on an Arduino.
 
 The following example command shows how to handle arguments from the Pi as well
-as how to return errors an other values:
+as how to return errors and other values:
 
 ```cpp
 static CommandError echo(int commandId, String argument) {
