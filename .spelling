@@ -14,6 +14,7 @@
 70x84x20mm
 7.5mm
 83x99x24mm
+Adafruit
 AprilTag
 Arduino
 booleans
@@ -37,6 +38,7 @@ python3
 scipy
 SourceBots
 square-ish
+submodule
 TeckNet
 Uno
 vcc
