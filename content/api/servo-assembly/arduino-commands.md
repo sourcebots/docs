@@ -99,7 +99,7 @@ static const CommandHandler commands[] = {
 The first argument is a quoted `String` literal containing the name you'll use
 in Python to call this command. It can contain letters, numbers and dashes (`-`).
 
-The second argument is the function you defined for your function, with an
+The second argument is the function you defined for your command, with an
 ampersand (`&`) just before the name.
 
 The third argument is another quoted `String` literal containing a description
