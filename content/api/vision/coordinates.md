@@ -21,7 +21,7 @@ For example, if `distance_metres` was `1`, `rot_x_deg` was `0`, and `rot_y_deg` 
 
 
 ## Cartesian Coordinates
-The Cartesian position is represented as 3 coordinates, `x`, `y` and `z`. These coordinates are relative to the view of the webcam.  
+The Cartesian position is represented as 3 coordinates, `x`, `y` and `z`. These coordinates are relative to the view of the webcam.
 
 - `x` - the x coordinate, positive in the right direction.
 - `y` - the y coordinate, positive in the up direction.
