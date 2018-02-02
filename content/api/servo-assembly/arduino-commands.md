@@ -78,7 +78,8 @@ static CommandError echo(int commandId, String argument) {
 
 For other examples of how to define commands (and the helper functions you can
 use), you can have a look at the other commands the Arduino already supports.
-In particular the `get_version`, `led` and `servo`  are a good starting point.
+In particular the `get_version`, `led` and `servo` functions are a good starting
+point.
 
 <!-- TODO should we error in robot-api/robotd if the incoming arguments include spaces? -->
 
