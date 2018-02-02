@@ -2,10 +2,10 @@
 title: Custom Arduino Commands
 ---
 
-At the core of the servo assembly is an [Arduino Uno][arduino]. By default the
-Arduino runs firmware created by SourceBots providing simple access to the
-attached servo shield, compatible ultrasound sensors and to the GPIO pins
-directly.
+At the core of the servo assembly is an [Arduino Uno](https://store.arduino.cc/arduino-uno-rev3).
+By default the Arduino runs firmware created by SourceBots providing simple
+access to the attached servo shield, compatible ultrasound sensors and to the
+GPIO pins directly.
 
 You can also extend the firmware on the Arduino to support more features, for
 example if you have other types of sensor which require higher precision timing
@@ -157,9 +157,9 @@ TypeError: unsupported operand type(s) for /: 'str' and 'str'
 
 ### Errors
 
-If an error is encountered while handling a command an [exception][errors] will
-be raised. The exceptions will contain information about the error so that you
-can change your code to fix it.
+If an error is encountered while handling a command an [exception](https://docs.python.org/3/tutorial/errors.html)
+will be raised. The exceptions will contain information about the error so that
+you can change your code to fix it.
 
 #### `CommandError`
 
@@ -211,6 +211,4 @@ correctly for all your messages back to the Pi.
     as it's nontrivial to describe which bits are safe to remove.
 -->
 
-[arduino]: https://store.arduino.cc/arduino-uno-rev3
 [servo-firmware-zip]: https://github.com/sourcebots/servo-firmware/archive/master.zip
-[errors]: https://docs.python.org/3/tutorial/errors.html
