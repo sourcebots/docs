@@ -1,7 +1,7 @@
 ---
 title: "Python: A Whirlwind Tour"
 ---
-In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use [Python](https://www.python.org/), specifically {{% python_version %}}. We chose Python because it's easy to learn, but also elegant and powerful.
+In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use [Python](https://www.python.org/), specifically {{% python_patch_version %}}. We chose Python because it's easy to learn, but also elegant and powerful.
 
 At the end of the tutorial are exercises. The first ones for each section should be quite easy, while the higher-numbered exercises will be harder. Some will be very hard; try these if you're up for a challenge.
 
@@ -618,7 +618,7 @@ Wrap the code for your average calculator from the Lists and Loops exercises in 
 
 ## What to do next
 
-As mentioned at the start, there are loads of Python exercises out there on the Web. If you want to learn some more advanced concepts, there are more tutorials out there too, and [LearnPython](http://learnpython.org/) looks like a good choice. Start at the Classes and Objects section. [Here's](/tutorials/intro-to-python/) our recommendations of tutorials from [Codecademy](https://www.codecademy.com/).
+As mentioned at the start, there are loads of Python exercises out there on the Web. If you want to learn some more advanced concepts, there are more tutorials out there too. [Here's](/tutorials/intro-to-python/) our recommendations of tutorials from [Codecademy](https://www.codecademy.com/).
 
 ## Appendices
 
