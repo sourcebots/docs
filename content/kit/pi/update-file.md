@@ -10,8 +10,8 @@ Using this file is the recommended way to update your kit.
 
 ## Using the update file
 
-1. Put the `update.tar.xz` file on a USB drive.
-2. Connect the USB drive to your robot.
+1. Put the `update.tar.xz` file on a USB drive
+2. Connect the USB drive to your robot
 3. Turn on your robot
 
 After the update is completed, the Pi will reboot. If you have a `main.py` file on the USB as well, this will now execute, because the `update.tar.xz` file is deleted when the update begins.
