@@ -7,7 +7,7 @@ To fully update your Pi's software, or refresh it if you think it's not working 
 To update the SD card, you'll need to download our image, `pi-image.img.xz`. The flashing procedure is identical to flashing other Raspberry Pi images.
 
 ## Etcher
-We recommend using [etcher](https://etcher.io), as it's simple to use, and available on Windows, macOS and Linux. If you're familiar with Raspberry Pis and have flashed images before with a different tool, that will also work.
+We recommend using [etcher](https://etcher.io), as it's simple to use, and available on Windows, macOS and Linux. If you're familiar with Raspberry Pi's and have flashed images before with a different tool, that will also work.
  
 ![Etcher example](https://etcher.io/static/screenshot.gif)
 
