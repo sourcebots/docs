@@ -4,8 +4,10 @@
   "description": "",
   "scripts": {
     "spellcheck": "mdspell --en-gb --report --ignore-acronyms --ignore-numbers --no-suggestions 'content/**/*.md'",
-    "broken-link": "blcl --recursive --ordered ./public/",
-    "test": "npm run spellcheck && npm run broken-link"
+    "broken-link-local": "blcl --recursive --ordered --exclude-external ./public/",
+    "broken-link-all": "blcl --recursive --ordered ./public/",
+    "test": "npm run spellcheck && npm run broken-link-local",
+    "ci-test": "npm run spellcheck && npm run broken-link-all"
   },
   "repository": {
     "type": "git",
