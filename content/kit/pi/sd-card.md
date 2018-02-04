@@ -4,7 +4,7 @@ title: Flashing your SD card
 
 To fully update your Pi's software, or refresh it if you think it's not working correctly, you can flash our SD card image onto the microSD card in your Pi. 
 
-To update the SD card, you'll need to download our update file, `pi-image.img.xz`. The flashing procedure is identical to flashing other images.
+To update the SD card, you'll need to download our image, `pi-image.img.xz`. The flashing procedure is identical to flashing other images.
 
 ## Etcher
 We recommend using [etcher](https://etcher.io), as it's simple to use, and available on Windows, macOS and Linux. If you have another preferred tool, that will also work.
