@@ -97,8 +97,6 @@ use), you can have a look at the other commands the Arduino already supports.
 In particular the `get_version`, `led` and `servo` functions are a good starting
 point.
 
-<!-- TODO should we error in robot-api/robotd if the incoming arguments include spaces? -->
-
 ### Registering the command
 
 To register this command we need to modify the list of commands stored in the
