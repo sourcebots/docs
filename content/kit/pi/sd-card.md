@@ -19,7 +19,7 @@ If you choose to use a tool other than Etcher, you may need to extract the `pi-i
 
 1. Open Etcher and select the `pi-image.img.xz` file you downloaded.
 2. Select your SD card from the devices window
-3. Click 'Flash!'.
+3. Click 'Flash!'
 
 {{% notice tip %}}
 The Raspberry Pi Foundation also have a good tutorial for all platforms [on their website](https://www.raspberrypi.org/documentation/installation/installing-images/).
