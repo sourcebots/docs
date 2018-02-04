@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "spellcheck": "mdspell --en-gb -ranx 'content/**/*.md'",
-    "broken-link": "blcl -ro ./public/",
+    "spellcheck": "mdspell --en-gb --report --ignore-acronyms --ignore-numbers --no-suggestions 'content/**/*.md'",
+    "broken-link": "blcl --recursive --ordered ./public/",
     "test": "npm run spellcheck && npm run broken-link"
   },
   "repository": {
