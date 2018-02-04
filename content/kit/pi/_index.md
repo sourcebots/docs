@@ -20,7 +20,7 @@ Keeping your kit up to date is very important. It enables us to deploy new featu
 
 There are 2 ways of updating your kit:
 
-- [Using the `update.tar.xz` file](update-file)
+- [Using an `update.tar.xz` file](update-file)
 - [Flashing your SD card](sd-card)
 
 We highly recommend using the update file, as it's a much smaller file, and far easier to do.
