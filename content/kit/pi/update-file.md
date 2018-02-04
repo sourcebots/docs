@@ -21,7 +21,7 @@ Do not turn off your Pi during the update process. It can take a few minutes to 
 {{% /notice %}}
 
 ## Logging
-The update process will create an `update.log` file on the USB drive. If any errors occur, they will be displayed there.
+The update process will create an `update.log` file on the USB drive. If any errors occur, they will be displayed there. If the update succeeds, the line _Upgrade complete, rebooting._ will be shown in the log.
 
 ## Failed update
-If the update file fails, you can try again. If it fails multiple times, you may need to [flash your SD card](../sd-card).
+If the update fails, you can try again. If it fails multiple times, you may need to [flash your SD card](../sd-card).
