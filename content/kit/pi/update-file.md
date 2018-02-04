@@ -1,5 +1,5 @@
 ---
-title: The update file
+title: The Update File
 ---
 
 The update file is the simplest way to update your Pi with new software from us.  
