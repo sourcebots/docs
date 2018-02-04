@@ -12,7 +12,7 @@ We recommend using [etcher](https://etcher.io), as it's simple to use, and avail
 ![Etcher example](https://etcher.io/static/screenshot.gif)
 
 {{% notice note %}}
-If you choose to use a tool other than Etcher, you may need to extract the `pi-image.img.xz` to `pi-image.img`. There are many tools available for this.
+If you choose to use a tool other than Etcher, you may need to extract the `pi-image.img.xz` to `pi-image.img`. There are many tools available for this, eg [7-zip](http://www.7-zip.org/).
 {{% /notice %}}
 
 ### Flashing
