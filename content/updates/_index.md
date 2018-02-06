@@ -15,4 +15,4 @@ approach. The full images are provided in case an update goes wrong or you need
 to completely wipe your Pi for some reason.
 
 Once you have downloaded the file you need, refer to the documentation on
-[updating your pi](kit/pi/#updating-your-pi) to apply the update.
+[updating your pi](/kit/pi/#updating-your-pi) to apply the update.
