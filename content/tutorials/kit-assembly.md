@@ -32,7 +32,7 @@ title: Connecting your kit
 You will need to obtain any other needed tools/supplies yourself.
 
 {{% notice info %}}
-_CamCons_ are the [green connectors](../kit-assembly.files/camcons.png) used for power wiring within our kit.
+_CamCons_ are the [green connectors](/tutorials/kit-assembly.files/camcons.png) used for power wiring within our kit.
 {{% /notice %}}
 
 ## Important notes before you start

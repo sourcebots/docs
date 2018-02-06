@@ -8,6 +8,12 @@ URL: http://docs.sourcebots.co.uk
 - [Hugo](https://gohugo.io) (>=0.30)
 - [NodeJS](https://nodejs.org/) (>=6) (required for tests only)
 
+## Style notes
+
+Since our pages can almost all be accessed both with and without a trailing
+slash, we prefer all our links to be root-relative (i.e: `/foo/bar`) rather
+than parent-relative (i.e: `../bar`).
+
 ## Local Setup
 1. `npm install`
 2. `git submodule update --init`
