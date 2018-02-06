@@ -10,10 +10,9 @@ params:
     disableInlineCopyToClipBoard: true
     disableLanguageSwitchingButton: true
     disableAssetsBusting: true
-    editURL: "https://github.com/sourcebots/docs/tree/master/content/"
     ordersectionsby: "weight"
 
-    pythonVersion: 3.5
+    pythonVersion: 3.5.3
 
 menu:
     shortcuts:
@@ -37,3 +36,5 @@ outputs:
   home:
     - html
     - json
+
+buildFuture: true

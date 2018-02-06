@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+
+{{ .Content }}
+
+<table style="text-align: center">
+  <tr>
+    <td><a href="{{ .Params.image }}">Download SD Card Image</a></td>
+    <td><a href="{{ .Params.update }}">Download Update File</a></td>
+  </tr>
+</table>
+
+{{ partial "footer.html" . }}
