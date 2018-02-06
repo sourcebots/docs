@@ -36,3 +36,5 @@ outputs:
   home:
     - html
     - json
+
+buildFuture: true
