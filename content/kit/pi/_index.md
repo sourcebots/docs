@@ -16,7 +16,7 @@ Please do not attempt to modify the software on the Raspberry Pi. It has been co
 {{% /notice %}}
 
 ## Updating your Pi
-Keeping your kit up to date is very important. It enables us to deploy new features, as well as fix bugs. 
+Keeping your kit up to date is very important. It enables us to deploy new features, as well as fix bugs.
 
 There are 2 ways of updating your kit:
 
