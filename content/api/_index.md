@@ -18,10 +18,17 @@ Once this has been done, this `Robot` object can be used to control the robot's 
 
 The remainder of the tutorials pages will assume your `Robot` object is defined as `r`.
 
-## Where to put your code
+## Running your code
 Your code needs to be put on a USB drive in a file called `main.py`. On insertion into the robot, this file will be executed. The file is directly executed off your USB drive, with your drive as the working directory.
 
-{{% notice warning %}}
+To stop your code running, you can just remove the USB drive. This will also
+stop the motors and any other peripherals connected to the kit.
+
+You can then reinsert the USB drive into the robot and it will run your
+`main.py` again (from the start). This allows you to make changes and test them
+quickly.
+
+{{% notice info %}}
 If this file is missing or incorrectly named, your robot won't do anything. No log file will be created.
 {{% /notice %}}
 
