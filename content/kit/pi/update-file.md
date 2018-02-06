@@ -10,6 +10,10 @@ Using this file is the recommended way to update your kit.
 
 ## Using the update file
 
+{{% notice note %}}
+You will need a minimal robot setup to do this. This includes the Pi and Power board connected.
+{{% /notice %}}
+
 1. Put the `update.tar.xz` file on a USB drive
 2. Connect the USB drive to your robot
 3. Turn on your robot
