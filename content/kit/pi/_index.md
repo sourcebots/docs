@@ -14,3 +14,15 @@ The software included on the Raspberry Pi allows it to run your robot. No graphi
 {{% notice warning %}}
 Please do not attempt to modify the software on the Raspberry Pi. It has been configured and tested in its current configuration. Unauthorized modifications may damage your robot or prevent accurate debugging.
 {{% /notice %}}
+
+## Updating your Pi
+Keeping your kit up to date is very important. It enables us to deploy new features, as well as fix bugs. 
+
+There are 2 ways of updating your kit:
+
+- [Using an `update.tar.xz` file](update-file)
+- [Flashing your SD card](sd-card)
+
+{{% notice tip %}}
+Using the update file is the recommended way to update your kit.
+{{% /notice %}}
