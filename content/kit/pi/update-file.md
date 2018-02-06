@@ -10,15 +10,13 @@ Using this file is the recommended way to update your kit.
 
 ## Using the update file
 
-{{% notice note %}}
-You will need a minimal robot setup to do this. This includes the Pi and Power board connected.
-{{% /notice %}}
+1. Create a minimal robot setup of at least the battery, Pi and power board. Additional components aren't required, however do not need to be disconnected.
+2. Put the `update.tar.xz` file on a USB drive
+3. Connect the USB drive to your robot
+4. Turn on your robot
+5. Wait for your Pi to reboot, this is a sign the update has completed successfully.
 
-1. Put the `update.tar.xz` file on a USB drive
-2. Connect the USB drive to your robot
-3. Turn on your robot
-
-After the update is completed, the Pi will reboot. If you have a `main.py` file on the USB as well, this will now execute, because the `update.tar.xz` file is deleted when the update begins.
+If you have a `main.py` file on the USB as well, this will now execute, because the `update.tar.xz` file is deleted when the update begins.
 
 {{% notice warning %}}
 Do not turn off your Pi during the update process. It can take a few minutes to finish.
