@@ -23,6 +23,8 @@ There are 2 ways of updating your kit:
 - [Using an `update.tar.xz` file](update-file)
 - [Flashing your SD card](sd-card)
 
+There is a separate list of [all published updates](/updates).
+
 {{% notice tip %}}
 Using the update file is the recommended way to update your kit.
 {{% /notice %}}
