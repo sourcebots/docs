@@ -11,7 +11,7 @@
   </tr>
   {{ range .Pages.ByDate }}
     <tr>
-      <td><a href='{{ .RelPermalink }}'>{{ .Title }}</a></td>
+      <td><a href='{{ .RelPermalink }}' title="See a summary of the changes in this release">{{ .Title }}</a></td>
       <td>{{ .Date.Format "2006-01-02" }}</td>
       <td>
         {{ if .Params.update }}
