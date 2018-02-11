@@ -8,11 +8,10 @@
     <th>Date</th>
     <th>Update File Download</th>
     <th>Image Download</th>
-    <th>Changelog</th>
   </tr>
   {{ range .Pages.ByDate }}
     <tr>
-      <td>{{ .Title }}</td>
+      <td><a href='{{ .RelPermalink }}'>{{ .Title }}</a></td>
       <td>{{ .Date.Format "2006-01-02" }}</td>
       <td>
         {{ if .Params.update }}
@@ -28,7 +27,6 @@
           No SD card image available
         {{ end }}
       </td>
-      <td><a href='{{ .RelPermalink }}'>View Changelog</a></td>
     </tr>
   {{ end }}
 </table>
