@@ -14,8 +14,20 @@
     <tr>
       <td>{{ .Title }}</td>
       <td>{{ .Date.Format "2006-01-02" }}</td>
-      <td><a href='{{ .Params.update }}'>Download <code>update.tar.xz</code></a></td>
-      <td><a href='{{ .Params.image }}'>Download <code>pi-image.img.xz</code></a></td>
+      <td>
+        {{ if .Params.update }}
+        <a href='{{ .Params.update }}'>Download <code>update.tar.xz</code></a>
+        {{ else }}
+          No update file available
+        {{ end }}
+      </td>
+      <td>
+        {{ if .Params.image }}
+        <a href='{{ .Params.image }}'>Download <code>pi-image.img.xz</code></a>
+        {{ else }}
+          No SD card image available
+        {{ end }}
+      </td>
       <td><a href='{{ .RelPermalink }}'>View Changelog</a></td>
     </tr>
   {{ end }}

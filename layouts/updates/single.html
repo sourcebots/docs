@@ -4,8 +4,13 @@
 
 <table style="text-align: center">
   <tr>
-    <td><a href="{{ .Params.image }}">Download SD Card Image</a></td>
-    <td><a href="{{ .Params.update }}">Download Update File</a></td>
+    {{ if .Params.image }}
+      <td><a href="{{ .Params.image }}">Download SD Card Image</a></td>
+    {{ end }}
+
+    {{ if .Params.update }}
+      <td><a href="{{ .Params.update }}">Download Update File</a></td>
+    {{ end }}
   </tr>
 </table>
 
