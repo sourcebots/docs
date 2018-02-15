@@ -18,12 +18,12 @@ The markers in the list have some useful attributes:
 - `is_token_marker()` - returns whether or not the marker is a [token marker](marker-ids/#token-markers).
 - `id` - returns the [id](marker-ids) of the marker.
 - `pixel_centre` - returns the location in pixels of the centre of the marker in the captured image.
-- `polar` - returns details of the position of the marker in the [polar](coordinates/#polar-coordinates) coordinate system.
 - `cartesian` - returns details of the position of the marker in the [Cartesian](coordinates/#cartesian-coordinates) coordinate system.
-- `polar` - *Deprecated*. Returns coordinate data in an undocumented manner.
+- `spherical` - returns details of the position of the marker in a [spherical](coordinates/#spherical-coordinates) coordinate system.
+- `polar` - *Deprecated*. Use the `spherical` attribute instead.
 
 {{% notice tip %}}
-A marker's position can be represented using both the [polar](coordinates/#polar-coordinates) and [Cartesian](coordinates/#cartesian-coordinates) coordinate systems.
+A marker's position can be represented using both the [Cartesian](coordinates/#cartesian-coordinates) and [spherical](coordinates/#spherical-coordinates) coordinate systems.
 {{% /notice %}}
 
 ## Marker PDFs
