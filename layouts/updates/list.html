@@ -9,7 +9,7 @@
     <th>Update File Download</th>
     <th>Image Download</th>
   </tr>
-  {{ range .Pages.ByDate }}
+  {{ range .Pages.ByDate.Reverse }}
     <tr>
       <td><a href='{{ .RelPermalink }}' title="See a summary of the changes in this release">{{ .Title }}</a></td>
       <td>{{ .Date.Format "2006-01-02" }}</td>
