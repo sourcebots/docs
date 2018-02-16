@@ -183,7 +183,7 @@ This error will generally indicate that something is wrong in your Python code.
 
 #### `InvalidResponse`
 
-A `InvalidResponse` indicates that the Python API which handles the actual
+An `InvalidResponse` indicates that the Python API which handles the actual
 communication to the Arduino received an invalid response from the Arduino. The
 error message will be the actual text received from the Arduino, allowing you to
 easily see the cause of the problem.
