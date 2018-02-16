@@ -45,6 +45,8 @@ For example, if `distance_metres` was `1`, `rot_x_degrees` was `0`, and
 `rot_y_degrees` was `45`, the marker would be 45 degrees to the right of the
 robot, exactly 1 metre away.
 
+{{% added_in update="2018-jan" feature="spherical coordinates" %}}
+
 ## Diagram
 
 The following diagram shows the orientation of the Cartesian axes relative to
