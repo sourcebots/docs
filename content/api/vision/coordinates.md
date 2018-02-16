@@ -41,11 +41,9 @@ approximately the same level as the camera.
    positive angle indicates that the marker is to the right of the camera's
    view.
 
-{{% notice info %}}
 For example, if `distance_metres` was `1`, `rot_x_degrees` was `0`, and
 `rot_y_degrees` was `45`, the marker would be 45 degrees to the right of the
 robot, exactly 1 metre away.
-{{% /notice %}}
 
 ## Diagram
 
