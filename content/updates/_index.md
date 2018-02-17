@@ -18,7 +18,3 @@ Once you have downloaded the file you need, refer to the documentation on
 [updating your pi](/kit/pi/#updating-your-pi) to apply the update.
 
 Each update file is a complete upgrade. Each file contains the changes of those before it. If you need to jump up multiple versions, you can do so by using the latest file.
-
-{{% notice warning %}}
-Downgrading using the update file is not supported, and may lead to odd behaviour. If for whatever reason you need to downgrade, flash the SD card.
-{{% /notice %}}
