@@ -14,8 +14,8 @@
   <!-- If you see this block, you've supplied an invalid update name. -->
   <div class="notices warning">
     <p>
-      <strong>ERROR</strong>: Invaild update specified:
-      <code>{{ $update }}</code> does not exist.
+      <strong>ERROR</strong>:
+      {{ errorf "Invaild update specified: '%s' does not exist." $update }}
     </p>
   </div>
 {{ end }}
