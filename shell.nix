@@ -2,8 +2,8 @@
 
 with pkgs;
 
-# Require hugo >= 0.30.
-assert (builtins.compareVersions hugo.version "0.30") >= 0;
+# Require hugo >= 0.33.
+assert (builtins.compareVersions hugo.version "0.33") >= 0;
 
 stdenv.mkDerivation {
   name = "docs-env";
