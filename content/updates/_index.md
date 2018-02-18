@@ -16,3 +16,5 @@ to completely wipe your Pi for some reason.
 
 Once you have downloaded the file you need, refer to the documentation on
 [updating your pi](/kit/pi/#updating-your-pi) to apply the update.
+
+Each update file is a complete upgrade. Each file contains the changes of those before it. If you need to jump up multiple versions, you can do so by using the latest file.
