@@ -7,10 +7,7 @@ Our vision system uses the [AprilTag](https://april.eecs.umich.edu/software/apri
 
 Here you can download PDF files of all markers:
 
-| PDF                               | Marker Size | Paper Size |
-|-----------------------------------|-------------|------------|
-| [Large markers][large-marker-pdf] | 250x250mm   | A3         |
-| [Small markers][small-marker-pdf] | 100x100mm   | A4         |
-
-[large-marker-pdf]: /docs/large-tags.pdf
-[small-marker-pdf]: /docs/small-tags.pdf
+| PDF                             | Marker Size | Paper Size |
+|---------------------------------|-------------|------------|
+| [Large markers](large-tags.pdf) | 250x250mm   | A3         |
+| [Small markers](small-tags.pdf) | 100x100mm   | A4         |
