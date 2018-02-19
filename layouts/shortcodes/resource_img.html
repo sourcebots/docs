@@ -16,4 +16,4 @@
 
 {{ $image := .Scratch.Get "image" }}
 
-<img src="{{ $image.RelPermalink }}" />
+<img src="{{ $image.RelPermalink }}" alt="{{ .Get "alt" }}"/>
