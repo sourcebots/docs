@@ -25,9 +25,3 @@ The markers in the list have some useful attributes:
 {{% notice tip %}}
 A marker's position can be represented using both the [Cartesian](coordinates/#cartesian-coordinates) and [spherical](coordinates/#spherical-coordinates) coordinate systems.
 {{% /notice %}}
-
-## Marker PDFs
-You can download PDF files of all markers:
-
-- [Large markers](/docs/large-tags.pdf), Containing Wall and Column markers (250x250mm, should be printed on A3)
-- [Small markers](/docs/small-tags.pdf), Containing Token markers (100x100mm, should be printed on A4)
