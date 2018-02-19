@@ -38,3 +38,7 @@ outputs:
     - json
 
 buildFuture: true
+
+imaging:
+    resampleFilter: Lanczos
+    quality: 100
