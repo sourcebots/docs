@@ -93,7 +93,7 @@ Certain things in your program, for example variables and functions, will need n
 
 ## Code blocks and indentation
 
-In the previous section, you probably noticed that the statements 'inside' the `if` statements were indented relative to the rest of the code. Python is reasonably unique in that it cares about indentation, and uses it to decide which statements are referred to by things like `if` statements.
+Python is reasonably unique in that it cares about indentation, and uses it to decide which statements are referred to by things like `if` statements.
 
 In most other programming languages, if you don't indent your code it will run just fine, but any poor soul who has to read your code will hunt you down and hit you around the head with a large, wet fish. In Python, you'll just get an error, which we're sure you'll agree is preferable.
 
