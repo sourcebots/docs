@@ -22,6 +22,7 @@
   "devDependencies": {},
   "dependencies": {
     "broken-link-checker-local": "0.1.1",
-    "markdown-spellcheck": "1.0.0"
+    "markdown-spellcheck": "1.0.0",
+    "sinon": "^1.17.7"
   }
 }
