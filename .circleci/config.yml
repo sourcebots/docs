@@ -3,7 +3,7 @@ version: 2.0
 jobs:
     build:
         docker:
-            - image: circleci/node:6.10
+            - image: circleci/node:8.9
         working_directory: ~/circleci-hugo-template
         steps:
             - checkout
