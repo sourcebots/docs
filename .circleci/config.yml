@@ -14,7 +14,7 @@ jobs:
                 name: Install Hugo
                 command: wget https://github.com/gohugoio/hugo/releases/download/v0.33/hugo_0.33_Linux-64bit.deb -O /tmp/hugo.deb && sudo dpkg -i /tmp/hugo.deb
             - restore_cache:
-                key: node-{{ checksum "package.json" }}
+                key: node-{{ checksum "package-lock.json" }}
             - run:
                 name: Install dependencies
                 command: npm install
@@ -25,6 +25,6 @@ jobs:
                 name: Run Tests
                 command: npm run ci-test
             - save_cache:
-                key: node-{{ checksum "package.json" }}
+                key: node-{{ checksum "package-lock.json" }}
                 paths:
                     - node_modules
