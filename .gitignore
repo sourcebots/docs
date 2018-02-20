@@ -129,6 +129,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# NPM Package Lock File
+package-lock.json
 
 # End of https://www.gitignore.io/api/node,hugo,intellij
 
