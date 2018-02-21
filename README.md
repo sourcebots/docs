@@ -6,7 +6,7 @@ URL: http://docs.sourcebots.co.uk
 
 ## Requirements
 - [Hugo](https://gohugo.io) (>=0.33)
-- [NodeJS](https://nodejs.org/) (>=6) (required for tests only)
+- [NodeJS](https://nodejs.org/) (>=8) (required for tests only)
 
 ## Style notes
 
