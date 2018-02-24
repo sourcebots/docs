@@ -11,6 +11,8 @@ You can also extend the firmware on the Arduino to support more features, for
 example if you have other types of sensor which require higher precision timing
 than can be achieved through the Python API.
 
+{{% added_in update="2018-jan" feature="custom arduino commands" %}}
+
 ## Requirements
 
 As your new firmware will still need to be able to talk to the Python code

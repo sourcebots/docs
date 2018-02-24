@@ -1,0 +1,21 @@
+{{ $feature := .Get "feature" }}
+{{ $update := .Get "update" }}
+
+{{ with $.Site.GetPage "page" "updates" $update }}
+  <div class="notices note">
+    <p>
+      Support for <em>{{ $feature }}</em> was added in the
+      <a href="{{ .RelPermalink }}" title="{{ .LinkTitle }}">{{ .Title }}</a>
+      update. You need to be running at least that version of the kit software
+      in order to use this feature.
+    </p>
+  </div>
+{{ else }}
+  <!-- If you see this block, you've supplied an invalid update name. -->
+  <div class="notices warning">
+    <p>
+      <strong>ERROR</strong>:
+      {{ errorf "Invalid update specified: '%s' does not exist." $update }}
+    </p>
+  </div>
+{{ end }}
