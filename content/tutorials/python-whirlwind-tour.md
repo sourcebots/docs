@@ -531,7 +531,7 @@ Write a program that asks the user for their age, and prints a different message
 Write a program which calculates the average of a list of numbers. You can specify the list in the code.
 
 **Extension:**
-You can tell when a user has not entered anything at a `input` prompt when it returns the empty string, `""`. Otherwise, it returns a string (like "42.5"), which you can turn into a number with the `float` function. Addiotionally, extend your program to let the user enter the list of values. Stop asking for new list entries when they do not enter anything at the `input` prompt. Exmaple of how to recognize when a user doesn't enter anything:
+You can tell when a user has not entered anything at a `input` prompt when it returns the empty string, `""`. Otherwise, it returns a string (like "42.5"), which you can turn into a number with the `float` function. Addiotionally, extend your program to let the user enter the list of values. Stop asking for new list entries when they do not enter anything at the `input` prompt. Example of how to recognize when a user doesn't enter anything:
 
 ```python
 var = input("Enter a number: ")
