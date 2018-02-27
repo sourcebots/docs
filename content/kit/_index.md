@@ -26,20 +26,20 @@ With your kit, you should have the following boards:
 
 In addition to the boards, your kit will also contain:
 
-| Part                         | Quantity | Specification                 | Notes                                            |
-|------------------------------|----------|-------------------------------|--------------------------------------------------|
-| Battery Bag                  | 1        |                               |                                                  |
-| Battery Charger              | 1        | iMAX B6                       |                                                  |
-| Battery Charger Power Supply | 1        | 12V 5A                        |                                                  |
-| Battery                      | 2        | 11.1V 2200mAh Lithium Polymer |                                                  |
-| Webcam                       | 1        | TeckNet C016                  |                                                  |
-| USB Hub                      | 1        |                               |                                                  |
-| Micro USB Cable              | 2        |                               |                                                  |
-| USB B Cable                  | 1        |                               |                                                  |
-| Large CamCon                 | 2        | 7.5mm                         |                                                  |
-| Medium CamCon                | 2        | 5mm                           |                                                  |
-| Small CamCon                 | 3        | 3.81mm                        | 1 additionally found on Raspberry Pi power cable |
-| Raspberry Pi Power Cable     | 1        | Micro USB to small CamCon     |                                                  |
+| Part                                                  | Quantity | Specification                 | Notes                                            |
+|-------------------------------------------------------|----------|-------------------------------|--------------------------------------------------|
+| [Battery Bag](https://goo.gl/6NHiwk)                  | 1        |                               |                                                  |
+| [Battery Charger](https://goo.gl/m3n9AZ)              | 1        | iMAX B6                       |                                                  |
+| [Battery Charger Power Supply](https://goo.gl/8dCnhm) | 1        | 12V 5A                        |                                                  |
+| [Battery](https://goo.gl/oVGWvH)                      | 2        | 11.1V 2200mAh Lithium Polymer |                                                  |
+| [Webcam](https://goo.gl/8sBFQv)                       | 1        | TeckNet C016                  |                                                  |
+| [USB Hub](https://goo.gl/QSMMFa)                      | 1        |                               |                                                  |
+| [Micro USB Cable](https://goo.gl/MS3vQA)              | 2        |                               |                                                  |
+| [USB B Cable](https://goo.gl/hMCTGv)                  | 1        |                               |                                                  |
+| [Large CamCon](https://goo.gl/GssRRS)                 | 2        | 7.5mm                         |                                                  |
+| [Medium CamCon](https://goo.gl/rK7UPb)                | 2        | 5mm                           |                                                  |
+| [Small CamCon](https://goo.gl/4NPxKs)                 | 3        | 3.81mm                        | 1 additionally found on Raspberry Pi power cable |
+| Raspberry Pi Power Cable                              | 1        | Micro USB to small CamCon     |                                                  |
 
 ### Parts we don't mind you keeping
 
