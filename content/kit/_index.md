@@ -26,20 +26,20 @@ With your kit, you should have the following boards:
 
 In addition to the boards, your kit will also contain:
 
-| Part                                                  | Quantity | Specification                 | Notes                                            |
-|-------------------------------------------------------|----------|-------------------------------|--------------------------------------------------|
-| [Battery Bag](https://goo.gl/6NHiwk)                  | 1        |                               |                                                  |
-| [Battery Charger](https://goo.gl/m3n9AZ)              | 1        | iMAX B6                       |                                                  |
-| [Battery Charger Power Supply](https://goo.gl/8dCnhm) | 1        | 12V 5A                        |                                                  |
-| [Battery](https://goo.gl/oVGWvH)                      | 2        | 11.1V 2200mAh Lithium Polymer |                                                  |
-| [Webcam](https://goo.gl/8sBFQv)                       | 1        | TeckNet C016                  |                                                  |
-| [USB Hub](https://goo.gl/QSMMFa)                      | 1        |                               |                                                  |
-| [Micro USB Cable](https://goo.gl/MS3vQA)              | 2        |                               |                                                  |
-| [USB B Cable](https://goo.gl/hMCTGv)                  | 1        |                               |                                                  |
-| [Large CamCon](https://goo.gl/GssRRS)                 | 2        | 7.5mm                         |                                                  |
-| [Medium CamCon](https://goo.gl/rK7UPb)                | 2        | 5mm                           |                                                  |
-| [Small CamCon](https://goo.gl/4NPxKs)                 | 3        | 3.81mm                        | 1 additionally found on Raspberry Pi power cable |
-| Raspberry Pi Power Cable                              | 1        | Micro USB to small CamCon     |                                                  |
+| Part                                                                                                     | Quantity | Specification                 | Notes                                            |
+|----------------------------------------------------------------------------------------------------------|----------|-------------------------------|--------------------------------------------------|
+| [Battery Bag](https://hobbyking.com/en_us/lithium-polymer-charge-pack-25x33cm-jumbo-sack.html)           | 1        |                               |                                                  |
+| [Battery Charger](https://hobbyking.com/en_us/imax-b6-50w-5a-charger-discharger-1-6-cells-genuine.html)  | 1        | iMAX B6                       |                                                  |
+| [Battery Charger Power Supply](https://www.amazon.co.uk/TMEZON-100V-240V-Switching-Security-Accessories-1x-5A-power-adapter/dp/B01N1ULL37) | 1      | 12V 5A                                           |
+| [Battery](https://hobbyking.com/en_us/turnigy-2200mah-3s-25c-lipo-pack.html)                             | 2        | 11.1V 3S 25C 2200mAh Lithium Polymer |                                           |
+| [Webcam](https://www.amazon.co.uk/TeckNet%C2%AE-C016-Webcam-MegaPixel-Microphone/dp/B000Q3VECE/)         | 1        | TeckNet C016                  |                                                  |
+| [USB Hub](https://www.amazon.co.uk/Warranty-Ultra-Slim-Portable-Expansion-Splitter-Black/dp/B01DYD3Q28/) | 1        |                               |                                                  |
+| [Micro USB Cable](https://www.amazon.co.uk/AmazonBasics-USB-Male-Micro-Cable/dp/B01EK87T9M/)             | 2        |                               |                                                  |
+| [USB B Cable](https://www.amazon.co.uk/AmazonBasics-USB-2-0-Cable-Male/dp/B00NH11KIK)                    | 1        |                               |                                                  |
+| [Large CamCon](http://uk.farnell.com/camdenboss/ctb9400-2/terminal-block-pluggable-2pos/dp/3882275)      | 2        | 7.5mm                         |                                                  |
+| [Medium CamCon](http://uk.farnell.com/camdenboss/ctb9200-2a/terminal-block-pluggable-2pos/dp/3881854)    | 2        | 5mm                           |                                                  |
+| [Small CamCon](http://uk.farnell.com/camdenboss/ctb92he-2/terminal-block-pluggable-2pos/dp/1717047)      | 3        | 3.81mm                        | 1 additionally found on Raspberry Pi power cable |
+| Raspberry Pi Power Cable                                                                                 | 1        | Micro USB to small CamCon     |                                                  |
 
 ### Parts we don't mind you keeping
 
