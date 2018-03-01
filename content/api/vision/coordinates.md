@@ -56,8 +56,16 @@ the camera as well as the angles which describe the spherical coordinate space.
 
 ## Orientation Coordinates
 
-Orientation represents the rotation of a marker around the x, y, and z axes.
-Rotations are applied in order of Z, Y, X.
+Orientation represents the rotation of a marker around the x, y, and z axes. These can be accessed as follows:
+
+- `rot_x_radians` / `rot_x_degrees` - the angle of rotation in radians/degrees
+   counter-clockwise about the Cartesian x axis.
+- `rot_y_radians` / `rot_y_degrees` - the angle of rotation in radians/degrees
+   counter-clockwise about the Cartesian y axis.
+- `rot_z_radians` / `rot_z_degrees` - the angle of rotation in radians/degrees
+   counter-clockwise about the Cartesian z axis. (tip: the z axis typically faces the camera, and thus will seem like a clockwise rotation)
+
+Rotations are applied in order of z, y, x.
 
 The following table visually explains what positive and negative rotations represent.
 |  |  |
