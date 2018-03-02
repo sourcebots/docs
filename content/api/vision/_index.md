@@ -20,7 +20,7 @@ The markers in the list have some useful attributes:
 - `pixel_centre` - returns the location in pixels of the centre of the marker in the captured image.
 - `cartesian` - returns details of the position of the marker in the [Cartesian](coordinates/#cartesian-coordinates) coordinate system.
 - `spherical` - returns details of the position of the marker in a [spherical](coordinates/#spherical-coordinates) coordinate system.
-- `orientation` - returns the [Orientation](coordinates/#orientation) of the marker around its centre.
+- `orientation` - returns the [Orientation](orientation) of the marker around its centre.
 - `polar` - *Deprecated*. Use the `spherical` attribute instead.
 
 {{% notice tip %}}
