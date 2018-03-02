@@ -64,8 +64,8 @@ These can be accessed as follows:
 - `rot_y_radians` / `rot_y_degrees` - the angle of rotation in radians/degrees
    counter-clockwise about the Cartesian y axis.
 - `rot_z_radians` / `rot_z_degrees` - the angle of rotation in radians/degrees
-   counter-clockwise about the Cartesian z axis. (tip: the z axis typically
-   faces the camera, and thus will seem like a clockwise rotation)
+   counter-clockwise about the Cartesian z axis. (tip: in our use case the z
+   axis always faces the camera, and thus will appear as a clockwise rotation)
 
 Rotations are applied in order of z, y, x.
 
