@@ -71,6 +71,7 @@ Rotations are applied in order of z, y, x.
 
 The following table visually explains what positive and negative
 rotations represent.
+
 |  |  |
 |:-:|:-:|
 | <img src="/img/api/coordinate-orientations/m45x0y0z.png?width=200px" style="margin:0"/> `rot_x_degrees = 45` | <img src="/img/api/coordinate-orientations/m-45x0y0z.png?width=200px" style="margin:0"/>  `rot_x_degrees = -45` |
