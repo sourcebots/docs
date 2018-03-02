@@ -2,6 +2,11 @@
 title: Orientation
 ---
 
+{{% notice tip %}}
+Orientation was added in version `1.2` of the robot software, see
+[updates](/updates) how to update your robot.
+{{% /notice %}}
+
 Orientation represents the rotation of a marker around the x, y, and z axes.
 These can be accessed as follows:
 
