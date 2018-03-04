@@ -20,7 +20,7 @@ menu:
           url: https://github.com/sourcebots/docs
 
         - name: "<i class='fa fa-globe'></i> Website"
-          url: http://sourcebots.co.uk/
+          url: https://sourcebots.co.uk/
 
 enableGitInfo: true
 enableRobotsTXT: true
