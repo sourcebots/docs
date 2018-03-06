@@ -47,7 +47,7 @@ robot, exactly 1 metre away.
 
 {{% added_in update="2018-jan" feature="spherical coordinates" %}}
 
-### Diagram
+## Diagram
 
 The following diagram shows the orientation of the Cartesian axes relative to
 the camera as well as the angles which describe the spherical coordinate space.
