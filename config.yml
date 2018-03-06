@@ -11,6 +11,7 @@ params:
     disableLanguageSwitchingButton: true
     disableAssetsBusting: true
     ordersectionsby: "weight"
+    editURL: "https://github.com/sourcebots/docs/tree/master/content/"
 
     pythonVersion: 3.5.3
 
