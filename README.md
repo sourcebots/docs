@@ -20,7 +20,7 @@ The site will be output to `public/`.
 `./scripts/server.sh` will start a server on http://localhost:1313.
 
 ## Tests
-Running tests locally is optional, as theyre automatically run by the CI in PRs.
+Running tests locally is optional, as they're automatically run by the CI in PRs.
 
 Currently, the only test run is a spell-checker.
 
