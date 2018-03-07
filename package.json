@@ -5,6 +5,7 @@
   "scripts": {
     "spellcheck": "mdspell --en-gb --report --ignore-acronyms --ignore-numbers --no-suggestions 'content/**/*.md'",
     "broken-link-local": "blcl --recursive --ordered --exclude-external ./public/",
+    "//": "Github links below are excluded to prevent breaking the link checker for the Edit in Github urls, when no such page exists in master",
     "broken-link-all": "blcl --recursive --exclude https://github.com/sourcebots/docs/tree/master/content/* --ordered ./public/",
     "test": "npm run spellcheck && npm run broken-link-local",
     "ci-test": "npm run spellcheck && npm run broken-link-all"
