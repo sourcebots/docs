@@ -14,6 +14,8 @@ The update files are the easiest way to apply an update and are the recommended
 approach. The full images are provided in case an update goes wrong or you need
 to completely wipe your Pi for some reason.
 
+If no update files are provided, you should update using the [full image](/kit/pi/sd-card).
+
 Once you have downloaded the file you need, refer to the documentation on
 [updating your pi](/kit/pi/#updating-your-pi) to apply the update.
 
