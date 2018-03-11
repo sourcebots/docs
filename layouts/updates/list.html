@@ -13,7 +13,7 @@
   {{ range .Pages.ByDate.Reverse }}
     <tr>
       <td><a href='{{ .RelPermalink }}' title="See a summary of the changes in this release">{{ .Title }}</a></td>
-      <td>{{ .Params.version }}</td>
+      <td>{{ default "N/A" .Params.version }}</td>
       <td>{{ .Date.Format "2006-01-02" }}</td>
       <td>
         {{ if .Params.update }}
