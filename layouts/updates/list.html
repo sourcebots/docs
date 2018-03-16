@@ -5,6 +5,7 @@
 <table>
   <tr>
     <th></th>
+    <th>Version number</th>
     <th>Release Date</th>
     <th>Update File Download</th>
     <th>Image Download</th>
@@ -12,6 +13,7 @@
   {{ range .Pages.ByDate.Reverse }}
     <tr>
       <td><a href='{{ .RelPermalink }}' title="See a summary of the changes in this release">{{ .Title }}</a></td>
+      <td>{{ default "N/A" .Params.version }}</td>
       <td>{{ .Date.Format "2006-01-02" }}</td>
       <td>
         {{ if .Params.update }}
