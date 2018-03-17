@@ -5,7 +5,6 @@
   "scripts": {
     "spellcheck": "mdspell --en-gb --report --ignore-acronyms --ignore-numbers --no-suggestions 'content/**/*.md'",
     "broken-link-local": "blcl --recursive --ordered --exclude-external ./public/",
-    "//": "Exclude Farnell as their site causes the link checker to hang.",
     "broken-link-all": "blcl --recursive --exclude farnell --ordered ./public/",
     "test": "npm run spellcheck && npm run broken-link-local",
     "ci-test": "npm run spellcheck && npm run broken-link-all"
