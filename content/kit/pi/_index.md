@@ -18,13 +18,6 @@ Please do not attempt to modify the software on the Raspberry Pi. It has been co
 ## Updating your Pi
 Keeping your kit up to date is very important. It enables us to deploy new features, as well as fix bugs.
 
-There are 2 ways of updating your kit:
-
-- [Using an `update.tar.xz` file](update-file)
-- [Flashing your SD card](sd-card)
+We have documentation on [Flashing your SD card](sd-card).
 
 There is a separate list of [all published updates](/updates).
-
-{{% notice tip %}}
-Using the update file is the recommended way to update your kit.
-{{% /notice %}}
