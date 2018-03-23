@@ -4,6 +4,8 @@ title: Updates
 
 Keeping your kit up to date is very important. It enables us to deploy new features, as well as fix bugs. The following table outlines the updates which have been published.
 
+If no update file is provided, you should update using the [full image](/kit/pi/sd-card) download.
+
 Once you have downloaded the file you need, refer to the documentation on
 [updating your pi](/kit/pi/#updating-your-pi) to apply the update.
 
