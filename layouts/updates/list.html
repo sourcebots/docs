@@ -11,7 +11,7 @@
   </tr>
   {{ range $index, $_ := .Pages.ByDate.Reverse }}
     <tr>
-      <td><a href='{{ .RelPermalink }}' title="See a summary of the changes in this release">{{ .Title }}</a>{{ if (eq $index 0) }} <em>(Latest)</em>{{ end }}</td>
+      <td><a href='{{ .RelPermalink }}' title="See a summary of the changes in this release">{{ .Title }}</a>{{ if (eq $index 0) }} <strong>(Latest)</strong>{{ end }}</td>
       <td>{{ .Date.Format "2006-01-02" }}</td>
       <td>
         {{ if .Params.update }}
