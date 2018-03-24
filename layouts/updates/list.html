@@ -10,8 +10,8 @@
     <th>Image Download</th>
   </tr>
   {{ range $index, $_ := .Pages.ByDate.Reverse }}
-    <tr>
-      <td><a href='{{ .RelPermalink }}' title="See a summary of the changes in this release">{{ .Title }}</a>{{ if (eq $index 0) }} (Latest){{ end }}</td>
+    <tr {{ if (eq $index 0) }}class="latest-row"{{ end }}>
+      <td><a href='{{ .RelPermalink }}' title="See a summary of the changes in this release">{{ .Title }}</a></td>
       <td>{{ .Date.Format "2006-01-02" }}</td>
       <td>
         {{ if .Params.update }}
