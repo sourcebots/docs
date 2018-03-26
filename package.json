@@ -4,10 +4,9 @@
   "description": "",
   "scripts": {
     "spellcheck": "mdspell --en-gb --report --ignore-acronyms --ignore-numbers --no-suggestions 'content/**/*.md'",
-    "broken-link-local": "blcl --recursive --ordered --exclude-external ./public/",
-    "broken-link-all": "blcl --recursive --exclude farnell --exclude microsoft --exclude https://github.com/sourcebots/docs/tree/master/content/* --ordered ./public/",
-    "test": "npm run spellcheck && npm run broken-link-local",
-    "ci-test": "npm run spellcheck && npm run broken-link-all"
+    "broken-link": "blcl --recursive --ordered --exclude-external ./public/",
+    "test": "npm run spellcheck && npm run broken-link",
+    "ci-test": "npm run spellcheck && npm run broken-link"
   },
   "repository": {
     "type": "git",
