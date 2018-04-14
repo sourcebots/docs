@@ -50,3 +50,12 @@ r.power_board.buzz(2, 400)
 {{% notice warning %}}
 Passing an invalid note will raise a `KeyError`. You can see all the supported notes by looking at the power boards `BUZZ_NOTES` variable by printing it (`print(r.power_board.BUZZ_NOTES)`), or [looking at the source](https://github.com/sourcebots/robot-api/blob/master/robot/power.py)
 {{% /notice %}}
+
+## Start Button
+You can manually wait for the start button to be pressed, not only at the start.
+
+```python
+r.power_board.wait_start()
+```
+
+This may be useful for debugging, but be sure to remove it in the competition, as your robot can't be interacted with!
