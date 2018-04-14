@@ -46,6 +46,8 @@ r = Robot(wait_for_start_button=False)
 r.power_board.wait_start()
 ```
 
+{{% added_in update="2018-02" feature="doing things before pressing the start button" %}}
+
 ## Logs
 A log file is saved on the USB drive so you can see what your robot did, what it didn't do, and any errors it raised. The file is saved to `log.txt` in the top-level directory of the USB drive.
 
