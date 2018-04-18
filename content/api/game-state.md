@@ -6,7 +6,7 @@ title: Game State
 Your robot can be in 1 of 2 modes: `DEVELOPMENT` and `COMPETITION`. By default, your robot will be in `DEVELOPMENT` mode. To work out which mode you're in, you need to compare the values against the `GameMode`:
 
 ```python
-from robot.game import GameMode
+from robot import GameMode
 
 r.mode == GameMode.DEVELOPMENT
 >> True
