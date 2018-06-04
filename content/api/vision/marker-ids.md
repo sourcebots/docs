@@ -71,10 +71,6 @@ marker.id in TOKEN_ZONE_0  # Does this token belong to the team in zone 0?
 Each face of the token has the same marker on. However each token has different markers.
 {{% /notice %}}
 
-{{% notice tip %}}
-It's recommended to use `marker.is_token_marker()` instead of `marker.id in TOKEN`.
-{{% /notice %}}
-
 ### All Marker Constants
 Any of the below marker constants can be imported from the `robot` module.
 
