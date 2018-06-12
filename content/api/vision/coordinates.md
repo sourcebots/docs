@@ -53,3 +53,9 @@ The following diagram shows the orientation of the Cartesian axes relative to
 the camera as well as the angles which describe the spherical coordinate space.
 
 ![A diagram showing the coordinate spaces](/img/api/coordinate-spaces.svg)
+
+
+## Pixel Coordinatesa
+
+The pixel coordinates uses 2 coordinates, `x`, and `y`. The units of the coordinates are in pixels of the [webcam](/kit/webcam/). The origin, `(0,0)` is in the top left of the camera. The `y` axis goes from top to bottom, the `x` axis goes from left to right.
+
