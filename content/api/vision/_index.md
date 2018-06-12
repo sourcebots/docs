@@ -17,8 +17,8 @@ The markers in the list have some useful attributes:
 - `is_wall_marker()` - returns whether or not the marker is a [wall marker](marker-ids/#wall-markers).
 - `is_token_marker()` - returns whether or not the marker is a [token marker](marker-ids/#token-markers).
 - `id` - returns the [id](marker-ids) of the marker.
-- `pixel_centre` - returns the [pixel](coordinates/#pixel-coordinates) co-ordinates of the centre of the marker in the captured image.
-- `pixel_corners` - returns a list of the corners of the markers in [pixel](coordinates/#pixel-coordinates) co-ordinates, clockwise with the first marker being the top left corner.
+- `pixel_centre` - returns the [pixel](coordinates/#pixel-coordinates) coordinates of the centre of the marker in the captured image.
+- `pixel_corners` - returns a list of the corners of the markers in [pixel](coordinates/#pixel-coordinates) coordinates, clockwise with the first marker being the top left corner.
 - `cartesian` - returns details of the position of the marker in the [Cartesian](coordinates/#cartesian-coordinates) coordinate system.
 - `spherical` - returns details of the position of the marker in a [spherical](coordinates/#spherical-coordinates) coordinate system.
 - `polar` - *Deprecated*. Use the `spherical` attribute instead.
