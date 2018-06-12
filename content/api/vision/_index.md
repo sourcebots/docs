@@ -18,7 +18,7 @@ The markers in the list have some useful attributes:
 - `is_token_marker()` - returns whether or not the marker is a [token marker](marker-ids/#token-markers).
 - `id` - returns the [id](marker-ids) of the marker.
 - `pixel_centre` - returns the [pixel](coordinates/#pixel-coordinates) coordinates of the centre of the marker in the captured image.
-- `pixel_corners` - returns a list of the corners of the markers in [pixel](coordinates/#pixel-coordinates) coordinates, clockwise with the first marker being the top left corner.
+- `pixel_corners` - returns a list of the corners of the markers in [pixel](coordinates/#pixel-coordinates) coordinates, with the first coordinate being those of the top left corner of the marker, and the being in clockwise order . This is relative to the marker's orientation, thus if the marker is upside down, the first coordinate will appear to be in the bottom right.
 - `cartesian` - returns details of the position of the marker in the [Cartesian](coordinates/#cartesian-coordinates) coordinate system.
 - `spherical` - returns details of the position of the marker in a [spherical](coordinates/#spherical-coordinates) coordinate system.
 - `polar` - *Deprecated*. Use the `spherical` attribute instead.
