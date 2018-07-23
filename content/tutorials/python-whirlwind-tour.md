@@ -664,9 +664,9 @@ y = 8
 z = 2
 
 if x == 5 and y == 3:
-    print("True")
+    print("Yes")
 else:
-    print("False")
+    print("No")
 
 print(x == 5 or not y == 8)         # could use y != 8 instead
 print(x == 2 and y == 3 or z == 2)  # needs brackets for clarity!
@@ -675,7 +675,7 @@ print(x == 2 and y == 3 or z == 2)  # needs brackets for clarity!
 Output:
 
 ```text
-"False"
+No
 True
 True
 ```
