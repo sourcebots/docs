@@ -647,11 +647,16 @@ These return a boolean (`True` or `False`) value, and are used in `if` statement
 :   less than, less than or equal to, greater than, etc.
 
 `in`
-:   returns true if the item on the left is contained in the item on the right. The items can be strings, arrays, or other objects. For example:
+:   returns true if the item on the left is contained in the item on the right. The items can be strings, lists, or other objects. For example:
 
 ```python
 if "car" in "Scarzy's hair":
     print("Of course.")
+```
+
+```python
+if 7 in [2, 35, 7, 8]:
+    print("Found a seven!")
 ```
 
 #### Logical
