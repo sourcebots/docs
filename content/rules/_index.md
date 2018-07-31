@@ -5,4 +5,4 @@ weight: 1
 
 You can find the rules for SourceBots 2018 below:
 
-# [Download the rules!]({{% resource_link "rules.pdf" %}})
+# [Download the rules!]({{% page_resource_link "rules.pdf" %}})

@@ -50,4 +50,4 @@ robot, exactly 1 metre away.
 The following diagram shows the orientation of the Cartesian axes relative to
 the camera as well as the angles which describe the spherical coordinate space.
 
-![A diagram showing the coordinate spaces](/img/api/coordinate-spaces.svg)
+![A diagram showing the coordinate spaces]({{% page_resource_link "coordinate-spaces.svg" %}})

@@ -12,5 +12,5 @@ Here you can download PDF files of all markers:
 | [Large markers][large-marker-pdf] | 250x250mm   | A3         |
 | [Small markers][small-marker-pdf] | 100x100mm   | A4         |
 
-[large-marker-pdf]: {{% resource_link "large-tags.pdf" %}}
-[small-marker-pdf]: {{% resource_link "small-tags.pdf" %}}
+[large-marker-pdf]: {{% page_resource_link "large-tags.pdf" %}}
+[small-marker-pdf]: {{% page_resource_link "small-tags.pdf" %}}
