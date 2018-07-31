@@ -36,12 +36,12 @@ under the name you'll use to call it from the Python code.
 
 You'll need to define a function to implement your command. The function should
 be placed in the `firmware.cpp` file just above the definition of the `commands`
-array (likely about line 205).
+array (likely about line 217).
 
 The function definition needs to look like this:
 
 ```cpp
-static CommandError my_function(int commandId, String argument) {
+static CommandResponse my_function(int requestID, String argument) {
   // implementation here
   return OK;
 }
@@ -50,7 +50,7 @@ static CommandError my_function(int commandId, String argument) {
 You should choose a suitable name for your function (above it's called
 `my_function`), though you'll need to stick to letters, numbers and underscore
 (`_`). The rest of the function signature (the line starting `static
-CommandError` above) needs to be exactly as above.
+CommandResponse` above) needs to be exactly as above.
 
 You command will need to adhere to some conventions to be able to communicate
 with the Pi, though you can otherwise do pretty much anything you normally would
@@ -60,7 +60,7 @@ The following example command shows how to handle arguments from the Pi as well
 as how to return errors and other values:
 
 ```cpp
-static CommandError echo(int commandId, String argument) {
+static CommandResponse echo(int requestID, String argument) {
 
   if (argument.length() == 0) {
     // If something went wrong, you should return a `COMMAND_ERROR` with a
@@ -83,7 +83,7 @@ static CommandError echo(int commandId, String argument) {
     // `serialWrite` function. The first two arguments need to be exactly as
     // they are here; the third argument needs to be a `String` containing the
     // value you want to send back to the Pi.
-    serialWrite(commandId, '>', next_arg);
+    serialWrite(requestID, '>', next_arg);
   }
 
   // If everything went fine, you should return `OK`.
@@ -94,7 +94,7 @@ static CommandError echo(int commandId, String argument) {
 
 For other examples of how to define commands (and the helper functions you can
 use), you can have a look at the other commands the Arduino already supports.
-In particular the `get_version`, `led` and `servo` functions are a good starting
+In particular the `version`, `led` and `servo` functions are a good starting
 point.
 
 ### Registering the command
@@ -106,19 +106,15 @@ the command.
 ```cpp
 static const CommandHandler commands[] = {
   // ... lots of existing commands ... (make sure you leave them in place!)
-  CommandHandler("echo", &echo, "echoes its arguments, each on a new line"),
+  CommandHandler('E', &echo),
 };
 ```
 
-The first argument is a quoted `String` literal containing the name you'll use
-in Python to call this command. It can contain letters, numbers and dashes (`-`).
+The first argument is a char containing the name you'll use
+in Python to call this command. It can contain exactly one letter or number. It is case-sensitive.
 
 The second argument is the function you defined for your command, with an
 ampersand (`&`) just before the name.
-
-The third argument is another quoted `String` literal containing a description
-of the command. This helps document what the command is for, and will be
-returned as part of the message if you call the `help` command.
 
 ## Calling commands
 
@@ -126,14 +122,14 @@ To call a command from Python you should call the `direct_command` method on a
 `Servo` instance. You can send strings and numbers:
 
 ```python
-r.servo_board.direct_command('echo', 'first argument', 2, 'third argument')
+r.servo_board.direct_command('E', 'first argument', 2, 'third argument')
 ```
 
 This will return a `list` of the responses from the command (anything which was
 sent back using the `serialWrite` function):
 
 ```python
->>> r.servo_board.direct_command('echo', 'first argument', 2, 'third argument')
+>>> r.servo_board.direct_command('E', 'first argument', 2, 'third argument')
 ['first argument', '2', 'third argument']
 ```
 
@@ -141,7 +137,7 @@ Note that the responses will all be strings, so you'll need to explicitly
 convert them back to numbers if you want to use them as numbers:
 
 ``` python
->>> a, b = r.servo_board.direct_command('echo', 6, 2)
+>>> a, b = r.servo_board.direct_command('E', 6, 2)
 >>> print(int(a) / int(b))
 3
 >>> print(a / b)
@@ -173,10 +169,10 @@ You'll also see a `CommandError` if you try to call a command which doesn't
 exist:
 
 ```python
->>> r.servo_board.direct_command('missing-command')
+>>> r.servo_board.direct_command('X')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-CommandError: Error, unknown command: missing-command
+CommandError: Error, unknown command: X
 ```
 
 This error will generally indicate that something is wrong in your Python code.
@@ -189,7 +185,7 @@ error message will be the actual text received from the Arduino, allowing you to
 easily see the cause of the problem.
 
 ```python
->>> r.servo_board.direct_command('the-command')
+>>> r.servo_board.direct_command('Q')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 InvalidResponse: b'received data'
