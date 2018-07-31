@@ -25,7 +25,5 @@ A marker's position can be represented using both the [Cartesian](coordinates/#c
 {{% /notice %}}
 
 ## Marker PDFs
-You can download PDF files of all markers:
 
-- [Large markers](/docs/large-tags.pdf), Containing Wall and Column markers (250x250mm, should be printed on A3)
-- [Small markers](/docs/small-tags.pdf), Containing Token markers (100x100mm, should be printed on A4)
+Marker PDFs can be downloaded from the [Markers](/markers) page
