@@ -1,1 +1,2 @@
-<link href="/css/style.css" rel="stylesheet">
+{{ $style := resources.Get "css/style.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" />

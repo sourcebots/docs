@@ -39,3 +39,5 @@ outputs:
     - json
 
 buildFuture: true
+
+assetDir: static/
