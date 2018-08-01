@@ -110,7 +110,7 @@ static const CommandHandler commands[] = {
 };
 ```
 
-The first argument is a char containing the name you'll use
+The first argument is a `char` containing the name you'll use
 in Python to call this command. It can contain exactly one letter or number. It is case-sensitive.
 
 The second argument is the function you defined for your command, with an
