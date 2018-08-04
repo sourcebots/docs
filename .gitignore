@@ -134,4 +134,5 @@ typings/
 
 content/tutorials/kit-assembly.files
 
+# Don't commit hugo resource cache
 resources/
