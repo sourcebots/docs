@@ -10,7 +10,6 @@ title: Connecting your kit
 - Arduino (another blue board with a metal USB-B connector, usually attached underneath the first)
 - Battery
 - USB Hub
-- USB Webcam
 
 ## Connectors and cables
 - 1 x 3.81mm CamCon (for the Arduino Servo Shield)
@@ -58,8 +57,7 @@ Make sure to read all these **before** you start assembly.
 6. The Arduino Servo Shield should already be connected into the top of the Arduino, but, if not, the pins on the bottom fit directly into the sockets with the same labels on the top of the Arduino.
 7. Connect the Arduino to the Pi by way of the beige USB-A to USB-B cable; the square-ish USB-B end goes into the appropriate metal-cased connector on the Arduino, the standard USB end goes into any free USB port on the Pi or connected USB hub. This will provide both power and communication to the Arduino.
 8. Connect the Arduino Servo Shield to the Power Board by screwing the green connector on the top and the small (3.81mm) CamCon provided onto the opposite ends of a pair of wires and plugging the CamCon into the second of the 5V power rail sockets on the Power Board.
-9. Connect the USB Webcam to the Pi via any one of the remaining USB sockets on the Pi or connected USB hub.
-10. To connect the motors, first screw wires connected to their pins into one of the medium-sized (5mm) CamCons and plug these into either of the two appropriate sockets on a Motor Board.
-11. At this point, check that everything is connected up correctly (it may be helpful to ask someone around you to check that all cables are connected properly).
-12. Connect the Power Board to one of the blue LiPo batteries by plugging the yellow connector on the cable connected to the Power Board into its counterpart on the battery.
-13. If there is not one plugged in already, a loop of wire should be connected to the socket beneath the On|Off switch. Check that the Power Board works by pressing the On|Off switch and checking that the LEDs on the board come on green. Ensure that the kit is switched off again and the battery unplugged before continuing assembly.
+9. To connect the motors, first screw wires connected to their pins into one of the medium-sized (5mm) CamCons and plug these into either of the two appropriate sockets on a Motor Board.
+10. At this point, check that everything is connected up correctly (it may be helpful to ask someone around you to check that all cables are connected properly).
+11. Connect the Power Board to one of the blue LiPo batteries by plugging the yellow connector on the cable connected to the Power Board into its counterpart on the battery.
+12. If there is not one plugged in already, a loop of wire should be connected to the socket beneath the On|Off switch. Check that the Power Board works by pressing the On|Off switch and checking that the LEDs on the board come on green. Ensure that the kit is switched off again and the battery unplugged before continuing assembly.

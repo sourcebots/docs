@@ -32,7 +32,6 @@ In addition to the boards, your kit will also contain:
 | [Battery Charger][battery-charger]          | 1        | iMAX B6                              |                                                  |
 | [Battery Charger Power Supply][charger-psu] | 1        | 12V 5A                               |                                                  |
 | [Battery][battery]                          | 2        | 11.1V 3S 25C 2200mAh Lithium Polymer |                                                  |
-| [Webcam][webcam]                            | 1        | TeckNet C016                         |                                                  |
 | [USB Hub][usb-hub]                          | 1        |                                      |                                                  |
 | [Micro USB Cable][micro-usb-cable]          | 2        |                                      |                                                  |
 | [USB B Cable][usb-b-cable]                  | 1        |                                      |                                                  |
@@ -45,7 +44,6 @@ In addition to the boards, your kit will also contain:
 [battery-charger]:https://hobbyking.com/en_us/imax-b6-50w-5a-charger-discharger-1-6-cells-genuine.html
 [charger-psu]:https://www.amazon.co.uk/-/dp/B01N1ULL37
 [battery]: https://hobbyking.com/en_us/turnigy-2200mah-3s-25c-lipo-pack.html
-[webcam]:https://www.amazon.co.uk/-/dp/B000Q3VECE/
 [usb-hub]:https://www.amazon.co.uk/-/dp/B01DYD3Q28/
 [micro-usb-cable]:https://www.amazon.co.uk/-/dp/B01EK87T9M/
 [usb-b-cable]:https://www.amazon.co.uk/-/dp/B00NH11KIK

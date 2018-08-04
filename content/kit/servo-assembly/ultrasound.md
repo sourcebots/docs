@@ -2,7 +2,7 @@
 title: Ultrasound
 ---
 
-Ultrasound sensors are a useful way of measuring distance when objects are too close for the [webcam](/kit/webcam) to detect, or if they don't have markers. Ultrasound sensors communicate with the kit using two wires. A signal is sent to the sensor on the _trigger_ pin, and the length of a response pulse on the _echo_ pin can be used to calculate the distance.
+Ultrasound sensors are a useful way of measuring distance. Ultrasound sensors communicate with the kit using two wires. A signal is sent to the sensor on the _trigger_ pin, and the length of a response pulse on the _echo_ pin can be used to calculate the distance.
 
 {{% notice warning %}}
 Ultrasound should only be considered accurate up to around two metres, beyond which the signal can become distorted and produce erroneous results.
