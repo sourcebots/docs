@@ -19,7 +19,7 @@ current than the "L" connectors.
 
 They should be used to connect to the motor board power input, though can also
 be used to power other devices. These are enabled when your robot code is
-started.
+started and can also be turned on or off from your code.
 
 There are two 5V connectors that can be used to connect low-current devices that take 5V inputs, such as the Raspberry Pi and the servo shield.
 

@@ -20,6 +20,17 @@ r.power_board.power_off()
 r.power_board.power_on()
 ```
 
+You can also control each output individually using the `power_on_output` and
+`power_on_output` functions. These take a single argument -- the output to
+turn on or off -- which are available as members of `PowerOutput`:
+
+```python
+from robot import PowerOutput
+
+r.power_board.power_off_output(PowerOutput.HIGH_POWER_1)
+r.power_board.power_on_output(PowerOutput.LOW_POWER_3)
+```
+
 {{% notice warning %}}
 Because the motor board is powered through these power outputs, whilst the power is off, you won't be able to control your motors. This will register as a missing board and your code will break if you try and control them.
 {{% /notice %}}
