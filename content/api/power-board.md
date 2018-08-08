@@ -27,8 +27,8 @@ turn on or off -- which are available as members of `PowerOutput`:
 ```python
 from robot import PowerOutput
 
-r.power_board.power_off_output(PowerOutput.HIGH_POWER_1)
-r.power_board.power_on_output(PowerOutput.LOW_POWER_3)
+r.power_board.power_off_output(PowerOutput.H1)
+r.power_board.power_on_output(PowerOutput.L3)
 ```
 
 {{% notice warning %}}
