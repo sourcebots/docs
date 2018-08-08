@@ -13,7 +13,13 @@ the Start button which is used to start your robot code.
 ![Power Board Diagram](/img/kit/power_board_v4_diagram.png)
 
 ## Connectors
-There are six power output connectors on the board, labelled L0–L3, H0, and H1. These are enabled when your robot code is started, and supply around 11.1V (±15%). They should be used to connect to the motor board power input. The "H" connectors will supply more current than the "L" connectors.
+There are six power output connectors on the board, labelled L0–L3, H0, and H1.
+These can supply around 11.1V (±15%). The "H" connectors will supply more
+current than the "L" connectors.
+
+They should be used to connect to the motor board power input, though can also
+be used to power other devices. These are enabled when your robot code is
+started.
 
 The 5V connectors can be used to connect low-current devices that take 5V inputs, such as the Raspberry Pi and the servo shield.
 
