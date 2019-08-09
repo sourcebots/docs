@@ -11,3 +11,15 @@
 
 [context.branch-deploy.environment]
     HUGO_VERSION = "0.40"
+
+[[redirects]]
+from = "/kit/*"
+to = "https://kit.sourcebots.co.uk"
+status = 302
+force = true
+
+[[redirects]]
+from = "/api/*"
+to = "https://kit.sourcebots.co.uk"
+status = 302
+force = true
