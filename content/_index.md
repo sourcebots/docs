@@ -1,8 +1,12 @@
 ---
-title: Homepage
+title: OLD DOCS
 ---
 
-# SourceBots Robotics Documentation
+# OLD SourceBots Robotics Documentation
+
+**This is the old docs. Please go to https://docs.sourcebots.co.uk**
+
+
 This documentation explains how to use the kit and the robot's Python API.
 
 There are a number of sections in the documentation offering help for the kit and programming. Under the tutorials section, concepts from across the entire documentation are brought together to help you understand what you can, or need, to do.
