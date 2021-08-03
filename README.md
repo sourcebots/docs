@@ -1,6 +1,6 @@
 # SourceBots Documentation
 
-[![CircleCI](https://circleci.com/gh/sourcebots/docs.svg?style=svg)](https://circleci.com/gh/sourcebots/docs)
+[![CI](https://github.com/sourcebots/docs/actions/workflows/ci.yml/badge.svg)](https://github.com/sourcebots/docs/actions/workflows/ci.yml)
 
 URL: http://docs.sourcebots.co.uk
 
