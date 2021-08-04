@@ -616,7 +616,7 @@ Wrap the code for your average calculator from the Lists and Loops exercises in 
 
 ## What to do next
 
-As mentioned at the start, there are loads of Python exercises out there on the Web. If you want to learn some more advanced concepts, there are more tutorials out there too. [Here's](/tutorials/intro-to-python/) our recommendations of tutorials from [Codecademy](https://www.codecademy.com/).
+As mentioned at the start, there are loads of Python exercises out there on the Web. If you want to learn some more advanced concepts, there are more tutorials out there too.
 
 ## Appendices
 

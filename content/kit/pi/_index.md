@@ -19,5 +19,3 @@ Please do not attempt to modify the software on the Raspberry Pi. It has been co
 Keeping your kit up to date is very important. It enables us to deploy new features, as well as fix bugs.
 
 We have documentation on [Flashing your SD card](sd-card).
-
-There is a separate list of [all published updates](/updates).
