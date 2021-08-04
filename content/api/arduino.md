@@ -86,7 +86,7 @@ r.arduino.pins[6].digital_state = False
 ### `GPIOPinMode.ANALOGUE_INPUT`
 
 Certain sensors output analogue signals rather than digital ones, and so
-have to be read differently. The arduino has six analogue inputs, which
+have to be read differently. The Arduino has six analogue inputs, which
 are labelled `A0` to `A5`; however pins `A4` and `A5` are reserved and
 cannot be used.
 
@@ -115,7 +115,7 @@ Pins `A4` and `A5` are reserved and cannot be used.
 ## Ultrasound Sensors
 
 You can also measure distance using an ultrasound sensor from the
-arduino.
+Arduino.
 
 ``` python
 # Trigger pin: 4
