@@ -21,7 +21,7 @@
   "homepage": "https://github.com/sourcebots/docs#readme",
   "devDependencies": {},
   "dependencies": {
-    "broken-link-checker-local": "0.1.1",
-    "markdown-spellcheck": "1.0.0"
+    "broken-link-checker-local": "0.2.1",
+    "markdown-spellcheck": "1.3.1"
   }
 }
