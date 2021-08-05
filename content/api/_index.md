@@ -26,41 +26,19 @@ defined as `r`.
 
 ## Running your code
 
-Your code needs to be put on a USB drive in a file called `main.py`. On
-insertion into the robot, this file will be executed. The file is
-directly executed off your USB drive, with your drive as the working
-directory.
-
-To stop your code running, you can just remove the USB drive. This will
-also stop the motors and any other peripherals connected to the kit.
-
-You can then reinsert the USB drive into the robot and it will run your
-`main.py` again (from the start). This allows you to make changes and
-test them quickly.
+Your code needs to be put in the `zone-0` or `zone-1` folder in a file called
+`forklift.py` or `crane.py` for the forklift and crane robots respectively.
 
 {{% notice tip %}}
 If this file is missing or incorrectly named, your robot won't do
 anything. No log file will be created.
 {{% /notice %}}
 
-{{% notice warning %}}
-The previous log file is deleted at the start of each run, so copy it
-elsewhere if you need to keep hold of it!
-{{% /notice %}}
+## Logs
 
-## Serial number
-
-All kit boards have a serial number, unique to that specific board,
-which can be read using the `serial` property:
-
-``` python
-r.power_board.serial
->>> 'SRO-AA2-7XS'
-r.servo_board.serial
->>> 'SRO-AA4-LG2'
-r.motor_board.serial
->>> 'SRO-AAO-RV2'
-```
+A log file is saved in the folder so you can see what your robot did,
+what it didn't do, and any errors it raised. Each log file name includes
+the date and time so you can look back at your previous runs.
 
 ## Included Libraries
 
@@ -68,11 +46,11 @@ Python already comes with plenty of [built-in
 libraries](https://docs.python.org/3.9/py-modindex.html) to use. We
 install some extra ones which may be of use:
 
-- [numpy 1.19.3](https://pypi.org/project/numpy/1.19.3/)
-- [matplotlib 3.3.3](https://pypi.org/project/matplotlib/3.3.3/)
-- [pandas 1.1.4](https://pypi.org/project/pandas/1.1.4/)
-- [scikit-learn 0.23.2](https://pypi.org/project/scikit-learn/0.23.2/)
-- [scipy 1.5.4](https://pypi.org/project/scipy/1.5.4/)
+- [numpy](https://pypi.python.org/pypi/numpy)
+- [matplotlib](https://pypi.org/project/matplotlib/3.3.3/)
+- [pandas](https://pypi.org/project/pandas/1.1.4/)
+- [scikit-learn](https://pypi.org/project/scikit-learn/0.23.2/)
+- [scipy](https://pypi.org/project/scipy/1.5.4/)
 
 
 {{% notice tip %}}
