@@ -19,6 +19,25 @@ Within the Webots IDE, there are a few different panels:
 - At the bottom is the console, where output from your robot code will be displayed
 - At the top are your general controls which include the time controls. Press the centre play button to run the simulation at normal speed.
 
+## Other robots
+
+There is another robot in the arena, in its starting zone. By default, this robot will not move.
+
+To control the other robot, you will need to provide its code:
+
+Create the robot code in zone-1/robot.py. Your code at robot.py will be used for zone 0, though you are encouraged to move your code to zone-0/robot.py when running multiple robots. Robots which do not have any robot code in their zone-x directory will not do anything.
+
+``` plain
+.
+├── competition-simulator
+│   ├── controllers
+│   │   ├── example_controller
+│   │   └── sr_controller
+│   ├── ...
+│   └── worlds
+└── robot.py
+```
+
 ## Time
 
 In the simulated environment, time advances only at the pace that the simulator is run. The relation between this time and the real passage of time depends on a couple of factors: the speed the simulation is configured to run at and the ability of the computer running the simulation to process it fast enough.
