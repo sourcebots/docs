@@ -82,7 +82,11 @@ Python already comes with plenty of [built-in
 libraries](https://docs.python.org/3.7/py-modindex.html) to use. We
 install some extra ones which may be of use:
 
-- [numpy](https://pypi.python.org/pypi/numpy)
+- [numpy 1.19.3](https://pypi.org/project/numpy/1.19.3/)
+- [matplotlib 3.3.3](https://pypi.org/project/matplotlib/3.3.3/)
+- [pandas 1.1.4](https://pypi.org/project/pandas/1.1.4/)
+- [scikit-learn 0.23.2](https://pypi.org/project/scikit-learn/0.23.2/)
+- [scipy 1.5.4](https://pypi.org/project/scipy/1.5.4/)
 
 
 {{% notice tip %}}
