@@ -4,7 +4,7 @@ weight: 1
 ---
 
 Programming your robot is done in [Python](https://www.python.org/),
-specifically version 3.7.4. You can learn more about Python from their
+specifically version 3.9.6. You can learn more about Python from their
 [docs](https://docs.python.org/3/), and our whirlwind tour.
 
 ## Setup
@@ -65,7 +65,7 @@ r.motor_board.serial
 ## Included Libraries
 
 Python already comes with plenty of [built-in
-libraries](https://docs.python.org/3.7/py-modindex.html) to use. We
+libraries](https://docs.python.org/3.9/py-modindex.html) to use. We
 install some extra ones which may be of use:
 
 - [numpy 1.19.3](https://pypi.org/project/numpy/1.19.3/)
