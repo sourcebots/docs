@@ -18,6 +18,7 @@
 Adafruit
 AprilTag
 Arduino
+Arena.wbt
 booleans
 CamCon
 CamCons
@@ -32,11 +33,16 @@ L0-3
 LearnPython
 LiPo
 macOS
+matplotlib
 microswitches
 numpy
 piezo
 PyCharm
 python3
+robot.py
+robot.py.
+R2021b
+scikit-learn
 scipy
 SourceBots
 square-ish
@@ -45,3 +51,6 @@ TeckNet
 Uno
 vcc
 Webots
+zone-0
+zone-1
+×
