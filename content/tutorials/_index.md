@@ -26,7 +26,7 @@ You will also need Python installed.
 | Linux | 3.9 |
 
 In the competition, python 3.9 will be used.
-There are a small number of [extenal libraries](https://github.com/sourcebots/docs/blob/sp2021/content/api/_index.md#included-libraries) which will be available to your robot code during the competition. For local development you will need to install these yourself.
+There are a small number of [extenal libraries](/content/api#included-libraries) which will be available to your robot code during the competition. For local development you will need to install these yourself.
 
 {{% notice warning %}} If you are installing python on Windows, you will need to add python to PATH otherwise webots will not be able to find the python installation {{% /notice %}}
 
@@ -40,4 +40,3 @@ You may receive a warning about your computer’s GPU not being good enough, whi
 ## Changing your version of Python
 
 If webots is picking up the incorrect version of Python, you’ll need to change it. This can be done using Tools > Preferences > General > Python command. You’ll need to ensure a matching version of Python is installed.
-
