@@ -42,7 +42,7 @@ Create the robot code in zone-1/robot.py. Your code at robot.py will be used for
 
 In the simulated environment, time advances only at the pace that the simulator is run. The relation between this time and the real passage of time depends on a couple of factors: the speed the simulation is configured to run at and the ability of the computer running the simulation to process it fast enough.
 
-You can configure and observe the speed the simulator is running at from the toolbar in webots:
+You can configure and observe the speed the simulator is running at from the toolbar in Webots:
 ![alt text](https://www.studentrobotics.org/docs/images/content/simulator/speed-toolbar.png)
 
 Here the simulation has run for 13.28 seconds, but is currently paused (the speed multiplier shows 0.00×). You could choose to step a single time increment, run the simulator at real speed (▶), or run the simulator at various faster speeds (▶▶ and ▶▶▶).
