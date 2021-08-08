@@ -21,7 +21,7 @@ There are a small number of [external libraries](/api#included-libraries) which 
 ### Installing the simulation
 
  1.   Download the simulation, and unzip it somewhere on your computer.
- 2.   Using the Webots IDE, open the worlds/Arena.wbt file.
+ 2.   Using the Webots IDE, open the `worlds/Arena.wbt` file.
 
 You may receive a warning about your computer’s GPU not being good enough, which can be ignored
 
