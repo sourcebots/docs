@@ -25,7 +25,7 @@ There is another robot in the arena, in its starting zone. By default, this robo
 
 To control the other robot, you will need to provide its code:
 
-Create the robot code in zone-1/robot.py. Your code at robot.py will be used for zone 0, though you are encouraged to move your code to zone-0/robot.py when running multiple robots. Robots which do not have any robot code in their zone-x directory will not do anything.
+Create the robot code in `zone-1/robot.py`. Your code at `robot.py` will be used for zone 0, though you are encouraged to move your code to `zone-0/robot.py` when running multiple robots. Robots which do not have any robot code in their `zone-x` directory will not do anything.
 
 ``` plain
 .

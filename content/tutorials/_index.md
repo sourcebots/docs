@@ -25,7 +25,7 @@ You will also need Python installed.
 | macOS | 3.9 |
 | Linux | 3.9 |
 
-In the competition, python 3.9 will be used.
+In the competition, Python 3.9 will be used.
 There are a small number of [external libraries](/api#included-libraries) which will be available to your robot code during the competition. For local development you will need to install these yourself.
 
 {{% notice warning %}} If you are installing python on Windows, you will need to add python to PATH otherwise Webots will not be able to find the python installation {{% /notice %}}
