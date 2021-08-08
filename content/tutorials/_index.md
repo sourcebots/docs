@@ -13,7 +13,7 @@ This part of the docs contains some practical guides for getting starting with b
 
 ### Prerequisites
 
-You need to download and install Webots (the download is around 1.5GB). This is the platform we run our simulation in. Whilst we recommend version “R2021a” of Webots, and will be running competition simulations using it, “R2020b-rev1” should still work.
+You need to download and install Webots R2021b (the download is around 0.5GB). This is the platform we run our simulation in.
 
 ## Python Version
 
