@@ -6,9 +6,29 @@ To test out your robot code, you can use our Simulator. This gives you a realist
 
 ## Installation
 
-1. [Download the Simulator](https://drive.google.com/file/d/16cGGOMruRT4f_5V_DPKOLaJuP82h7NGP/view?usp=sharing), and extract it into a directory.
-2. Edit the existing `test.py`.
-3. Run `run.bat`. This will launch 2 windows: The simulator itself, and a terminal which will hold the output of your application.
+### Prerequisites
+
+You need to download and install Webots R2021b (the download is around 0.5 GB). This is the platform we run our simulation in.
+
+### Python Version
+
+You will also need Python 3.9 installed.
+
+There are a small number of [external libraries](/api#included-libraries) which will be available to your robot code during the competition. For local development you will need to install these yourself.
+
+{{% notice warning %}} If you are installing python on Windows, you will need to add python to PATH otherwise Webots will not be able to find the python installation {{% /notice %}}
+
+### Installing the simulation
+
+ 1.   Download the simulation, and unzip it somewhere on your computer.
+ 2.   Using the Webots IDE, open the worlds/Arena.wbt file.
+
+You may receive a warning about your computer’s GPU not being good enough, which can be ignored
+
+### Changing your version of Python
+
+If Webots is picking up the incorrect version of Python, you’ll need to change it. This can be done using Tools > Preferences > General > Python command. You’ll need to ensure a matching version of Python is installed.
+
 
 ## Overview
 
