@@ -1,5 +1,6 @@
 ---
 title: "Python: A Whirlwind Tour"
+weight: 10
 ---
 
 # The Basics
