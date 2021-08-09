@@ -29,7 +29,7 @@ Below are step-by-step instructions for installing Python 3.9.6 (which is requir
 7. If the Python install was successful then you will get this window: \
 
 
-![alt_text](/static/img/tutorials/whrl-win-2.png)
+![alt_text](/img/tutorials/whrl-win-2.png)
 
 
 ## Installing Python on Mac
