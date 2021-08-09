@@ -95,53 +95,15 @@ age = 17
 A variable could store many types of data including numbers, text, collections of numbers or text, entire robots and much more.
 
 Here are some of the built-in types:
-
-
-<table>
-  <tr>
-   <td>Name of type
-   </td>
-   <td>Example
-   </td>
-  </tr>
-  <tr>
-   <td>String
-   </td>
-   <td><code>"Hello World"</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Integer
-   </td>
-   <td><code>6</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Float (decimal)
-   </td>
-   <td><code>4.2</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Boolean
-   </td>
-   <td><code>True</code>
-   </td>
-  </tr>
-  <tr>
-   <td>List
-   </td>
-   <td><code>[1, 2, 3, 4, 5, 6]</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Dictionary
-   </td>
-   <td><code>{"a": 1, "b": 2}</code>
-   </td>
-  </tr>
-</table>
-
+ 
+| Name of type | Example |
+| ------------ | ------- |
+| String | `"Hello World"` |
+| Integer | `6` |
+| Float | `4.2` |
+| Boolean | `True` |
+| List | `[1, 2, 3, 4, 5, 6]` |
+| Dictionary | `{"a": 1, "b": 2}` |
 
 In Python you don’t need to tell the computer what type your variable is, the computer will just work it out based on the value you assign to it. It’s generally frowned upon to change a variable’s value to a different type, although Python does let you do it.
 
@@ -329,111 +291,17 @@ Boolean variables can only be `True `or `False`. Booleans are used for condition
 
 You can use boolean operators to make complex decisions based on lots of variables.
 
-
-<table>
-  <tr>
-   <td><strong>Symbol/operator</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Example that would be <code>True</code> </strong>
-   </td>
-   <td><strong>Example that would be <code>False</code></strong>
-   </td>
-  </tr>
-  <tr>
-   <td><code>==</code>
-   </td>
-   <td>Equals
-   </td>
-   <td><code>1 == 1</code>
-   </td>
-   <td><code>1 == 2</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>!=</code>
-   </td>
-   <td>Does not equal
-   </td>
-   <td><code>1 != 2</code>
-   </td>
-   <td><code>1 != 1</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>></code>
-   </td>
-   <td>Greater Than
-   </td>
-   <td><code>4 > 2</code>
-   </td>
-   <td><code>3 > 4</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>&lt;</code>
-   </td>
-   <td>Less Than
-   </td>
-   <td><code>2 &lt; 4</code>
-   </td>
-   <td><code>4 &lt; 1</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>>=</code>
-   </td>
-   <td>Greater Than or Equal To
-   </td>
-   <td><code>4 >= 4</code>
-   </td>
-   <td><code>4 >= 6</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>&lt;=</code>
-   </td>
-   <td>Less Than or Equal To
-   </td>
-   <td><code>2 &lt;= 2</code>
-   </td>
-   <td><code>7 &lt;= 1</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>and</code>
-   </td>
-   <td>Logical ‘and’ operator
-   </td>
-   <td><code>True and True</code>
-   </td>
-   <td><code>False and False</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>or</code>
-   </td>
-   <td>Logical ‘or’ operator
-   </td>
-   <td><code>True or False</code>
-   </td>
-   <td><code>False or False</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>not</code>
-   </td>
-   <td>Logical ‘not’ operator
-   </td>
-   <td><code>not False</code>
-   </td>
-   <td><code>not True</code>
-   </td>
-  </tr>
-</table>
-
-
+| Symbol/Operator | Description | Example that would be `True` | Example that would be `False` |
+| --------------- | ----------- | ---------------------------- | ----------------------------- |
+| `==` | Equals | `1 == 1` | `1 == 2` |
+| `!=` | Does not equal | `1 != 2` | `1 != 1` |
+| `>` | Greater Than | `4 > 2`| `3 > 4` |
+| `<` | Less Than | `2 < 4` | `4 > 1` |
+| >= | Greater Than or Equal To | `4 >= 4` | `4 >= 6` |
+| <= | Less Than or Equal To | `2 <= 2` | `7 >= 1` |
+| `and` | Logical 'and' operator | `True and True` | `False and False` |
+| `or` | Logical 'or' operator | `True or False` | `False or False` |
+| `not` | Logical 'not' operator | `not False` | `not True` |
 
 #### Additional Resources - Booleans
 
@@ -570,79 +438,13 @@ You can also use variables when doing mathematical operations, however they need
 
 Below is a list of mathematical operators that you can use:
 
-
-<table>
-  <tr>
-   <td>Operator Name
-   </td>
-   <td>Operator in Python
-   </td>
-   <td>Operator in mathematical form
-   </td>
-  </tr>
-  <tr>
-   <td>Add
-   </td>
-   <td><code>a + b</code>
-   </td>
-   <td>
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-   </td>
-  </tr>
-  <tr>
-   <td>Subtract
-   </td>
-   <td><code>a - b</code>
-   </td>
-   <td>
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-   </td>
-  </tr>
-  <tr>
-   <td>Multiply
-   </td>
-   <td><code>a * b</code>
-   </td>
-   <td>
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-   </td>
-  </tr>
-  <tr>
-   <td>Divide
-   </td>
-   <td><code>a / b</code>
-   </td>
-   <td>
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-   </td>
-  </tr>
-  <tr>
-   <td>Power
-   </td>
-   <td><code>a ** b</code>
-   </td>
-   <td>
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-   </td>
-  </tr>
-</table>
-
-
+| Operator Name | in Python | Operator in mathematical form |
+| ------------- | --------- | ----------------------------- |
+| Add | `a + b` | |
+| Subtract | `a - b` | |
+| Divide | `a / b` | |
+| Multiply | `a * b` | |
+| Powers | `a ** b` | |
 
 #### Additional Resources - Basic Operators
 
