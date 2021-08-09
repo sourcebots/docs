@@ -440,11 +440,11 @@ Below is a list of mathematical operators that you can use:
 
 | Operator Name | in Python | Operator in mathematical form |
 | ------------- | --------- | ----------------------------- |
-| Add | `a + b` | |
-| Subtract | `a - b` | |
-| Divide | `a / b` | |
-| Multiply | `a * b` | |
-| Powers | `a ** b` | |
+| Add | `a + b` | ![alt_text](/img/tutorials/add.png) |
+| Subtract | `a - b` | ![alt_text](/img/tutorials/subtract.png) |
+| Divide | `a / b` | ![alt_text](/img/tutorials/divide.png) |
+| Multiply | `a * b` | ![alt_text](/img/tutorials/multiply.png) |
+| Powers | `a ** b` | ![alt_text](/img/tutorials/powers.png) |
 
 #### Additional Resources - Basic Operators
 
