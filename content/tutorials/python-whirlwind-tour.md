@@ -20,12 +20,8 @@ Below are step-by-step instructions for installing Python 3.9.6 (which is requir
 3. Click “save file” and wait for the installer to download.
 4. Find your downloads folder and open the Python installer. You should get this window:
 
-        
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](/static/img/tutorials/whrl-win-1.png)
 
 
 5. Tick the **<span style="text-decoration:underline;">“Add Python 3.9 to PATH”</span>** checkbox and click “Install Now” (important)
@@ -33,11 +29,7 @@ Below are step-by-step instructions for installing Python 3.9.6 (which is requir
 7. If the Python install was successful then you will get this window: \
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+![alt_text](/static/img/tutorials/whrl-win-2.png)
 
 
 ## Installing Python on Mac
@@ -51,13 +43,7 @@ Below are step-by-step instruction for installing Python 3.9.6 (which is require
 3. Find your downloads folder and open the Python installer. You should get this window:
 
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
-
+![alt_text](/static/img/tutorials/whrl-mac-1.png)
 
 
 4. Follow the  rest of the instructions as given by the installer. 
