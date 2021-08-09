@@ -1,720 +1,626 @@
 ---
 title: "Python: A Whirlwind Tour"
+weight: 10
 ---
-In this tutorial, we'll introduce the basic concepts of programming, which will be central to the programs that you will run on your robot. There are many different languages in which computers can be programmed, all with their advantages and disadvantages, but we use [Python](https://www.python.org/), specifically {{% python_patch_version %}}. We chose Python because it's easy to learn, but also elegant and powerful.
 
-At the end of the tutorial are exercises. The first ones for each section should be quite easy, while the higher-numbered exercises will be harder. Some will be very hard; try these if you're up for a challenge.
+# The Basics
 
-Before we begin, a word on learning. The way that you learn to code is by doing it; make sure you try out the examples, fiddle with them, break them, try some of the exercises.
 
-## Using an interpreter
+## Installing Python on Windows
 
-To run Python programs you need a something called an interpreter. This is a computer program which interprets human-readable Python code into something that the computer can execute. There are a number of online interpreters that should work even on a locked-down computer, such as you will probably find in your college.
+Below are step-by-step instructions for installing Python 3.9.6 (which is required for the competition):
 
-If your computer has a compatible browser, go to http://repl.it and select _Python3_ from the dropdown. Enter your program in the box on the left, and click the arrow to run it.
 
-If your browser isn't compatible, another good online interpreter can be found at http://codeskulptor.org. It's very similar; simply enter your program into the left pane and click the play button to run it. The output will appear in the right pane.
 
-Whichever you choose, test it with this classic one line program:
+1. Go to [https://www.python.org/downloads/release/python-396/ (Python 3.9.6)](https://www.python.org/downloads/release/python-396/)
+2. Scroll down “Files” and click on “**Windows installer 64 bit**” (if you are on a 64 bit machine) or “**Windows installer 32 bit**” (if you are on a 32 bit machine). 
 
-```python
-print("Hello World!")
-```
+   If you do not know what version to get, then type in your windows search bar “**About your PC**”. Under ‘system type’ it should tell you what bit of operating system you have.
 
-The text `Hello World!` should appear in the output box.
+3. Click “save file” and wait for the installer to download.
+4. Find your downloads folder and open the Python installer. You should get this window:
 
-There's nothing particularly wrong with online interpreters for our needs, but if you want to use Python for something more advanced you'll want an interpreter which runs directly on your computer. Downloads are available for all common OS's from [the website](https://www.python.org/downloads/).
 
-## Statements
+![A window with the heading "Install Python 3.9.6 (64-bit)". Two buttons say "Install Now" and "Customise installation". Two checkboxes at the bottom; one says "Install launcher for all users (recommended)" and the other says "Add Python 3.9 to PATH".](/img/tutorials/whrl-win-1.png)
 
-A statement is a line of code that does something. A program is a list of statements. For example:
 
-```python
-x = 5
-y = (x * 2) + 4
-print("Number of bees:", y - 2)
-```
+5. Tick the **“Add Python 3.9 to PATH”** checkbox and click “Install Now” (important)
+6. Windows will warn you on whether you want to make changes to this device. Click “yes”. 
+7. If the Python install was successful then you will get this window: \
 
-The statements are executed one by one, in order. This example would give the output `Number of bees: 12`.
 
-As you may have guessed, the `print` statement displays text on the screen, while the other two lines are simple algebra.
+![A window with the heading "Setup was successful" and a 'close' button in the bottom right.](/img/tutorials/whrl-win-2.png)
 
-### Strings
 
-When you want the interpreter to treat something as a text value (for example, after the `print` statement above), you have to surround it in quotes. You can use either single (`'`) or double (`"`) quotes, but try to be consistent. Pieces of text that are treated like this are called 'strings'.
+## Installing Python on Mac
 
-### Comments
+Below are step-by-step instruction for installing Python 3.9.6 (which is required for the competition):
 
-Placing a hash (`#`) in your program ignores anything after the hash.
 
-For example:
 
-```python
-# This is a comment
-print("This isn't.")  # But this is!
-```
+1. Go to [https://www.python.org/downloads/release/python-396/ (Python 3.9.6)](https://www.python.org/downloads/release/python-396/)
+2. Scroll down “Files” and download the relevant Mac installer for your device.
+3. Find your downloads folder and open the Python installer. You should get this window:
 
-You should use comments whenever you think that it is not completely clear what a statement or block of statements does, especially as you are working in teams! Also bear in mind the varying coding skills of your team. You might be the best coder in your team, but what if you were taken ill the day before the competition, and your team-mates had to fix your code?
 
-Comments are also useful for temporarily removing statements from your code, for testing:
+![A window with the heading "Welcome to the Python installer" and a pair of buttons in the bottom right that say "Go Back" and "Continue".](/img/tutorials/whrl-mac-1.png)
 
-```python
-x = 42
-#x = x - 4
-print("The answer is", x)
-```
 
-This example would output `The answer is 42`, as the subtraction is not executed.
+4. Follow the  rest of the instructions as given by the installer. 
+
+
+## A small Introduction
+
+The purpose of this document is to teach/remind you how Python works. Throughout the training booklet, there are links for further resources and websites just in case you are not satisfied with how a particular concept is explained.
+
+Below is a list of websites that have some Python tutorials:
+
+
+
+* [Python Docs](https://docs.python.org/3/tutorial/index.html)
+* [LearnPython](https://www.learnpython.org/)
+* [Real Python](https://realpython.com/)
+* [Programiz](https://www.programiz.com/python-programming)
+* [Google for Education](https://developers.google.com/edu/python)
+* [Learn Microsoft](https://docs.microsoft.com/en-us/learn/modules/intro-to-python/)
+* [FreeCodeCamp (YouTube)](https://www.youtube.com/watch?v=rfscVS0vtbw&t=1s)
+
+If you are stuck, then you can check if someone else had a similar issue on StackOverflow. 
+
+
+## A short overview on how programs work
+
+A program is a list of instructions that are executed, line-by-line by a computer. The instructions are written in a programming language and are converted into binary for the computer to understand.
+
+We are going to be using Python as it is easy to learn and there is an abundance of useful libraries (pre-written code).
+
+To write your own program, you will be using a code editor. Python comes with its own editor called IDLE, but we will use VSCode instead as it has some built-in features that should make collaborative remote programming much easier.
+
 
 ## Variables
 
-Variables store values for later use, as in the first example. They can store many different things, but the most relevant here are numbers, strings (blocks of text), booleans (`True` or `False`) and lists (which we'll come to later).
+In a program you often need to store information to use later; to do this you would use a variable.
 
-To set a variable, simply give its name, followed by `=` and a value. For example:
+Variables are called that because the value stored in one can change, or vary. Some languages have constants whose values can’t change but these don’t exist in Python.
+
+To assign a value to a variable in Python we specify a name for the variable, followed by the `= `sign, followed by the value e.g:
+
 
 ```python
-x = 8
-my_string = "Tall ship"
+name = "Mary"
+age = 17
 ```
 
-You can ask the user to put some text into a variable with the `input` function (we'll cover functions in more detail later):
+
+A variable could store many types of data including numbers, text, collections of numbers or text, entire robots and much more.
+
+Here are some of the built-in types:
+ 
+| Name of type | Example |
+| ------------ | ------- |
+| String | `"Hello World"` |
+| Integer | `6` |
+| Float | `4.2` |
+| Boolean | `True` |
+| List | `[1, 2, 3, 4, 5, 6]` |
+| Dictionary | `{"a": 1, "b": 2}` |
+
+In Python you don’t need to tell the computer what type your variable is, the computer will just work it out based on the value you assign to it. It’s generally frowned upon to change a variable’s value to a different type, although Python does let you do it.
+
+
+#### Additional Resources - Variables
+
+
+
+* [W3Schools](https://www.w3schools.com/python/python_variables.asp)
+* [Real Python](https://realpython.com/python-variables/)
+* [LearnPython (has built in code editor)](http://learnpython)
+* [Tutorialspoint](https://www.tutorialspoint.com/python/python_variable_types.htm)
+
+
+## Print Statement
+
+The print statement displays what it’s given in the output window. This is useful for debugging as you can use it to see what value a variable is storing. For example:
+
 
 ```python
-name = input("What is your name?")
+print("Hello world")
 ```
 
-### Identifiers
 
-Certain things in your program, for example variables and functions, will need names. These names are called 'identifiers' and must follow these rules:
+Would output the following in the console:
 
-- Identifiers can contain letters, digits, and underscores. They may not contain spaces or other symbols.
-- An identifier cannot begin with a digit.
-- Identifiers are case sensitive. This means that `bees`, `Bees` and `BEES` are three different identifiers.
-
-## Code blocks and indentation
-
-Python is reasonably unique in that it cares about indentation, and uses it to decide which statements are referred to by things like `if` statements.
-
-In most other programming languages, if you don't indent your code it will run just fine, but any poor soul who has to read your code will hunt you down and hit you around the head with a large, wet fish. In Python, you'll just get an error, which we're sure you'll agree is preferable.
-
-A group of consecutive statements that are all indented by the same distance is called a block. `if` statements, as well as functions and loops, all refer to the block that follows them, which must be indented further than that statement. An example is in order. Let's expand the first `if` example:
 
 ```python
-name = input("What is your name?")
-email = "Bank of Nigeria: Tax Refund"
-if name == "Tim":
-    print("Hello Tim.")
-    if email != "":
-        print("You've got an email.")
+Hello world
+```
 
-        # (blocks can contain blank lines in the middle)
-        if email != "Bank of Nigeria: Tax Refund":
-            print("Looks legitimate, too!")
-    else:
-        print("No mail.")
 
+We can also print variables. Here, variable `a` stores the number `4.2`:
+
+
+```python
+>>> a = 4.2
+>>> print(a)
+4.2
+```
+
+
+
+#### Additional Resources - Print Statement
+
+
+
+* [Real Python](https://realpython.com/python-print/)
+* [Programiz](https://www.programiz.com/python-programming/methods/built-in/print)
+* [W3Schools](https://www.w3schools.com/python/ref_func_print.asp)
+
+
+## Input Statement
+
+`input()` is the opposite of `print()`. It lets you type something in and get it as a variable. Here are a few examples:
+
+
+```python
+>>> a = input()
+Hello
+>>> print(a)
+Hello
+```
+
+
+As you can see, the program waits for you to give an input which is _Hello_ in this example. When you print `a` it outputs the string _Hello_ - which is what was inputted.
+
+```input()``` always returns a string, so If you want to input numbers (integers or floats) then you will need to convert the input to the appropriate variable type using the `int()` or `float()` functions. 
+
+
+```python
+a = int(input())
+```
+
+
+While you won’t be able to use `input()` in the competition (the robots don’t have keyboards), it can be quite useful for practising or for testing ideas.
+
+
+## Commenting
+
+Making the intent of your code clear is very important, even more so when working in a team. Use comments to explain why the code is behaving a certain way without affecting the program flow. Any text after a ‘#’ will be ignored e.g:
+
+
+```python
+# A comment on its own line
+favourite_insect = "Bee"  # Bees are cool. (Comment on same line as code)
+```
+
+
+
+## Data Types
+
+
+### Storing text - Strings
+
+Strings are used to store a bunch of characters. To create a string, put speech marks ("") around the text that you want to be in the string. For example:
+
+
+```python
+>>> a = "Foo"
+>>> a
+'Foo'
+>>> "abc" + "def"  # Concatenate 2 strings together
+'abcdef'
+>>> str(42)  # Convert something else to a string
+'42'
+```
+
+
+
+#### Additional Resources - Strings
+
+
+
+* [W3Schools](https://www.w3schools.com/python/python_strings.asp)
+* [Google for Education](https://developers.google.com/edu/python/strings)
+* [Programiz](https://www.programiz.com/python-programming/string)
+
+
+### Storing numbers - Integers and decimals
+
+As the name implies, integer variables store integers (whole numbers). In Python decimals (known as floats) and integers can be used interchangeably and will work with each other without you having to think about it.
+
+
+```python
+bees = 100
+honey = 0.3
+total_honey = honey * bees  # evaluates to 30
+```
+
+
+Operations involving numbers are covered in the _Doing Maths in Python_ section.
+
+
+#### Additional Resources - Integers and decimals
+
+
+
+* [W3Schools](https://www.w3schools.com/python/python_numbers.asp)
+* [Programiz](https://www.programiz.com/python-programming/numbers)
+
+
+### Storing Collections - Lists
+
+Lists are a bunch of values under one variable. They are defined by putting the values within square brackets and separating the variables with commas, like this:
+
+
+```python
+a  =  [1, 2, 3, 4, 5, 6, 7]
+```
+
+
+Get certain items from a list using the _list index_. The index starts at 0:
+
+
+```python
+a[0]  # Evaluates to 1
+a[-1]  # Evaluates to 7 - negative numbers count backwards from the end
+```
+
+
+As it so happens, strings are lists of characters! You can use list operations on them too:
+
+
+```python
+alpha = "abcdefg"
+letter = alpha[4]  # letter is "e"
+cabbage = alpha[2] + alpha[0] + alpha[1]*2 + alpha[0] + alpha[6] + alpha[4]
+```
+
+
+
+#### Additional Resources - Lists
+
+
+
+* [Google for Education](https://developers.google.com/edu/python/lists)
+* [Programiz](https://www.programiz.com/python-programming/list)
+* [Tutorialspoint](https://www.tutorialspoint.com/python/python_lists.htm)
+
+
+### True / False logic - Booleans
+
+Boolean variables can only be `True `or `False`. Booleans are used for conditions in `if` statements, `while` loops and `for` loops. These will come up later.
+
+You can use boolean operators to make complex decisions based on lots of variables.
+
+| Symbol/Operator | Description | Example that would be `True` | Example that would be `False` |
+| --------------- | ----------- | ---------------------------- | ----------------------------- |
+| `==` | Equals | `1 == 1` | `1 == 2` |
+| `!=` | Does not equal | `1 != 2` | `1 != 1` |
+| `>` | Greater Than | `4 > 2`| `3 > 4` |
+| `<` | Less Than | `2 < 4` | `4 > 1` |
+| >= | Greater Than or Equal To | `4 >= 4` | `4 >= 6` |
+| <= | Less Than or Equal To | `2 <= 2` | `7 >= 1` |
+| `and` | Logical 'and' operator | `True and True` | `False and False` |
+| `or` | Logical 'or' operator | `True or False` | `False or False` |
+| `not` | Logical 'not' operator | `not False` | `not True` |
+
+#### Additional Resources - Booleans
+
+
+* [W3Schools (Booleans)](https://www.w3schools.com/python/python_booleans.asp)
+* [W3Schools (Boolean Operators)](https://www.w3schools.com/python/python_operators.asp)
+
+
+## Using Logic
+
+
+### If Statements
+
+If statements let you execute code depending on whether the condition evaluates to true, e.g:
+
+
+```python
+name = "mary"
+if len(name) > 3:
+    print("Your name isn't all that short") 
+```
+
+
+You can add an `else` statement following your `if` statement to execute code if the condition is false, e.g:
+
+
+```python
+name = "mary"
+if len(name) > 3:
+    print("Your name isn't all that short") 
 else:
-    print("You're not Tim!")
-
-print("Python rocks.")
+    print("Wow that's a short name")
 ```
 
-Output (for "Tim" as before):
 
-```text
-Hello Tim.
-You've got an email!
-Python rocks.
-```
+If you want to chain if statements together you can use the `elif` statement like so:
 
-To find the limits of an `if` statement, just scan straight down until you encounter another statement on the same indent level. Play around with this example until you understand what's happening.
-
-One final thing: Python doesn't mind _how_ you indent lines, just so long as you're consistent. Some text editors insert indent characters when you press tab; others insert spaces (normally four). They'll often look the same, but cause errors if they're mixed. If you're using an online interpreter, you probably don't need to worry. Otherwise, check your editor's settings to make sure they're consistent. Four spaces per indent level is the convention in Python. We'll now move on from this topic before that last sentence causes a [flame war](https://www.youtube.com/watch?v=SsoOG6ZeyUI).
-
-## Lists
-Lists store more than one value in a single variable and allow you to set and retrieve values by their position ('index') in the list. For example:
 
 ```python
-shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
-print(shopping_list[0])
-shopping_list[3] = "Magazine"
-print(shopping_list[2])
-print(shopping_list[3])
+name = "mary"
+if len(name) > 3:
+    print("Your name isn't all that short")
+elif len(name) > 10:
+    print("Wow that's a long name")
+else:
+    print("Wow that's a short name")
 ```
 
-Output:
 
-```text
-Bread
-PNP Transistors
-Magazine
-```
 
-{{% notice warning %}}
-Like most other programming languages, indices start at 0, not 1. Due to this, the last element of this four-element list is at index 3. Attempting to retrieve `shopping_list[4]` would cause an error.
-{{% /notice %}}
+### While Loops
 
-You can find out the length of a list with the `len` function, like so:
+A `while` loop will continue executing the code within it while the condition is true, e.g:
+
 
 ```python
-shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
-print("There are", len(shopping_list), "items on your list.")
+while True:
+    print("I know a song that will get on your nerves")
+    print("Get on your nerves")
+    print("Get on your nerves")
+    print("I know a song that will get on your nerves")
+    print("And this is how it goes")
 ```
 
-Finally, you can add a value to the end of a list with the `append` method:
+
+In order to not get ‘stuck’ in a while loop you should make sure that you change the condition within the loop:
+
 
 ```python
-shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
-shopping_list.append("Mince pies in October")
-print(shopping_list)
+number_of_sheep = 0
+while number_of_sheep < 10:
+    print("Hope I sleep soon")
+    number_of_sheep += 1
+    print("zzzzzzzzz")
 ```
 
-The values in a list can be of any type, even other lists. Also, a list can contain values of different types.
 
-There are various other useful data structures that are beyond the scope of this tutorial, such as dictionaries (which allow indices other than numbers). You can find out more about these in [python's documentation](http://docs.python.org/tutorial/datastructures.html).
 
-## `while` loops
+### For Loops
 
-The `while` loop is the most basic type of loop. It repeats the statements in the loop while a condition is true. For example:
+An `for` loop and an `in `statement lets you loop through each item in a list, e.g:
+
+
+```
+tasty_types_of_cheese = ["Cheddar", "Camembert", "Gouda", "Brie"]
+for cheese in tasty_types_of_cheese:
+    print(cheese + " is tasty")
+```
+
+
+
+### Indentation
+
+Indentation is important in Python. For code to be counted as part of a loop, `if` statement or function it has to be indented properly. The standard indent size is 4 spaces. Pressing ‘tab’ in VSCode will automatically indent the configured amount.
+
 
 ```python
-x = 10
-while x > 0:
-    print(x)
-    if x == 5:
-        print("Half way there!")
-
-    x = x - 1
-
-print("Zero!")
+tasty_types_of_cheese = ["Cheddar", "Camembert", "Gouda", "Brie"]
+for cheese in tasty_types_of_cheese:
+    print(cheese + " is tasty")  # Part of the loop
+print("mmm yum")  # Not indented so not part of the loop
 ```
 
-Output:
 
-```text
-10
-9
-8
-7
-6
-5
-Half way there!
-4
-3
-2
-1
-Zero!
-```
 
-The condition is the same as it would be in an `if` statement and the block of code to put in the loop is denoted in the same way, too.
+#### Additional Resources - Using Logic
 
-## `for` loops
 
-The most common application of loops is in conjunction with lists. The `for` loop is designed specifically for that purpose. For example:
+
+* If Statements
+    * [Python Docs (if)](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
+    * [Programiz (if - elif - else)](https://www.programiz.com/python-programming/if-elif-else)
+    * [W3Schools (if - elif - else)](https://www.w3schools.com/python/python_conditions.asp)
+    * [Tutorialspoint (if - elif - else)](https://www.tutorialspoint.com/python/python_if_else.htm)
+* While Loops
+    * [Tutorialspoint](https://www.tutorialspoint.com/python/python_while_loop.htm)
+    * [Real Python](https://realpython.com/python-while-loop/)
+    * [Programiz](https://www.programiz.com/python-programming/while-loop) 
+* For Loops
+    * [Python Docs](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
+    * [Real Python](https://realpython.com/python-for-loop/)
+    * [Programiz](https://www.programiz.com/python-programming/for-loop)
+    * [W3Schools](https://www.w3schools.com/python/python_for_loops.asp)
+
+
+## Doing Maths in Python
+
+
+### Basic Operators
+
+Maths in Python is very similar to the way we do maths in a calculator. The order of operations follows _BIDMAS_ (_Brackets_, _Indices_, _Division_, _Multiplication_, _Addition_ and _Subtraction_). We would recommend using a liberal amount of brackets to ensure that the correct order of operations is carried out.
+
+You can also use variables when doing mathematical operations, however they need to be floats or integers. Mathematical operations won’t always work on strings or booleans.
+
+Below is a list of mathematical operators that you can use:
+
+| Operator Name | in Python | Operator in mathematical form |
+| ------------- | --------- | ----------------------------- |
+| Add | `a + b` | ![A plus B](/img/tutorials/add.png) |
+| Subtract | `a - b` | ![A minus B](/img/tutorials/subtract.png) |
+| Divide | `a / b` | ![A divided by B](/img/tutorials/divide.png) |
+| Multiply | `a * b` | ![A times B](/img/tutorials/multiply.png) |
+| Powers | `a ** b` | ![A to the power of B](/img/tutorials/powers.png) |
+
+#### Additional Resources - Basic Operators
+
+
+
+* [Tutorialspoint](https://www.tutorialspoint.com/python/python_basic_operators.htm)
+* [W3Schools](https://www.w3schools.com/python/gloss_python_arithmetic_operators.asp)
+* [Python Docs](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator)
+
+
+### Using the `math` module 
+
+The `math` module has several mathematical functions that could be useful for robot development (e.g trigonometry functions). To access this module, it must be imported.
+
 
 ```python
-shopping_list = ["Bread", "Milk", "PNP Transistors", "Newspaper"]
-for x in shopping_list:
-    print("[ ]", x)
+>>> import math
+>>> math.factorial(5)
+120
+>>> math.cos(0)
+1.0
 ```
 
-The code is executed once for each item in the list, with `x` set to each item in turn. So, the output of this example is:
 
-```text
-[ ] Bread
-[ ] Milk
-[ ] PNP Transistors
-[ ] Newspaper
-```
 
-Unfortunately, this method doesn't tell you the index of the current item. `x` is only a temporary variable, so modifying it has no effect on the list itself (try it). This is where the `enumerate` function comes in (see [Calling functions](#calling-functions)). It tells us the index of each value we loop over. An example with numbers:
+
+* [More functions you can use in the `math` module (Python Website)](https://docs.python.org/3/library/math.html)
+* [More functions you can use in the `math` module (W3 website)](https://www.w3schools.com/python/module_math.asp)
+
+
+## Debugging (and better print statements)
+
+Sometimes you might come across issues with your code that you may need to debug. The `print()` statement comes in handy in these situations. You might find it useful to insert `print()` statements at various points in your code to track the values of variables:
+
 
 ```python
-prices = [4, 5, 2, 1.50]
-# Add VAT
-for index, value in enumerate(prices):
-    prices[index] = value * 1.20
-
-print(prices)
+x = 40
+print("initialised x as 40")
+x = x + 2
+print("x is now:", x)
 ```
 
-Output:
 
-```text
-[4.8, 6.0, 2.4, 1.7999999999999998]
-```
 
-## Calling functions
-Functions are pre-written bits of code that can be run ('called') at any point. The simplest functions take no parameters and return nothing. For example, the `exit` function ends your program prematurely:
+### f-strings
+
+For inserting values into strings we recommend _f-strings_. f-strings look like normal strings, but with an _f_ in front like this: `f"This is an f-string"`. Unlike normal strings, f-strings let you insert values into them inside curly brackets {} like this:
+
 
 ```python
-x = 10
-while x > 0:
-    print(x)
-    x = x - 1
-    if x == 5:
-        exit()  # not supported in repl.it!
+var_age = 20
+print(f"my age is {var_age}"))  # Prints "my age is 20"
 ```
 
-This will output the numbers 10 to 6, and then stop. Not very useful. However, most functions take input values ('parameters') and output something useful (a 'return value'). For example, the `len` function returns the length of the given list:
+
+You can put any valid value in the curly brackets:
+
 
 ```python
-my_list = [42, "BOOMERANG!!!", [0, 3]]
-print(len(my_list))
+f"{["Mammal", "Reptile", "Fish", "Amphibian", "Bird"][4]} is the word"
 ```
 
-Output:
 
-```text
-3
-```
 
-Combined with the `range` function, which returns a list of numbers in a certain range, you get a list of indices for the list (you might want to look back at that second `for` example).
+# Functions!
+
+
+## Functions
+
+Functions are named blocks of reusable code. They’re useful for making your code neater and easier to read, which is important as you don’t have that much time to debug errors. Using functions reduces the amount of repeated code in your program. Make them like this:
+
 
 ```python
-my_list = [42, "BOOMERANG!!!", [0, 3]]
-print(range(len(my_list)))
+def function_name():
+    print("This function will print this string")
 ```
 
-Output:
 
-```text
-[0, 1, 2]
-```
+This function prints `"This function will print this string"` every time it’s called.
 
-The `range` function can also take multiple parameters:
 
 ```python
-print(range(5))           # numbers from 0 to 4.
-print(range(2, 5))         # numbers from 2 to 4.
-print(range(1, 10, 2))     # odd numbers from 1 to 10
+>>> function_name()
+This function will print this string
 ```
 
-Output:
 
-```text
-[0, 1, 2, 3, 4]
-[2, 3, 4]
-[1, 3, 5, 7, 9]
+Functions can take in extra data called parameters. These work like variables that you can only access from within the function, and their values get set when the function gets called.
+
+
+```python
+def turn_right(angle, speed):
+    print(f"set the left motor to {speed}")
+    print(f"set the right motor to {-speed}")
+    print(f"wait {angle / 100} seconds")
+    print("set the left motor to 0")
+    print("set the right motor to 0")
 ```
 
-There are many built-in functions supplied with Python (see [appendix](#built-in-functions)). Most are in 'modules', collections of functions which have to be imported. For example, the `math` module contains mathematical functions. To use the `sin` function, we must import it:
+
+Here’s what happens when you call `turn_right`:
+
+
+```python
+>>> turn_right(45, 0.7)
+set the left motor to 0.7
+set the right motor to -0.7
+wait 0.45 seconds
+set the left motor to 0
+set the right motor to 0
+```
+
+
+Functions can also return values, which can then be stored in variables, passed to other functions or even just ignored. Here’s a function which returns a value:
+
 
 ```python
 import math
-
-print(math.sin(math.pi / 2))
+def degrees_to_radians(degrees):
+    return degrees * math.pi / 180
 ```
 
-### Defining functions
 
-Of course, you'll want to make your own functions. To do this, you precede a block of code with a `def` statement, specifying an identifier for the function, and any parameters you might want. For example:
+And here’s that function in action:
+
 
 ```python
-def annoy(num_times):
-    for i in range(num_times):
-        print("Na na na-na na!")
-
-annoy(3)
-```
-
-The output would be three annoying lines of `Na na na-na na!`.
-
-To return a value, use the `return` statement. A rather trivial example:
-
-```python
-def multiply(x, y):
-    return x * y
-
-print(multiply(2, 3))
-```
-
-### Using functions effectively
-Without functions, most programs would be very hard to read and maintain. Here's an example (admittedly a little contrived):
-
-```python
-my_string = "All bees like cheese when they're wearing hats."
-x = 0
-for c in my_string:
-    if c == "a":
-        x = x + 1
-
-y = 0
-for c in my_string:
-    if c == "e":
-        y = y + 1
-```
-
-Before we explain the example, try and figure out what it does. What do `x` and `y` represent?
-
-Now, let's refine it with functions:
-
-```python
-def count_letter(string, l):
-    x = 0
-    for c in string:
-        if c == l:
-            x = x + 1
-
-    return x
-
-my_string = "Bees like cheese when they're wearing hats."
-
-x = count_letter(my_string, "a")
-y = count_letter(my_string, "e")
-```
-
-This version has a number of advantages:
-
-- It's far more obvious what the program does.
-- The program is shorter, and cleaner.
-- The code for counting letters in a string is in only one place, and can be reused.
-
-The last point has another advantage. There's a bug in this program: upper-case letters aren't counted. It's easy to fix, but in the function version we only have to apply the fix in one place. True, it would only be two places in the original, but in a major program, it could be thousands.
-
-You should try and use functions wherever you see multiple lines of code that are repeated, or find yourself writing code to do the same thing (or a similar thing) more than once. In these situations, look at the relevant bits of code and try to think of a way to put it into a function.
-
-## Scope
-
-When you set a variable inside a function, it will only keep its value inside that function. For example:
-
-```python
-x = 2
-
-def foo():
-    x = 3
-    print("In foo(), x =", x)
-
-foo()
-print("Outside foo(), x =", x)
-```
-
-Output:
-
-```text
-In foo(), x = 3
-Outside foo(), x = 2
-```
-
-This can get quite confusing, so it's best to avoid giving variables inside functions ('local' variables) the same identifier as those outside. If you want to get information out of a function, `return` it.
-
-This concept is called 'scope'. We say that variables which are changed inside a function are in a different scope from those outside.
-
-You can have functions within functions, and this can actually be quite useful. In this situation, each nested function will also have its own scope.
-
-## Exercises: variables and mathematics
-### Average calculator
-
-The first two lines of this program put two numbers entered by the user into variables `a` and `b`. (The `input` function is like `input`, but returns a number (e.g. `42`) when you enter one, rather than a string (like `"42"`).) Replace the comment with code that averages the numbers and puts them in a variable called `average`.
-
-```python
-a = input("Enter first number: ")
-b = input("Enter second number: ")
-
-# Store the average of a and b in the variable `average`
-
-print("The average of", a, "and", b, "is", average)
-```
-
-Run your code and check that it works.
-
-### Distance calculator
-
-Write a program which uses `input` to take an X and a Y coordinate, and calculate the distance from (0, 0) to (X, Y) using Pythagoras' Theorem. Put the code into an interpreter and run it. Does it do what you expected?
-
-{{% notice tip %}}
-You can find the square root of a number by raising it to the power of 0.5, for example, `my_number ** 0.5`.
-{{% /notice %}}
-
-**Extension:** can you adapt the program to calculate the distance between any two points?
-
-### Booleans and `if` statements
-
-A boolean value is either `True` or `False`. For example:
-
-```python
-print(42 > 5)
-print(4 == 2)
-```
-
-Output:
-
-```text
-True
-False
-```
-
-`<` and `==` are operators, just like `+` or `*`, which return booleans. Others include `<=` (less than or equal to), `>`, `>=` and `!=` (not equal to). You can also use `and`, `or`, and `not` (see the [Operators](#operators) appendix).
-
-`if` statements execute code only if their condition is true. The code to include in the `if` is denoted by a number of indented lines. To indent a line, press the tab key or insert four spaces at the start. You can also include an `else` statement, which is executed if the condition is false. For example:
-
-```python
-name = input("What is your name?")
-if name == "Tim":
-    print("Hello Tim.")
-    print("You've got an email.")
-else:
-    print("You're not Tim!")
-
-print("Python rocks!")
-```
-
-If you typed "Tim" at the prompt, this example would output:
-
-```text
-Hello Tim.
-You've got an email.
-Python rocks!
-```
-
-Having another `if` in the `else` block is very common:
-
-```python
-price = 50000 * 1.3
-if price < 60000:
-    print("We can afford the tall ship!")
-else:
-    if price < 70000:
-        print("We might be able to afford the tall ship...")
-    else:
-        print("We can't afford the tall ship. :-(")
-```
-
-So common that there's a special keyword, `elif`, for the purpose. So, the following piece of code is equivalent to the last:
-
-```python
-price = 50000 * 1.3
-if price < 60000:
-    print("We can afford the tall ship!")
-elif price < 70000:
-    print("We might be able to afford the tall ship...")
-else:
-    print("We can't afford the tall ship. :-(")
-```
-
-Both output:
-
-```text
-We might be able to afford the tall ship...
-```
-
-## Exercises: `if` statements and blocks
-
-### So many `if`s
-
-Without running it, work out what output the following code will give:
-
-```python
-some_text = "Duct Tape"
-if 5 > 4:
-    print("Maths works.")
-    if some_text == "duct tape":
-        print("The case is wrong.")
-    elif some_text == "Duct Tape":
-        print("That's right.")
-    else:
-        print("Completely wrong.")
-else:
-    print("Oh-oh.")
-```
-
-Run the code and check your prediction.
-
-### Age detection tool
-
-Write a program that asks the user for their age, and prints a different message depending on whether they are under 18, over 65, or in between.
-
-## Exercises: lists and loops
-
-### A better average calculator
-
-Write a program which calculates the average of a list of numbers. You can specify the list in the code.
-
-**Extension:**
-You can tell when a user has not entered anything at a `input` prompt when it returns the empty string, `""`. Otherwise, it returns a string (like "42.5"), which you can turn into a number with the `float` function. Additionally, extend your program to let the user enter the list of values. Stop asking for new list entries when they do not enter anything at the `input` prompt. Example of how to recognize when a user doesn't enter anything:
-
-```python
-var = input("Enter a number: ")
-if var == "":
-    print("You didn't enter anything!")
-else:
-    print("You entered", float(var))
-```
-
-### Fizz buzz
-
-Write a program which prints a list of numbers from 0 to 100, but replace numbers divisible by 3 with "Fizz", numbers divisible by 5 with "Buzz", and numbers divisible by both with "Fizz Buzz".
-
-**Extension:** create a list of numbers, and replace a number with "Fuzz" if it is a multiple of any number in the list.
-
-### Trees and triangles
-
-You can combine (or 'concatenate') strings in Python with the `+` operator:
-
-```python
-str = "Hello "
-str = str + "World!"
-print(str)
-```
-
-Write a program that asks the user for a number, and then prints a triangle of that height, with its right angle at the bottom left. For example, given the number 3, the program should output:
-
-```text
-*
-**
-***
-```
-
-Try the same, but with the right angle in the top-right, like so (again, for input 3):
-
-```text
-***
- **
-  *
-```
-
-**Extension:** print out a tree shape of the given size. For example, a tree of size 4 would look like this:
-
-```text
-   *
-  ***
- *****
-*******
-   *
-   *
-```
-
-## Exercises: functions
-
-### Trigonometry
-
-Write a program that takes as input an angle (in radians) and the length of one side (of your choice) of a right-angled triangle. Print out the length of all sides of the triangle.
-
-You'll need the functions contained in the [`math` module](http://docs.python.org/library/math.html).
-{{% notice note %}}
-Python uses radians for its angles. If you are not comfortable with radians, you can use the `radians` function in the `math` module to convert to radians from degrees.
-{{% /notice %}}
-
-**Extension:** you can return multiple values from a function like so:
-
-```python
-def foo():
-    return 1, 2, 3
-
-x, y, z = foo()
-```
-
-Wrap your triangle calculation code in a function.
-
-### Greeting
-
-Write a function that takes a name as an input, and prints a message greeting that person.
-
-### Average function
-
-Wrap the code for your average calculator from the Lists and Loops exercises in a function that takes a list as a parameter and returns its average.
-
-## What to do next
-
-As mentioned at the start, there are loads of Python exercises out there on the Web. If you want to learn some more advanced concepts, there are more tutorials out there too.
-
-## Appendices
-
-### Operators
-There are three types of operators in Python: arithmetic, comparison, and logical. I'll list the most important.
-
-#### Arithmetic
-
-The usual mathematical order (BODMAS) applies to these, just like in normal algebra.
-
-Here are some symbols used for arithmetic:
-|Symbol in python | What it is |
-| ---------------- | ---------- |
-| `+` | add |
-| `-` |subtract|
-| `*` | multiply|
-| `/` | divide |
-| `%` | remainder|
-| `**` | power |
-
-##### Some Examples:
-`%`
-:   Remainder. For example, `5 % 2` is 1, `4 % 2` is 0.
-
-`**`
-:   power (e.g. `4 ** 2` is 4 squared)
-
-#### Comparison
-
-These return a boolean (`True` or `False`) value, and are used in `if` statements and `while` loops. These are always done after arithmetic.
-
-Here are some operators used for comparison:
-|Symbol in python | What it is |
-| ---------------- | ---------- |
-| `=` | equal to |
-| `!=` | not equal to |
-| `<` | less than |
-| `>` | greater than |
-| `<=` | less than or equal to |
-| `>=` | greater than or equal to |
-
-##### The `in` keyword and some examples:
-
-`in`
-:   returns true if the item on the left is contained in the item on the right. The items can be strings, lists, or other objects. For example:
-
-```python
-if "car" in "Scarzy's hair":
-    print("Of course.")
-```
-
-```python
-if 7 in [2, 35, 7, 8]:
-    print("Found a seven!")
-```
-
-#### Logical
-
-These operators are `and`, `or`, and `not`. They are done after both arithmetic and comparisons. They're pretty self-explanatory, with an example:
-
-```python
-x = 5
-y = 8
-z = 2
-
-if x == 5 and y == 3:
-    print("Yes")
-else:
-    print("No")
-
-print(x == 5 or not y == 8)         # could use y != 8 instead
-print(x == 2 and y == 3 or z == 2)  # needs brackets for clarity!
-```
-
-Output:
-
-```text
-No
-True
-True
-```
-
-When more than one boolean operator is used in an expression, `not` is performed first (as it works on a single operand). After this, `and` is done before `or`, but you should use brackets instead of relying on that fact, for readability. So, the last line of the example should read:
-
-```python
-print((x == 2 and y == 3) or z == 2)
+>>> radians = degrees_to_radians(360)
+>>> radians
+6.283185307179586
 ```
 
 
-### Built-in functions
 
-A lot of functions are defined for you by Python. Those listed in [the docs](http://docs.python.org/library/functions.html) are always available, and are the most commonly used, including `len`, `range`, and enumerate.
+#### Additional Resources - Functions
 
-Others are contained in modules. To use a function from a module, you must `import` that module, like so:
 
-```python
-import math
-print(math.sqrt(4))
-```
 
-One of the most useful modules for the moment will be [`math`](http://docs.python.org/library/math.html).
+* [W3Schools](https://www.w3schools.com/python/python_functions.asp)
+* [Programiz](https://www.programiz.com/python-programming/function)
+* [Tutorialspoint](https://www.tutorialspoint.com/python/python_functions.htm)
+* [Python Docs (built-in functions)](https://docs.python.org/3/library/functions.html)
+* [Real Python](https://realpython.com/defining-your-own-python-function/)
+
+
+## Scope of a variable
+
+Not all variables are accessible in every part of the code. Where a variable can be accessed from is called its _scope_. If the variable is defined in a function, then you can only use that variable inside the same function. Variables defined outside functions can be used anywhere.
+
+If you want a variable in a function to be accessible everywhere, write `global` in front of its name when you define it (e.g `global myVar = 2`). You shouldn’t usually need to do this, though.
+
+
+#### Additional Resources - Scope
+
+
+
+* [W3Schools](https://www.w3schools.com/python/python_scope.asp)
+* [Datacamp](https://www.datacamp.com/community/tutorials/scope-of-variables-python)
+* [Real Python](https://realpython.com/python-scope-legb-rule/)
+
+
+## Using Modules
+
+A module contains pre-written functions and variables that you can use by _importing_ it. This is quite a useful tool to use since it avoids reinventing the wheel and splitting your own code into modules makes it easier to divide up the work among your team.
+
+Start by importing the module you want with the statement `import module_name`. You can then use its functions by writing `module_name.function()`. For example, if you wanted to use the `sleep` function in the `time` module then you would write `time.sleep()`.
+
+Some module names are quite long, so you can shorten the code by assigning it a different name when you import it by using the `as` keyword. For example, `matplotlib.pyplot` allows you to plot graphs, but you can shorten it to “plt” in your code by writing this when you import it: `import matplotlib.pyplot as plt`.
+
+Any other Python files in the same folder can be imported like modules. If you have a file called `motor_control.py`, for example, you could import it by writing `import motor_control`.
+
+
+#### Additional Resources - Modules
+
+
+
+* [Python Docs](https://docs.python.org/3/tutorial/modules.html)
+* [W3Schools](https://www.w3schools.com/python/python_modules.asp)
+* [Real Python](https://realpython.com/python-modules-packages/)
