@@ -655,7 +655,7 @@ Below is a list of mathematical operators that you can use:
 
 ### Using the Math module 
 
-The math module has several mathematical functions that could be useful for robot development (e.g trigonometry functions). To access this module, it must be imported.
+The `math` module has several mathematical functions that could be useful for robot development (e.g trigonometry functions). To access this module, it must be imported.
 
 
 ```python
@@ -669,8 +669,8 @@ The math module has several mathematical functions that could be useful for robo
 
 
 
-* [More functions you can use in the math module (Python Website)](https://docs.python.org/3/library/math.html)
-* [More functions you can use in the math module (W3 website)](https://www.w3schools.com/python/module_math.asp)
+* [More functions you can use in the `math` module (Python Website)](https://docs.python.org/3/library/math.html)
+* [More functions you can use in the `math` module (W3 website)](https://www.w3schools.com/python/module_math.asp)
 
 
 ## Debugging (and better print statements)
