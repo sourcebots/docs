@@ -1,5 +1,6 @@
 ---
 title: Kit
+weight: 9
 ---
 
 ## Boards
