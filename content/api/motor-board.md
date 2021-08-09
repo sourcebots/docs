@@ -1,5 +1,6 @@
 ---
 title: Motor Board API
+weight: 1
 ---
 
 The kit can control multiple motors simultaneously. One Motor Board can

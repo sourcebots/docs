@@ -1,5 +1,6 @@
 ---
 title: Servo Board API
+weight: 3
 ---
 
 The kit can control multiple servos simultaneously. One Servo Board can

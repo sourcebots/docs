@@ -1,5 +1,6 @@
 ---
 title: Basic Movement
+weight: 1
 ---
 
 The example program we'll write will do a number of things with the motor: forwards and backwards, and different power settings, for example. Let's begin. To start off, we'll just make a motor move forwards, then backwards, and then repeat.
