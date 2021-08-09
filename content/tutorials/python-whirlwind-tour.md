@@ -21,7 +21,7 @@ Below are step-by-step instructions for installing Python 3.9.6 (which is requir
 4. Find your downloads folder and open the Python installer. You should get this window:
 
 
-![alt_text](/static/img/tutorials/whrl-win-1.png)
+![alt_text](/img/tutorials/whrl-win-1.png)
 
 
 5. Tick the **<span style="text-decoration:underline;">“Add Python 3.9 to PATH”</span>** checkbox and click “Install Now” (important)
