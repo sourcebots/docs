@@ -616,7 +616,7 @@ Wrap the code for your average calculator from the Lists and Loops exercises in 
 
 ## What to do next
 
-As mentioned at the start, there are loads of Python exercises out there on the Web. If you want to learn some more advanced concepts, there are more tutorials out there too. [Here's](/tutorials/intro-to-python/) our recommendations of tutorials from [Codecademy](https://www.codecademy.com/).
+As mentioned at the start, there are loads of Python exercises out there on the Web. If you want to learn some more advanced concepts, there are more tutorials out there too.
 
 ## Appendices
 
@@ -627,9 +627,17 @@ There are three types of operators in Python: arithmetic, comparison, and logica
 
 The usual mathematical order (BODMAS) applies to these, just like in normal algebra.
 
-`+`, `-`, `*`, `/`
-:   Self-explanatory.
+Here are some symbols used for arithmetic:
+|Symbol in python | What it is |
+| ---------------- | ---------- |
+| `+` | add |
+| `-` |subtract|
+| `*` | multiply|
+| `/` | divide |
+| `%` | remainder|
+| `**` | power |
 
+##### Some Examples:
 `%`
 :   Remainder. For example, `5 % 2` is 1, `4 % 2` is 0.
 
@@ -640,11 +648,17 @@ The usual mathematical order (BODMAS) applies to these, just like in normal alge
 
 These return a boolean (`True` or `False`) value, and are used in `if` statements and `while` loops. These are always done after arithmetic.
 
-`==`, `!=`
-:   equal to, not equal to
+Here are some operators used for comparison:
+|Symbol in python | What it is |
+| ---------------- | ---------- |
+| `=` | equal to |
+| `!=` | not equal to |
+| `<` | less than |
+| `>` | greater than |
+| `<=` | less than or equal to |
+| `>=` | greater than or equal to |
 
-`<`, `<=`, `>`, `>=`
-:   less than, less than or equal to, greater than, etc.
+##### The `in` keyword and some examples:
 
 `in`
 :   returns true if the item on the left is contained in the item on the right. The items can be strings, lists, or other objects. For example:

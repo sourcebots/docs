@@ -17,10 +17,10 @@ params:
 
 menu:
     shortcuts:
-        - name: "<i class='fa fa-github'></i> Github Repo"
+        - name: "<i class='fab fa-github'></i> Github Repo"
           url: https://github.com/sourcebots/docs
 
-        - name: "<i class='fa fa-globe'></i> Website"
+        - name: "<i class='fas fa-globe'></i> Website"
           url: https://sourcebots.co.uk/
 
 enableGitInfo: true
