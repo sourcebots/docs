@@ -808,13 +808,13 @@ If you want a variable in a function to be accessible everywhere, write `global`
 
 ## Using Modules
 
-A module contains prewritten functions and variables that you can use by _importing_ it. This is quite a useful tool to use since it avoids reinventing the wheel and splitting your own code into modules makes it easier to divide up the work among your team.
+A module contains pre-written functions and variables that you can use by _importing_ it. This is quite a useful tool to use since it avoids reinventing the wheel and splitting your own code into modules makes it easier to divide up the work among your team.
 
 Start by importing the module you want with the statement `import module_name`. You can then use its functions by writing `module_name.function()`. For example, if you wanted to use the `sleep` function in the `time` module then you would write `time.sleep()`.
 
-Some module names are quite long, so you can shorten the code by assigning it a different name when you import it by using the `as` keyword. For example, matplotlib.pyplot allows you to plot graphs, but you can shorten it to “plt” in your code by writing this when you import it: `import matplotlib.pyplot as plt`.
+Some module names are quite long, so you can shorten the code by assigning it a different name when you import it by using the `as` keyword. For example, `matplotlib.pyplot` allows you to plot graphs, but you can shorten it to “plt” in your code by writing this when you import it: `import matplotlib.pyplot as plt`.
 
-Any other Python files in the same folder can be imported like modules. If you have a file called _motor_control.py_, for example, you could import it by writing `import motor_control`.
+Any other Python files in the same folder can be imported like modules. If you have a file called `motor_control.py`, for example, you could import it by writing `import motor_control`.
 
 
 #### Additional Resources - Modules
