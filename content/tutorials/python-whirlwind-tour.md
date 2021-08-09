@@ -99,7 +99,7 @@ Variables are called that because the value stored in one can change, or vary. S
 To assign a value to a variable in Python we specify a name for the variable, followed by the `= `sign, followed by the value e.g:
 
 
-```
+```python
 name = "Mary"
 age = 17
 ```
@@ -174,7 +174,7 @@ In Python you don’t need to tell the computer what type your variable is, the 
 The print statement displays what it’s given in the output window. This is useful for debugging as you can use it to see what value a variable is storing. For example:
 
 
-```
+```python
 print("Hello world")
 ```
 
@@ -182,7 +182,7 @@ print("Hello world")
 Would output the following in the console:
 
 
-```
+```python
 Hello world
 ```
 
@@ -190,7 +190,7 @@ Hello world
 We can also print variables. Here, variable <code>a<em> </em></code>stores the number <code>4.2</code>:
 
 
-```
+```python
 >>> a = 4.2
 >>> print(a)
 4.2
@@ -212,7 +212,7 @@ We can also print variables. Here, variable <code>a<em> </em></code>stores the n
 `input()` is the opposite of `print()`. It lets you type something in and get it as a variable. Here are a few examples:
 
 
-```
+```python
 >>> a = input()
 Hello
 >>> print(a)
@@ -222,10 +222,10 @@ Hello
 
 As you can see, the program waits for you to give an input which is _Hello_ in this example. When you print <code>a<em> </em></code>it outputs the string <em>Hello </em>which is what was inputted.
 
-`input()` always returns a string, so If you want to input numbers (integers or floats) then you will need to convert the input to the appropriate variable type using the `int()` or `float()` functions. 
+```input()``` always returns a string, so If you want to input numbers (integers or floats) then you will need to convert the input to the appropriate variable type using the `int()` or `float()` functions. 
 
 
-```
+```python
 a = int(input())
 ```
 
@@ -238,7 +238,7 @@ While you won’t be able to use `input()` in the competition (the robots don’
 Making the intent of your code clear is very important, even more so when working in a team. Use comments to explain why the code is behaving a certain way without affecting the program flow. Any text after a ‘#’ will be ignored e.g:
 
 
-```
+```python
 # A comment on its own line
 favourite_insect = "Bee"  # Bees are cool. (Comment on same line as code)
 ```
@@ -253,7 +253,7 @@ favourite_insect = "Bee"  # Bees are cool. (Comment on same line as code)
 Strings are used to store a bunch of characters. To create a string, put speech marks ("") around the text that you want to be in the string. For example:
 
 
-```
+```python
 >>> a = "Foo"
 >>> a
 'Foo'
@@ -279,7 +279,7 @@ Strings are used to store a bunch of characters. To create a string, put speech 
 As the name implies, integer variables store integers (whole numbers). In Python decimals (known as floats) and integers can be used interchangeably and will work with each other without you having to think about it.
 
 
-```
+```python
 bees = 100
 honey = 0.3
 total_honey = honey * bees  # evaluates to 30
@@ -302,7 +302,7 @@ Operations involving numbers are covered in the _Doing Maths in Python_ section.
 Lists are a bunch of values under one variable. They are defined by putting the values within square brackets and separating the variables with commas, like this:
 
 
-```
+```python
 a  =  [1, 2, 3, 4, 5, 6, 7]
 ```
 
@@ -310,7 +310,7 @@ a  =  [1, 2, 3, 4, 5, 6, 7]
 Get certain items from a list using the _list index_. The index starts at 0:
 
 
-```
+```python
 a[0]  # Evaluates to 1
 a[-1]  # Evaluates to 7 - negative numbers count backwards from the end
 ```
@@ -319,7 +319,7 @@ a[-1]  # Evaluates to 7 - negative numbers count backwards from the end
 As it so happens, strings are lists of characters! You can use list operations on them too:
 
 
-```
+```python
 alpha = "abcdefg"
 letter = alpha[4]  # letter is "e"
 cabbage = alpha[2] + alpha[0] + alpha[1]*2 + alpha[0] + alpha[6] + alpha[4]
@@ -465,7 +465,7 @@ You can use boolean operators to make complex decisions based on lots of variabl
 If statements let you execute code depending on whether the condition evaluates to true, e.g:
 
 
-```
+```python
 name = "mary"
 if len(name) > 3:
     print("Your name isn't all that short") 
@@ -475,7 +475,7 @@ if len(name) > 3:
 You can add an `else` statement following your `if` statement to execute code if the condition is false, e.g:
 
 
-```
+```python
 name = "mary"
 if len(name) > 3:
     print("Your name isn't all that short") 
@@ -487,7 +487,7 @@ else:
 If you want to chain if statements together you can use the `elif` statement like so:
 
 
-```
+```python
 name = "mary"
 if len(name) > 3:
     print("Your name isn't all that short")
@@ -504,7 +504,7 @@ else:
 A `while` loop will continue executing the code within it while the condition is true, e.g:
 
 
-```
+```python
 while True:
     print("I know a song that will get on your nerves")
     print("Get on your nerves")
@@ -517,7 +517,7 @@ while True:
 In order to not get ‘stuck’ in a while loop you should make sure that you change the condition within the loop:
 
 
-```
+```python
 number_of_sheep = 0
 while number_of_sheep < 10:
     print("Hope I sleep soon")
@@ -545,7 +545,7 @@ for cheese in tasty_types_of_cheese:
 Indentation is important in Python. For code to be counted as part of a loop, `if` statement or function it has to be indented properly. The standard indent size is 4 spaces. Pressing ‘tab’ in VSCode will automatically indent the configured amount.
 
 
-```
+```python
 tasty_types_of_cheese = ["Cheddar", "Camembert", "Gouda", "Brie"]
 for cheese in tasty_types_of_cheese:
     print(cheese + " is tasty")  # Part of the loop
@@ -673,7 +673,7 @@ Below is a list of mathematical operators that you can use:
 The math module has several mathematical functions that could be useful for robot development (e.g trigonometry functions). To access this module, it must be imported.
 
 
-```
+```python
 >>> import math
 >>> math.factorial(5)
 120
@@ -693,7 +693,7 @@ The math module has several mathematical functions that could be useful for robo
 Sometimes you might come across issues with your code that you may need to debug. The `print()` statement comes in handy in these situations. You might find it useful to insert `print()` statements at various points in your code to track the values of variables:
 
 
-```
+```python
 x = 40
 print("initialised x as 40")
 x = x + 2
@@ -707,7 +707,7 @@ print("x is now:", x)
 For inserting values into strings we recommend _f-strings_. f-strings look like normal strings, but with an _f_ in front like this: `f"This is an f-string"`. Unlike normal strings, f-strings let you insert values into them inside curly brackets {} like this:
 
 
-```
+```python
 var_age = 20
 print(f"my age is {var_age}"))  # Prints "my age is 20"
 ```
@@ -716,7 +716,7 @@ print(f"my age is {var_age}"))  # Prints "my age is 20"
 You can put any valid value in the curly brackets:
 
 
-```
+```python
 f"{["Mammal", "Reptile", "Fish", "Amphibian", "Bird"][4]} is the word"
 ```
 
@@ -730,7 +730,7 @@ f"{["Mammal", "Reptile", "Fish", "Amphibian", "Bird"][4]} is the word"
 Functions are named blocks of reusable code. They’re useful for making your code neater and easier to read, which is important as you don’t have that much time to debug errors. Using functions reduces the amount of repeated code in your program. Make them like this:
 
 
-```
+```python
 def function_name():
     print("This function will print this string")
 ```
@@ -739,7 +739,7 @@ def function_name():
 This function prints `"This function will print this string"` every time it’s called.
 
 
-```
+```python
 >>> function_name()
 This function will print this string
 ```
@@ -748,7 +748,7 @@ This function will print this string
 Functions can take in extra data called parameters. These work like variables that you can only access from within the function, and their values get set when the function gets called.
 
 
-```
+```python
 def turn_right(angle, speed):
     print(f"set the left motor to {speed}")
     print(f"set the right motor to {-speed}")
@@ -761,7 +761,7 @@ def turn_right(angle, speed):
 Here’s what happens when you call `turn_right`:
 
 
-```
+```python
 >>> turn_right(45, 0.7)
 set the left motor to 0.7
 set the right motor to -0.7
@@ -774,7 +774,7 @@ set the right motor to 0
 Functions can also return values, which can then be stored in variables, passed to other functions or even just ignored. Here’s a function which returns a value:
 
 
-```
+```python
 import math
 def degrees_to_radians(degrees):
     return degrees * math.pi / 180
@@ -784,7 +784,7 @@ def degrees_to_radians(degrees):
 And here’s that function in action:
 
 
-```
+```python
 >>> radians = degrees_to_radians(360)
 >>> radians
 6.283185307179586
