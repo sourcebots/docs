@@ -58,12 +58,12 @@ Below is a list of websites that have some Python tutorials:
 
 
 * [Python Docs](https://docs.python.org/3/tutorial/index.html)
-* [learnpython](https://www.learnpython.org/)
-* [Realpython](https://realpython.com/)
+* [LearnPython](https://www.learnpython.org/)
+* [Real Python](https://realpython.com/)
 * [Programiz](https://www.programiz.com/python-programming)
 * [Google for Education](https://developers.google.com/edu/python)
 * [Learn Microsoft](https://docs.microsoft.com/en-us/learn/modules/intro-to-python/)
-* [FreeCodeCamp (youtube)](https://www.youtube.com/watch?v=rfscVS0vtbw&t=1s)
+* [FreeCodeCamp (YouTube)](https://www.youtube.com/watch?v=rfscVS0vtbw&t=1s)
 
 If you are stuck, then you can check if someone else had a similar issue on StackOverflow. 
 
@@ -151,8 +151,8 @@ In Python you don’t need to tell the computer what type your variable is, the 
 
 
 * [W3Schools](https://www.w3schools.com/python/python_variables.asp)
-* [Realpython](https://realpython.com/python-variables/)
-* [Learnpython (has built in code editor)](http://learnpython)
+* [Real Python](https://realpython.com/python-variables/)
+* [LearnPython (has built in code editor)](http://learnpython)
 * [Tutorialspoint](https://www.tutorialspoint.com/python/python_variable_types.htm)
 
 
@@ -189,7 +189,7 @@ We can also print variables. Here, variable <code>a<em> </em></code>stores the n
 
 
 
-* [Realpython](https://realpython.com/python-print/)
+* [Real Python](https://realpython.com/python-print/)
 * [Programiz](https://www.programiz.com/python-programming/methods/built-in/print)
 * [W3Schools](https://www.w3schools.com/python/ref_func_print.asp)
 
@@ -438,8 +438,6 @@ You can use boolean operators to make complex decisions based on lots of variabl
 #### Additional Resources - Booleans
 
 
-
-* [Realpython](http://Realpython)
 * [W3Schools (Booleans)](https://www.w3schools.com/python/python_booleans.asp)
 * [W3Schools (Boolean Operators)](https://www.w3schools.com/python/python_operators.asp)
 
@@ -467,7 +465,7 @@ name = "mary"
 if len(name) > 3:
     print("Your name isn't all that short") 
 else:
-    print("Wow thats a short name")
+    print("Wow that's a short name")
 ```
 
 
@@ -479,9 +477,9 @@ name = "mary"
 if len(name) > 3:
     print("Your name isn't all that short")
 elif len(name) > 10:
-    print("Wow thats a long name")
+    print("Wow that's a long name")
 else:
-    print("Wow thats a short name")
+    print("Wow that's a short name")
 ```
 
 
@@ -552,11 +550,11 @@ print("mmm yum")  # Not indented so not part of the loop
     * [Tutorialspoint (if - elif - else)](https://www.tutorialspoint.com/python/python_if_else.htm)
 * While Loops
     * [Tutorialspoint](https://www.tutorialspoint.com/python/python_while_loop.htm)
-    * [Realpython](https://realpython.com/python-while-loop/)
+    * [Real Python](https://realpython.com/python-while-loop/)
     * [Programiz](https://www.programiz.com/python-programming/while-loop) 
 * For Loops
     * [Python Docs](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
-    * [Realpython](https://realpython.com/python-for-loop/)
+    * [Real Python](https://realpython.com/python-for-loop/)
     * [Programiz](https://www.programiz.com/python-programming/for-loop)
     * [W3Schools](https://www.w3schools.com/python/python_for_loops.asp)
 
