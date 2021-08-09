@@ -15,7 +15,7 @@ Below are step-by-step instructions for installing Python 3.9.6 (which is requir
 1. Go to [https://www.python.org/downloads/release/python-396/ (Python 3.9.6)](https://www.python.org/downloads/release/python-396/)
 2. Scroll down “Files” and click on “**Windows installer 64 bit**” (if you are on a 64 bit machine) or “**Windows installer 32 bit**” (if you are on a 32 bit machine). 
 
-        If you do not know what version to get, then type in your windows search bar “**About your PC**”. Under ‘system type’ it should tell you what bit of operating system you have.
+   If you do not know what version to get, then type in your windows search bar “**About your PC**”. Under ‘system type’ it should tell you what bit of operating system you have.
 
 3. Click “save file” and wait for the installer to download.
 4. Find your downloads folder and open the Python installer. You should get this window:
