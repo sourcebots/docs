@@ -21,7 +21,7 @@ Below are step-by-step instructions for installing Python 3.9.6 (which is requir
 4. Find your downloads folder and open the Python installer. You should get this window:
 
 
-![alt_text](/img/tutorials/whrl-win-1.png)
+![A window with the heading "Install Python 3.9.6 (64-bit)". Two buttons say "Install Now" and "Customise installation". Two checkboxes at the bottom; one says "Install launcher for all users (recommended)" and the other says "Add Python 3.9 to PATH".](/img/tutorials/whrl-win-1.png)
 
 
 5. Tick the **“Add Python 3.9 to PATH”** checkbox and click “Install Now” (important)
@@ -29,7 +29,7 @@ Below are step-by-step instructions for installing Python 3.9.6 (which is requir
 7. If the Python install was successful then you will get this window: \
 
 
-![alt_text](/img/tutorials/whrl-win-2.png)
+![A window with the heading "Setup was successful" and a 'close' button in the bottom right.](/img/tutorials/whrl-win-2.png)
 
 
 ## Installing Python on Mac
@@ -43,7 +43,7 @@ Below are step-by-step instruction for installing Python 3.9.6 (which is require
 3. Find your downloads folder and open the Python installer. You should get this window:
 
 
-![alt_text](/img/tutorials/whrl-mac-1.png)
+![A window with the heading "Welcome to the Python installer" and a pair of buttons in the bottom right that say "Go Back" and "Continue".](/img/tutorials/whrl-mac-1.png)
 
 
 4. Follow the  rest of the instructions as given by the installer. 
@@ -440,11 +440,11 @@ Below is a list of mathematical operators that you can use:
 
 | Operator Name | in Python | Operator in mathematical form |
 | ------------- | --------- | ----------------------------- |
-| Add | `a + b` | ![alt_text](/img/tutorials/add.png) |
-| Subtract | `a - b` | ![alt_text](/img/tutorials/subtract.png) |
-| Divide | `a / b` | ![alt_text](/img/tutorials/divide.png) |
-| Multiply | `a * b` | ![alt_text](/img/tutorials/multiply.png) |
-| Powers | `a ** b` | ![alt_text](/img/tutorials/powers.png) |
+| Add | `a + b` | ![A plus B](/img/tutorials/add.png) |
+| Subtract | `a - b` | ![A minus B](/img/tutorials/subtract.png) |
+| Divide | `a / b` | ![A divided by B](/img/tutorials/divide.png) |
+| Multiply | `a * b` | ![A times B](/img/tutorials/multiply.png) |
+| Powers | `a ** b` | ![A to the power of B](/img/tutorials/powers.png) |
 
 #### Additional Resources - Basic Operators
 
