@@ -24,7 +24,7 @@ Below are step-by-step instructions for installing Python 3.9.6 (which is requir
 ![alt_text](/img/tutorials/whrl-win-1.png)
 
 
-5. Tick the **<span style="text-decoration:underline;">“Add Python 3.9 to PATH”</span>** checkbox and click “Install Now” (important)
+5. Tick the **“Add Python 3.9 to PATH”** checkbox and click “Install Now” (important)
 6. Windows will warn you on whether you want to make changes to this device. Click “yes”. 
 7. If the Python install was successful then you will get this window: \
 
@@ -136,7 +136,7 @@ Hello world
 ```
 
 
-We can also print variables. Here, variable <code>a<em> </em></code>stores the number <code>4.2</code>:
+We can also print variables. Here, variable `a` stores the number `4.2`:
 
 
 ```python
@@ -169,7 +169,7 @@ Hello
 ```
 
 
-As you can see, the program waits for you to give an input which is _Hello_ in this example. When you print <code>a<em> </em></code>it outputs the string <em>Hello </em>which is what was inputted.
+As you can see, the program waits for you to give an input which is _Hello_ in this example. When you print `a` it outputs the string _Hello_ - which is what was inputted.
 
 ```input()``` always returns a string, so If you want to input numbers (integers or floats) then you will need to convert the input to the appropriate variable type using the `int()` or `float()` functions. 
 
