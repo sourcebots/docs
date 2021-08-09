@@ -43,7 +43,7 @@ Below are step-by-step instruction for installing Python 3.9.6 (which is require
 3. Find your downloads folder and open the Python installer. You should get this window:
 
 
-![alt_text](/static/img/tutorials/whrl-mac-1.png)
+![alt_text](/img/tutorials/whrl-mac-1.png)
 
 
 4. Follow the  rest of the instructions as given by the installer. 
