@@ -653,7 +653,7 @@ Below is a list of mathematical operators that you can use:
 * [Python Docs](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator)
 
 
-### Using the Math module 
+### Using the `math` module 
 
 The `math` module has several mathematical functions that could be useful for robot development (e.g trigonometry functions). To access this module, it must be imported.
 
@@ -820,5 +820,5 @@ Any other Python files in the same folder can be imported like modules. If you h
 
 
 * [Python Docs](https://docs.python.org/3/tutorial/modules.html)
-* [W3schools](https://www.w3schools.com/python/python_modules.asp)
+* [W3Schools](https://www.w3schools.com/python/python_modules.asp)
 * [Real Python](https://realpython.com/python-modules-packages/)
