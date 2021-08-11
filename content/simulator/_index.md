@@ -1,6 +1,6 @@
 ---
 title: Simulator
-weight: 5
+weight: 3
 ---
 
 To test out your robot code, you can use our Simulator. This gives you a realistic environment to run your code, against a dummy robot, without the need for a physical arena. This simulator is currently only available on Windows.
