@@ -1,6 +1,5 @@
 ---
 title: Power Board API
-weight: 7
 ---
 
 

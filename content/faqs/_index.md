@@ -1,6 +1,6 @@
 ---
 title: FAQs
-weight: 7
+weight: 6
 ---
 
 Teams often ask us questions, so we've put the most common ones below, so others can learn from them.
