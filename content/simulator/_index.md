@@ -56,7 +56,10 @@ Create the robot code in `zone-1/robot.py`. Your code at `robot.py` will be used
 │   │   └── sr_controller
 │   ├── ...
 │   └── worlds
-└── robot.py
+├── zone-0
+│   └── robot.py
+└── zone-1
+    └── robot.py
 ```
 
 ## Time
