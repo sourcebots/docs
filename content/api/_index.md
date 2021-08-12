@@ -36,9 +36,9 @@ anything. No log file will be created.
 
 ## Logs
 
-A log file is saved in the folder so you can see what your robot did,
-what it didn't do, and any errors it raised. Each log file name includes
-the date and time so you can look back at your previous runs.
+A log file is saved in the `output/` folder so you can see what your robot did,
+what it didn't do, and any errors it raised. Each log file is in a folder based on its
+date and time, so you can look back at your previous runs.
 
 ## Included Libraries
 
