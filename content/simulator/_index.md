@@ -11,7 +11,7 @@ Should you wish to run the simulator locally, this is fine, however it will dras
 
 To ease the load on your computers, the Webots simulator will be run by us, which you can interact with through our runner interface. The runner allows you to run simulations, and view the logs and recordings afterwards.
 
-To run a simulation, click the "Run Simulation" button. The button will prevent you from running additional simulations whilst a simulation is running. Once the simulation has finished, the button will return to "Run Simulation", and an entry will be shown below it with a link to the logs and animation for your simulation run. Note that this always uses the files.
+To run a simulation, click the "Run Simulation" button. The button will prevent you from running additional simulations whilst a simulation is running. Once the simulation has finished, the button will return to "Run Simulation", and an entry will be shown below it with a link to the logs and animation for your simulation run. Note that this always uses the files in the `zone-0` / `zone-1` directory.
 
 ## Directory structure
 
