@@ -21,7 +21,19 @@ from microswitches to LEDs. GPIO is only available on pins 2 to 13 and
 A0 to A5 because pins 0 and 1 are reserved for communication with the
 rest of our kit.
 
-## Pin mode
+## Simulator
+
+In the simulator, the Arduino's pins are pre-populated and pre-configured.
+The first few digital pins are occupied by digital inputs, the next few by
+digital outputs, and the analogue pins are attached to distance sensors.
+
+To find out how many inputs and outputs each type of robot has, check the
+[robot docs](TODO_change_when_this_page_is_added).
+
+You won't be able to change pin mode or use the ultrasound sensors like in
+a physical robot (see below), but pins 0 and 1 are stil unavailable.
+
+## Pin Mode (Unavailable in Simulator)
 
 GPIO pins have four different modes. A pin can only have one mode at a
 time, and some pins aren't compatible with certain modes. These pin
@@ -113,7 +125,7 @@ The values are the voltages read on the pins, between 0 and 5.
 Pins `A4` and `A5` are reserved and cannot be used.
 {{% /notice %}}
 
-## Ultrasound Sensors
+## Ultrasound Sensors (Unavailable in Simulator)
 
 You can also measure distance using an ultrasound sensor from the
 Arduino.
