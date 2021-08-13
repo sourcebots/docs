@@ -18,7 +18,7 @@ Internally this uses the simulation’s own clock and so is suitable for use in 
 
 ```python
 # Blink the output
-R.ruggeduinos[0].digital_write(A_PIN, 1)
+R.arduino.pins[8].digital_state = True
 R.sleep(1.5)  # Sleep for a second and a half of simulation time
 R.ruggeduinos[0].digital_write(A_PIN, 0)
 ```
