@@ -33,6 +33,30 @@ To find out how many inputs and outputs each type of robot has, check the
 You won't be able to change pin mode or use the ultrasound sensors like in
 a physical robot (see below), but pins 0 and 1 are stil unavailable.
 
+### Digital Inputs
+
+Each robot has a number of digital inputs, starting from pin 2. If your
+robot has 5 inputs, those would occupy pins 2-6.
+
+These all have a digital state which you can read as a boolean.
+
+```python
+bumper_pressed = r.arduino.pins[5].digital_state
+```
+
+### Digital Outputs
+
+The digital outputs start the pin after the last input. If your robot has 5
+inputs and 3 outputs, the outputs would occupy pins 7-9.
+
+You can set their state similarly to reading the inputs, and you can also
+read the last value that was set.
+
+```python
+led_state = r.arduino.pins[8].digital_state
+r.arduino.pins[8].digital_state = not led_state  # Toggle output
+```
+
 ## Pin Mode (Unavailable in Simulator)
 
 GPIO pins have four different modes. A pin can only have one mode at a
