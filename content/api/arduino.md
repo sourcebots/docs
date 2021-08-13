@@ -33,6 +33,18 @@ To find out how many inputs and outputs each type of robot has, check the
 You won't be able to change pin mode or use the ultrasound sensors like in
 a physical robot (see below), but pins 0 and 1 are stil unavailable.
 
+### Analogue Inputs
+
+Any analogue input devices (e.g. distance sensors) are connected to the
+Arduino's analogue input pins starting from pin `A0`. You can read their
+values like this:
+
+```python
+distance = r.arduino.pins[AnaloguePin.A0].analogue_value
+```
+
+The value read is returned as a float.
+
 ### Digital Inputs
 
 Each robot has a number of digital inputs, starting from pin 2. If your
