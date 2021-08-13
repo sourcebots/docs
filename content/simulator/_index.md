@@ -4,7 +4,7 @@ weight: 3
 ---
 
 {{% notice note %}}
-Should you wish to run the simulator locally, this is fine, however will drastically limit your ability to collaborate with the rest of your team.
+Should you wish to run the simulator locally, this is fine, however it will drastically limit your ability to collaborate with the rest of your team.
 {{% /notice %}}
 
 ## Running simulations
