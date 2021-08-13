@@ -75,8 +75,8 @@ Distance sensors are connected to 1 analogue pin each and measure the
 distance to the object ahead of them in metres. You read them like any
 other analogue pin.
 
-The value returned will be between 0 and 2 - anything further than 2m
-will be capped at 2.
+The value returned will be between 0 and 2 - anything further than 2
+metres will be capped at 2.
 
 ## Pin Mode (Unavailable in Simulator)
 
