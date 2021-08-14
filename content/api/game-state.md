@@ -36,3 +36,17 @@ r.zone
 
 During a competition match, a USB drive will be used to tell your robot
 which corner it's in. By default during development, this is `0`.
+
+## Start Signal
+
+You can manually wait for the start button to be pressed, not only at
+the start.
+
+``` python
+# Waits until the match starts.
+r.wait_start()
+```
+
+This may be useful for debugging, but be sure to remove it in the
+competition, as you won't be allowed to touch the start button after a
+match has begun!
