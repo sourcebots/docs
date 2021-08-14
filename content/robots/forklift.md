@@ -3,9 +3,9 @@ title: Forklift Robot
 weight: 1
 ---
 
-The forklift has two [radial motors](../../api/motor-board), allowing it to move itself around the arena. It also has 2 grabber motors, wired so they move together. Each motor has an [encoder (position sensor)](../../api/encoder) that can tell you either the position of the motor along its track, or its angle relative to the start.
+The forklift has two [radial motors](/api/motor-board), allowing it to move itself around the arena. It also has 2 grabber motors, wired so they move together. Each motor has an [encoder (position sensor)](/api/encoder) that can tell you either the position of the motor along its track, or its angle relative to the start.
 
-The Forklift robot also has multiple Ultrasound sensors, a touch sensor, and a radio, see below for details.
+The forklift robot also has multiple Ultrasound sensors, a touch sensor, and a radio, see below for details.
 
 ## Motor layout
 
@@ -32,11 +32,11 @@ Hint: the radius of a forklift wheel is 15cm.
 
 ## Touch sensor
 
-In addition to other sensors, the Forklift also has a [microswitch touch sensor](../../api/touch) at the rear. This is used to detect if the forklift's rear is touching another object (a container, another robot, or a wall). The touch sensor is connected to pin `2` of the arduino.
+In addition to other sensors, the forklift also has a [microswitch touch sensor](/api/touch) at the rear. This is used to detect if the forklift's rear is touching another object (a container, another robot, or a wall). The touch sensor is connected to pin `2` of the Arduino.
 
 ## Ultrasound (Distance) Sensor
 
-The Forklift has many [ultrasound sensors](../../api/ultrasound) attached to various points in the robot, here is the layout of the ultrasound sensors:
+The forklift has many [ultrasound sensors](/api/ultrasound) attached to various points in the robot, here is the layout of the ultrasound sensors:
 
 - Sensor 0: Front Left
 - Sensor 1: Front Right
@@ -47,4 +47,4 @@ The Forklift has many [ultrasound sensors](../../api/ultrasound) attached to var
 
 ## Radio
 
-The Forklift robot has a [radio](../../api/radio) receiver attached to its center.
+The forklift robot has a [radio](/api/radio) receiver attached to its centre.

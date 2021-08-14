@@ -18,11 +18,19 @@ r.magnet.energised = False
 ```
 
 {{% notice warning %}}
-Check the spelling of `energised`, it's in british english, `energized` will not work!
+Check the spelling of `energised`, it's in British English, `energized` will not work!
 {{% /notice %}}
 
 You can get the current state of the magnet by getting the value of `energized` like so:
 
 ```python
 magnet_on = r.magnet.energised
+```
+ 
+## Checking if a container is nearby
+
+The magnet can tell you if there is an object in range to be picked up. You can check if any object is in range by accessing the `nearby` property.
+```python
+# Get if a container is nearby
+is_nearby = r.magnet.nearby # True or False
 ```
