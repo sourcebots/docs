@@ -31,4 +31,4 @@ The crane has one [ultrasound sensor](../../api/ultrasound) pointing downwards f
 
 ## Radio
 
-The crane robot has a [radio](../../api/radio) receiver attached to the hook, which can be used to measure the position of the container relative to the hook in a 2D plane.
+The crane robot has a [radio](../../api/radio) receiver attached to the hook, which can be used to detect which container is below it.

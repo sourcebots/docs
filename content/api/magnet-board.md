@@ -5,7 +5,7 @@ weight: 8
  
 The magnet board is only available on the [Crane robot](../../robots/crane).
  
-The magnet of the crane will stick to any magnetic objects (especially containers).
+The magnet of the crane will only stick to containers.
  
 ## Getting the magnet's status
  

@@ -11,11 +11,11 @@ Linear encoders are attached to joints that move in a straight line (i.e. raisin
 
 Linear encoders measure the distance the joint has moved from its start position, in *metres*.
 
-All encoders are stored in a list called `encoders[]`, you can access the encoder with `encoders[i]`, where `i` is the slot the encoder is plugged into. You can find this number in the [documentation for the robot](../robots/).
+All encoders are stored in a list called `encoders`, you can access the encoder with `encoders[i]`, where `i` is the slot the encoder is plugged into. You can find this number in the [documentation for the robot](../robots/).
 
 ```python
 # Get the distance from the start position
-distance_from_start = r.encoders[i].displacement # in Metres
+distance_from_start = r.encoders[1].displacement # in Metres
 ```
 
 ## Rotary Encoders 
@@ -24,9 +24,9 @@ Rotary encoders are attached to joints that rotate (i.e. wheel rotations).
 
 Rotary encoders measure the total rotation the joint has moved from its start position, in *radians*.
 
-All encoders are stored in a list called `encoders[]`, you can access the encoder with `encoders[i]`, where `i` is the slot the encoder is plugged into. You can find this number in the [documentation for the robot](../robots/).
+All encoders are stored in a list called `encoders`, you can access the encoder with `encoders[i]`, where `i` is the slot the encoder is plugged into. You can find this number in the [documentation for the robot](../robots/).
 
 ```python
 # Get the total rotation from the start position
-rotation_from_start = r.encoders[i].rotation # in Radians
+rotation_from_start = r.encoders[1].rotation # in Radians
 ```
