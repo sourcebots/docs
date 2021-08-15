@@ -3,6 +3,8 @@ title: Crane Robot
 weight: 2
 ---
 
+![Crane robot](/img/robots/crane-isolated.png)
+
 The crane has three [linear motor](/api/motor-board), allowing it to move its [electromagnet](/api/magnet) in 3 dimensions. Each motor has an [encoder (position sensor)](/api/encoder) that can tell you the position of the motor along its track.
 
 Additionally, the crane has one ultrasound distance sensor and a radio, both attached to the hook (see below).

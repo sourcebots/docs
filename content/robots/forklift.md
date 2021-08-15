@@ -3,6 +3,8 @@ title: Forklift Robot
 weight: 1
 ---
 
+![Forklift robot](/img/robots/forklift-isolated.png)
+
 The forklift has two [radial motors](/api/motor-board), allowing it to move itself around the arena. It also has 2 grabber motors, wired so they move together. Each motor has an [encoder (position sensor)](/api/encoder) that can tell you either the position of the motor along its track, or its angle relative to the start.
 
 The forklift robot also has multiple Ultrasound sensors, a touch sensor, and a radio, see below for details.
