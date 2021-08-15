@@ -33,3 +33,4 @@ The magnet can tell you if there is an object in range to be picked up. You can 
 ```python
 # Is there a container nearby?
 is_nearby = r.magnet.nearby() # True or False
+```
