@@ -25,12 +25,12 @@ rest of our kit.
 
 In the simulator, the Arduino's pins are pre-populated and pre-configured.
 The first few digital pins are occupied by digital inputs, the next few by
-digital outputs, and the analogue pins are attached to distance sensors.
+digital outputs, and the analogue pins are attached to ultrasound sensors.
 
 To find out how many inputs and outputs each type of robot has, check the
 [robot docs](../../robots).
 
-You won't be able to change pin mode or use the ultrasound sensors like in
+You won't be able to change pin mode like in
 a physical robot (see below), but pins 0 and 1 are still unavailable.
 
 ### Digital Inputs
@@ -68,15 +68,6 @@ distance = r.arduino.pins[AnaloguePin.A0].analogue_value
 ```
 
 The value read is returned as a float.
-
-### Distance Sensor
-
-Distance sensors are connected to 1 analogue pin each and measure the
-distance to the object ahead of them in metres. You read them like any
-other analogue pin.
-
-The value returned will be between 0 and 2 - anything further than 2
-metres will be capped at 2.
 
 ## Pin Mode (Unavailable in Simulator)
 
@@ -168,24 +159,4 @@ The values are the voltages read on the pins, between 0 and 5.
 
 {{% notice warning %}}
 Pins `A4` and `A5` are reserved and cannot be used.
-{{% /notice %}}
-
-## Ultrasound Sensors (Unavailable in Simulator)
-
-You can also measure distance using an ultrasound sensor from the
-Arduino.
-
-``` python
-# Trigger pin: 4
-# Echo pin: 5
-u = r.arduino.ultrasound_sensors[4, 5]
-
-time_taken = u.pulse()
-
-distance_metres = u.distance()
-```
-
-{{% notice warning %}}
-If the ultrasound signal never returns, the sensor will timeout and
-return `None`.
 {{% /notice %}}
