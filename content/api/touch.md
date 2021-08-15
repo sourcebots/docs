@@ -2,6 +2,8 @@
 title: Touch Sensors
 weight: 7
 ---
+
+![Touch sensor](/img/api/touch-sensor.png?width=600px)
  
 Microswitches, or touch sensors, are used to measure when something is touching the sensor.
 
