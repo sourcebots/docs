@@ -30,15 +30,19 @@ my_motor_board = r.motor_boards["SRO-AAD-GBH"]
 my_other_motor_board = r.motor_boards["SR08U6"]
 ```
 
+{{% notice warning %}}
+Please note, in the simulator you should try to access the motorboards using their serial number.
+{{% /notice %}}
+
 ## Controlling the Motor Board
 
 This board object has an array containing the motors connected to it,
-which can be accessed as `motors[0]` and `motors[1]`. The Motor Board is
+which can be accessed as `m0` and `m1`. The Motor Board is
 labelled so you know which motor is which.
 
 ``` python
-my_motor_board.motors[0]
-my_motor_board.motors[1]
+my_motor_board.m0
+my_motor_board.m1
 ```
 
 ## Powering motors
@@ -50,17 +54,17 @@ the power with a fractional value between `-1` and `1` inclusive, where
 other direction and `0` causes the motor to brake.
 
 ``` python
-my_motor_board.motors[0].power = 1
-my_motor_board.motors[1].power = -1
+my_motor_board.m0.power = 1
+my_motor_board.m1.power = -1
 ```
 
 These values can also be read back:
 
 ``` python
-my_motor_board.motors[0].power
+my_motor_board.m0.power
 >>> 1
 
-my_motor_board.motors[1].power
+my_motor_board.m1.power
 >>> -1
 ```
 
@@ -98,7 +102,7 @@ quick as possible.
 ``` python
 from sbot import BRAKE
 
-my_motor_board.motors[0].power = BRAKE
+my_motor_board.m0.power = BRAKE
 ```
 
 #### `COAST`
@@ -109,5 +113,5 @@ continue moving under the momentum they had before.
 ``` python
 from sbot import COAST
 
-my_motor_board.motors[1].power = COAST
+my_motor_board.m1.power = COAST
 ```
