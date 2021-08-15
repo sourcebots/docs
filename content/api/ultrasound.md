@@ -2,7 +2,9 @@
 title: Ultrasound Sensors
 weight: 7
 ---
- 
+
+![Ultrasound sensor](/img/api/ultrasound.png?width=300px)
+
 Ultrasound sensors can measure distance of objects from the sensor. Ultrasound sensors emit a pulse of very high frequency sound, and measure the time it takes to hear an echo, typically Ultrasound sensors have electronics on the sensor to decide when an echo is received, and reports back a number as the distance in meters.
 
 Ultrasound sensors measure distance in a 18 degree diameter cone in front of the sensor, and report the closest measured distance in that cone. Ultrasound sensors also have a maximum distance. (Ultrasound sensors typically also have a minimum distance too, but we do not simulate that in our simulator).
