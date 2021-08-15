@@ -28,7 +28,7 @@ The first few digital pins are occupied by digital inputs, the next few by
 digital outputs, and the analogue pins are attached to distance sensors.
 
 To find out how many inputs and outputs each type of robot has, check the
-[robot docs](TODO_change_when_this_page_is_added).
+[robot docs](../../robots).
 
 You won't be able to change pin mode or use the ultrasound sensors like in
 a physical robot (see below), but pins 0 and 1 are still unavailable.
