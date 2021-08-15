@@ -24,7 +24,7 @@ distance_metres = r.arduino.pins[pin].analogue_value
 
 ### Physical
 
-Connect the ultrasound sensor to a pair of digital Arduino pins. You can read either the time taken for the sound pulse to reflect back or the precalculated distance from the API
+Connect the ultrasound sensor to a pair of digital Arduino pins. You can read either the time taken for the sound pulse to reflect back or the pre-calculated distance from the API
 
 ``` python
 trigger_pin = 4
