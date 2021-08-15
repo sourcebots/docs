@@ -29,8 +29,7 @@ magnet_on = r.magnet.energised
  
 ## Checking if a container is nearby
 
-The magnet can tell you if there is an object in range to be picked up. You can check if any object is in range by accessing the `nearby` property.
+The magnet can tell you if there is an object in range to be picked up. You can check if any object is in range by accessing the `nearby` method:
 ```python
-# Get if a container is nearby
-is_nearby = r.magnet.nearby # True or False
-```
+# Is there a container nearby?
+is_nearby = r.magnet.nearby() # True or False
