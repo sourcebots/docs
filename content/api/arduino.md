@@ -21,7 +21,55 @@ from microswitches to LEDs. GPIO is only available on pins 2 to 13 and
 A0 to A5 because pins 0 and 1 are reserved for communication with the
 rest of our kit.
 
-## Pin mode
+## Simulator
+
+In the simulator, the Arduino's pins are pre-populated and pre-configured.
+The first few digital pins are occupied by digital inputs, the next few by
+digital outputs, and the analogue pins are attached to ultrasound sensors.
+
+To find out how many inputs and outputs each type of robot has, check the
+[robot docs](../../robots).
+
+You won't be able to change pin mode like in
+a physical robot (see below), but pins 0 and 1 are still unavailable.
+
+### Digital Inputs
+
+Each robot has a number of digital inputs, starting from pin 2. If your
+robot has 5 inputs, those would occupy pins 2-6.
+
+These all have a digital state which you can read as a boolean.
+
+```python
+bumper_pressed = r.arduino.pins[5].digital_state
+```
+
+### Digital Outputs
+
+The digital outputs start the pin after the last input. If your robot has 5
+inputs and 3 outputs, the outputs would occupy pins 7-9.
+
+You can set their state similarly to reading the inputs, and you can also
+read the last value that was set.
+
+```python
+led_state = r.arduino.pins[8].digital_state
+r.arduino.pins[8].digital_state = not led_state  # Toggle output
+```
+
+### Analogue Inputs
+
+Any analogue input devices (e.g. distance sensors) are connected to the
+Arduino's analogue input pins starting from pin `A0`. You can read their
+values like this:
+
+```python
+distance = r.arduino.pins[AnaloguePin.A0].analogue_value
+```
+
+The value read is returned as a float.
+
+## Pin Mode (Unavailable in Simulator)
 
 GPIO pins have four different modes. A pin can only have one mode at a
 time, and some pins aren't compatible with certain modes. These pin
@@ -111,24 +159,4 @@ The values are the voltages read on the pins, between 0 and 5.
 
 {{% notice warning %}}
 Pins `A4` and `A5` are reserved and cannot be used.
-{{% /notice %}}
-
-## Ultrasound Sensors
-
-You can also measure distance using an ultrasound sensor from the
-Arduino.
-
-``` python
-# Trigger pin: 4
-# Echo pin: 5
-u = r.arduino.ultrasound_sensors[4, 5]
-
-time_taken = u.pulse()
-
-distance_metres = u.distance()
-```
-
-{{% notice warning %}}
-If the ultrasound signal never returns, the sensor will timeout and
-return `None`.
 {{% /notice %}}
