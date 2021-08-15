@@ -74,7 +74,7 @@ while True:
 
     # power up to 0.7 (from 0.1)
     for pwr in range(10, 80, 10):
-        r.motor_board[0].m0.power = pwr / 100.0
+        r.motor_boards[0].m0.power = pwr / 100.0
         time.sleep(0.1)
 
     # power down from 0.7 (to 0.1)
