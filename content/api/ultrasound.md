@@ -7,7 +7,7 @@ Ultrasound sensors can measure distance of objects from the sensor. Ultrasound s
 
 Ultrasound sensors measure distance in a 18 degree diameter cone in front of the sensor, and report the closest measured distance in that cone. Ultrasound sensors also have a maximum distance. (Ultrasound sensors typically also have a minimum distance too, but we do not simulate that in our simulator).
 
-In our robots, ultrasound sensors are connected to the ['Arduino'](arduino) board, which is used to read sensors for many different purposes. Keep reading to learn how to take measurements.
+In our robots, ultrasound sensors are connected to the ['Arduino'](../arduino) board, which is used to read sensors for many different purposes. Keep reading to learn how to take measurements.
 
 ## Reading the ultrasound sensor
 
