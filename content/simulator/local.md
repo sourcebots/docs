@@ -1,9 +1,8 @@
 ---
-title: Simulator
-weight: 5
+title: Local installation
 ---
 
-To test out your robot code, you can use our Simulator. This gives you a realistic environment to run your code, against a dummy robot, without the need for a physical arena. This simulator is currently only available on Windows.
+Should you wish to run the simulator locally, this is fine, however it will drastically limit your ability to collaborate with the rest of your team.
 
 ## Installation
 
@@ -17,7 +16,9 @@ You will also need Python 3.9 installed.
 
 There are a small number of [external libraries](/api#included-libraries) which will be available to your robot code during the competition. For local development you will need to install these yourself.
 
-{{% notice warning %}} If you are installing python on Windows, you will need to add python to PATH otherwise Webots will not be able to find the python installation {{% /notice %}}
+{{% notice warning %}}
+If you are installing python on Windows, you will need to add python to `PATH` otherwise Webots will not be able to find the python installation
+{{% /notice %}}
 
 ### Installing the simulation
 
@@ -30,7 +31,6 @@ You may receive a warning about your computer’s GPU not being good enough, whi
 
 If Webots is picking up the incorrect version of Python, you’ll need to change it. This can be done using Tools > Preferences > General > Python command. You’ll need to ensure a matching version of Python is installed.
 
-
 ## Overview
 
 Within the Webots IDE, there are a few different panels:
@@ -39,25 +39,6 @@ Within the Webots IDE, there are a few different panels:
 - On the left is a tree hierarchy of all elements in this “world”
 - At the bottom is the console, where output from your robot code will be displayed
 - At the top are your general controls which include the time controls. Press the centre play button to run the simulation at normal speed.
-
-## Other robots
-
-There is another robot in the arena, in its starting zone. By default, this robot will not move.
-
-To control the other robot, you will need to provide its code:
-
-Create the robot code in `zone-1/robot.py`. Your code at `robot.py` will be used for zone 0, though you are encouraged to move your code to `zone-0/robot.py` when running multiple robots. Robots which do not have any robot code in their `zone-x` directory will not do anything.
-
-``` plain
-.
-├── competition-simulator
-│   ├── controllers
-│   │   ├── example_controller
-│   │   └── sr_controller
-│   ├── ...
-│   └── worlds
-└── robot.py
-```
 
 ## Time
 

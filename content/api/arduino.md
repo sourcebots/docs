@@ -1,6 +1,5 @@
 ---
 title: Arduino API
-weight: 5
 ---
 
 The [Arduino](https://store.arduino.cc/arduino-uno-rev3) provides a

@@ -1,6 +1,5 @@
 ---
 title: Game State
-weight: 9
 ---
 
 ## Mode

@@ -1,6 +1,5 @@
 ---
 title: "Python: A Whirlwind Tour"
-weight: 10
 ---
 
 # The Basics
@@ -10,8 +9,8 @@ weight: 10
 Below are step-by-step instructions for installing Python 3.9.6 (which is required for the competition):
 
 1. Go to [https://www.python.org/downloads/release/python-396/ (Python 3.9.6)](https://www.python.org/downloads/release/python-396/)
-2. Scroll down “Files” and click on “**Windows installer 64 bit**” (if you are on a 64 bit machine) or “**Windows installer 32 bit**” (if you are on a 32 bit machine).  
-   If you do not know what version to get, then type in your windows search bar “**About your PC**”. Under ‘system type’ it should tell you what bit of operating system you have.  
+2. Scroll down “Files” and click on “**Windows installer 64 bit**” (if you are on a 64 bit machine) or “**Windows installer 32 bit**” (if you are on a 32 bit machine).
+   If you do not know what version to get, then type in your windows search bar “**About your PC**”. Under ‘system type’ it should tell you what bit of operating system you have.
 3. Click “save file” and wait for the installer to download.
 4. Find your downloads folder and open the Python installer. You should get this window:
 
@@ -252,7 +251,7 @@ If statements let you execute code depending on whether the condition evaluates 
 ```python
 name = "mary"
 if len(name) > 3:
-    print("Your name isn't all that short") 
+    print("Your name isn't all that short")
 ```
 
 You can add an `else` statement following your `if` statement to execute code if the condition is false, e.g:
@@ -260,7 +259,7 @@ You can add an `else` statement following your `if` statement to execute code if
 ```python
 name = "mary"
 if len(name) > 3:
-    print("Your name isn't all that short") 
+    print("Your name isn't all that short")
 else:
     print("Wow that's a short name")
 ```

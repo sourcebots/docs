@@ -1,10 +1,10 @@
 ---
 title: Kit
-weight: 9
+weight: 5
 ---
 
 {{% notice warning %}}
-These kit docs are only relevant for the physical robot, as opposed to the [simulator](../tutorials/simulator).
+These kit docs are only relevant for the physical robot, as opposed to the [simulator](/simulator/).
 {{% /notice %}}
 
 ## Boards
