@@ -9,14 +9,12 @@ On first run, the robot will execute an example program for convenience. On firs
 .
 ├── competition-simulator-<version>
 │   ├── ...
-│   └─ worlds
+│   └── worlds
 │       └── Arena.wbt
 ├── zone-0
 │   ├── crane.py
-│   └─ forklift.py
-├── zone-1
-│   ├── crane.py
-│   └─ forklift.py
+│   └── forklift.py
+└── zone-1
 ```
 
 Your code for the forklift robot should go in `forklift.py` and the crane in `crane.py`.
@@ -37,7 +35,7 @@ for more details.
 
 ## Other robots
 
-There is another robot in the arena, in its starting zone is zone 1. By default, this robot will not move.
+There is another robot in the arena; its starting zone is zone 1. By default, this robot will not move.
 
 To control the zone 1 robot, you will need to provide its code:
 
