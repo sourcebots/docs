@@ -22,15 +22,19 @@ r = Robot()
 
 while True:
     r.motor_boards[0].m0.power = 0.5
+    r.motor_boards[0].m1.power = 0.5
     r.sleep(3)
 
     r.motor_boards[0].m0.power = 0
+    r.motor_boards[0].m1.power = 0
     r.sleep(1.4)
 
     r.motor_boards[0].m0.power = -0.5
+    r.motor_boards[0].m1.power = -0.5
     r.sleep(1)
 
     r.motor_boards[0].m0.power = 0
+    r.motor_boards[0].m1.power = 0
     r.sleep(4)
 ```
 
@@ -57,15 +61,19 @@ r = Robot()
 
 while True:
     r.motor_boards[0].m0.power = 0.5
+    r.motor_boards[0].m1.power = 0.5
     r.sleep(3)
 
     r.motor_boards[0].m0.power = 0
+    r.motor_boards[0].m1.power = 0
     r.sleep(1.4)
 
     r.motor_boards[0].m0.power = -0.5
+    r.motor_boards[0].m1.power = -0.5
     r.sleep(1)
 
     r.motor_boards[0].m0.power = 0
+    r.motor_boards[0].m1.power = 0
     r.sleep(4)
 
     # ^^ code from before ^^
@@ -73,29 +81,35 @@ while True:
     # power up to 0.7 (from 0.1)
     for pwr in range(10, 80, 10):
         r.motor_boards[0].m0.power = pwr / 100.0
+        r.motor_boards[0].m1.power = pwr / 100.0
         r.sleep(0.1)
 
     # power down from 0.7 (to 0.1)
     for pwr in range(70, 0, -10):
         r.motor_boards[0].m0.power = pwr / 100.0
+        r.motor_boards[0].m1.power = pwr / 100.0
         r.sleep(0.1)
 
     # set power to 0 for a second
     r.motor_boards[0].m0.power = 0
+    r.motor_boards[0].m1.power = 0
     r.sleep(1)
 
     # power up to -0.7 (from -0.1)
     for pwr in range(-10, -80, -10):
         r.motor_boards[0].m0.power = pwr / 100.0
+        r.motor_boards[0].m1.power = pwr / 100.0
         r.sleep(0.1)
 
     # power down to -0.1 (from -0.7)
     for pwr in range(-70, 0, 10):
         r.motor_boards[0].m0.power = pwr / 100.0
+        r.motor_boards[0].m1.power = pwr / 100.0
         r.sleep(0.1)
 
     # set power to 0 for a second
     r.motor_boards[0].m0.power = 0
+    r.motor_boards[0].m1.power = 0
     r.sleep(1)
 ```
 
