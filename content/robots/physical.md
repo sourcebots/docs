@@ -18,6 +18,4 @@ The front grabber is actuated by a single servo, attached to the [Arduino](/api/
 
 ## Ultrasound
 
-The forklift has many [ultrasound sensors](/api/ultrasound) attached to various points in the robot, here is the layout of the ultrasound sensors:
-
--
+The forklift has an [ultrasound sensor](/api/ultrasound) attached to the front of the robot. This sensor uses pin 4 as the trigger pin and 5 as the echo.
