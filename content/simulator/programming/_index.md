@@ -5,7 +5,7 @@ weight: 1
 
 On first run, the robot will execute an example program for convenience. On first run, this will be copied into `zone-0` in the same directory that `competition-simulator-<version>` is stored in:
 
-```
+```plain
 .
 ├── competition-simulator-<version>
 │   ├── ...
