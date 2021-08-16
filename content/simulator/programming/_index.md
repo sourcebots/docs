@@ -11,8 +11,12 @@ On first run, the robot will execute an example program for convenience. On firs
 │   ├── ...
 │   └─ worlds
 │       └── Arena.wbt
-├── crane.py
-└── forklift.py
+├── zone-0
+│   ├── crane.py
+│   └─ forklift.py
+├── zone-1
+│   ├── crane.py
+│   └─ forklift.py
 ```
 
 Your code for the forklift robot should go in `forklift.py` and the crane in `crane.py`.
@@ -33,11 +37,11 @@ for more details.
 
 ## Other robots
 
-There is another robot in the arena, in its starting zone. By default, this robot will not move.
+There is another robot in the arena, in its starting zone is zone 1. By default, this robot will not move.
 
-To control the other robot, you will need to provide its code:
+To control the zone 1 robot, you will need to provide its code:
 
-Create the robot code in `zone-1/forklift.py` and `zone-1/crane.py`. Your original code will still be used for zone 0, though you are encouraged to move your code to `zone-0/` when running multiple robots. Robots which do not have any robot code in their `zone-x` directory will not do anything.
+Create the robot code in `zone-1/forklift.py` and `zone-1/crane.py`. Your original code in `zone-0/` will still be used to control zone 0 robots. Robots which do not have any robot code in their `zone-x` directory will not do anything.
 
 ``` plain
 .
