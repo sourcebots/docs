@@ -43,6 +43,8 @@ These all have a digital state which you can read as a boolean.
 bumper_pressed = r.arduino.pins[5].digital_state
 ```
 
+Digital inputs are used for [touch sensors](touch).
+
 ### Digital Outputs
 
 The digital outputs start the pin after the last input. If your robot has 5
@@ -58,7 +60,7 @@ r.arduino.pins[8].digital_state = not led_state  # Toggle output
 
 ### Analogue Inputs
 
-Any analogue input devices (e.g. distance sensors) are connected to the
+Any analogue input devices (e.g. [distance sensors](ultrasound)) are connected to the
 Arduino's analogue input pins starting from pin `A0`. You can read their
 values like this:
 
