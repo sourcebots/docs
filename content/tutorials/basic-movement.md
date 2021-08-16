@@ -16,23 +16,26 @@ The actual direction of travel of a motor, when mounted on a robot, will depend 
 Here's the code:
 
 ```python
-from robot import Robot
-import time
+from sbot import Robot
 
 r = Robot()
 
 while True:
     r.motor_boards[0].m0.power = 0.5
-    time.sleep(3)
+    r.motor_boards[0].m1.power = 0.5
+    r.sleep(3)
 
     r.motor_boards[0].m0.power = 0
-    time.sleep(1.4)
+    r.motor_boards[0].m1.power = 0
+    r.sleep(1.4)
 
     r.motor_boards[0].m0.power = -0.5
-    time.sleep(1)
+    r.motor_boards[0].m1.power = -0.5
+    r.sleep(1)
 
     r.motor_boards[0].m0.power = 0
-    time.sleep(4)
+    r.motor_boards[0].m1.power = 0
+    r.sleep(4)
 ```
 
 You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `r.motor_boards...` lines. For a comprehensive reference to the `motor` object, see [`motor` API](/api/motor-board) page.
@@ -52,53 +55,62 @@ If you find that the motor doesn't turn when you run the above code, check that 
 Now we're going to modify the program to vary the speed of the motor. Our aim is to do the forwards and backwards bit (as above), but, before we loop round again, ramp the power up to 70%, then down to -70%, and then back to 0 (all in steps of 10%). Here's the code:
 
 ```python
-from robot import Robot
-import time
+from sbot import Robot
 
 r = Robot()
 
 while True:
     r.motor_boards[0].m0.power = 0.5
-    time.sleep(3)
+    r.motor_boards[0].m1.power = 0.5
+    r.sleep(3)
 
     r.motor_boards[0].m0.power = 0
-    time.sleep(1.4)
+    r.motor_boards[0].m1.power = 0
+    r.sleep(1.4)
 
     r.motor_boards[0].m0.power = -0.5
-    time.sleep(1)
+    r.motor_boards[0].m1.power = -0.5
+    r.sleep(1)
 
     r.motor_boards[0].m0.power = 0
-    time.sleep(4)
+    r.motor_boards[0].m1.power = 0
+    r.sleep(4)
 
     # ^^ code from before ^^
 
     # power up to 0.7 (from 0.1)
     for pwr in range(10, 80, 10):
         r.motor_boards[0].m0.power = pwr / 100.0
-        time.sleep(0.1)
+        r.motor_boards[0].m1.power = pwr / 100.0
+        r.sleep(0.1)
 
     # power down from 0.7 (to 0.1)
     for pwr in range(70, 0, -10):
         r.motor_boards[0].m0.power = pwr / 100.0
-        time.sleep(0.1)
+        r.motor_boards[0].m1.power = pwr / 100.0
+        r.sleep(0.1)
 
     # set power to 0 for a second
     r.motor_boards[0].m0.power = 0
-    time.sleep(1)
+    r.motor_boards[0].m1.power = 0
+    r.sleep(1)
 
     # power up to -0.7 (from -0.1)
     for pwr in range(-10, -80, -10):
         r.motor_boards[0].m0.power = pwr / 100.0
-        time.sleep(0.1)
+        r.motor_boards[0].m1.power = pwr / 100.0
+        r.sleep(0.1)
 
     # power down to -0.1 (from -0.7)
     for pwr in range(-70, 0, 10):
         r.motor_boards[0].m0.power = pwr / 100.0
-        time.sleep(0.1)
+        r.motor_boards[0].m1.power = pwr / 100.0
+        r.sleep(0.1)
 
     # set power to 0 for a second
     r.motor_boards[0].m0.power = 0
-    time.sleep(1)
+    r.motor_boards[0].m1.power = 0
+    r.sleep(1)
 ```
 
 ## Next steps
