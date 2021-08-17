@@ -13,7 +13,7 @@ You can control attached servo motors from the [Arduino](../arduino/). By defaul
 The servo assembly can interface with up to sixteen servos connected to it.
 
 ```python
-servo_one = r.arduino.servos[1]
+servo_zero = r.arduino.servos[0]
 ```
 
 {{% notice tip %}}
@@ -25,8 +25,8 @@ Servo can be connected to any port, you don't have to start at 0!
 Servos can be controlled using the `position` parameter. This should be set to a value between -1 and 1.
 
 ```python
-servo_one.position = 0.65
-print(servo_one.position)
+servo_zero.position = 0.65
+print(servo_zero.position)
 >>> 0.65
 ```
 
