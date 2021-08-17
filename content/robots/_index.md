@@ -10,4 +10,4 @@ In this year's competition we have 2 Robots, which are each controlled by their 
 
 There is also a [Physical Robot](physical).
 
-See [the API section](../api/) for more details on how to run your code.
+See [the API section](/api/) for more details on how to run your code.
