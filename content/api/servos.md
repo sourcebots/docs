@@ -6,7 +6,7 @@ title: Servos
 Servos only apply to the [physical robot](/robots/physical/).
 {{% /notice %}}
 
-You can control attached servo motors from the [arduino](../arduino/). By default, servos will be unpowered when your robot starts, and can freely rotate when turned by hand. Upon setting a value, they will hold the corresponding position. They will become unpowered again when you turn off your robot, unplug your USB stick, or set their position to the special value `None`.
+You can control attached servo motors from the [Arduino](../arduino/). By default, servos will be unpowered when your robot starts, and can freely rotate when turned by hand. Upon setting a value, they will hold the corresponding position. They will become unpowered again when you turn off your robot, unplug your USB stick, or set their position to the special value `None`.
 
 ## Querying servos
 
