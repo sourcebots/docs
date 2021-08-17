@@ -29,7 +29,7 @@ The layout of the [encoders](/api/encoder) are as follows:
 
 ## Ultrasound sensor
 
-The crane has one [ultrasound sensor](/api/ultrasound) pointing downwards from the magnet. The ultrasound sensor is attached to Arduino pin 0.
+The crane has one [ultrasound sensor](/api/ultrasound) pointing downwards from the magnet. The ultrasound sensor is attached to Arduino pin `AnaloguePin.A0`.
 
 ## Radio
 
