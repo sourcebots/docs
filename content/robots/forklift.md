@@ -40,12 +40,12 @@ In addition to other sensors, the forklift also has a [microswitch touch sensor]
 
 The forklift has many [ultrasound sensors](/api/ultrasound) attached to various points in the robot, here is the layout of the ultrasound sensors:
 
-- Sensor 0: Front Left
-- Sensor 1: Front Right
-- Sensor 2: Left
-- Sensor 3: Right
-- Sensor 4: Front
-- Sensor 5: Back
+- `AnaloguePin.A0`: Front Left
+- `AnaloguePin.A1`: Front Right
+- `AnaloguePin.A2`: Left
+- `AnaloguePin.A3`: Right
+- `AnaloguePin.A4`: Front
+- `AnaloguePin.A5`: Back
 
 ## Radio
 

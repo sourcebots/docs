@@ -20,4 +20,4 @@ The servo will only let you move the grabber in a safe range. `-1` will open the
 
 ## Ultrasound
 
-The forklift has an [ultrasound sensor](/api/ultrasound) attached to the front of the robot. This sensor uses pin 4 as the trigger pin and 5 as the echo.
+The forklift has an [ultrasound sensor](/api/ultrasound) attached to the front of the robot. This sensor uses digital pin 4 as the trigger pin and 5 as the echo.

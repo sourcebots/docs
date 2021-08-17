@@ -21,7 +21,7 @@ Ultrasound sensors have a maximum range of 2 metres, if objects are further than
 
 ``` python
 # Get the closest distance to the ultrasound sensor is reading.
-distance_metres = r.arduino.pins[pin].analogue_value
+distance_metres = r.arduino.pins[AnaloguePin.A0].analogue_value
 ```
 
 ### Physical
