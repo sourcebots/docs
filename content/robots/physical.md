@@ -2,7 +2,7 @@
 title: Physical robot
 ---
 
-The physical robot is closely modelled after the [forklift](../forklift) robot, however is different in a few important ways. The physical robot has two [radial motors](/api/motor-board), allowing it to move itself around the arena.
+The physical robot is closely modelled after the [forklift](/robots/forklift) robot, however is different in a few important ways. The physical robot has two [radial motors](/api/motor-board), allowing it to move itself around the arena.
 
 ## Motor layout
 
