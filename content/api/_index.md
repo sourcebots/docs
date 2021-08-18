@@ -13,7 +13,7 @@ The following two lines are required to complete initialisation of the
 kit:
 
 ``` python
-from sbot import Robot
+from sbot import *
 
 r = Robot()
 ```

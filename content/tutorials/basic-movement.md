@@ -15,7 +15,7 @@ The actual direction of travel of a motor, when mounted on a robot, will depend 
 Here's the code:
 
 ```python
-from sbot import Robot
+from sbot import *
 
 r = Robot()
 
@@ -54,7 +54,7 @@ If you find that the motor doesn't turn when you run the above code, check that 
 Now we're going to modify the program to vary the speed of the motor. Our aim is to do the forwards and backwards bit (as above), but, before we loop round again, ramp the power up to 70%, then down to -70%, and then back to 0 (all in steps of 10%). Here's the code:
 
 ```python
-from sbot import Robot
+from sbot import *
 
 r = Robot()
 
