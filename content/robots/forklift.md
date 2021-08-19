@@ -29,7 +29,7 @@ The layout of the Encoders are as follows:
 - Slot 3: Right grabber linear encoder
 
 {{% notice note %}}
-Hint: the radius of a forklift wheel is 15cm.
+Hint: the radius of a forklift wheel is 5cm.
 {{% /notice %}}
 
 ## Touch sensor
