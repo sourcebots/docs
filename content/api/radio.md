@@ -39,13 +39,13 @@ while True:
 
 ## Detecting beacons
 
-There are 4 beacons in the arena, see [the rules](/rules/) for their locations. These beacons continually transmit their identity. Beacons can be detected up to 2.5m away.
+There are 4 beacons in the arena, see [the rules](/rules/) for their locations. These beacons continually transmit their identity. Beacons can be detected up to 4.5m away.
 
 The beacons have the `target_info.type` value of `0` (`TargetType.BEACON`), which can be used to detect if it is a beacon. See '[Objects of the Radio System](#objects-of-the-radio-system)' below for all available information.
 
 ## Detecting containers
 
-There are many containers in the arena, which are each owned by a specific team. Containers can be detected up to 2.5m away.
+There are many containers in the arena, which are each owned by a specific team. Containers can be detected up to 2m away.
 
 The beacons have the `target_info.type` value of `1` (`TargetType.CONTAINER`), which can be used to detect if it is a container. See '[Objects of the Radio System](#objects-of-the-radio-system)' below for all available information.
 
