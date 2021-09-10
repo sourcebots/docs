@@ -16,7 +16,7 @@ The layout of the motors attached to the motor boards for the forklift robot are
 
 The front grabber is actuated by a single [servo](/api/servos), attached to the [Arduino](/api/arduino/#servos). It is plugged in to port 0.
 
-The servo will only let you move the grabber in a safe range. `-1` will open the grabber, and `1` will close the grabber.
+The servo will only let you move the grabber in a safe range. `1` will open the grabber, and `-1` will close the grabber.
 
 ## Ultrasound
 
