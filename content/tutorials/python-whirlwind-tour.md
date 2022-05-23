@@ -360,6 +360,7 @@ Below is a list of mathematical operators that you can use:
 * [Tutorialspoint](https://www.tutorialspoint.com/python/python_basic_operators.htm)
 * [W3Schools](https://www.w3schools.com/python/gloss_python_arithmetic_operators.asp)
 * [Python Docs](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator)
+* [Scaler Topics](https://www.scaler.com/topics/python/)
 
 ### Using the `math` module
 
