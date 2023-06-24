@@ -47,7 +47,7 @@ This will build the site once, and place it in `site/` in the root of the projec
 
 ### Spell checking
 
-This project uses `markdown-spellcheck` for spell checking. Plugins are
+This project uses `cspell` for spell checking. Plugins are
 available for a variety of editors and a command line runner is available
 through `npm`:
 
@@ -59,4 +59,4 @@ npm install
 npm run spellcheck
 ```
 
-Words that `markdown-spellcheck` is unaware of can be added to the `.spelling` file.
+Words that `cspell` is unaware of can be added to the `.spelling` file.

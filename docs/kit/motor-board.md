@@ -35,7 +35,7 @@ The case measures 70x84x20mm. Don’t forget that the cables will stick out.
 ## Designs
 You can access the schematics and source code of the firmware on the motor board in the following places. You do not need this information to use the board but it may be of interest to some people.
 
-- [Full Schematics](/docs/motor-schematic.pdf)
+- [Full Schematics](../assets/docs/motor-schematic.pdf)
 - [Firmware Source](https://github.com/sourcebots/motor-v4-fw)
 - [Hardware Source](https://github.com/sourcebots/motor-v4-hw)
 
