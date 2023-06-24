@@ -1,4 +1,0 @@
-code, kbd, pre, samp {
-    /* Replace the default font as it is too difficult to distinguish between l and 1 */
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-}

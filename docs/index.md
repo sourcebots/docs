@@ -1,5 +1,8 @@
 ---
-title: Homepage
+title: Home
+hide:
+    - navigation
+    - toc
 ---
 
 # SourceBots Robotics Documentation
