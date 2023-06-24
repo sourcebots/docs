@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "spellcheck": "mdspell --en-gb --report --ignore-acronyms --ignore-numbers --no-suggestions 'content/**/*.md'",
-    "broken-link-local": "blcl --recursive --ordered --exclude-external ./public/",
-    "broken-link-all": "blcl --recursive --exclude farnell --exclude microsoft --exclude https://github.com/sourcebots/docs/tree/master/content/* --ordered ./public/",
+    "spellcheck": "mdspell --en-gb --report --ignore-acronyms --ignore-numbers --no-suggestions 'docs/**/*.md'",
+    "broken-link-local": "blcl --recursive --ordered --exclude-external ./site/",
+    "broken-link-all": "blcl --recursive --exclude farnell --exclude microsoft --exclude https://github.com/sourcebots/docs/tree/master/docs/* --ordered ./site/",
     "test": "npm run spellcheck && npm run broken-link-local",
     "ci-test": "npm run spellcheck && npm run broken-link-local"
   },
