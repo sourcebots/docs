@@ -1,6 +1,5 @@
 ---
 title: API
-weight: 2
 ---
 
 Programming your robot is done in [Python](https://www.python.org/),

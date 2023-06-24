@@ -1,6 +1,5 @@
 ---
 title: Radio API
-weight: 6
 ---
 
 Radio transmitters and receivers are attached to various items in the arena.

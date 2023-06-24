@@ -1,6 +1,5 @@
 ---
 title: Compass
-weight: 10
 ---
 
 The forklift robot has a compass unit. This allows [robots](/robots/) to determine the direction it's facing in the arena.

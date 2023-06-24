@@ -1,6 +1,5 @@
 ---
 title: Motor Encoder API
-weight: 8
 ---
 
 Most moving parts of the robot have encoders attached. There are two kinds of encoders, linear encoders and rotary encoders. You can tell which is which by the joint it is attached to; if the joint rotates it is a Rotary encoder, whilst if it slides, it is a linear encoder.
@@ -18,7 +17,7 @@ All encoders are stored in a list called `encoders`, you can access the encoder 
 distance_from_start = r.encoders[1].displacement # in Metres
 ```
 
-## Rotary Encoders 
+## Rotary Encoders
 
 Rotary encoders are attached to joints that rotate (i.e. wheel rotations).
 

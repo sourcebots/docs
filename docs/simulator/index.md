@@ -1,6 +1,5 @@
 ---
 title: Simulator
-weight: 3
 ---
 
 {{% notice note %}}

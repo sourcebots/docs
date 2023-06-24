@@ -1,6 +1,5 @@
 ---
 title: Magnet API
-weight: 8
 ---
 
 The magnet is only available on the [Crane robot](/robots/crane).

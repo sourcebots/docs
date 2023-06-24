@@ -1,6 +1,5 @@
 ---
 title: Ultrasound Sensors
-weight: 7
 ---
 
 ![Ultrasound sensor](/img/api/ultrasound.png?width=300px)
