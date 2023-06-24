@@ -10,7 +10,8 @@ It also holds the internal On|Off switch for the whole robot as well as
 the Start button which is used to start your robot code.
 
 ## Board diagram
-![Power Board Diagram](/img/kit/power_board_v4_diagram.png)
+
+![Power Board Diagram](../assets/img/kit/power_board_v4_diagram.png)
 
 ## Connectors
 There are six power output connectors on the board, labelled L0–L3, H0, and H1.

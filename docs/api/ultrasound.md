@@ -2,7 +2,7 @@
 title: Ultrasound Sensors
 ---
 
-![Ultrasound sensor](/img/api/ultrasound.png?width=300px)
+![Ultrasound sensor](../assets/img/api/ultrasound.png?width=300px)
 
 Ultrasound sensors can measure distance of objects from the sensor. Ultrasound sensors emit a pulse of very high frequency sound, and measure the time it takes to hear an echo, typically Ultrasound sensors have electronics on the sensor to decide when an echo is received, and reports back a number as the distance in meters.
 

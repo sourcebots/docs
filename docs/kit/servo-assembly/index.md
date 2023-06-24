@@ -4,7 +4,7 @@ title: Servo Assembly
 
 The servo assembly allows you to control GPIO pins, analogue pins, and servos. It's comprised of an [Arduino Uno](https://store.arduino.cc/arduino-uno-rev3), and a [servo shield](https://learn.adafruit.com/adafruit-16-channel-pwm-slash-servo-shield).
 
-![Servo Assembly](/img/kit/servo-assembly.jpg?width=30pc)
+![Servo Assembly](../../assets/img/kit/servo-assembly.jpg)
 
 ## The servo shield
 The servo shield enables you to control up to sixteen servos. It's attached to the top of the Arduino, passing its pins through.

@@ -7,7 +7,8 @@ The Motor Board can be used to control two 12V DC motors. These can be used for 
 The speed and direction of the two outputs are controlled independently through the USB interface. The USB interface is isolated from the rest of the board to prevent damage to the host in the case of a board failure. Due to this isolation the board must have power applied to both the power connector (from the 12V outputs on the power board) and the USB port. If the board does not have power applied to the power connector then the kit will report that there is a problem with the motor board.
 
 ## Board diagram
-![Board Diagram](/img/kit/mcv4b_board_diagram.png)
+
+![Board Diagram](../assets/img/kit/mcv4b_board_diagram.png)
 
 ## Indicators
 | LED                   | Meaning                                                | Initial power-up state |
