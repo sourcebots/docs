@@ -1,10 +1,8 @@
----
-title: "Python: A Whirlwind Tour"
----
+# Python: A Whirlwind Tour
 
-# The Basics
+## Installation
 
-## Installing Python on Windows
+### Installing Python on Windows
 
 Below are step-by-step instructions for installing Python 3.9.6 (which is required for the competition):
 
@@ -22,7 +20,7 @@ Below are step-by-step instructions for installing Python 3.9.6 (which is requir
 
    ![A window with the heading "Setup was successful" and a 'close' button in the bottom right.](/img/tutorials/whrl-win-2.png)
 
-## Installing Python on Mac
+### Installing Python on Mac
 
 Below are step-by-step instruction for installing Python 3.9.6 (which is required for the competition):
 
