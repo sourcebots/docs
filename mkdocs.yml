@@ -2,8 +2,8 @@ site_name: SourceBots Docs
 site_url: https://docs.sourcebots.co.uk
 strict: true
 theme:
-  logo: /assets/favicon.ico
-  favicon: /assets/favicon.ico
+  logo: assets/favicon.ico
+  favicon: assets/favicon.ico
   name: material
   features:
     - navigation.tabs
