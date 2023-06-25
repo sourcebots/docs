@@ -1,0 +1,18 @@
+---
+title: Touch Sensors
+---
+
+![Touch sensor](../assets/img/api/touch-sensor.png)
+
+Microswitches, or touch sensors, are used to measure when something is touching the sensor.
+
+## Reading the touch sensor
+
+The touch sensors will be connected to a specific pin in the Arduino, typically wired in such a way that the pin's voltage is changed when the switch is pressed by an object.
+
+To read this, you need to read the digital value of the correct pin. You can get the correct pin number by looking at [the documentation for the robot](), then writing the code like so:
+
+``` python
+# Get if something is touching the touch sensor.
+is_touching = r.arduino.pins[pin].digital_state # True or False
+```

@@ -1,0 +1,5 @@
+mkdocs==1.4.3
+mkdocs-material==9.1.16
+mdx-include==1.4.2
+mkdocs-awesome-pages-plugin==2.9.1
+mkdocs-glightbox==0.3.4
