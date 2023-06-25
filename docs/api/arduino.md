@@ -80,11 +80,8 @@ imported before they can be used.
 from sbot import GPIOPinMode
 ```
 
-{{% notice tip %}}
-The input modes closely resemble those of an Arduino. More information
-on them can be found in [their
-docs](https://www.arduino.cc/en/Tutorial/DigitalPins).
-{{% /notice %}}
+!!! tip
+    The input modes closely resemble those of an Arduino. More information on them can be found in [their docs](https://www.arduino.cc/en/Tutorial/DigitalPins).
 
 ### Setting the pin mode
 
@@ -138,11 +135,10 @@ have to be read differently. The Arduino has six analogue inputs, which
 are labelled `A0` to `A5`; however pins `A4` and `A5` are reserved and
 cannot be used.
 
-{{% notice tip %}}
-Analogue signals can have any voltage, while digital signals can only
-take on one of two voltages. You can read more about digital vs analogue
-signals [here](https://learn.sparkfun.com/tutorials/analog-vs-digital).
-{{% /notice %}}
+!!! tip
+    Analogue signals can have any voltage, while digital signals can only
+    take on one of two voltages. You can read more about digital vs analogue
+    signals [here](https://learn.sparkfun.com/tutorials/analog-vs-digital).
 
 ``` python
 from sbot import AnaloguePin
@@ -152,10 +148,8 @@ r.arduino.pins[AnaloguePin.A0].mode = GPIOPinMode.ANALOGUE_INPUT
 pin_value = r.arduino.pins[AnaloguePin.A0].analogue_value
 ```
 
-{{% notice tip %}}
-The values are the voltages read on the pins, between 0 and 5.
-{{% /notice %}}
+!!! tip
+    The values are the voltages read on the pins, between 0 and 5.
 
-{{% notice warning %}}
-Pins `A4` and `A5` are reserved and cannot be used.
-{{% /notice %}}
+!!! warning
+    Pins `A4` and `A5` are reserved and cannot be used.

@@ -14,11 +14,8 @@ accessed using the `motor_board` property of the `Robot` object.
 my_motor_board = r.motor_board
 ```
 
-{{% notice warning %}}
-If there is more than one motor board on your kit, you *must* use the
-`motor_boards` property. `r.motor_board` *will cause an error*. This is
-because the kit doesn't know which motor board you want to access.
-{{% /notice %}}
+!!! warning
+    If there is more than one motor board on your kit, you *must* use the `motor_boards` property. `r.motor_board` *will cause an error*. This is because the kit doesn't know which motor board you want to access.
 
 Motor boards attached to your robot can be accessed under the
 `motor_boards` property of the `Robot`. The boards are indexed by their
@@ -63,17 +60,11 @@ my_motor_board.motors[1].power
 >>> -1
 ```
 
-{{% notice warning %}}
-Setting a value outside of the range `-1` to `1` will raise an exception
-and your code will crash.
-{{% /notice %}}
+!!! warning
+    Setting a value outside of the range `-1` to `1` will raise an exception and your code will crash.
 
-{{% notice warning %}}
-Sudden large changes in the motor speed setting (e.g. `-1` to `0`, `1`
-to `-1` etc.) will likely trigger the over-current protection and your
-robot will shut down with a distinct beeping noise and/or a red light
-next to the power board output that is powering the motor board.
-{{% /notice %}}
+!!! danger
+    Sudden large changes in the motor speed setting (e.g. `-1` to `0`, `1` to `-1` etc.) will likely trigger the over-current protection and your robot will shut down with a distinct beeping noise and/or a red light next to the power board output that is powering the motor board.
 
 ### Special values
 
@@ -90,9 +81,8 @@ from sbot import BRAKE, COAST
 `BRAKE` will stop the motors from turning, and thus stop your robot as
 quick as possible.
 
-{{% notice tip %}}
-`BRAKE` does the same as setting the power to `0`.
-{{% /notice %}}
+!!! note
+    `BRAKE` does the same as setting the power to `0`.
 
 ``` python
 from sbot import BRAKE

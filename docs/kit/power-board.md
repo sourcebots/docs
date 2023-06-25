@@ -28,9 +28,8 @@ There is also a Micro USB B connector which should be used to connect the Raspbe
 
 Finally, there are connectors for external Start and On|Off switches. You may connect any latching switch for the On|Off switch, or a push-to-make button for the Start button.
 
-{{% notice note %}}
-If you intend to use only the internal On|Off switch, a CamCon must be plugged into the On|Off connector with a wire connecting one pin to the other pin on the same connector. Your power board should already have one of these plugged in.
-{{% /notice %}}
+!!! note
+    If you intend to use only the internal On|Off switch, a CamCon must be plugged into the On|Off connector with a wire connecting one pin to the other pin on the same connector. Your power board should already have one of these plugged in.
 
 ## Indicators
 |   LED      | Meaning                                                                                                           | Initial power-up state |
