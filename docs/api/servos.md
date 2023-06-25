@@ -12,9 +12,8 @@ The servo assembly can interface with up to sixteen servos connected to it.
 servo_zero = r.arduino.servos[0]
 ```
 
-{{% notice tip %}}
-Servo can be connected to any port, you don't have to start at 0!
-{{% /notice %}}
+!!! info
+    Servo can be connected to any port, you don't have to start at 0!
 
 ## Controlling servos
 
@@ -26,6 +25,5 @@ print(servo_zero.position)
 >>> 0.65
 ```
 
-{{% notice tip %}}
-When `position` is set to `None`, the servo loses power and can freely rotate. This is the same state they're in at start-up.
-{{% /notice %}}
+!!! tip
+    When `position` is set to `None`, the servo loses power and can freely rotate. This is the same state they're in at start-up.

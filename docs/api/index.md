@@ -28,10 +28,8 @@ defined as `r`.
 Your code needs to be put in the `zone-0` or `zone-1` folder in a file called
 `forklift.py` or `crane.py` for the forklift and crane robots respectively.
 
-{{% notice tip %}}
-If this file is missing or incorrectly named, your robot won't do
-anything. No log file will be created.
-{{% /notice %}}
+!!! tip
+    If this file is missing or incorrectly named, your robot won't do anything. No log file will be created.
 
 ## Logs
 
@@ -51,7 +49,5 @@ install some extra ones which may be of use:
 - [scikit-learn 0.23.2](https://pypi.org/project/scikit-learn/0.23.2/)
 - [scipy 1.5.4](https://pypi.org/project/scipy/1.5.4/)
 
-{{% notice tip %}}
-If you would like an extra library installed, go and ask a volunteer to
-see if we can help.
-{{% /notice %}}
+!!! tip
+    If you would like an extra library installed, go and ask a volunteer to see if we can help.

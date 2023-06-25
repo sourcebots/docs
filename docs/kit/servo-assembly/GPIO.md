@@ -6,8 +6,7 @@ The Arduino allows you to connect your kit to your own electronics. It has fourt
 
 The pin layout of the servo assembly is the same as an Arduino Uno.
 
-{{% notice note %}}
-The Arduino communicates with the servo shield using two of the analogue input pins (4 and 5), and with the Raspberry Pi using two of the digital IO pins (0 and 1). These four pins are therefore reserved, and using them may cause the Arduino or servo shield to behave unusually.
-{{% /notice %}}
+!!! note
+    The Arduino communicates with the servo shield using two of the analogue input pins (4 and 5), and with the Raspberry Pi using two of the digital IO pins (0 and 1). These four pins are therefore reserved, and using them may cause the Arduino or servo shield to behave unusually.
 
 ![Pin Map](https://raw.githubusercontent.com/Bouni/Arduino-Pinout/master/Arduino%20Uno%20R3%20Pinout.png?width=50pc)

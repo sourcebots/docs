@@ -37,7 +37,5 @@ time_taken = u.pulse()
 distance_metres = u.distance()
 ```
 
-{{% notice warning %}}
-If the ultrasound signal never returns, the sensor will timeout and
-return `None`.
-{{% /notice %}}
+!!! warning
+    If the ultrasound signal never returns, the sensor will timeout and return `None`.
