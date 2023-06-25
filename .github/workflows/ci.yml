@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - sp2023
   pull_request:
 
   # Allow running manually
@@ -77,7 +78,7 @@ jobs:
       - spellcheck
       - build
 
-    if: github.ref_name == 'master'
+    if: github.ref_name == 'master' || github.ref_name == 'sp2023'
 
     steps:
       - name: Deploy to GitHub Pages
