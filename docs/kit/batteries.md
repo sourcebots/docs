@@ -60,5 +60,5 @@ When the battery has been almost completely discharged, the Power Board
 will automatically turn off and the LED marked “Power / Flat Battery
 Indicator” in the [diagram](./power-board.md) will
 flash red and green. You should immediately disconnect the battery. Flat
-batteries should be given to a faciliator in exchange for a freshly charged
+batteries should be given to a facilitator in exchange for a freshly charged
 battery.

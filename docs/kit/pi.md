@@ -1,7 +1,7 @@
 # Raspberry Pi
 
 !!! danger
-    Do not reflash or edit the SD card. This will stop your robot working!
+    Do not re-flash or edit the SD card. This will stop your robot working!
 
 ![Raspberry Pi 3B+](../assets/img/kit/pi.jpg){ width="50%" }
 
