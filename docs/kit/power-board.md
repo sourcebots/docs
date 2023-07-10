@@ -22,9 +22,9 @@ They should be used to connect to the motor board power input, though can also
 be used to power other devices. These are enabled when your robot code is
 started and can also be turned on or off from your code.
 
-There are two 5V connectors that can be used to connect low-current devices that take 5V inputs, such as the Raspberry Pi and the servo shield.
+There are two 5V connectors that can be used to connect low-current devices that take 5V inputs, such as the Raspberry Pi.
 
-There is also a Micro USB B connector which should be used to connect the Raspberry Pi for control of the power board.
+There is also a Micro USB B connector which should be connected to the Raspberry Pi for control of the power board.
 
 Finally, there are connectors for external Start and On|Off switches. You may connect any latching switch for the On|Off switch, or a push-to-make button for the Start button.
 
@@ -37,11 +37,11 @@ Finally, there are connectors for external Start and On|Off switches. You may co
 | PWR\|FLAT  | Green when powered<br />Flashing red and green when the battery is low                                            | Green                  |
 | 5V         | Green when 5V is being supplied                                                                                   | Green                  |
 | H0–1, L0–3 | Green when the corresponding output is on [^1]<br />Red when the output's current limit is reached                | Off                    |
-| RUN\|ERROR | Orange on power-up, or USB reset <br />Flashing green when ready to run<br /> Solid green when running or booting | Orange                 |
+| RUN\|ERROR | Orange on power-up, or USB disconnection <br />Flashing green when ready to run<br /> Solid green when running or booting | Orange                 |
 
 [^1]: The outputs only turn on when your program runs (specifically, when the `Robot` object is created).
 
-On power-up, the Power Board will emit some beeps, which are related to the version of the firmware it has installed.
+On power-up and while waiting for the start button, the Power Board will emit a beep.
 
 If the Power Board starts beeping (and all the outputs turn off) then this means that the whole board's current limit has been triggered.
 
