@@ -22,7 +22,10 @@ brown wire) at the bottom of the board.
 
 For the servo board to operate correctly, you must connect it to the 12V
 power rail from the power board. A green LED will light next to the
-servo board 12V connector when it is correctly powered.
+servo board 12V connector when it is correctly powered and the 8 outputs 
+on the left-side of the board can be used.
+
+To use the 4 auxillary outputs on the right-side of the board, 5V needs to be connected to the auxillary input.
 
 ## Case Dimensions
 
