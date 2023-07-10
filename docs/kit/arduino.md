@@ -15,7 +15,7 @@ isn't working. This isn't a guaranteed fix, but may solve some problems.
 
 ## GPIO Pins
 
-The Arduino allows you to connect your kit to your own electronics. It has fourteen digital I/O pins, and six analogue input pins. The analogue pins can read an analogue signal from 0 to 5V. The board also has a couple of ground pins, as well as some pins fixed at 3.3V and 5V output.
+The Arduino allows you to connect your kit to your own electronics. It has fourteen digital I/O pins, and six analogue input pins. The analogue pins can read an analogue signal from 0 to 5V and the digital pins can receive or send digital signals at 0V & 5V. The board also has a couple of ground pins, as well as some pins fixed at 3.3V and 5V output to supply power to your sensors.
 
 ![Pin Map](../assets/img/kit/arduino_pinout.png)
 
