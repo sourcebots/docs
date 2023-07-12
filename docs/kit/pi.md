@@ -5,7 +5,7 @@
 
 ![Raspberry Pi 3B+](../assets/img/kit/pi.jpg){ width="50%" }
 
-The brain of your robot is a Raspberry Pi 3 / 3B+. This handles the running of your python code, recognition of markers and sends control commands to the other boards.
+The brain of your robot is a Raspberry Pi 3B+. This handles the running of your python code, recognition of markers and sends control commands to the other boards.
 
 ## Power Hat
 
@@ -31,6 +31,6 @@ All LEDs will turn on at boot. After the Pi detects a USB stick, the LEDs work a
 
 Your robot is running a customised version of the [Raspberry Pi OS](https://www.raspberrypi.com/software/) operating system.
 
-When a USB stick is inserted, the SourceBots software will look for a file named `main.py`, and then execute it.
+When a USB stick is inserted, the SourceBots software will look for a file named `robot.py`, and then execute it.
 
 The output of your code is written to a file named `log.txt` on the USB stick.
