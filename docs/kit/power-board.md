@@ -41,7 +41,7 @@ Finally, there are connectors for external Start and On|Off switches. You may co
 
 [^1]: The outputs only turn on when your program runs (specifically, when the `Robot` object is created).
 
-On power-up and while waiting for the start button, the Power Board will emit a beep.
+On power-up and when waiting for the start button, the Power Board will beep once.
 
 If the Power Board starts beeping (and all the outputs turn off) then this means that the whole board's current limit has been triggered.
 
