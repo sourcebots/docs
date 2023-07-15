@@ -22,9 +22,7 @@
 -  Any other colour of wire
 
 !!! tip
-    *CamCons* are the green connectors used for power wiring within our kit.
-
-    ![](../assets/img/assembly/camcons.png){ width="50%" }
+    [CamCons](../kit/camcons.md) are the green connectors used for power wiring within our kit.
 
 ## Peripherals
 
