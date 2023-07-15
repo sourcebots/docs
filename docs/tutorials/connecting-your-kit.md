@@ -64,6 +64,10 @@ You will need to fetch any other needed tools/supplies yourself.
    power (say 12V or 5V), *black* for wires connected to ground
    (0V) and *any other colour* for motors.
 
+-  Please don't connect the Arduino to the Raspberry Pi via the
+   USB Hub. If the Arduino is not connected *directly* to the Pi, you may
+   have issues with getting enough power to it.
+
 ## How it all fits together
 
 The first step of your robot is assembly! Here we'll guide you step-by-step on
@@ -88,12 +92,6 @@ how to connect things up. You'll be cutting your own wires here!
     end goes into the Motor Board.
 6.  Connect the Arduino to the Pi by way of the USB-A (rectangle) to USB-B
     (square-like) cable.
-
-!!! warning
-    Please don't connect the Arduino to the Raspberry Pi via the
-    USB Hub. If the Arduino is not connected *directly* to the Pi, you may
-    have issues with getting enough power to it.
-
 7.  Connect the Servo Board to the Power Board by screwing the two 7.5mm (large)
     CamCons onto the opposite ends of a pair of wires, ensuring that positive
     connects to positive and ground to ground, and then plugging one end into
