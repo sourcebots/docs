@@ -1,5 +1,5 @@
 ---
-title: Camcons
+title: CamCons
 ---
 
 [CamCons](https://uk.farnell.com/-/ctb92he-2/-/dp/1717047) are the green connectors used for power wiring within our kit.
