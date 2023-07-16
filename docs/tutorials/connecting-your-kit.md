@@ -64,9 +64,6 @@ You will need to fetch any other needed tools/supplies yourself.
    power (say 12V or 5V), *black* for wires connected to ground
    (0V) and *any other colour* for motors.
 
--  Please don't connect the Arduino to the Raspberry Pi via the
-   USB Hub. If the Arduino is not connected *directly* to the Pi, you may
-   have issues with getting enough power to it.
 
 ## How it all fits together
 
