@@ -39,7 +39,7 @@ You're familiar with the first few lines; in fact, the only lines you may not be
 
 But, to summarise:
 
-`r.motor_board.motors[0].power = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](../kit/motor-board.md) to half speed forwards (i.e. a duty-cycle of 0.5 forwards). As you would expect, then, `-0.5` will put this motor into reverse at half power.
+`r.motor_board.motors[0].power = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](../kit/motor-board.md) to half speed forwards (i.e. a duty-cycle of 50% forwards). As you would expect, then, `-0.5` will put this motor into reverse at half power.
 `r.motor_board.motors[0].power = 0` will brake the motor and stop it.
 
 So, if you put the above code on your robot, you should be able to see a motor spin forwards, stop, spin backwards, stop, and then repeat...
