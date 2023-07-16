@@ -1,4 +1,4 @@
-# Power Board API
+# Power Board
 
 The power board can be accessed using the `power_board` property of
 the `Robot` object.

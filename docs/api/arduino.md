@@ -1,6 +1,4 @@
----
-title: Arduino API
----
+# Arduino
 
 The [Arduino](https://store.arduino.cc/arduino-uno-rev3) provides a
 total of 18 pins for either digital input or output (labelled 2 to 13
