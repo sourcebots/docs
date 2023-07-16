@@ -6,6 +6,9 @@ The [Arduino](https://store.arduino.cc/arduino-uno-rev3) provides a
 total of 18 pins for either digital input or output (labelled 2 to 13
 and A0 to A5), including 6 for analogue input (labelled A0 to A5).
 
+!!! warning
+    Digital pins 0 and 1 are reserved and cannot be used.
+
 ## Accessing the Arduino
 
 The Arduino can be accessed using the `arduino` property of the `Robot`
@@ -102,9 +105,6 @@ pin_value = r.arduino.pins[AnaloguePin.A0].analogue_value
 
 !!! tip
     The values are the voltages read on the pins, between 0 and 5.
-
-!!! warning
-    Pins `A4` and `A5` are reserved and cannot be used.
 
 ## Ultrasound Sensors
 
