@@ -25,17 +25,34 @@ defined as `r`.
 
 ## Running your code
 
-Your code needs to be put in the `zone-0` or `zone-1` folder in a file called
-`forklift.py` or `crane.py` for the forklift and crane robots respectively.
+Your code needs to be put on a USB drive in a file called `robot.py`. When connected to the robot, this file will be executed. The file is directly executed off your USB drive, with your drive as the working directory.
 
 !!! tip
     If this file is missing or incorrectly named, your robot won't do anything. No log file will be created.
 
+To stop your code running, you can just remove the USB drive. This will also stop the motors and any other peripherals connected to the kit.
+
+You can then reinsert the USB drive into the robot, and it will run your `main.py` again (from the start). This allows you to make changes and test them quickly.
+
 ## Logs
 
-A log file is saved in the `output/` folder so you can see what your robot did,
-what it didn't do, and any errors it raised. Each log file is in a folder based on its
-date and time, so you can look back at your previous runs.
+A log file is saved to your USB so you can see what your robot did,
+what it didn't do, and any errors it raised. The file is saved to log.txt in the top-level directory of the USB drive.
+
+!!! warning
+    The previous log file is deleted at the start of each run, so copy it elsewhere if you need to keep hold of it!
+
+## Running Code before pressing the start button
+
+If you want to do things before the start button press, such as setting up servos or motors, you can pass `wait_start` to the `Robot` constructor. You will then need to wait for the start button manually.
+
+```python
+r = Robot(wait_start=False)
+
+# Do your setup here
+
+r.wait_start()
+```
 
 ## Included Libraries
 
@@ -43,11 +60,10 @@ Python already comes with plenty of [built-in
 libraries](https://docs.python.org/3.9/py-modindex.html) to use. We
 install some extra ones which may be of use:
 
-- [numpy 1.19.3](https://pypi.org/project/numpy/1.19.3/)
-- [matplotlib 3.3.3](https://pypi.org/project/matplotlib/3.3.3/)
-- [pandas 1.1.4](https://pypi.org/project/pandas/1.1.4/)
-- [scikit-learn 0.23.2](https://pypi.org/project/scikit-learn/0.23.2/)
-- [scipy 1.5.4](https://pypi.org/project/scipy/1.5.4/)
+- [numpy 1.25.0](https://pypi.org/project/numpy/1.25.0/)
+- [matplotlib 3.7.1](https://pypi.org/project/matplotlib/3.7.1/)
+- [pandas 2.0.3](https://pypi.org/project/pandas/2.0.3/)
+- [scipy 1.11.1](https://pypi.org/project/scipy/1.11.1/)
 
 !!! tip
     If you would like an extra library installed, go and ask a volunteer to see if we can help.
