@@ -54,6 +54,20 @@ r = Robot(wait_start=False)
 r.wait_start()
 ```
 
+## Debug mode
+
+It is possible to run your robot in "Debug Mode".
+
+In "Debug Mode", your robot will print more information about what it is doing.
+
+```python
+from sbot import Robot
+r = Robot(debug=True)
+```
+
+!!! info
+    Debug mode is quite verbose. It will print a lot of information that you will not need.
+
 ## Included Libraries
 
 Python already comes with plenty of [built-in
