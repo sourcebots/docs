@@ -105,3 +105,17 @@ pin_value = r.arduino.pins[AnaloguePin.A0].analogue_value
 
 !!! warning
     Pins `A4` and `A5` are reserved and cannot be used.
+
+## Ultrasound Sensors
+
+You can also measure distance using an ultrasound sensor from the arduino.
+
+```python
+# Trigger pin: 4
+# Echo pin: 5
+
+distance_metres = r.arduino.ultrasound_measure(4, 5)
+```
+
+!!! warning
+    The ultrasound sensor can measure distances up to 2 metres. If the ultrasound signal has to travel further than 2m, the sensor will timeout and return `None`.
