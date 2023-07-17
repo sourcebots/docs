@@ -1,4 +1,4 @@
-# Motor Board
+# Motor Board API
 
 The kit can control multiple motors simultaneously. One Motor Board can
 control up to two motors.
