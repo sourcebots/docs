@@ -9,6 +9,8 @@ Specifically it will detect [AprilTags](https://april.eecs.umich.edu/software/ap
 Using [Pose Estimation](https://en.wikipedia.org/wiki/3D_pose_estimation), it can calculate the orientation and position of
 the marker relative to the webcam. Using this data, it is possible to determine the location of your robot and other objects around it.
 
+You can download the markers from the [resources page](../../resources/index.md).
+
 ## Searching for markers
 
 Assuming you have a webcam connected, you can use `r.camera.see()` to take a picture. The software will process the picture
