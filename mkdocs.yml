@@ -42,6 +42,7 @@ extra:
 # Extensions
 markdown_extensions:
   - attr_list
+  - abbr
   - pymdownx.highlight
   - pymdownx.superfences
   - footnotes

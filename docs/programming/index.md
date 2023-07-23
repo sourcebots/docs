@@ -1,10 +1,10 @@
----
-title: API
----
+# Programming
 
 Programming your robot is done in [Python](https://www.python.org/),
 specifically version 3.9.6. You can learn more about Python from their
 [docs](https://docs.python.org/3/), and our whirlwind tour.
+
+Each board has an API which allows its various functionality to be controlled.
 
 ## Setup
 
@@ -81,3 +81,5 @@ install some extra ones which may be of use:
 
 !!! tip
     If you would like an extra library installed, go and ask a volunteer to see if we can help.
+
+*[API]: Application Programming Interface

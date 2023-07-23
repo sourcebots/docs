@@ -34,7 +34,7 @@ while True:
     r.sleep(4)
 ```
 
-You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `r.motor_boards...` lines. For a comprehensive reference to the `motor` object, see [`motor` API](../api/motor-board.md) page.
+You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `r.motor_boards...` lines. For a comprehensive reference to the `motor` object, see [`motor` API](../programming/motor-board.md) page.
 But, to summarise:
 
 `r.motor_boards.m0.power = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](../kit/motor-board.md) to half speed forwards (i.e. a duty-cycle of 0.5 forwards). As you would expect, then, `-0.5` will put the this motor into reverse at half power.
