@@ -2,7 +2,7 @@
 
 Programming your robot is done in [Python](https://www.python.org/),
 specifically version 3.9.6. You can learn more about Python from their
-[docs](https://docs.python.org/3/), and our whirlwind tour.
+[docs](https://docs.python.org/3/), and our [whirlwind tour](../tutorials/python-whirlwind-tour.md).
 
 Each board has an API which allows its various functionality to be controlled.
 
