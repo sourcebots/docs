@@ -12,7 +12,7 @@ Doing this is actually very easy; the only thing you need to realise is that a p
 Here's the code:
 
 ```python
-from sbot import *
+from sbot import Robot
 
 robot = Robot()
 
@@ -50,7 +50,7 @@ So, if you put the above code on your robot, you should be able to see a motor s
 Now we're going to modify the program to vary the speed of the motor. Our aim is to do the forwards and backwards bit (as above), but, before we loop round again, ramp the power up to 70%, then down to -70%, and then back to 0 (all in steps of 10%). Here's the code:
 
 ```python
-from sbot import *
+from sbot import Robot
 
 robot = Robot()
 
