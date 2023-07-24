@@ -66,7 +66,7 @@ r = Robot(debug=True)
 ```
 
 !!! info
-    Debug mode is quite verbose. It will print a lot of information that you will not need.
+    Debug mode is very verbose. It will print a lot of information that you may not need.
 
 ## Included Libraries
 
