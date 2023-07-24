@@ -70,7 +70,7 @@ r = Robot(debug=True)
 
 ## Included Libraries
 
-Python already comes with plenty of [built-in
+Python comes with plenty of [built-in
 libraries](https://docs.python.org/3.9/py-modindex.html) to use. We
 install some extra ones which may be of use:
 
