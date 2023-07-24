@@ -15,7 +15,7 @@ Your robot can be in 1 of 2 modes: `DEVELOPMENT` and `COMPETITION`. By
 default, your robot will be in `DEVELOPMENT` mode:
 
 ``` python
-r.is_competition
+robot.is_competition
 >> False
 ```
 
@@ -29,7 +29,7 @@ zone. The number of zones depends on the game. Each zone is given a
 number, which you can access with the `zone` property:
 
 ``` python
-r.zone
+robot.zone
 >> 1
 ```
 

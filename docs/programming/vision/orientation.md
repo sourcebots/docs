@@ -11,12 +11,12 @@ Orientation represents the rotation of a marker around the x, y, and z axes. The
 Rotations are applied in order of z, y, x.
 
 ```python
-markers = r.camera.see()
+markers = robot.camera.see()
 
-for m in markers:
-   print(m.orientation.rot_x)  # Angle of rotation about x axis.
-   print(m.orientation.rot_y)  # Angle of rotation about y axis.
-   print(m.orientation.rot_z)  # Angle of rotation about z axis.
+for marker in markers:
+   print(marker.orientation.rot_x)  # Angle of rotation about x axis.
+   print(marker.orientation.rot_y)  # Angle of rotation about y axis.
+   print(marker.orientation.rot_z)  # Angle of rotation about z axis.
 ```
 
 !!! note

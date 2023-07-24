@@ -14,14 +14,17 @@ kit:
 ``` python
 from sbot import *
 
-r = Robot()
+robot = Robot()
 ```
 
 Once this has been done, this `Robot` object can be used to control the
 robot's functions.
 
 The remainder of the tutorials pages will assume your `Robot` object is
-defined as `r`.
+defined as `robot`.
+
+!!! note
+    In Python, variables are case-sensitive. `robot` is an instance of `Robot`.
 
 ## Running your code
 
@@ -47,11 +50,11 @@ what it didn't do, and any errors it raised. The file is saved to log.txt in the
 If you want to do things before the start button press, such as setting up servos or motors, you can pass `wait_start` to the `Robot` constructor. You will then need to wait for the start button manually.
 
 ```python
-r = Robot(wait_start=False)
+robot = Robot(wait_start=False)
 
 # Do your setup here
 
-r.wait_start()
+robot.wait_start()
 ```
 
 ## Debug mode
@@ -62,7 +65,8 @@ In "Debug Mode", your robot will print more information about what it is doing.
 
 ```python
 from sbot import Robot
-r = Robot(debug=True)
+
+robot = Robot(debug=True)
 ```
 
 !!! info

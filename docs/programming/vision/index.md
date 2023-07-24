@@ -11,11 +11,11 @@ the marker relative to the webcam. Using this data, it is possible to determine 
 
 ## Searching for markers
 
-Assuming you have a webcam connected, you can use `r.camera.see()` to take a picture. The software will process the picture
+Assuming you have a webcam connected, you can use `robot.camera.see()` to take a picture. The software will process the picture
 and returns a list of the markers it sees.
 
 ```python
-markers = r.camera.see()
+markers = robot.camera.see()
 ```
 
 !!! tip
@@ -30,7 +30,7 @@ corner of the marker. The ID of every marker is also written next to it.
 Snapshots are saved to your USB drive, and can be viewed on another computer.
 
 ```python
-r.camera.save("snapshot.jpg")
+robot.camera.save("snapshot.jpg")
 ```
 
 ![An annotated arena with Fiducial Markers.](../../assets/img/api/vision/arena_marker_annotated.jpg){ width="50%" }
@@ -44,7 +44,7 @@ The marker objects in the list expose data that may be useful to your robot.
 Every marker has a numeric identifier that can be used to determine what object it represents.
 
 ```python
-markers = r.camera.see()
+markers = robot.camera.see()
 
 for m in markers:
     print(m.id)
@@ -57,7 +57,7 @@ Each marker has a position in 3D space, relative to your webcam.
 You can access the position using `m.distance`, `m.cartesian` and `m.spherical`.
 
 ```python
-markers = r.camera.see()
+markers = robot.camera.see()
 
 for m in markers:
     print(m.distance)  # Distance to the marker from the webcam, in metres
@@ -82,7 +82,7 @@ You can access the size of a marker using `m.size`.
 Check the rules to find out how big the different marker types are.
 
 ```python
-markers = r.camera.see()
+markers = robot.camera.see()
 
 for m in markers:
     print(m.size)
@@ -98,7 +98,7 @@ marker. Pixels are counted from the origin of the image, which
 conventionally is in the top left corner of the image.
 
 ```python
-markers = r.camera.see()
+markers = robot.camera.see()
 
 for m in markers:
     print(m.pixel_corners)  # Pixel positions of the marker corners within the image.

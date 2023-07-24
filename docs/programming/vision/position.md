@@ -19,7 +19,7 @@ The value of each coordinate indicates the distance travelled along the axis to 
 The camera is located at the origin, where the coordinates are ``(0, 0, 0)``.
 
 ```python
-markers = r.camera.see()
+markers = robot.camera.see()
 
 for m in markers:
     print(m.cartesian.x)  # Displacement from the origin in millimetres, along x axis.
@@ -44,7 +44,7 @@ three values to specify a specific point in space.
 The camera is located at the origin, where the coordinates are `(0, 0, 0)`.
 
 ```python
-markers = r.camera.see()
+markers = robot.camera.see()
 
 for m in markers:
   print(m.spherical.distance)  # Distance from the origin in millimetres

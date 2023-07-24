@@ -4,7 +4,7 @@ The power board can be accessed using the `power_board` property of
 the `Robot` object.
 
 ```python
-my_power_board = r.power_board
+my_power_board = robot.power_board
 ```
 
 ## Power outputs
@@ -21,8 +21,8 @@ The power board's six outputs can be turned on and off using the
     pressed.
 
 ```python
-r.power_board.outputs.power_off()
-r.power_board.outputs.power_on()
+robot.power_board.outputs.power_off()
+robot.power_board.outputs.power_on()
 ```
 
 You can also get information about and control each output in the group.
@@ -31,12 +31,12 @@ An output is indexed using the appropriate `PowerOutputPosition`.
 ```python
 from sbot import PowerOutputPosition
 
-r.power_board.outputs[PowerOutputPosition.H0].is_enabled = True
-r.power_board.outputs[PowerOutputPosition.L3].is_enabled = False
+robot.power_board.outputs[PowerOutputPosition.H0].is_enabled = True
+robot.power_board.outputs[PowerOutputPosition.L3].is_enabled = False
 
-boolean_value = r.power_board.outputs[PowerOutputPosition.L2].is_enabled
+boolean_value = robot.power_board.outputs[PowerOutputPosition.L2].is_enabled
 
-current_amps = r.power_board.outputs[PowerOutputPosition.H1].current
+current_amps = robot.power_board.outputs[PowerOutputPosition.H1].current
 ```
 
 !!! warning
@@ -51,8 +51,8 @@ The power board has some sensors that can monitor the status of your battery.
 This can be useful for checking the charge status of your battery.
 
 ```python
-battery_voltage = r.power_board.battery_sensor.voltage
-battery_current_amps = r.power_board.battery_sensor.current
+battery_voltage = robot.power_board.battery_sensor.voltage
+battery_current_amps = robot.power_board.battery_sensor.current
 ```
 
 ## Buzzing 🐝
@@ -80,10 +80,10 @@ The `Note` enum provides notes in [scientific pitch notation](https://en.wikiped
 from sbot import Note
 
 # Buzz for half a second in D6.
-r.power_board.piezo.buzz(0.5, Note.D6)
+robot.power_board.piezo.buzz(0.5, Note.D6)
 
 # Buzz for 2 seconds at 400Hz
-r.power_board.piezo.buzz(2, 400)
+robot.power_board.piezo.buzz(2, 400)
 ```
 
 ## Start Button
@@ -92,7 +92,7 @@ You can manually wait for the start button to be pressed, not only at
 the start.
 
 ```python
-r.wait_start()
+robot.wait_start()
 ```
 
 This may be useful for debugging, but be sure to remove it in the

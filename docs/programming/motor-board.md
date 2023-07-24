@@ -9,19 +9,19 @@ If there is exactly one motor board attached to your robot, it can be
 accessed using the `motor_board` property of the `Robot` object.
 
 ``` python
-my_motor_board = r.motor_board
+my_motor_board = robot.motor_board
 ```
 
 !!! warning
-    If there is more than one motor board on your kit, you *must* use the `motor_boards` property. `r.motor_board` *will cause an error*. This is because the kit doesn't know which motor board you want to access.
+    If there is more than one motor board on your kit, you *must* use the `motor_boards` property. `robot.motor_board` *will cause an error*. This is because the kit doesn't know which motor board you want to access.
 
 Motor boards attached to your robot can be accessed under the
 `motor_boards` property of the `Robot`. The boards are indexed by their
 serial number, which is written on the board.
 
 ``` python
-my_motor_board = r.motor_boards["SRO-AAD-GBH"]
-my_other_motor_board = r.motor_boards["SR08U6"]
+my_motor_board = robot.motor_boards["SRO-AAD-GBH"]
+my_other_motor_board = robot.motor_boards["SR08U6"]
 ```
 
 ## Controlling the Motor Board
