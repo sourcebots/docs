@@ -47,10 +47,10 @@ what it didn't do, and any errors it raised. The file is saved to log.txt in the
 
 ## Running Code before pressing the start button
 
-If you want to do things before the start button press, such as setting up servos or motors, you can pass `wait_start` to the `Robot` constructor. You will then need to wait for the start button manually.
+If you want to do things before the start button press, such as setting up servos or motors, you can pass `wait_for_start` to the `Robot` constructor. You will then need to wait for the start button manually using `robot.wait_start()`.
 
 ```python
-robot = Robot(wait_start=False)
+robot = Robot(wait_for_start=False)
 
 # Do your setup here
 
