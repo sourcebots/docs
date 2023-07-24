@@ -67,6 +67,8 @@ You will need to fetch any other needed tools/supplies yourself.
 
 ## How it all fits together
 
+![An assembled kit](../assets/img/assembly/kit-assembly.svg)
+
 The first step of your robot is assembly! Here we'll guide you step-by-step on
 how to connect things up. You'll be cutting your own wires here!
 
