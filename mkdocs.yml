@@ -10,6 +10,7 @@ theme:
     - navigation.tabs.sticky
     - toc.follow
     - navigation.top
+    - navigation.sections
   palette:
     primary: deep purple
     accent: purple
