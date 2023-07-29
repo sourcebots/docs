@@ -1,0 +1,61 @@
+site_name: SourceBots Docs
+site_url: https://docs.sourcebots.co.uk
+strict: true
+theme:
+  logo: assets/favicon.ico
+  favicon: assets/favicon.ico
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.follow
+    - navigation.top
+  palette:
+    primary: deep purple
+    accent: purple
+
+copyright: "&copy; SourceBots"
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://sourcebots.co.uk
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/sourcebots
+
+# Extensions
+markdown_extensions:
+  - attr_list
+  - abbr
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - footnotes
+  - markdown.extensions.admonition
+  - markdown.extensions.def_list
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - mdx_include:
+      base_path: docs
+
+
+plugins:
+  - search
+  - awesome-pages
+  - glightbox
