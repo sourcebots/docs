@@ -21,4 +21,5 @@ Each PDF contains a single marker, which when printed on a single page will be t
 
 ## Labs
 
-- [Python Lab](../tutorials/python-lab.md)
+- [Python Lab](../tutorials/labs/python.md)
+- [Electronics Lab](../tutorials/labs/electronics.md)
