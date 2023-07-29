@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - sp2023
   pull_request:
 
   # Allow running manually
