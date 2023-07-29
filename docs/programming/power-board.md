@@ -79,11 +79,11 @@ The `Note` enum provides notes in [scientific pitch notation](https://en.wikiped
 ```python
 from sbot import Note
 
-# Buzz for half a second in D6.
-robot.power_board.piezo.buzz(0.5, Note.D6)
+# Buzz in D6 for half a second
+robot.power_board.piezo.buzz(Note.D6, 0.5)
 
-# Buzz for 2 seconds at 400Hz
-robot.power_board.piezo.buzz(2, 400)
+# Buzz at 400Hz for 2 seconds
+robot.power_board.piezo.buzz(400, 2)
 ```
 
 ## Start Button
