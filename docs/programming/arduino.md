@@ -1,10 +1,11 @@
----
-title: Arduino API
----
+# Arduino API
 
 The [Arduino](https://store.arduino.cc/arduino-uno-rev3) provides a
 total of 18 pins for either digital input or output (labelled 2 to 13
 and A0 to A5), including 6 for analogue input (labelled A0 to A5).
+
+!!! warning
+    Digital pins 0 and 1 are reserved and cannot be used.
 
 ## Accessing the Arduino
 
@@ -12,7 +13,7 @@ The Arduino can be accessed using the `arduino` property of the `Robot`
 object.
 
 ``` python
-my_arduino = r.arduino
+my_arduino = robot.arduino
 ```
 
 You can use the GPIO *(General Purpose Input/Output)* pins for anything,
@@ -20,55 +21,7 @@ from microswitches to LEDs. GPIO is only available on pins 2 to 13 and
 A0 to A5 because pins 0 and 1 are reserved for communication with the
 rest of our kit.
 
-## Simulator
-
-In the simulator, the Arduino's pins are pre-populated and pre-configured.
-The first few digital pins are occupied by digital inputs, the next few by
-digital outputs, and the analogue pins are attached to ultrasound sensors.
-
-To find out how many inputs and outputs each type of robot has, check the
-[robot docs]().
-
-You won't be able to change pin mode like in
-a physical robot (see below), but pins 0 and 1 are still unavailable.
-
-### Digital Inputs
-
-Each robot has a number of digital inputs, starting from pin 2. If your
-robot has 5 inputs, those would occupy pins 2-6.
-
-These all have a digital state which you can read as a boolean.
-
-```python
-bumper_pressed = r.arduino.pins[5].digital_state
-```
-
-### Digital Outputs
-
-The digital outputs start the pin after the last input. If your robot has 5
-inputs and 3 outputs, the outputs would occupy pins 7-9.
-
-You can set their state similarly to reading the inputs, and you can also
-read the last value that was set.
-
-```python
-led_state = r.arduino.pins[8].digital_state
-r.arduino.pins[8].digital_state = not led_state  # Toggle output
-```
-
-### Analogue Inputs
-
-Any analogue input devices (e.g. distance sensors) are connected to the
-Arduino's analogue input pins starting from pin `A0`. You can read their
-values like this:
-
-```python
-distance = r.arduino.pins[AnaloguePin.A0].analogue_value
-```
-
-The value read is returned as a float.
-
-## Pin Mode (Unavailable in Simulator)
+## Pin Mode
 
 GPIO pins have four different modes. A pin can only have one mode at a
 time, and some pins aren't compatible with certain modes. These pin
@@ -90,7 +43,7 @@ performing an action with that pin. You can read about the possible pin
 modes below.
 
 ``` python
-r.arduino.pins[3].mode = GPIOPinMode.DIGITAL_INPUT_PULLUP
+robot.arduino.pins[3].mode = GPIOPinMode.DIGITAL_INPUT_PULLUP
 ```
 
 ### `GPIOPinMode.DIGITAL_INPUT`
@@ -99,9 +52,9 @@ In this mode, the digital state of the pin (whether it is high or low)
 can be read.
 
 ``` python
-r.arduino.pins[4].mode = GPIOPinMode.DIGITAL_INPUT
+robot.arduino.pins[4].mode = GPIOPinMode.DIGITAL_INPUT
 
-pin_value = r.arduino.pins[4].digital_state
+pin_value = robot.arduino.pins[4].digital_state
 ```
 
 ### `GPIOPinMode.DIGITAL_INPUT_PULLUP`
@@ -111,9 +64,9 @@ resistor](https://learn.sparkfun.com/tutorials/pull-up-resistors)
 enabled.
 
 ``` python
-r.arduino.pins[4].mode = GPIOPinMode.DIGITAL_INPUT_PULLUP
+robot.arduino.pins[4].mode = GPIOPinMode.DIGITAL_INPUT_PULLUP
 
-pin_value = r.arduino.pins[4].digital_state
+pin_value = robot.arduino.pins[4].digital_state
 ```
 
 ### `GPIOPinMode.DIGITAL_OUTPUT`
@@ -121,11 +74,11 @@ pin_value = r.arduino.pins[4].digital_state
 In this mode, we can set binary values of `0V` or `5V` to the pin.
 
 ``` python
-r.arduino.pins[4].mode = GPIOPinMode.DIGITAL_OUTPUT
-r.arduino.pins[6].mode = GPIOPinMode.DIGITAL_OUTPUT
+robot.arduino.pins[4].mode = GPIOPinMode.DIGITAL_OUTPUT
+robot.arduino.pins[6].mode = GPIOPinMode.DIGITAL_OUTPUT
 
-r.arduino.pins[4].digital_state = True
-r.arduino.pins[6].digital_state = False
+robot.arduino.pins[4].digital_state = True
+robot.arduino.pins[6].digital_state = False
 ```
 
 ### `GPIOPinMode.ANALOGUE_INPUT`
@@ -143,13 +96,24 @@ cannot be used.
 ``` python
 from sbot import AnaloguePin
 
-r.arduino.pins[AnaloguePin.A0].mode = GPIOPinMode.ANALOGUE_INPUT
+robot.arduino.pins[AnaloguePin.A0].mode = GPIOPinMode.ANALOGUE_INPUT
 
-pin_value = r.arduino.pins[AnaloguePin.A0].analogue_value
+pin_value = robot.arduino.pins[AnaloguePin.A0].analogue_value
 ```
 
 !!! tip
     The values are the voltages read on the pins, between 0 and 5.
 
+## Ultrasound Sensors
+
+You can also measure distance using an ultrasound sensor from the arduino.
+
+```python
+# Trigger pin: 4
+# Echo pin: 5
+
+distance_metres = robot.arduino.ultrasound_measure(4, 5)
+```
+
 !!! warning
-    Pins `A4` and `A5` are reserved and cannot be used.
+    The ultrasound sensor can measure distances up to 2 metres. If the ultrasound signal has to travel further than 2m, the sensor will timeout and return `None`.

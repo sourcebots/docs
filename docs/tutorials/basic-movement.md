@@ -12,9 +12,9 @@ Doing this is actually very easy; the only thing you need to realise is that a p
 Here's the code:
 
 ```python
-from sbot import *
+from sbot import Robot
 
-r = Robot()
+robot = Robot()
 
 while True:
     r.motor_board.motors[0].power = 0.5
@@ -35,7 +35,7 @@ while True:
     r.sleep(4)
 ```
 
-You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `r.motor_board...` lines. For a comprehensive reference to the `motor` object, see [`motor` API](../api/motor-board.md) page.
+You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `r.motor_board...` lines. For a comprehensive reference to the `motor` object, see [`motor` API](../programming/motor-board.md) page.
 
 But, to summarise:
 
@@ -52,9 +52,9 @@ So, if you put the above code on your robot, you should be able to see a motor s
 Now we're going to modify the program to vary the speed of the motor. Our aim is to do the forwards and backwards bit (as above), but, before we loop round again, ramp the power up to 70%, then down to -70%, and then back to 0 (all in steps of 10%). Here's the code:
 
 ```python
-from sbot import *
+from sbot import Robot
 
-r = Robot()
+robot = Robot()
 
 while True:
     r.motor_board.motors[0].power = 0.5
