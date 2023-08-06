@@ -103,7 +103,7 @@ pin_value = robot.arduino.pins[AnalogPins.A0].analog_value
 !!! tip
     The values are the voltages read on the pin, between 0 and 5.
 
-### Ultrasound Sensors
+## Ultrasound Sensors
 
 You can also measure distance using an ultrasound sensor from the arduino. Ultrasound sensors return the distance of the closest object in mm.
 
