@@ -2,7 +2,7 @@
 
 ## A small Introduction
 
-The purpose of this document is to teach/remind you how Python works. Throughout the training booklet, there are links for further resources and websites just in case you are not satisfied with how a particular concept is explained.
+The purpose of this document is to teach/remind you how Python works. Throughout this tutorial there are links for further resources and websites, just in case you are not satisfied with how a particular concept is explained.
 
 Below is a list of websites that have some Python tutorials:
 
