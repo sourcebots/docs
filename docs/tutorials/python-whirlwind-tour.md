@@ -14,7 +14,7 @@ Below is a list of websites that have some Python tutorials:
 * [Learn Microsoft](https://docs.microsoft.com/en-us/learn/modules/intro-to-python/)
 * [FreeCodeCamp (YouTube)](https://www.youtube.com/watch?v=rfscVS0vtbw&t=1s)
 
-If you are stuck, then you can check if someone else had a similar issue on StackOverflow.
+Remember, if you are stuck, then you can usually Google the issue and find other people who have had a similar problem. [StackOverflow](https://stackoverflow.com) is a great question and answer site for programming, so if you see it on Google, it's usually a good result to look at.
 
 ## A short overview on how programs work
 
