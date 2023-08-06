@@ -1,37 +1,5 @@
 # Python: A Whirlwind Tour
 
-## Installation
-
-### Installing Python on Windows
-
-Below are step-by-step instructions for installing Python 3.9.6 (which is required for the competition):
-
-1. Go to [https://www.python.org/downloads/release/python-396/ (Python 3.9.6)](https://www.python.org/downloads/release/python-396/)
-2. Scroll down “Files” and click on “**Windows installer 64 bit**” (if you are on a 64 bit machine) or “**Windows installer 32 bit**” (if you are on a 32 bit machine).
-   If you do not know what version to get, then type in your windows search bar “**About your PC**”. Under ‘system type’ it should tell you what bit of operating system you have.
-3. Click “save file” and wait for the installer to download.
-4. Find your downloads folder and open the Python installer. You should get this window:
-
-   ![A window with the heading "Install Python 3.9.6 (64-bit)". Two buttons say "Install Now" and "Customise installation". Two checkboxes at the bottom; one says "Install launcher for all users (recommended)" and the other says "Add Python 3.9 to PATH".](../assets/img/tutorials/whrl-win-1.png)
-
-5. Tick the **“Add Python 3.9 to PATH”** checkbox and click “Install Now” (important)
-6. Windows will warn you on whether you want to make changes to this device. Click “yes”.
-7. If the Python install was successful then you will get this window:
-
-   ![A window with the heading "Setup was successful" and a 'close' button in the bottom right.](../assets/img/tutorials/whrl-win-2.png)
-
-### Installing Python on Mac
-
-Below are step-by-step instruction for installing Python 3.9.6 (which is required for the competition):
-
-1. Go to [https://www.python.org/downloads/release/python-396/ (Python 3.9.6)](https://www.python.org/downloads/release/python-396/)
-2. Scroll down “Files” and download the relevant Mac installer for your device.
-3. Find your downloads folder and open the Python installer. You should get this window:
-
-   ![A window with the heading "Welcome to the Python installer" and a pair of buttons in the bottom right that say "Go Back" and "Continue".](../assets/img/tutorials/whrl-mac-1.png)
-
-4. Follow the  rest of the instructions as given by the installer.
-
 ## A small Introduction
 
 The purpose of this document is to teach/remind you how Python works. Throughout the training booklet, there are links for further resources and websites just in case you are not satisfied with how a particular concept is explained.
