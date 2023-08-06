@@ -24,6 +24,8 @@ We are going to be using Python as it is easy to learn and there is an abundance
 
 To write your own program, you will be using a code editor. Python comes with its own editor called IDLE, but we will use Visual Studio Code (VSCode) instead, as it has some built-in features that should make programming easier.
 
+Open 'Visual Studio Code' (Not 'Visual Studio') on your machine and create a new file. When prompted which language to use, choose 'Python'. If you're prompted to install the recommended python extension, go ahead and click install.
+
 ## Variables
 
 In a program you often need to store information to use later; to do this you would use a variable.
