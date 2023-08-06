@@ -15,8 +15,8 @@ Your robot can be in 1 of 2 modes: `DEVELOPMENT` and `COMPETITION`. By
 default, your robot will be in `DEVELOPMENT` mode:
 
 ``` python
-robot.is_competition
->> False
+>>> robot.is_competition
+False
 ```
 
 During competition mode, your robot will stop executing code at the end
@@ -29,8 +29,8 @@ zone. The number of zones depends on the game. Each zone is given a
 number, which you can access with the `zone` property:
 
 ``` python
-robot.zone
->> 1
+>>> robot.zone
+1
 ```
 
 During a competition match, a USB drive will be used to tell your robot

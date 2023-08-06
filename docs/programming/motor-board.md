@@ -51,11 +51,11 @@ my_motor_board.motors[1].power = -1
 These values can also be read back:
 
 ``` python
-my_motor_board.motors[0].power
->>> 1
+>>> my_motor_board.motors[0].power
+1
 
-my_motor_board.motors[1].power
->>> -1
+>>> my_motor_board.motors[1].power
+-1
 ```
 
 !!! warning
