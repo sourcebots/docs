@@ -56,21 +56,19 @@ for m in markers:
 
 Each marker has a position in 3D space, relative to your webcam.
 
-You can access the position using `m.distance`, `m.cartesian` and `m.spherical`.
+You can access the position using `m.distance`, `m.azimuth` and `m.elevation`.
 
 ```python
 markers = robot.camera.see()
 
 for m in markers:
     print(m.distance)  # Distance to the marker from the webcam, in metres
-    print(m.spherical.rot_y)  # Bearing to the marker from the webcam, in radians
+    print(m.azimuth)  # Bearing to the marker from the webcam, in radians
 ```
 
-!!! note
-    `m.distance` is equivalent to `m.cartesian.z` or `m.spherical.dist`.
+Azimuth is the angle in radians to the right from the center of the camera to the center of the marker.
 
-For more information on position, including how to use `m.cartesian`, `m.spherical`, and the coordinate systems,
-see [Position](./position.md).
+Elevation is the angle in radians above the center of the camera to the center of the marker.
 
 It is also possible to look at the [Orientation](./orientation.md) of the marker.
 
@@ -95,8 +93,7 @@ for m in markers:
 The positions of various points on the marker within the image are exposed over the API. This is useful
 if you would like to perform your own Computer Vision calculations.
 
-The corners are specified in clockwise order, starting from the top left corner of the
-marker. Pixels are counted from the origin of the image, which
+Pixels are counted from the origin of the image, which
 conventionally is in the top left corner of the image.
 
 ```python
