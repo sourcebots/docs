@@ -105,7 +105,7 @@ pin_value = robot.arduino.pins[AnalogPins.A0].analog_value
 
 ### Ultrasound Sensors
 
-You can also measure distance using an ultrasound sensor from the arduino.
+You can also measure distance using an ultrasound sensor from the arduino. Ultrasound sensors return the distance of the closest object in mm.
 
 ```python
 # Trigger pin: 4
