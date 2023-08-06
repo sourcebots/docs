@@ -49,7 +49,7 @@ robot.arduino.pins[3].mode = GPIOPinMode.INPUT_PULLUP
 
 ### Digital Input
 
-Digital inputs can be used to check the sate of a pin (whether it is high or low).
+Digital inputs can be used to check the state of a pin (whether it is high or low).
 This is useful for connecting something such as a micro-switch.
 
 ``` python
