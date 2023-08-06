@@ -22,7 +22,7 @@ A program is a list of instructions that are executed, line-by-line by a compute
 
 We are going to be using Python as it is easy to learn and there is an abundance of useful libraries (pre-written code).
 
-To write your own program, you will be using a code editor. Python comes with its own editor called IDLE, but we will use VSCode instead as it has some built-in features that should make collaborative remote programming much easier.
+To write your own program, you will be using a code editor. Python comes with its own editor called IDLE, but we will use VSCode instead, as it has some built-in features that should make programming easier.
 
 ## Variables
 
