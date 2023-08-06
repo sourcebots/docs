@@ -30,7 +30,7 @@ The following table visually explains what positive and negative rotations repre
 |---:|:---:|:---:|
 | **`yaw`** | ![m0x45y0z] | ![m0x-45y0z] |
 | **`pitch`** | ![m-45x0y0z] | ![m45x0y0z] |
-| **`roll`** | ![m0x0y45z] | ![m0x0y-45z] |
+| **`roll`** | ![m0x0y-45z] | ![m0x0y45z] |
 
 [m0x0y0z]: ../../assets/img/api/vision/m0x0y0z.png
 [m-45x0y0z]: ../../assets/img/api/vision/m-45x0y0z.png
