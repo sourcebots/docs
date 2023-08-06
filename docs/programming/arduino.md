@@ -58,8 +58,8 @@ robot.arduino.pins[4].mode = GPIOPinMode.INPUT
 pin_value = robot.arduino.pins[4].digital_value
 ```
 
-Some external switches may require a pull up resistor,
-`GPIOPinMode.INPUT_PULLUP`, is the same as INPUT but also enables an internal [pull-up
+Some external switches may require a pull up resistor.
+`GPIOPinMode.INPUT_PULLUP`, is the same as `INPUT` but also enables an internal [pull-up
 resistor](https://learn.sparkfun.com/tutorials/pull-up-resistors).
 
 ``` python
