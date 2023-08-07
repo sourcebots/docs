@@ -22,7 +22,7 @@ markers = robot.camera.see()
 
 !!! tip
     Taking images while moving will cause them to be blurry, which will cause marker detection to fail.
-    Try pausing movment while taking an image.
+    Try pausing movement while taking an image.
 
 ## Saving camera output
 
