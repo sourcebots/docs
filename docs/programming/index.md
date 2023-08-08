@@ -35,7 +35,7 @@ Your code needs to be put on a USB drive in a file called `robot.py`. When conne
 
 To stop your code running, you can just remove the USB drive. This will also stop the motors and any other peripherals connected to the kit.
 
-You can then reinsert the USB drive into the robot, and it will run your `main.py` again (from the start). This allows you to make changes and test them quickly.
+You can then reinsert the USB drive into the robot, and it will run your `robot.py` again (from the start). This allows you to make changes and test them quickly.
 
 ## Logs
 
