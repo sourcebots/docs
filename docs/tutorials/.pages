@@ -1,7 +1,6 @@
 nav:
     - index.md
     - python-whirlwind-tour.md
-    - python-lab.md
     - getting-code-on-the-robot.md
     - basic-movement.md
     - ...
