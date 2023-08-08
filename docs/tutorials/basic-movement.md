@@ -17,30 +17,30 @@ from sbot import Robot
 robot = Robot()
 
 while True:
-    r.motor_board.motors[0].power = 0.5
-    r.motor_board.motors[1].power = 0.5
-    r.sleep(3)
+    robot.motor_board.motors[0].power = 0.5
+    robot.motor_board.motors[1].power = 0.5
+    robot.sleep(3)
 
-    r.motor_board.motors[0].power = 0
-    r.motor_board.motors[1].power = 0
-    r.sleep(1.4)
+    robot.motor_board.motors[0].power = 0
+    robot.motor_board.motors[1].power = 0
+    robot.sleep(1.4)
 
-    r.motor_board.motors[0].power = -0.5
-    r.motor_board.motors[1].power = -0.5
-    r.sleep(1)
+    robot.motor_board.motors[0].power = -0.5
+    robot.motor_board.motors[1].power = -0.5
+    robot.sleep(1)
 
-    r.motor_board.motors[0].power = 0
-    r.motor_board.motors[1].power = 0
+    robot.motor_board.motors[0].power = 0
+    robot.motor_board.motors[1].power = 0
 
-    r.sleep(4)
+    robot.sleep(4)
 ```
 
-You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `r.motor_board...` lines. For a comprehensive reference to the `motor` object, see [`motor` API](../programming/motor-board.md) page.
+You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `robot.motor_board...` lines. For a comprehensive reference to the `motor` object, see [`motor` API](../programming/motor-board.md) page.
 
 But, to summarise:
 
-`r.motor_board.motors[0].power = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](../kit/motor-board.md) to half speed forwards (i.e. a duty-cycle of 50% forwards). As you would expect, then, `-0.5` will put this motor into reverse at half power.
-`r.motor_board.motors[0].power = 0` will brake the motor and stop it.
+`robot.motor_board.motors[0].power = 0.5` sets the target power of the motor connected to output 0 on the first [motor board](../kit/motor-board.md) to half speed forwards (i.e. a duty-cycle of 50% forwards). As you would expect, then, `-0.5` will put this motor into reverse at half power.
+`robot.motor_board.motors[0].power = 0` will brake the motor and stop it.
 
 So, if you put the above code on your robot, you should be able to see a motor spin forwards, stop, spin backwards, stop, and then repeat...
 
@@ -57,57 +57,57 @@ from sbot import Robot
 robot = Robot()
 
 while True:
-    r.motor_board.motors[0].power = 0.5
-    r.motor_board.motors[1].power = 0.5
-    r.sleep(3)
+    robot.motor_board.motors[0].power = 0.5
+    robot.motor_board.motors[1].power = 0.5
+    robot.sleep(3)
 
-    r.motor_board.motors[0].power = 0
-    r.motor_board.motors[1].power = 0
-    r.sleep(1.4)
+    robot.motor_board.motors[0].power = 0
+    robot.motor_board.motors[1].power = 0
+    robot.sleep(1.4)
 
-    r.motor_board.motors[0].power = -0.5
-    r.motor_board.motors[1].power = -0.5
-    r.sleep(1)
+    robot.motor_board.motors[0].power = -0.5
+    robot.motor_board.motors[1].power = -0.5
+    robot.sleep(1)
 
-    r.motor_board.motors[0].power = 0
-    r.motor_board.motors[1].power = 0
-    r.sleep(4)
+    robot.motor_board.motors[0].power = 0
+    robot.motor_board.motors[1].power = 0
+    robot.sleep(4)
 
     # ^^ code from before ^^
 
     # power up to 0.7 (from 0.1)
     for pwr in range(10, 80, 10):
-        r.motor_board.motors[0].power = pwr / 100
-        r.motor_board.motors[1].power = pwr / 100
-        r.sleep(0.1)
+        robot.motor_board.motors[0].power = pwr / 100
+        robot.motor_board.motors[1].power = pwr / 100
+        robot.sleep(0.1)
 
     # power down from 0.7 (to 0.1)
     for pwr in range(70, 0, -10):
-        r.motor_board.motors[0].power = pwr / 100
-        r.motor_board.motors[1].power = pwr / 100
-        r.sleep(0.1)
+        robot.motor_board.motors[0].power = pwr / 100
+        robot.motor_board.motors[1].power = pwr / 100
+        robot.sleep(0.1)
 
     # set power to 0 for a second
-    r.motor_board.motors[0].power = 0
-    r.motor_board.motors[1].power = 0
-    r.sleep(1)
+    robot.motor_board.motors[0].power = 0
+    robot.motor_board.motors[1].power = 0
+    robot.sleep(1)
 
     # power up to -0.7 (from -0.1)
     for pwr in range(-10, -80, -10):
-        r.motor_board.motors[0].power = pwr / 100
-        r.motor_board.motors[1].power = pwr / 100
-        r.sleep(0.1)
+        robot.motor_board.motors[0].power = pwr / 100
+        robot.motor_board.motors[1].power = pwr / 100
+        robot.sleep(0.1)
 
     # power down to -0.1 (from -0.7)
     for pwr in range(-70, 0, 10):
-        r.motor_board.motors[0].power = pwr / 100
-        r.motor_board.motors[1].power = pwr / 100
-        r.sleep(0.1)
+        robot.motor_board.motors[0].power = pwr / 100
+        robot.motor_board.motors[1].power = pwr / 100
+        robot.sleep(0.1)
 
     # set power to 0 for a second
-    r.motor_board.motors[0].power = 0
-    r.motor_board.motors[1].power = 0
-    r.sleep(1)
+    robot.motor_board.motors[0].power = 0
+    robot.motor_board.motors[1].power = 0
+    robot.sleep(1)
 ```
 
 ## Next steps
