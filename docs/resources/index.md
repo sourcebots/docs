@@ -23,3 +23,8 @@ Each PDF contains a single marker, which when printed on a single page will be t
 
 - [Python Lab](../tutorials/labs/python.md)
 - [Electronics Lab](../tutorials/labs/electronics.md)
+
+## Soundtrack for Smallpeice 2023
+
+- [Epic Playlist](https://open.spotify.com/playlist/1YcPSwUKrdciNC7MKTaj6T)
+- [_Chill_ Playlist](https://open.spotify.com/playlist/7LrWvXDqUzYIi58Z2dz8la)
