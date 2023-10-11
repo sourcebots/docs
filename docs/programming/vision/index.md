@@ -63,7 +63,7 @@ You can access the position using `m.distance`, `m.azimuth` and `m.elevation`.
 markers = robot.camera.see()
 
 for m in markers:
-    print(m.distance)  # Distance to the marker from the webcam, in metres
+    print(m.distance)  # Distance to the marker from the webcam, in millimetres
     print(m.azimuth)  # Bearing to the marker from the webcam, in radians
 ```
 
